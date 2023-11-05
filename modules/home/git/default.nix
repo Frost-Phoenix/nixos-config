@@ -11,7 +11,7 @@
       credential.helper = "store";
     };
 
-    environment.shellAliases = {
+    aliases = {
       # Git aliases
       ga = "git add";
       gaa = "git add --all";
