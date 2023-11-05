@@ -8,6 +8,8 @@
     ++ [ (import ./hyprland) ]
     ++ [ (import ./gaming) ]
     ++ [ (import ./git) ]
+    ++ [ (import ./btop) ]
+    ++ [ (import ./bat) ]
     ++ [ (import ./foot) ]
     ++ [ (import ./swaylock) ]
     ++ [ (import ./wofi) ]
