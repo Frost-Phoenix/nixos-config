@@ -1,47 +1,35 @@
 { inputs, pkgs, ... }: 
 {
-  home.packages =
-    let
-      php = pkgs.php.buildEnv { extraConfig = "memory_limit = 2G"; };
-    in
-    (with pkgs;
-    [
-      # programming
-      python39
-      nodejs
-      nodePackages.nodemon
-      yarn
-      nix-prefetch-github
-      typescript
-      rnix-lsp
-      ripgrep
-      rustup
-      php
-      vscode
-      lazygit
+  home.packages = (with pkgs; [
       bat
-
-      # others
-      openssl
-      libnotify
-      pamixer
-      xfce.thunar
-      pavucontrol
-      wget
-      unzip
-      gparted
-      mpv
-      playerctl
-      qalculate-gtk
-      bleachbit
-      imv
-      htop
-      xdg-utils
-      fzf
-      ffmpeg
-      bore-cli
+      btop
       discord
       eza
+      fzf
+      lazygit
+      nix-prefetch-github
+      python39
+      ripgrep
+      rnix-lsp
+      rustup
+      vscode
+      xfce.thunar
+
+      bleachbit
+      bore-cli
+      gparted
+      ffmpeg
+      imv
+      libnotify
+      mpv
+      openssl
+      pamixer
+      pavucontrol
+      playerctl
+      qalculate-gtk
+      unzip
+      wget
+      xdg-utils
       inputs.alejandra.defaultPackage.${system}
     ]
     ++ [
