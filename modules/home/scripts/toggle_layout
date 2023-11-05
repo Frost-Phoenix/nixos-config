@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+current_layout=$(hyprctl getoption general:layout)
+
+for word in $current_layout
+do
+    temp="${word%\"}"
+    temp="${temp#\"}"
+    if [ $temp == "dwindle" ]; then
+        rm -rf ~/.local/bin/env/layout
+        echo "hyprctl --batch 'keyword general:layout master;'" > ~/.local/bin/env/layout
+        hyprctl --batch "keyword general:layout master;"
+    fi
+    if [ $temp == "master" ]; then
+        rm -rf ~/.local/bin/env/layout
+        echo "hyprctl --batch 'keyword general:layout dwindle;'" > ~/.local/bin/env/layout
+        hyprctl --batch "keyword general:layout dwindle;"
+    fi
+done
