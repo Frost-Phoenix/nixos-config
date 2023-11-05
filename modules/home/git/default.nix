@@ -13,6 +13,4 @@
   };
 
   home.packages = [ pkgs.gh ];
-
-  # home.configFile."git/config".source = ./config;
 }
