@@ -8,7 +8,9 @@
     
     defaultBranch = "main";
 
-    credential.helper = "store";
+    extraConfig = { 
+      credential.helper = "store";
+    };
   };
 
   home.packages = [ pkgs.gh ];
