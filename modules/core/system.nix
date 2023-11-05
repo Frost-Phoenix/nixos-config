@@ -1,9 +1,5 @@
-{ self
-, pkgs
-, lib
-, inputs
-, ...
-}: {
+{ self, pkgs, lib, inputs, ...}: 
+{
   imports = [ inputs.nix-gaming.nixosModules.default ];
   nix = {
     settings = {

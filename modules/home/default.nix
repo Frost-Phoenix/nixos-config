@@ -1,7 +1,8 @@
-{ inputs, ... }: {
+{ inputs, ... }: 
+{
   imports =
-    [ (import ./waybar) ]
-     ++ [ (import ./firefox) ]
+       [ (import ./waybar) ]
+    ++ [ (import ./firefox) ]
     # ++ [ (import ./vscode) ]
     ++ [ (import ./chromium) ]
     ++ [ (import ./hyprland) ]

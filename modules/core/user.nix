@@ -1,7 +1,4 @@
-{ pkgs
-, inputs
-, ...
-}:
+{ pkgs, inputs, ...}:
 let
   name = "FrostPhoenix";
   username = "frostphoenix";

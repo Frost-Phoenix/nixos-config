@@ -5,7 +5,8 @@
 
       requests
     ];
-in {
+in 
+{
   environment.systemPackages = [
     (pkgs.python3.withPackages my-python-packages)
   ];

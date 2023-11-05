@@ -1,4 +1,5 @@
-{lib, ...}: {
+{ lib, ... }: 
+{
   programs.starship = {
     enable = true;
     settings = {

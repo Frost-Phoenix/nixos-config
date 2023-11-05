@@ -1,4 +1,5 @@
-{ ... }: {
+{ ... }: 
+{
   programs.waybar.style = ''
     * {
         font-family: JetBrainsMono Nerd Font;

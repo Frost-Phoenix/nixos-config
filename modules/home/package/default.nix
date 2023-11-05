@@ -1,7 +1,5 @@
-{ inputs
-, pkgs
-, ...
-}: {
+{ inputs, pkgs, ... }: 
+{
   home.packages =
     let
       php = pkgs.php.buildEnv { extraConfig = "memory_limit = 2G"; };

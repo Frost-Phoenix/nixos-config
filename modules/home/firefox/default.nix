@@ -1,5 +1,4 @@
 { config, pkgs, theme, inputs, ... }:
-
 {
   programs.firefox =
     let

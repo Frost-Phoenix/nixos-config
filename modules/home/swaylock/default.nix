@@ -1,12 +1,5 @@
+{ pkgs, lib, config, inputs, ... }: 
 {
-  pkgs,
-  lib,
-  config,
-  inputs,
-  ...
-}: {
-  # home.packages = with pkgs; [swaylock-effects];
-  
   programs.swaylock = {
     enable = true;
     package = pkgs.swaylock-effects;

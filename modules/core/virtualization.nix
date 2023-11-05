@@ -1,5 +1,4 @@
 { config, pkgs, ... }:
-
 {
   # Add user to libvirtd group
   users.users.frostphoenix.extraGroups = [ "libvirtd" ];

@@ -1,8 +1,4 @@
-{ inputs
-, nixpkgs
-, self
-, ...
-}:
+{ inputs, nixpkgs, self, ...}:
 let
   system = "x86_64-linux";
   pkgs = import nixpkgs {

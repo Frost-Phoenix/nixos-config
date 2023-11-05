@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }: 
+{
   systemd.packages = with pkgs; [
   (cloudflare-warp.overrideAttrs (old: {
       src = pkgs.fetchurl {
