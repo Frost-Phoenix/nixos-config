@@ -4,7 +4,7 @@
     enable = true;
     
     settings = {
-      color_theme = "./dracula.theme";
+      color_theme = "dracula";
       theme_background = false;
     };
   };
