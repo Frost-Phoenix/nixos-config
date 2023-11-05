@@ -14,6 +14,7 @@
       # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
       # ani = "bash $HOME/.local/bin/anime --dub";
 
+      # Utils
       vim = "nvim";
       cat = "bat --theme 'Visual Studio Dark+'";
       l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
@@ -21,14 +22,33 @@
       tree = "eza --icons --tree --group-directories-first";
       findw = "grep -rl";
 
-      # nixos
-      nix-switch = "sudo nixos-rebuild switch --flake nixos-config#nixos";
-      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake nixos-config#nixos";
-      nix-flake-update = "sudo nix flake update nixos-config#";
+      # Nixos
+      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#nixos";
+      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos";
+      nix-flake-update = "sudo nix flake update ~/nixos-config#";
       nix-clean = "nix-collect-garbage && nix-collect-garbage -d && sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/*";
       # nix-clean = "sudo nix-collect-garbage -d";
       # nix-cleanold = "sudo nix-collect-garbage --delete-old";
       # nix-cleanboot = "sudo /run/current-system/bin/switch-to-configuration boot";
+
+      # Git
+      ga = "git add";
+      gaa = "git add --all";
+      gs = "git status";
+      gb = "git branch";
+      gm = "git merge";
+      gpl = "git pull";
+      gplo = "git pull origin";
+      gps = "git push";
+      gpso = "git push origin";
+      gc = "git commit";
+      gcm = "git commit -m";
+      gch = "git checkout";
+      gchb = "git checkout -b";
+      gcoe = "git config user.email";
+      gcon = "git config user.name";
+
+      g = "lazygit";
 
       # python
       piv = "python -m venv .venv";
