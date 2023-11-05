@@ -6,9 +6,8 @@
     userName = "Frost-Phoenix";
     userEmail = "67cyril6767@gmail.com";
     
-    defaultBranch = "main";
-
     extraConfig = { 
+      init.defaultBranch = "main";
       credential.helper = "store";
     };
   };
