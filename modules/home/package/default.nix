@@ -41,7 +41,7 @@
       ffmpeg
       bore-cli
       discord
-      exa
+      eza
       inputs.alejandra.defaultPackage.${system}
     ]
     ++ [
