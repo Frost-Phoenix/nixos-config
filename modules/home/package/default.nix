@@ -18,6 +18,8 @@
       rustup
       php
       vscode
+      lazygit
+      bat
 
       # others
       openssl
