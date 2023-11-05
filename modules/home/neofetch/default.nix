@@ -5,5 +5,5 @@
   ...
 }: {
   home.packages = [pkgs.neofetch];
-  # xdg.configFile."neofetch".source = ./config;
+  xdg.configFile."neofetch".source = ./config;
 }
