@@ -61,7 +61,6 @@ in
 
       decoration {
           rounding = 0
-          multisample_edges = true
           active_opacity = 0.8500;
           inactive_opacity = 0.76;
           blur {
