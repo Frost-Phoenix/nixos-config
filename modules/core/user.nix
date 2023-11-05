@@ -5,8 +5,6 @@
 let
   name = "FrostPhoenix";
   username = "frostphoenix";
-  #email = "t@gmail.com";
-  initialPassword = "dreamX";
   packages = with pkgs; [
     fish
   ];
@@ -28,11 +26,9 @@ in
 
   users.users.${username} = {
     isNormalUser = true;
-    initialPassword = initialPassword;
     description = name;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
-  users.users.root.initialPassword = initialPassword;
-  nix.settings.allowed-users = [ "frostphoenix" ];
+  nix.settings.allowed-users = [ ${username} ];
 }

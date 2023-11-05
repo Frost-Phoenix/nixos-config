@@ -2,7 +2,7 @@
   services.xserver = {
     enable = true;
     layout = "us";
-    videoDrivers = [ "amdgpu" ];
+    # videoDrivers = [ "amdgpu" ];
     displayManager.autoLogin = {
       enable = true;
       user = "frostphoenix";
