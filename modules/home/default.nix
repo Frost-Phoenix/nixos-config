@@ -11,6 +11,7 @@
     ++ [ (import ./btop) ]
     ++ [ (import ./bat) ]
     ++ [ (import ./cava) ]
+    ++ [ (import ./kitty) ]
     ++ [ (import ./foot) ]
     ++ [ (import ./swaylock) ]
     ++ [ (import ./wofi) ]
