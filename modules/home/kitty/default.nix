@@ -11,6 +11,7 @@
     };
 
     settings = {
+      confirm_os_window_close = false;
       background_opacity = "0.55";  
       window_padding_width = 5;
       scrollback_lines = 10000;
