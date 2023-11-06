@@ -1,8 +1,7 @@
 { pkgs, ... }: 
 {
   programs.bat = {
-    enable = true
-    config .theme = "base16"
-    # config.theme = "Monokai Extended";
+    enable = true;
+    config.theme = "Monokai Extended";
   };
 }
