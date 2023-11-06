@@ -9,13 +9,13 @@
 
     settings = {
       directory = {
-        format = "[ $path ]($style)";
+        format = "[](bold #89dceb)[ $path ]($style)";
         style = "bold #94e2d5";
       };
 
       character = {
-        success_symbol = "[](bold #89dceb)[ ➜](bold green)";
-        error_symbol = "[](bold #89dceb)[ ➜](bold red)";
+        success_symbol = "[  ](bold #89dceb)[➜](bold green)";
+        error_symbol = "[  ](bold #89dceb)[➜](bold red)";
         # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
 
