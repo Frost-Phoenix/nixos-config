@@ -9,16 +9,30 @@
 
     settings = {
       format = lib.concatStrings [
+        # "$directory"
+        # "$git_branch"
+        # "$git_status"
+        # "$nix_shell"
         "$directory"
         "$git_branch"
         "$git_status"
-        "$nix_shell"
+        "$git_metrics"
+        "$time"
+        "\n"
+        "$character"
       ];
 
-      # character = {
-      #   success_symbol = "[ ](bold #89dceb)[›](bold green)";
-      #   error_symbol = "[ ](bold #89dceb)[›](bold red)";
-      # };
+      directory = {
+        format = "[ ﱮ $path ]($style)";
+        style = "bold #74c7ec";
+      };
+
+      character = {
+        # success_symbol = "[ ](bold #89dceb)[›](bold green)";
+        # error_symbol = "[ ](bold #89dceb)[›](bold red)";
+        success_symbol = "[ ](bold #89dceb)[➜](bold green)";
+        error_symbol = "[ ](bold #89dceb)[✗](bold red)";
+      };
 
       # directory.substitutions = {
       #   "Documents" = " ";
