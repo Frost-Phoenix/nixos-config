@@ -14,8 +14,8 @@
       };
 
       character = {
-        success_symbol = "[](bold #89dceb)[ ➜](bold green)";
-        error_symbol = "[](bold #89dceb)[ ➜](bold red)";
+        success_symbol = "[ ](bold #89dceb)[ ➜](bold green)";
+        error_symbol = "[ ](bold #89dceb)[ ➜](bold red)";
         # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
 
@@ -27,7 +27,7 @@
       #   "~" = "󰋞 ";
       # };
 
-      palette = "catppuccin_mocha";
-    } // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
+      # palette = "catppuccin_mocha";
+    } #// builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
   };
 }
