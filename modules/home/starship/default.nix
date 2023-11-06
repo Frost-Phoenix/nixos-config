@@ -9,8 +9,8 @@
 
     settings = {
       directory = {
-        format = "[](bold #89dceb)[ $path ]($style)";
-        style = "bold #89b4fa";
+        format = "[](bold #89b4fa)[ $path ]($style)";
+        style = "bold #b4befe";
       };
 
       character = {
