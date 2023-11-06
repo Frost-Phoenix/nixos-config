@@ -14,8 +14,8 @@
       };
 
       character = {
-        success_symbol = "[ ](bold #94e2d5)[ ➜](bold green)";
-        error_symbol = "[ ](bold #94e2d5)[ ➜](bold red)";
+        success_symbol = "[ ](bold #89b4fa)[ ➜](bold green)";
+        error_symbol = "[ ](bold #89b4fa)[ ➜](bold red)";
         # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
 
