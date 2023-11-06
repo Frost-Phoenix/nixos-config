@@ -1,6 +1,6 @@
-{ config, pkgs, ... }:
+{ catppuccin-bat, ... }: 
 {
- 	programs.bat = {
+  programs.bat = {
     enable = true;
     config = {
       pager = "less -FR";
@@ -8,7 +8,7 @@
     };
     themes = {
       # https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme
-      Catppuccin-mocha = builtins.readFile "https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme";
+      Catppuccin-mocha = builtins.readFile "${catppuccin-bat}/Catppuccin-mocha.tmTheme";
     };
   };
 }

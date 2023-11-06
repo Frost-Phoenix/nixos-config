@@ -27,6 +27,15 @@
     { nixpkgs, self, ...} @ inputs:
     let
       selfPkgs = import ./pkgs;
+
+      catppuccin-fcitx5 = {
+        url = "github:catppuccin/fcitx5";
+        flake = false;
+      };
+      catppuccin-cava = {
+        url = "github:catppuccin/cava";
+        flake = false;
+      };
     in
     {
       overlays.default = selfPkgs.overlay;
