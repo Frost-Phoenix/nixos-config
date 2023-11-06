@@ -9,8 +9,8 @@
 
     settings = {
       character = {
-        success_symbol = "[ ](bold #74c7ec)[❯ ](bold green)[› ](bold green)";
-        error_symbol = "[ ](bold #74c7ec)[❯ ](bold red)[› ](bold red)";
+        success_symbol = "[  ](bold #74c7ec)[›](bold green)";
+        error_symbol = "[  ](bold #74c7ec)[›](bold red)";
       };
 
       # directory.substitutions = {
