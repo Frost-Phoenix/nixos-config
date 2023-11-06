@@ -21,6 +21,38 @@
         "type": "github"
       }
     },
+    "catppuccin-bat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668065083,
+        "narHash": "sha256-6WVKQErGdaqb++oaXnY3i6/GuH2FhTgK0v4TN4Y0Wbw=",
+        "owner": "catppuccin",
+        "repo": "bat",
+        "rev": "ba4d16880d63e656acced2b7d4e034e4a93f74b1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "bat",
+        "type": "github"
+      }
+    },
+    "catppuccin-cava": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665489380,
+        "narHash": "sha256-hYC6ExtroRy2UoxGNHAzKm9MlTdJSegUWToat4VoN20=",
+        "owner": "catppuccin",
+        "repo": "cava",
+        "rev": "ad3301b50786e22e31cbf4316985827d6f05845e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "cava",
+        "type": "github"
+      }
+    },
     "fenix": {
       "inputs": {
         "nixpkgs": [
@@ -317,6 +349,8 @@
     "root": {
       "inputs": {
         "alejandra": "alejandra",
+        "catppuccin-bat": "catppuccin-bat",
+        "catppuccin-cava": "catppuccin-cava",
         "home-manager": "home-manager",
         "hypr-contrib": "hypr-contrib",
         "hyprland": "hyprland",
