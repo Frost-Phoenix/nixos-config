@@ -9,7 +9,7 @@
 
     settings = {
       directory = {
-        format = "[](bold #89b4fa)[ $path ]($style)";
+        format = "[ ](bold #89b4fa)[ $path ]($style)";
         style = "bold #b4befe";
       };
 
@@ -19,13 +19,13 @@
         # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
 
-      # directory.substitutions = {
-      #   "Documents" = " ";
-      #   "Downloads" = " ";
-      #   "Music" = " ";
-      #   "Pictures" = " ";
-      #   "~" = "󰋞 ";
-      # };
+      directory.substitutions = {
+        "~" = "󰋞 ";
+        # "Documents" = " ";
+        # "Downloads" = " ";
+        # "Music" = " ";
+        # "Pictures" = " ";
+      };
 
       palette = "catppuccin_mocha";
     } // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
