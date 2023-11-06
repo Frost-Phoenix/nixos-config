@@ -10,6 +10,7 @@
     ++ [ (import ./git) ]
     ++ [ (import ./btop) ]
     ++ [ (import ./bat) ]
+    ++ [ (import ./cava) ]
     ++ [ (import ./foot) ]
     ++ [ (import ./swaylock) ]
     ++ [ (import ./wofi) ]
