@@ -21,21 +21,21 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    catppuccin-bat = {
+      url = "github:catppuccin/bat";
+      flake = false;
+    };
+    catppuccin-cava = {
+      url = "github:catppuccin/cava";
+      flake = false;
+    };
   };
 
   outputs =
     { nixpkgs, self, ...} @ inputs:
     let
       selfPkgs = import ./pkgs;
-
-      catppuccin-bat = {
-        url = "github:catppuccin/bat";
-        flake = false;
-      };
-      catppuccin-cava = {
-        url = "github:catppuccin/cava";
-        flake = false;
-      };
     in
     {
       overlays.default = selfPkgs.overlay;
