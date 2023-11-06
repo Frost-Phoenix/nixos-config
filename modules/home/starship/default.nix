@@ -8,30 +8,29 @@
     enableNushellIntegration = true;
 
     settings = {
-      format = lib.concatStrings [
-        # "$directory"
-        # "$git_branch"
-        # "$git_status"
-        # "$nix_shell"
-        "$directory"
-        "$git_branch"
-        "$git_status"
-        "$git_metrics"
-        "$time"
-        "\n"
-        "$character"
-      ];
+      # format = lib.concatStrings [
+      #   # "$directory"
+      #   # "$git_branch"
+      #   # "$git_status"
+      #   # "$nix_shell"
+      #   "$directory"
+      #   "$git_branch"
+      #   "$git_status"
+      #   "$git_metrics"
+      #   "$time"
+      #   "\n"
+      #   "$character"
+      # ];
 
       directory = {
-        format = "[ ﱮ $path ]($style)";
-        style = "bold #74c7ec";
+        format = "[  $path ]($style)";
+        style = "bold #b4befe";
       };
 
       character = {
-        # success_symbol = "[ ](bold #89dceb)[›](bold green)";
-        # error_symbol = "[ ](bold #89dceb)[›](bold red)";
-        success_symbol = "[ ](bold #89dceb)[➜](bold green)";
-        error_symbol = "[ ](bold #89dceb)[✗](bold red)";
+        success_symbol = "[ ](bold #89dceb)[ ➜](bold green)";
+        error_symbol = "[ ](bold #89dceb)[ ➜](bold red)";
+        # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
 
       # directory.substitutions = {
