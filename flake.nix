@@ -28,8 +28,8 @@
     let
       selfPkgs = import ./pkgs;
 
-      catppuccin-fcitx5 = {
-        url = "github:catppuccin/fcitx5";
+      catppuccin-bat = {
+        url = "github:catppuccin/bat";
         flake = false;
       };
       catppuccin-cava = {
