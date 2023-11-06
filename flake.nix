@@ -30,6 +30,10 @@
       url = "github:catppuccin/cava";
       flake = false;
     };
+    catppuccin-starship = {
+      url = "github:catppuccin/starship";
+      flake = false;
+    };
   };
 
   outputs =
