@@ -1,9 +1,4 @@
 { config, pkgs, ... }:
-let catppuccin-bat = {
-  url = "github:catppuccin/bat";
-  flake = false;
-};
-in 
 {
  	programs.bat = {
     enable = true;
@@ -13,7 +8,7 @@ in
     };
     themes = {
       # https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme
-      Catppuccin-mocha = builtins.readFile "${catppuccin-bat}/Catppuccin-mocha.tmTheme";
+      Catppuccin-mocha = builtins.readFile "https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme";
     };
   };
 }
