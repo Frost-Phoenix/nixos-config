@@ -12,13 +12,13 @@
         OfferToSaveLoginsDefault = false;
         PasswordManagerEnabled = false;
         DontCheckDefaultBrowser = true;
-        # FirefoxHome = {
-        #   Search = true;
-        #   Pocket = false;
-        #   Snippets = false;
-        #   TopSites = false;
-        #   Highlights = false;
-        # };
+        FirefoxHome = {
+          Search = true;
+          Pocket = false;
+          Snippets = false;
+          TopSites = false;
+          Highlights = false;
+        };
         UserMessaging = {
           ExtensionRecommendations = false;
           SkipOnboarding = true;
