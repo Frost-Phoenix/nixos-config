@@ -21,7 +21,7 @@ in {
 
     nur.enable = true;
 
-    hm.programs.firefox = let
+    programs.firefox = let
       startpage = pkgs.substituteAll {
         src = ./startpage.html;
         inherit (theme) wallpaper;
