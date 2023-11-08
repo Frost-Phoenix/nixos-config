@@ -32,8 +32,8 @@ in
 
 
       general {
-          gaps_in = 6
-          gaps_out = 10
+          gaps_in = 4
+          gaps_out = 8
           border_size = 2
           col.active_border = rgba(595959ff)
           col.inactive_border = rgba(00140e10)
@@ -60,9 +60,9 @@ in
 
 
       decoration {
-          rounding = 0
-          active_opacity = 0.8500;
-          inactive_opacity = 0.76;
+          rounding = 5
+          active_opacity = 0.9;
+          inactive_opacity = 0.9;
           blur {
             new_optimizations = 1
             enabled = 1
@@ -77,11 +77,11 @@ in
       animations {
           enabled=1
           bezier = overshot, 0.13, 0.99, 0.29, 1.1
-          animation = windows, 1, 4, overshot, slide
-          animation = windowsOut, 1, 5, default, popin 80%
+          animation = windows, 1, 5, default, popin 75%
+          animation = windowsOut, 1, 5, default, popin 75%
           animation = border, 1, 5, default
           animation = fade, 1, 8, default
-          animation = workspaces, 1, 6, overshot, slidevert
+          animation = workspaces, 1, 6, default, fade
       }
 
 
@@ -195,7 +195,7 @@ in
 
       
       # autostart
-      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 16
+      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
       exec-once = systemctl --user import-environment &
       exec-once = hash dbus-update-activation-environment 2>/dev/null &
       exec-once = dbus-update-activation-environment --systemd &
