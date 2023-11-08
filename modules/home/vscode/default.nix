@@ -5,8 +5,8 @@
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
-      catppuccin.catppuccin-vsc
-      vscode-icons-team.vscode-icons
+      # catppuccin.catppuccin-vsc
+      # vscode-icons-team.vscode-icons
     ];
     userSettings = {
       "update.mode" = "none";
@@ -16,8 +16,8 @@
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
       "workbench.colorTheme" = "Catppuccin Mocha";
-      "workbench.iconTheme" = "vscode-icons";
-      "vsicons.dontShowNewVersionMessage" = true;
+      # "workbench.iconTheme" = "vscode-icons";
+      # "vsicons.dontShowNewVersionMessage" = true;
       "editor.fontLigatures" = true;
       "editor.minimap.enabled" = false;
 
