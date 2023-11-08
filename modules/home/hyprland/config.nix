@@ -60,7 +60,7 @@ in
 
 
       decoration {
-          rounding = 5
+          rounding = 8
           active_opacity = 0.9;
           inactive_opacity = 0.9;
           blur {
@@ -77,8 +77,8 @@ in
       animations {
           enabled=1
           bezier = overshot, 0.13, 0.99, 0.29, 1.1
-          animation = windows, 1, 5, default, popin 75%
-          animation = windowsOut, 1, 5, default, popin 75%
+          animation = windows, 1, 5, default, popin 50%
+          animation = windowsOut, 1, 5, default, popin 50%
           animation = border, 1, 5, default
           animation = fade, 1, 8, default
           animation = workspaces, 1, 6, default, fade
