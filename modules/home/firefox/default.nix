@@ -19,7 +19,7 @@ in {
       DEFAULT_BROWSER = "firefox";
     };
 
-    nur.enable = true;
+    # nur.enable = true;
 
     programs.firefox = let
       startpage = pkgs.substituteAll {
