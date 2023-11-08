@@ -13,7 +13,7 @@
     ripgrep
     rnix-lsp
     rustup
-    vscode
+    # vscode
     xfce.thunar
 
     bleachbit
