@@ -12,13 +12,13 @@
         OfferToSaveLoginsDefault = false;
         PasswordManagerEnabled = false;
         DontCheckDefaultBrowser = true;
-        FirefoxHome = {
-          Search = true;
-          Pocket = false;
-          Snippets = false;
-          TopSites = false;
-          Highlights = false;
-        };
+        # FirefoxHome = {
+        #   Search = true;
+        #   Pocket = false;
+        #   Snippets = false;
+        #   TopSites = false;
+        #   Highlights = false;
+        # };
         UserMessaging = {
           ExtensionRecommendations = false;
           SkipOnboarding = true;
@@ -26,10 +26,10 @@
         ExtensionSettings = {};
       };
     };
-    profiles.jamie = {
+    profiles.frostphoenix = {
       id = 0;
       isDefault = true;
-      name = "jamie";
+      name = "frostphoenix";
       search = {
         force = true;
         default = "DuckDuckGo";
