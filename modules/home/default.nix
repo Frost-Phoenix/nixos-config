@@ -11,7 +11,6 @@
     ++ [(import ./bat)]
     ++ [(import ./cava)]
     ++ [(import ./kitty)]
-    # ++ [(import ./foot)]
     ++ [(import ./swaylock)]
     ++ [(import ./wofi)]
     ++ [(import ./zsh)]

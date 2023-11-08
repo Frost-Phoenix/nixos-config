@@ -87,9 +87,8 @@ in
 
       # ----------------------------------------------------------------
       # keybindings
-      # bind = $mainMod, Return, exec, foot
       bind = $mainMod, Return, exec, kitty
-      bind = $mainMod SHIFT, Return, exec, foot --fullscreen
+      bind = $mainMod SHIFT, Return, exec, kitty --fullscreen
       bind = $mainMod, Q, killactive,
       bind = $mainMod, T, killactive,
       bind = $mainMod, F, fullscreen,
