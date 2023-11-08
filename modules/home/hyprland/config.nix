@@ -14,7 +14,7 @@ in
       input {
           kb_layout = us
           numlock_by_default = true
-          follow_mouse = 1
+          follow_mouse = 0
           sensitivity = 0
       }
 
@@ -61,8 +61,8 @@ in
 
       decoration {
           rounding = 8
-          active_opacity = 0.9;
-          inactive_opacity = 0.9;
+          active_opacity = 0.8;
+          inactive_opacity = 0.8;
           blur {
             new_optimizations = 1
             enabled = 1
