@@ -7,6 +7,7 @@
     pkgs.twemoji-color-font
     pkgs.noto-fonts-emoji
   ];
+
   gtk = {
     enable = true;
     font = {
@@ -30,6 +31,7 @@
       name = "Catppuccin-Frappe-Dark";
     };
   };
+  
   home.pointerCursor = {
     package = pkgs.catppuccin-cursors;
     name = "Catppuccin-Frappe-Red";
