@@ -12,8 +12,7 @@
       settings = {};
       isDefault = true;
       userChrome = builtins.readFile ./userChrome.css;
-      extensions = with pkgs.nur.repos.rycee.firefox-addons;
-      with pkgs.firefox-addons; [
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         sponsorblock
         ublock-origin
         bitwarden
