@@ -18,12 +18,12 @@
       name = "Papirus-Dark";
     };
     theme = {
-      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      name = "Catppuccin";
       package = pkgs.catppuccin-gtk.override {
-        accents = [ "pink" ];
-        size = "compact";
-        tweaks = [ "rimless" "black" ];
-        variant = "macchiato";
+        accents = [ "lavender" ];
+        size = "standard";
+        # tweaks = [ "rimless" "black" ];
+        variant = "mocha";
       };
     };
     cursorTheme = {
