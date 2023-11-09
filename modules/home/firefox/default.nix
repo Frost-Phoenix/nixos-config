@@ -7,22 +7,24 @@
     };
   in {
     enable = true;
+
+    profiles.default = {
+      settings = {};
+      isDefault = true;
+      userChrome = builtins.readFile ./userChrome.css;
+      extensions = with pkgs.nur.repos.rycee.firefox-addons;
+      with pkgs.firefox-addons; [
+        sponsorblock
+        ublock-origin
+        bitwarden
+        sidebery
+        firefox-translations
+        wayback-machine
+      ];
+    };
+      
     package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
-      profiles.default = {
-        settings = {};
-        isDefault = true;
-        userChrome = builtins.readFile ./userChrome.css;
-        extensions = with pkgs.nur.repos.rycee.firefox-addons;
-        with pkgs.firefox-addons; [
-          sponsorblock
-          ublock-origin
-          bitwarden
-          sidebery
-          firefox-translations
-          wayback-machine
-          ];
-        };
-        extraPolicies = {
+      extraPolicies = {
         CaptivePortal = false;
         DisableFirefoxStudies = true;
         DisablePocket = true;
