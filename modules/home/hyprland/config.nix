@@ -7,17 +7,25 @@ in
   wayland.windowManager.hyprland = {
     extraConfig = "
       $mainMod = SUPER
+
       monitor = ,highrr,auto,1
       monitor = ,highres,auto,1
 
+      # autostart
+      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
+      exec-once = systemctl --user import-environment &
+      exec-once = hash dbus-update-activation-environment 2>/dev/null &
+      exec-once = dbus-update-activation-environment --systemd &
+      exec-once = swww init && swaylock && load-env 
+      exec-once = wl-paste --type text --watch cliphist store && wl-paste --type image --watch cliphist store && mako &
+      exec-once = waybar &
 
       input {
           kb_layout = us
           numlock_by_default = true
-          follow_mouse = 0
+          follow_mouse = 1
           sensitivity = 0
       }
-
 
       misc {
           disable_autoreload = true
@@ -30,20 +38,18 @@ in
           focus_on_activate = true
       }
 
-
       general {
           gaps_in = 4
           gaps_out = 8
           border_size = 2
           col.active_border = rgba(595959ff)
           col.inactive_border = rgba(00140e10)
-          apply_sens_to_raw = 1
+          # apply_sens_to_raw = 1
       }
-
 
       dwindle {
           no_gaps_when_only = false
-          force_split = 0
+          # force_split = 0
           special_scale_factor = 0.8
           split_width_multiplier = 1.0
           use_active_for_splits = true
@@ -51,16 +57,14 @@ in
           preserve_split = yes
       }
 
-
       master {
           new_is_master = true
           special_scale_factor = 1
           no_gaps_when_only = false
       }
 
-
       decoration {
-          rounding = 8
+          rounding = 10
           active_opacity = 0.8;
           inactive_opacity = 0.8;
           blur {
@@ -76,14 +80,17 @@ in
 
     animations {
         enabled = true
+        
         bezier = fluent_decel, 0, 0.2, 0.4, 1
         bezier = easeOutCirc, 0, 0.55, 0.45, 1
         bezier = easeOutCubic, 0.33, 1, 0.68, 1
         bezier = easeinoutsine, 0.37, 0, 0.63, 1
+
         # Windows
         animation = windowsIn, 1, 3, easeOutCubic, popin 30% # window open
         animation = windowsOut, 1, 3, fluent_decel, popin 70% # window close.
         animation = windowsMove, 1, 2, easeinoutsine, slide # everything in between, moving, dragging, resizing.
+        
         # Fade
         animation = fadeIn, 1, 3, easeOutCubic  # fade in (open) -> layers and windows
         animation = fadeOut, 1, 1.7, easeOutCubic # fade out (close) -> layers and windows
@@ -95,18 +102,9 @@ in
         animation = workspaces, 1, 3, easeOutCubic, fade # styles: slide, slidevert, fade, slidefade, slidefadevert
     }
 
-      # animations {
-      #     enabled=1
-      #     bezier = overshot, 0.13, 0.99, 0.29, 1.1
-      #     animation = windows, 1, 5, default, popin 50%
-      #     animation = windowsOut, 1, 5, default, popin 50%
-      #     animation = border, 1, 5, default
-      #     animation = fade, 1, 8, default
-      #     animation = workspaces, 1, 6, default, fade
-      # }
-
 
       # ----------------------------------------------------------------
+      
       # keybindings
       bind = $mainMod, Return, exec, kitty
       bind = $mainMod SHIFT, Return, exec, kitty --fullscreen
@@ -129,14 +127,17 @@ in
       bind = $mainMod, O,exec, toggle-opacity
       bind = $mainMod, A,exec, toggle-animation
       bind = $mainMod, D,exec, toggle-blur
+      
       # screenshot
       bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
       bind = $mainMod, Print, exec, grimblast --notify --cursor  copy area
+      
       # switch focus
       bind = $mainMod, left, movefocus, l
       bind = $mainMod, right, movefocus, r
       bind = $mainMod, up, movefocus, u
       bind = $mainMod, down, movefocus, d
+      
       # switch workspace
       bind = $mainMod, 1, workspace, 1
       bind = $mainMod, 2, workspace, 2
@@ -148,6 +149,7 @@ in
       bind = $mainMod, 8, workspace, 8
       bind = $mainMod, 9, workspace, 9
       bind = $mainMod, 0, workspace, 10
+      
       # same as above, but switch to the workspace
       bind = $mainMod SHIFT, 1, movetoworkspace, 1
       bind = $mainMod SHIFT, 2, movetoworkspace, 2
@@ -160,6 +162,7 @@ in
       bind = $mainMod SHIFT, 9, movetoworkspace, 9
       bind = $mainMod SHIFT, 0, movetoworkspace, 10
       bind = $mainMod CTRL, c, movetoworkspace, empty
+      
       # window control
       bind = SUPER SHIFT, left, movewindow, l
       bind = SUPER SHIFT, right, movewindow, r
@@ -173,6 +176,7 @@ in
       bind = SUPER ALT, right, moveactive, 80 0
       bind = SUPER ALT, up, moveactive, 0 -80
       bind = SUPER ALT, down, moveactive, 0 80
+      
       # media and volume controls
       bind = ,XF86AudioRaiseVolume,exec, pamixer -i 5
       bind = ,XF86AudioLowerVolume,exec, pamixer -d 5
@@ -183,9 +187,11 @@ in
       bind = , XF86AudioStop, exec, playerctl stop
       bind = $mainMod, mouse_down, workspace, e-1
       bind = $mainMod, mouse_up, workspace, e+1
+      
       # mouse binding
       bindm = $mainMod, mouse:272, movewindow
       bindm = $mainMod, mouse:273, resizewindow
+      
       # windowrule
       windowrule = float,wlogout
       windowrule = float,wofi
@@ -213,16 +219,6 @@ in
       windowrule = size 900 500,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
-
-      
-      # autostart
-      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
-      exec-once = systemctl --user import-environment &
-      exec-once = hash dbus-update-activation-environment 2>/dev/null &
-      exec-once = dbus-update-activation-environment --systemd &
-      exec-once = swww init && swaylock && notify-send 'Hey $USER, Welcome back' && load-env 
-      exec-once = wl-paste --type text --watch cliphist store && wl-paste --type image --watch cliphist store && mako &
-      exec-once = waybar &
     ";
   };
 }
