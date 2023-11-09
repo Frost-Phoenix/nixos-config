@@ -122,24 +122,22 @@ in
       bind = $mainMod, Return, exec, kitty
       bind = $mainMod SHIFT, Return, exec, kitty --fullscreen
       bind = $mainMod, Q, killactive,
-      bind = $mainMod, T, killactive,
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
-      bind = $mainMod, Z, exec, pkill wofi || wofi --show drun
-      bind = $mainMod, X, exec, pkill wlogout || wlogout -b 4
-      bind = $mainMod, C, exec, hyprctl dispatch centerwindow none
+      bind = $mainMod, D, exec, pkill wofi || wofi --show drun
+      bind = $mainMod, Escape, exec, swaylock
+      bind = $mainMod, SHIFT, Escape, exec, pkill wlogout || wlogout -b 4
       bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
-      bind = $mainMod, Y, pin,
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
       bind = $mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped
-      bind = $mainMod SHIFT, c ,exec, hyprpicker -a
+      bind = $mainMod, C ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
-      bind = $mainMod, O,exec, toggle-opacity
-      bind = $mainMod, A,exec, toggle-animation
-      bind = $mainMod, D,exec, toggle-blur
+      # bind = $mainMod, O,exec, toggle-opacity
+      # bind = $mainMod, A,exec, toggle-animation
+      # bind = $mainMod, D,exec, toggle-blur
       
       # screenshot
       bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
