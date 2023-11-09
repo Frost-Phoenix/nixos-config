@@ -253,7 +253,7 @@
         #   "network.cookie.lifetimePolicy" = 0;
         #   "security.pki.sha1_enforcement_level" = 1;
         # };
-      };
+      # };
     };
   };
 }
