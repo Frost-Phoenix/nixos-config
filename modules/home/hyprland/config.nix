@@ -23,6 +23,7 @@ in
       input {
           kb_layout = us
           numlock_by_default = true
+          kb_options=caps:escape
           follow_mouse = 1
           sensitivity = 0
       }
@@ -45,6 +46,8 @@ in
           # col.active_border = rgba(595959ff)
           # col.inactive_border = rgba(00140e10)
           # apply_sens_to_raw = 1
+
+          layout = dwindle
 
           gaps_in = 5
           gaps_out = 10
