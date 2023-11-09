@@ -6,7 +6,7 @@
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       catppuccin.catppuccin-vsc
-      Catppuccin.catppuccin-vsc-icons
+      catppuccin.catppuccin-vsc-icons
     ];
     userSettings = {
       "update.mode" = "none";
