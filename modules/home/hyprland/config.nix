@@ -74,15 +74,36 @@ in
       }
 
 
-      animations {
-          enabled=1
-          bezier = overshot, 0.13, 0.99, 0.29, 1.1
-          animation = windows, 1, 5, default, popin 50%
-          animation = windowsOut, 1, 5, default, popin 50%
-          animation = border, 1, 5, default
-          animation = fade, 1, 8, default
-          animation = workspaces, 1, 6, default, fade
-      }
+    animations {
+        enabled = true
+        bezier = fluent_decel, 0, 0.2, 0.4, 1
+        bezier = easeOutCirc, 0, 0.55, 0.45, 1
+        bezier = easeOutCubic, 0.33, 1, 0.68, 1
+        bezier = easeinoutsine, 0.37, 0, 0.63, 1
+        # Windows
+        animation = windowsIn, 1, 3, easeOutCubic, popin 30% # window open
+        animation = windowsOut, 1, 3, fluent_decel, popin 70% # window close.
+        animation = windowsMove, 1, 2, easeinoutsine, slide # everything in between, moving, dragging, resizing.
+        # Fade
+        animation = fadeIn, 1, 3, easeOutCubic  # fade in (open) -> layers and windows
+        animation = fadeOut, 1, 1.7, easeOutCubic # fade out (close) -> layers and windows
+        animation = fadeSwitch, 0, 1, easeOutCirc # fade on changing activewindow and its opacity
+        animation = fadeShadow, 1, 10, easeOutCirc # fade on changing activewindow for shadows
+        animation = fadeDim, 1, 4, fluent_decel # the easing of the dimming of inactive windows
+        animation = border, 1, 2.7, easeOutCirc # for animating the border's color switch speed
+        animation = borderangle, 1, 30, fluent_decel, once # for animating the border's gradient angle - styles: once (default), loop
+        animation = workspaces, 1, 3, easeOutCubic, fade # styles: slide, slidevert, fade, slidefade, slidefadevert
+    }
+
+      # animations {
+      #     enabled=1
+      #     bezier = overshot, 0.13, 0.99, 0.29, 1.1
+      #     animation = windows, 1, 5, default, popin 50%
+      #     animation = windowsOut, 1, 5, default, popin 50%
+      #     animation = border, 1, 5, default
+      #     animation = fade, 1, 8, default
+      #     animation = workspaces, 1, 6, default, fade
+      # }
 
 
       # ----------------------------------------------------------------
