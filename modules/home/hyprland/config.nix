@@ -23,7 +23,6 @@ in
       input {
           kb_layout = us
           numlock_by_default = true
-          kb_options=caps:escape
           follow_mouse = 1
           sensitivity = 0
       }
@@ -124,8 +123,8 @@ in
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
-      # bind = $mainMod, ESCAPE, exec, swaylock
-      # bind = $mainMod, SHIFT, ESCAPE, exec, pkill wlogout || wlogout -b 4
+      bind = $mainMod, `, exec, swaylock
+      bind = $mainMod, ~, ESCAPE, exec, pkill wlogout || wlogout -b 4
       bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
@@ -134,9 +133,6 @@ in
       bind = $mainMod, C ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
-      # bind = $mainMod, O,exec, toggle-opacity
-      # bind = $mainMod, A,exec, toggle-animation
-      # bind = $mainMod, D,exec, toggle-blur
       
       # screenshot
       bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
@@ -188,8 +184,8 @@ in
       bind = SUPER ALT, down, moveactive, 0 80
       
       # media and volume controls
-      bind = ,XF86AudioRaiseVolume,exec, pamixer -i 5
-      bind = ,XF86AudioLowerVolume,exec, pamixer -d 5
+      bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2
+      bind = ,XF86AudioLowerVolume,exec, pamixer -d 2
       bind = ,XF86AudioMute,exec, pamixer -t
       bind = ,XF86AudioPlay,exec, playerctl play-pause
       bind = ,XF86AudioNext,exec, playerctl next
