@@ -3,7 +3,7 @@
     [(import ./waybar)]
     ++ [(import ./firefox)]
     ++ [(import ./vscode)]
-    ++ [(import ./chromium)]
+    # ++ [(import ./chromium)]
     ++ [(import ./hyprland)]
     ++ [(import ./gaming)]
     ++ [(import ./git)]
