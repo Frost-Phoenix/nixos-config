@@ -30,12 +30,12 @@ in
       name = "matrix-gtk";
     };
     cursorTheme = {
-      name = "Catppuccin-Mocha-Dark";
+      name = "Catppuccin-Frappe-Dark";
     };
   };
   home.pointerCursor = {
     package = pkgs.catppuccin-cursors;
-    name = "Catppuccin-Mocha-Red";
+    name = "Catppuccin-Frappe-Red";
     size = 15;
   };
 }
