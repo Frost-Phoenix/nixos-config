@@ -1,218 +1,124 @@
-/* Sidebery */
-#main-window[titlepreface*="​​​​​"] .tabbrowser-tab {
-  visibility: collapse;
-}
+:root {
+  /**
+   * The number of buttons (back, forward, stop, etc) to the left of the URL bar
+ * Add 1px here for each button 3 buttons = 3px
+   */
+  --buttons-left-of-urlbar: 3;
 
-#main-window[titlepreface*="​​​​​"] .titlebar-button {
-  height: 40px;
-}
-
-#main-window[titlepreface*="​​​​​"] #nav-bar {
-  /* margin-top: -40px; */
-}
-#main-window[titlepreface*="​​​​​"][tabsintitlebar="true"] #nav-bar {
-  /* margin-right: 137px; */
-}
-#main-window[titlepreface*="​​​​​"] #titlebar-spacer {
-  background-color: var(--chrome-secondary-background-color);
-}
-
-#main-window[titlepreface*="​​​​​"] #titlebar-buttonbox-container {
-  background-color: var(--chrome-secondary-background-color);
-}
-
-#main-window[titlepreface*="​​​​​"] .titlebar-color {
-  background-color: var(--toolbar-bgcolor);
-}
-
-#sidebar-box #sidebar-header {
-  visibility: collapse;
-}
-
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_sidebar.css made available under Mozilla Public License v. 2.0
-See the above repository for updates as well as full license text. */
-
-/* Show sidebar only when the cursor is over it  */
-/* The border controlling sidebar width will be removed so you'll need to modify these values to change width */
-
-#sidebar-box {
-  --uc-sidebar-width: 47px;
-  --uc-sidebar-hover-width: 232px;
-  --uc-autohide-sidebar-delay: 050ms; /* Wait 0.6s before hiding sidebar */
-  position: relative;
-  min-width: var(--uc-sidebar-width) !important;
-  width: var(--uc-sidebar-width) !important;
-  max-width: var(--uc-sidebar-width) !important;
-  z-index:1;
-  margin-top: -1px;
-}
-
-#sidebar-box[positionend] {
-  direction: rtl;
-}
-#sidebar-box[positionend] > *{
-  direction: ltr;
-}
-
-#sidebar-box[positionend]:-moz-locale-dir(rtl){
-  direction: ltr;
-}
-#sidebar-box[positionend]:-moz-locale-dir(rtl) > *{
-  direction: rtl;
-}
-
-#sidebar-box > #sidebar {
-  transition: min-width 100ms cubic-bezier(0,0,0,1.01) !important;
-  min-width: var(--uc-sidebar-width) !important;
-  will-change: min-width;
-}
-
-#sidebar-box:hover > #sidebar {
-  min-width: var(--uc-sidebar-hover-width) !important;
-  transition: min-width 100ms cubic-bezier(0,0,0,1.01) var(--uc-autohide-sidebar-delay), box-shadow 500ms linear !important;
-  box-shadow: 0 0 4px rgba(10,10,10, .5);
-  clip-path: inset(0px -15px 0px -15px);
-}
-
-/* Add sidebar divider and give it background */
-
-#sidebar,
-#sidebar-header {
-  background-color: var(--toolbar-bgcolor) !important;
-  border-inline: 1px solid var(--chrome-content-separator-color);
-  border-inline-width: 0px 1px;
-}
-
-#sidebar-box:not([positionend]) > :-moz-locale-dir(rtl),
-#sidebar-box[positionend] > * {
-  border-inline-width: 1px 0px;
-}
-
-/* Move statuspanel to the other side when sidebar is hovered so it doesn't get covered by sidebar */
-
-#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel {
-  inset-inline: auto 0px !important;
-}
-#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel-label {
-  margin-inline: 0px !important;
-  border-left-style: solid !important;
-}
-#sidebar-splitter{
-  width: 0px !important;
-  background-color: #f00 !important;
-  border: none !important;
-}
-
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_bookmarks_toolbar.css made available under Mozilla Public License v. 2.0
-See the above repository for updates as well as full license text. */
-
-#PersonalToolbar{
-  --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
-  --uc-bm-padding: 7px; /* Vertical padding to be applied to bookmarks */
-  --uc-autohide-toolbar-delay: 600ms; /* The toolbar is hidden after 0.6s */
-
-  /* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */
-  --uc-autohide-toolbar-focus-rotation: 0deg; /* urlbar is focused */
-  --uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */
-}
-
-:root[uidensity="compact"] #PersonalToolbar{ --uc-bm-padding: 1px; }
-:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }
-
-#PersonalToolbar:not([customizing]){
-  position: relative;
-  margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
-  transform: rotateX(90deg);
-  transform-origin: top;
-  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
-  z-index: 1;
-  /* The following properties should allow the themes with trasparent toolbars to work */
-  background-color: transparent !important;
-  background-repeat: no-repeat,no-repeat,var(--lwt-background-tiling);
-  --uc-bg-y: calc(-2 * (var(--tab-block-margin) + var(--toolbarbutton-inner-padding) + var(--toolbarbutton-outer-padding)) - var(--tab-min-height) - 16px - var(--bookmark-block-padding));
-  background-position: top left,top left,var(--lwt-background-alignment,top left);
-  background-position-y:top,top,var(--uc-bg-y),var(--uc-bg-y),var(--uc-bg-y);
-  background-image: var(--toolbar-bgimage), linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)),var(--lwt-header-image,var(--lwt-additional-images)) !important;
-}
-
-#PlacesToolbarItems > .bookmark-item,
-#OtherBookmarks,
-#PersonalToolbar > #import-button{
-  padding-block: var(--uc-bm-padding) !important;
-}
-
-#nav-bar:focus-within + #PersonalToolbar{
-  transition-delay: 100ms !important;
-  transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));
-}
-
-#navigator-toolbox:hover > #PersonalToolbar{
-  transition-delay: 100ms !important;
-  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
-}
-
-#navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {
-  transform: rotateX(0);
-}
-
-#navigator-toolbox-background {
-  appearance: none !important;
-  background: @backgroundColor@ !important;
-}
-
-/* #titlebar {
-  display: none !important;
-} */
-
-#nav-bar {
-  margin-right: 0 !important;
-  background: none !important;
-}
-
-.titlebar-close {
-  visibility: hidden !important;
-}
-
-/* .titlebar-buttonbox-container {
-  visibility: hidden !important;
-} */
-
-#main-window {
-  background: none !important;
+  /**
+   * Width of `https://` text in your font as an m and a / may not be proportional in all fonts
+   * Adjust this until only `https://` is hidden in the URL bar
+   * +/-0.1 should work for most fonts
+   */
+  --https-text-offset-amount: -3.7em;
 }
 
 #navigator-toolbox {
-  border: none !important;
+  display: flex;
 }
 
+#urlbar-container {
+  min-width: 18.2em !important;
+}
 
-#urlbar-go-button,
-#identity-box,
-#star-button-box,
-#pageActionButton,
-#tracking-protection-icon-container,
+#nav-bar {
+  order: 0;
+}
+
+#titlebar {
+  order: 1;
+  width: 100%;
+}
+
 #page-action-buttons {
-  display: none !important;
+  margin-right: -100em;
+  transition: all 0.3s ease-in;
 }
 
-#urlbar-input {
-  padding-left: 5px !important;
+:root[customizing] #nav-bar-customization-target,
+#nav-bar:focus-within #nav-bar-customization-target,
+popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
+#nav-bar:hover #nav-bar-customization-target {
+  margin-left: 0em;
+  width: 50vw;
+  transition-delay: 0s;
 }
 
-#urlbar:not([breakout][breakout-extend]) > #urlbar-background {
-  background: transparent !important;
-  border: #00000061 !important;
-  border: transparent !important;
-  outline: none !important;
+#urlbar-input-container .urlbar-input-box #urlbar-input {
+  margin-left: var(--https-text-offset-amount) !important;
+  transition: all 0.3s ease-in;
 }
 
+#urlbar-input-container .urlbar-input-box #urlbar-input:placeholder-shown {
+  margin-left: 0 !important;
+  transition-delay: 0.1s;
+}
 
-/* Uncomment to enable compatibility for multi-row_bookmarks.css */
-/* This would break buttons placed in the toolbar but that is likely not happening if you are using multi-row setup  */
-/*
-#PersonalToolbar:not([customizing]){
-  position: fixed;
+#nav-bar:hover .urlbar-input-box #urlbar-input,
+#nav-bar:focus-within #urlbar-input-container .urlbar-input-box #urlbar-input {
+  margin-left: 0em !important;
+}
+
+#urlbar-input-container:after {
   display: block;
-  margin-bottom: 0px !important;
+  position: relative;
+  pointer-events: none;
+  float: right;
+  width: 4em;
+  margin-right: -0.2em;
+  background: linear-gradient(to right, transparent, Field);
+  z-index: 1;
+  height: 1em;
+  content: " ";
+  transition: width 0.3s ease-in;
 }
-*/
+
+#nav-bar:hover #urlbar-input-container:after,
+#nav-bar:focus-within #urlbar-input-container:after {
+  width: 0;
+}
+
+#urlbar-input-container > box {
+  position: relative;
+  background-color: Field;
+  z-index: 1;
+}
+
+#urlbar-input-container > box:hover {
+  background-color: SelectedItem;
+}
+
+:root[customizing] #navigator-toolbox-background #nav-bar-customization-target,
+popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target,
+#nav-bar:hover #nav-bar-customization-target #page-action-buttons {
+  margin-right: 0;
+}
+
+#nav-bar-customization-target {
+  margin-left: calc(0px - calc(var(--buttons-left-of-urlbar) * 34px));
+  min-width: 24em;
+  width: 24em;
+  transition: all 0.3s ease-in;
+  transition-delay: 0.1s;
+}
+
+#nav-bar-customization-target ~ toolbarbutton,
+#nav-bar-customization-target ~ toolbaritem {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+:root[customizing] #nav-bar-customization-target ~ toolbaritem,
+:root[customizing] #nav-bar-customization-target ~ toolbarbutton,
+popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target ~ toolbaritem,
+#nav-bar:focus-within #nav-bar-customization-target ~ toolbaritem,
+#nav-bar:hover #nav-bar-customization-target ~ toolbaritem,
+popupset:hover ~ #navigator-toolbox-background #nav-bar-customization-target ~ toolbarbutton,
+#nav-bar:hover #nav-bar-customization-target ~ toolbarbutton {
+  opacity: 1 !important;
+}
+
+#identity-box.notSecure ~ .urlbar-input-box #urlbar-input,
+#identity-box.chromeUI ~ .urlbar-input-box #urlbar-input {
+  margin-left: 0em !important;
+}
