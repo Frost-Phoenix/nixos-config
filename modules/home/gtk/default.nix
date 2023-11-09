@@ -11,19 +11,19 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 10;
+      size = 12;
     };
     iconTheme = {
       package = pkgs.papirus-icon-theme;
       name = "Papirus-Dark";
     };
     theme = {
-      name = "Catppuccin-Mocha-Standard-Lavender-Dark";
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = [ "lavender" ];
-        size = "standard";
-        tweaks = [ "rimless" ];
-        variant = "mocha";
+        accents = [ "pink" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "macchiato";
       };
     };
     cursorTheme = {
