@@ -3,18 +3,17 @@
   programs.firefox = {
     enable = true;
 
-    profiles.default = {
+    profiles.frostphoenix = {
       settings = {};
       isDefault = true;
       extraConfig = builtins.readFile ./user.js;
-      # userChrome = builtins.readFile ./userChrome.css;
+      userChrome = builtins.readFile ./userChrome.css;
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        sponsorblock
         ublock-origin
-        bitwarden
-        sidebery
-        firefox-translations
-        wayback-machine
+        return-youtube-dislikes
+        youtube-time-tracker
+        firefox-color
+        styl-us
       ];
     };
       
@@ -38,31 +37,31 @@
       #     ExtensionRecommendations = false;
       #     SkipOnboarding = true;
       #   };
-        # ExtensionSettings = {
-        #   # @ytb  -->  YouTube
-        #   # @gh  -->  GitHub
-        #   # @nix  -->  Nix Package
-        #   "github@search" = {
-        #     installation_mode = "force_installed";
-        #     install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/github-search.xpi";
-        #   };
+        ExtensionSettings = {
+          # @ytb  -->  YouTube
+          # @gh  -->  GitHub
+          # @nix  -->  Nix Package
+          "github@search" = {
+            installation_mode = "force_installed";
+            install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/github-search.xpi";
+          };
 
-        #   "youtube@search" = {
-        #     installation_mode = "force_installed";
-        #     install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/youtube-search.xpi";
-        #   };
+          "youtube@search" = {
+            installation_mode = "force_installed";
+            install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/youtube-search.xpi";
+          };
 
-        #   "nix.package@search" = {
-        #     installation_mode = "force_installed";
-        #     install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/nix-search.xpi";
-        #   };
+          "nix.package@search" = {
+            installation_mode = "force_installed";
+            install_url = "https://raw.githubusercontent.com/mlyxshi/FFExtension/main/nix-search.xpi";
+          };
 
-        #   "ebay@search.mozilla.org".installation_mode = "blocked";
-        #   "amazondotcom@search.mozilla.org".installation_mode = "blocked";
-        #   "bing@search.mozilla.org".installation_mode = "blocked";
-        #   "ddg@search.mozilla.org".installation_mode = "blocked";
-        #   "wikipedia@search.mozilla.org".installation_mode = "blocked";
-        # };
+          "ebay@search.mozilla.org".installation_mode = "blocked";
+          "amazondotcom@search.mozilla.org".installation_mode = "blocked";
+          "bing@search.mozilla.org".installation_mode = "blocked";
+          "ddg@search.mozilla.org".installation_mode = "blocked";
+          "wikipedia@search.mozilla.org".installation_mode = "blocked";
+        };
         # Preferences = {
         #   "browser.toolbars.bookmarks.visibility" = "never";
         #   "browser.fullscreen.autohide" = false;
