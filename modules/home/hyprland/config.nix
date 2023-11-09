@@ -39,12 +39,18 @@ in
       }
 
       general {
-          gaps_in = 4
-          gaps_out = 8
-          border_size = 2
-          col.active_border = rgba(595959ff)
-          col.inactive_border = rgba(00140e10)
+          # gaps_in = 4
+          # gaps_out = 8
+          # border_size = 2
+          # col.active_border = rgba(595959ff)
+          # col.inactive_border = rgba(00140e10)
           # apply_sens_to_raw = 1
+
+          gaps_in = 5
+          gaps_out = 10
+          border_size = 2
+          col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
+          col.inactive_border = 0x00000000
       }
 
       dwindle {
@@ -65,13 +71,17 @@ in
 
       decoration {
           rounding = 10
+          
           active_opacity = 0.8;
           inactive_opacity = 0.8;
+          fullscreen_opacity = 1.0;
+
           blur {
             new_optimizations = 1
             enabled = 1
-            size = 2
+            size = 4
             passes = 2
+            xray = true
           }
 
           drop_shadow = 0
