@@ -7,7 +7,6 @@
     pkgs.twemoji-color-font
     pkgs.noto-fonts-emoji
   ];
-  xdg.dataFile."themes/matrix-gtk".source = matrix-gtk;
   gtk = {
     enable = true;
     font = {
