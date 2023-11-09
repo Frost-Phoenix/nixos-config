@@ -18,7 +18,7 @@
       name = "Papirus-Dark";
     };
     theme = {
-      name = "Catppuccin-Mocha-Lavender";
+      name = "Catppuccin-Mocha-Standard-Lavender-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "lavender" ];
         size = "standard";
