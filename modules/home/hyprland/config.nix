@@ -123,8 +123,8 @@ in
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
-      bind = $mainMod, `, exec, swaylock
-      bind = $mainMod, ~, exec, pkill wlogout || wlogout -b 4
+      bind = $mainMod, Escape, exec, swaylock
+      # bind = $mainMod, Escape, exec, pkill wlogout || wlogout -b 4
       bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
