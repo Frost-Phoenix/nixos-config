@@ -1,9 +1,8 @@
-{ pkgs, lib, config, theme,... }: 
+{ pkgs, lib, config,... }: 
 {
   programs.firefox = let
     startpage = pkgs.substituteAll {
       src = ./startpage.html;
-      inherit (theme) wallpaper;
     };
   in {
     enable = true;
