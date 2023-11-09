@@ -1,12 +1,4 @@
 { pkgs, ... }:
-let
-  matrix-gtk = pkgs.fetchFromGitHub {
-    owner = "samiulbasirfahim";
-    repo = "Matrix-gtk";
-    rev = "9ff060e016e5cd4830aafb6299142c3d8922944e";
-    sha256 = "K7tEtB0WGKyjND+pZKUd4pktBlCV3v27pvqaxMILpFU=";
-  };
-in
 {
   fonts.fontconfig.enable = true;
   home.packages = [
@@ -27,7 +19,13 @@ in
       name = "Papirus-Dark";
     };
     theme = {
-      name = "matrix-gtk";
+      name = "Catppuccin-Macchiato-Compact-Pink-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "pink" ];
+        size = "compact";
+        tweaks = [ "rimless" ];
+        variant = "macchiato";
+      };
     };
     cursorTheme = {
       name = "Catppuccin-Frappe-Dark";
