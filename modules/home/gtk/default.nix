@@ -20,7 +20,7 @@ in
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 10;
+      size = 11;
     };
     iconTheme = {
       package = pkgs.papirus-icon-theme;
@@ -30,12 +30,12 @@ in
       name = "matrix-gtk";
     };
     cursorTheme = {
-      name = "Catppuccin-Frappe-Dark";
+      name = "Catppuccin-Mocha-Dark";
     };
   };
   home.pointerCursor = {
     package = pkgs.catppuccin-cursors;
-    name = "Catppuccin-Frappe-Red";
+    name = "Catppuccin-Mocha-Red";
     size = 15;
   };
 }
