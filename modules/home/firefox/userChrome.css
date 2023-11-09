@@ -160,9 +160,9 @@ See the above repository for updates as well as full license text. */
   background: @backgroundColor@ !important;
 }
 
-#titlebar {
+/* #titlebar {
   display: none !important;
-}
+} */
 
 #nav-bar {
   margin-right: 0 !important;
@@ -173,9 +173,9 @@ See the above repository for updates as well as full license text. */
   visibility: hidden !important;
 }
 
-.titlebar-buttonbox-container {
+/* .titlebar-buttonbox-container {
   visibility: hidden !important;
-}
+} */
 
 #main-window {
   background: none !important;
