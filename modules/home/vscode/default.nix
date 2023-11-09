@@ -2,7 +2,7 @@
 {
   programs.vscode = {
     enable = true;
-    # package = pkgs.vscodium;
+    package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
       catppuccin.catppuccin-vsc
@@ -16,7 +16,7 @@
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
       "workbench.colorTheme" = "Catppuccin Mocha";
-      "workbench.iconTheme" = "catppuccin-vsc-icons";
+      "workbench.iconTheme" = "catppuccin-mocha";
       "vsicons.dontShowNewVersionMessage" = true;
       "editor.fontLigatures" = true;
       "editor.minimap.enabled" = false;
