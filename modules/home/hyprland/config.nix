@@ -120,13 +120,12 @@ in
       
       # keybindings
       bind = $mainMod, Return, exec, kitty
-      bind = $mainMod SHIFT, Return, exec, kitty --fullscreen
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
-      bind = $mainMod, Escape, exec, swaylock
-      bind = $mainMod, SHIFT, Escape, exec, pkill wlogout || wlogout -b 4
+      bind = $mainMod, ESCAPE, exec, swaylock
+      bind = $mainMod, SHIFT, ESCAPE, exec, pkill wlogout || wlogout -b 4
       bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
