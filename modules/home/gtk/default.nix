@@ -10,11 +10,10 @@ in
 {
   fonts.fontconfig.enable = true;
   home.packages = [
-    pkgs.twemoji-color-font
-    pkgs.noto-fonts
-    pkgs.noto-fonts-cjk
-    pkgs.noto-fonts-emoji
+    pkgs.nerdfonts
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    pkgs.twemoji-color-font
+    pkgs.noto-fonts-emoji
   ];
   xdg.dataFile."themes/matrix-gtk".source = matrix-gtk;
   gtk = {
