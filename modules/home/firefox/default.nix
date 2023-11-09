@@ -4,8 +4,9 @@
     enable = true;
 
     profiles.default = {
-      settings = builtins.readFile ./user.js;
+      settings = {};
       isDefault = true;
+      extraConfig = builtins.readFile ./user.js;
       # userChrome = builtins.readFile ./userChrome.css;
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         sponsorblock
