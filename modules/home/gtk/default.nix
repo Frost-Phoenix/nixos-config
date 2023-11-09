@@ -22,7 +22,7 @@
       package = pkgs.catppuccin-gtk.override {
         accents = [ "lavender" ];
         size = "standard";
-        # tweaks = [ "rimless" "black" ];
+        tweaks = [ "rimless" ];
         variant = "mocha";
       };
     };
