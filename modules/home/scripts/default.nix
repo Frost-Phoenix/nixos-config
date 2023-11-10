@@ -24,7 +24,7 @@
       echo "Git wasn't initialized here."
     fi
   '';
-  push = pkgs.writeShellScriptBin "commit" ''
+  commit = pkgs.writeShellScriptBin "commit" ''
     git_directory=$PWD/.git
     if [[ -d $git_directory ]];then
       git add .
