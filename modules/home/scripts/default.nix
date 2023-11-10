@@ -35,7 +35,6 @@
     fi
   '';
 in {
-  home.file.".local/bin/anime".source = ./ani-cli;
   home.packages = with pkgs; [
     wall-change
     wallpaper-picker
