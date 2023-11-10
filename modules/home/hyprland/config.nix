@@ -84,9 +84,9 @@ in
           fullscreen_opacity = 1.0;
 
           blur {
-            new_optimizations = 1
+            new_optimizations = true
             enabled = 1
-            size = 2
+            size = 3
             passes = 5
             xray = 1
           }
