@@ -8,16 +8,17 @@ in
     extraConfig = "
       $mainMod = SUPER
 
-      monitor = ,highrr,auto,1
-      monitor = ,highres,auto,1
+      monitor=,preferred,auto,auto
+      monitor=,1920x1200,auto,auto
 
       # autostart
       exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
       exec-once = systemctl --user import-environment &
       exec-once = hash dbus-update-activation-environment 2>/dev/null &
       exec-once = dbus-update-activation-environment --systemd &
-      exec-once = swww init && swaylock && load-env 
-      exec-once = wl-paste --type text --watch cliphist store && wl-paste --type image --watch cliphist store && mako &
+      exec-once = swaybg -m fill -i ~/Pictures/wallpapers/wallpaper.png && swaylock
+      # exec-once = 
+      exec-once = mako &
       exec-once = waybar &
 
       input {
@@ -129,7 +130,7 @@ in
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod, Escape, exec, swaylock
       bind = $mainMod, Suppr, exec, pkill wlogout || wlogout -b 4
-      bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
+      # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
