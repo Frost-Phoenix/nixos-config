@@ -1,6 +1,4 @@
 { pkgs, ... }: 
 {
-  programs.aseprite = {
-    enable = true;
-  };
+  home.packages = (with pkgs; [ aseprite ]);
 }
