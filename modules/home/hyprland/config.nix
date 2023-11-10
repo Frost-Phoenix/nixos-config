@@ -79,16 +79,16 @@ in
       decoration {
           rounding = 10
           
-          active_opacity = 0.8;
-          inactive_opacity = 0.8;
+          active_opacity = 0.65;
+          inactive_opacity = 0.65;
           fullscreen_opacity = 1.0;
 
           blur {
             new_optimizations = 1
             enabled = 1
-            size = 4
+            size = 2
             passes = 2
-            xray = true
+            xray = 1
           }
 
           drop_shadow = 0
