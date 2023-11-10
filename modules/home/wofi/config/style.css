@@ -1,67 +1,94 @@
-* {
- font-family: JetBrainsMono Nerd Font;  
-}
-window {
-  margin: 0px;
-  border: 2px solid #595959;
-  background-color: rgba(31, 31, 31, 0.95);
-  border-radius: 0px;
-}
-#input {
-  all: unset;
-  min-height: 36px;
-  padding: 4px 10px;
-  margin: 4px;
-  border: none;
-  color: #e2e0ec;
-  font-weight: bold;
-  background-color: #595959;
-  outline: none;
-  border-radius: 0px;
-  margin: 10px;
-  margin-bottom: 2px;
-}
+/* Mocha Mauve */
+@define-color accent #cba6f7;
+@define-color txt #cad3f5;
+@define-color bg #24273a;
+@define-color bg2 #494d64;
 
-#inner-box {
-  margin: 4px;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 0px;
-}
+ * {
+    font-family: 'JetBrains Mono Nerd Font', monospace;
+    font-size: 14px;
+ }
 
-#outer-box {
-  margin: 0px;
-  padding: 3px;
-  border: none;
-  border-radius: 0px;
-  border: 2px solid #595959;
-}
+ /* Window */
+ window {
+    margin: 0px;
+    padding: 10px;
+    border: 3px solid @accent;
+    border-radius: 7px;
+    background-color: @bg;
+    animation: slideIn 0.5s ease-in-out both;
+ }
 
-#scroll {
-  margin-top: 5px;
-  border: none;
-  border-radius: 0px;
-  margin-bottom: 5px;
-}
+ /* Slide In */
+ @keyframes slideIn {
+    0% {
+       opacity: 0;
+    }
 
-#text:selected {
-  color: #f1f0f5;
-  margin: 0px 0px;
-  border: none;
-  border-radius: 0px;
-}
+    100% {
+       opacity: 1;
+    }
+ }
 
-#entry {
-  margin: 0px 0px;
-  border: none;
-  border-radius: 0px;
-  background-color: transparent;
-}
+ /* Inner Box */
+ #inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @bg;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
 
-#entry:selected {
-  margin: 0px 0px;
-  border: none;
-  border-radius: 0px;
-  background: #595959;
-  /* background: linear-gradient(90deg, #E97193 0%, #82A497 100%); */
-}
+ /* Fade In */
+ @keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
+
+    100% {
+       opacity: 1;
+    }
+ }
+
+ /* Outer Box */
+ #outer-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @bg;
+ }
+
+ /* Scroll */
+ #scroll {
+    margin: 0px;
+    padding: 10px;
+    border: none;
+ }
+
+ /* Input */
+ #input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @accent;
+    background-color: @bg2;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
+
+ /* Text */
+ #text {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @txt;
+    animation: fadeIn 0.5s ease-in-out both;
+ }
+
+ /* Selected Entry */
+ #entry:selected {
+   background-color: @accent;
+ }
+
+ #entry:selected #text {
+    color: @bg2;
+ }
