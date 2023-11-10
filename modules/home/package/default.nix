@@ -1,9 +1,6 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    aseprite
-    bat
-    btop
     discord
     eza
     fzf
@@ -13,7 +10,6 @@
     ripgrep
     rnix-lsp
     rustup
-    # vscode
     xfce.thunar
 
     bleachbit
