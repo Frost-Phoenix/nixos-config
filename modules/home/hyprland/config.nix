@@ -87,7 +87,7 @@ in
             new_optimizations = 1
             enabled = 1
             size = 2
-            passes = 2
+            passes = 5
             xray = 1
           }
 
