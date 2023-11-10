@@ -12,10 +12,10 @@ in
       monitor=,1920x1200,auto,auto
 
       # autostart
-      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
       exec-once = systemctl --user import-environment &
       exec-once = hash dbus-update-activation-environment 2>/dev/null &
       exec-once = dbus-update-activation-environment --systemd &
+      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15
       exec-once = swaybg -m fill -i ~/Pictures/wallpapers/wallpaper.png
       exec-once = swaylock
       exec-once = mako &
