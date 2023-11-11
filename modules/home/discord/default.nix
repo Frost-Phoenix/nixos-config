@@ -6,6 +6,7 @@
 
   home.packages = with pkgs; [
     webcord
+    webcord-vencord
   ];
   
   nixpkgs.overlays = [
@@ -32,8 +33,6 @@
       };
     })
   ];
-
-  environment.systemPackages = with pkgs; [ webcord-vencord ];
 
   xdg.configFile."WebCord/Themes/amoled-cord".source = pkgs.substituteAll {
     src = ./themes/theme.css;
