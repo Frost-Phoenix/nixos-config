@@ -35,18 +35,11 @@ in
           layers_hog_keyboard_focus = true
           animate_manual_resizes = false
           enable_swallow = true
-          swallow_regex =
+          # swallow_regex =
           focus_on_activate = true
       }
 
       general {
-          # gaps_in = 4
-          # gaps_out = 8
-          # border_size = 2
-          # col.active_border = rgba(595959ff)
-          # col.inactive_border = rgba(00140e10)
-          # apply_sens_to_raw = 1
-
           layout = dwindle
 
           gaps_in = 5
@@ -63,7 +56,7 @@ in
       dwindle {
           no_gaps_when_only = false
           force_split = 0
-          special_scale_factor = 1
+          special_scale_factor = 1.0
           split_width_multiplier = 1.0
           use_active_for_splits = true
           pseudotile = yes
