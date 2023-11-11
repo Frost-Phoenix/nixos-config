@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ $# == 0 ]]; then
-    runbg audacious -t
-elif [[ $1 == -s ]]; then
-    pkill audacious
-else
-    echo "[ERROR] => Wrong argument..."
-fi
