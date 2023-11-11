@@ -224,8 +224,8 @@ in
       windowrule = float,mpv
       windowrule = center,mpv
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*mpv.*)$
-      windowrule = tile,aseprite
-      windowrulev2 = opacity 1.0 override 1.0 override, class:(Aseprite)
+      # windowrule = tile,aseprite
+      windowrulev2 = opacity 1.0 override 1.0 override, floating:0, class:(Aseprite)
       windowrule = size 1200 725,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
