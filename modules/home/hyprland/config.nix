@@ -215,16 +215,18 @@ in
       windowrule = move 40 55%,title:^(Volume Control)$
       windowrulev2 = float, title:^(Picture-in-Picture)$
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
+      windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$
       windowrulev2 = pin, title:^(Picture-in-Picture)$
       windowrule = float,imv
       windowrule = center,imv
-      windowrule = size 1200 650,imv
+      windowrule = size 1200 700,imv
+      windowrulev2 = opacity 1.0 override 1.0 override, title:^(imv)$
       windowrule = float,mpv
       windowrule = center,mpv
-      windowrule = size 1200 650,mpv
+      windowrulev2 = opacity 1.0 override 1.0 override, title:^(mpv)$
+      windowrule = size 1200 700,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
-      windowrulev2 = opacity 1.0 1.0, title:^(.*YouTube.*)$
     ";
   };
 }
