@@ -35,6 +35,9 @@
     fi
   '';
 in {
+  home.file.".local/bin/dsize".source = ./dsize;
+  home.file.".local/bin/runbg".source = ./runbg;
+  home.file.".local/bin/music".source = ./music;
   home.packages = with pkgs; [
     wall-change
     wallpaper-picker
