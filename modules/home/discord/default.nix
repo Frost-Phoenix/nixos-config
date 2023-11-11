@@ -33,10 +33,10 @@
     })
   ];
 
-  environment.systemPackages = with pkgs; [webcord-vencord];
+  environment.systemPackages = with pkgs; [ webcord-vencord ];
 
   xdg.configFile."WebCord/Themes/amoled-cord".source = pkgs.substituteAll {
-    src = ./themes/amoled-cord.css;
+    src = ./themes/theme.css;
   };
   xdg.configFile."WebCord/config.json".source = ./webcord/config.json;
 }
