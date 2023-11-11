@@ -84,8 +84,6 @@ in
             new_optimizations = true
           }
 
-          multisample_edges = true
-
           drop_shadow = 0
       }
 
