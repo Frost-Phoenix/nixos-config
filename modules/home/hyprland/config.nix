@@ -204,7 +204,6 @@ in
       windowrule = noanim,wofi
       windowrule = pin,wofi
       windowrule = noborder,wofi
-      windowrulev2 = opacity 1.0 1.0, title:^(.*YouTube.*)$
       windowrule = tile, neovide
       windowrule = idleinhibit focus,mpv
       windowrule = float,udiskie
@@ -218,13 +217,14 @@ in
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$
       windowrulev2 = pin, title:^(Picture-in-Picture)$
       windowrule = float,imv
-      windowrule = move 510 290,imv
-      windowrule = size 900 500,imv
+      windowrule = center,imv
+      windowrule = size 1200 650,imv
       windowrule = float,mpv
-      windowrule = move 510 290,mpv
-      windowrule = size 900 500,mpv
+      windowrule = center,mpv
+      windowrule = size 1200 650,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
+      windowrulev2 = opacity 1.0 1.0, title:^(.*YouTube.*)$
     ";
   };
 }
