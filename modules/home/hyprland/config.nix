@@ -117,7 +117,7 @@ in
       
       # keybindings
       bind = $mainMod, Return, exec, kitty
-      bind = $mainMod, Alt, exec, firefox
+      bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
@@ -128,7 +128,7 @@ in
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
-      bind = $mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped
+      # bind = $mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped
       bind = $mainMod, C ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
@@ -204,6 +204,7 @@ in
       windowrule = noanim,wofi
       windowrule = pin,wofi
       windowrule = noborder,wofi
+      windowrulev2 = opacity 1.0 1.0, title:^(.*YouTube.*)$
       windowrule = tile, neovide
       windowrule = idleinhibit focus,mpv
       windowrule = float,udiskie
