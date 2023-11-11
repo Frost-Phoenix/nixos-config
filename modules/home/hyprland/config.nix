@@ -198,6 +198,7 @@ in
       bindm = $mainMod, mouse:273, resizewindow
       
       # windowrule
+      windowrule = float,audacious
       windowrule = float,wlogout
       windowrule = float,wofi
       windowrule = noanim,wlogout
