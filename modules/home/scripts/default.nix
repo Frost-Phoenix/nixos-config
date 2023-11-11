@@ -59,7 +59,9 @@
   '';
   music = pkgs.writeShellScriptBin "music" ''
     if [[ $# == 0 ]]; then
-        runbg audacious -t
+        hyprctl dispatch exec "[workspace 8 silent] audacious -t"
+        audtool playlist-repeat-status |grep "on" || audtool playlist-repeat-toggle
+        audtool playlist-shuffle-status|grep "on" || audtool playlist-shuffle-toggle
     elif [[ $1 == -s ]]; then
         pkill audacious
     else
