@@ -199,7 +199,7 @@ in
       
       # windowrule
       windowrule = float,audacious
-      windowrule = workspace 8,audacious
+      windowrule = workspace 8 silent, audacious
       windowrule = float,wlogout
       windowrule = float,wofi
       windowrule = noanim,wlogout
@@ -231,6 +231,19 @@ in
       windowrule = size 1200 725,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
+    
+      windowrulev2 = float,class:^(pavucontrol)$
+      windowrulev2 = float,class:^(file_progress)$
+      windowrulev2 = float,class:^(confirm)$
+      windowrulev2 = float,class:^(dialog)$
+      windowrulev2 = float,class:^(download)$
+      windowrulev2 = float,class:^(notification)$
+      windowrulev2 = float,class:^(error)$
+      windowrulev2 = float,class:^(confirmreset)$
+      windowrulev2 = float,title:^(Open File)$
+      windowrulev2 = float,title:^(branchdialog)$
+      windowrulev2 = float,title:^(Confirm to replace files)$
+      windowrulev2 = float,title:^(File Operation Progress)$
     ";
   };
 }
