@@ -8,7 +8,7 @@
     webcord
   ];
   
-  os.nixpkgs.overlays = [
+  nixpkgs.overlays = [
     (_final: prev: {
       webcord-vencord = prev.webcord-vencord.override {
         # Patch webcord
