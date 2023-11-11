@@ -80,8 +80,8 @@ in
             enabled = 1
             size = 2
             passes = 2
-            xray = true
-            new_optimizations = true
+            xray = 1
+            # new_optimizations = 1
           }
 
           drop_shadow = 0
