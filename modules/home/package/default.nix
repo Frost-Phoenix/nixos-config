@@ -10,6 +10,7 @@
     ripgrep
     rnix-lsp
     rustup
+    spotify
     xfce.thunar
     yazi
 
