@@ -11,6 +11,7 @@
     rnix-lsp
     rustup
     xfce.thunar
+    yazi
 
     bleachbit
     bore-cli
