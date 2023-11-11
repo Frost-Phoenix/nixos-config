@@ -199,6 +199,7 @@ in
       
       # windowrule
       windowrule = float,audacious
+      windowrule = workspace 8,audacious
       windowrule = float,wlogout
       windowrule = float,wofi
       windowrule = noanim,wlogout
