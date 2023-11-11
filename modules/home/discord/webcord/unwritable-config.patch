@@ -1,0 +1,39 @@
+diff --git a/sources/code/main/modules/config.ts b/sources/code/main/modules/config.ts
+index 4390832..31fe819 100644
+--- a/sources/code/main/modules/config.ts
++++ b/sources/code/main/modules/config.ts
+@@ -2,7 +2,7 @@
+  * configManager
+  */
+ 
+-import { readFileSync, existsSync, rmSync, writeFileSync } from "fs";
++import { readFileSync, existsSync, rmSync } from "fs";
+ import {
+   app,
+   BrowserWindow,
+@@ -146,12 +146,12 @@ class Config<T> {
+   /** Default configuration values. */
+   private readonly defaultConfig;
+   protected spaces = 4;
+-  #write(object: unknown) {
+-    const decodedData = JSON.stringify(object, null, this.spaces);
+-    let encodedData:string|Buffer = decodedData;
+-    if(this.#pathExtension === FileExt.Encrypted)
+-      encodedData = safeStorage.encryptString(decodedData);
+-    writeFileSync(this.#path+this.#pathExtension,encodedData);
++  #write(_object: unknown) {
++    // const decodedData = JSON.stringify(object, null, this.spaces);
++    // let encodedData:string|Buffer = decodedData;
++    // if(this.#pathExtension === FileExt.Encrypted)
++    //   encodedData = safeStorage.encryptString(decodedData);
++    // writeFileSync(this.#path+this.#pathExtension,encodedData);
+   }
+   #read(): unknown {
+     const encodedData = readFileSync(this.#path+this.#pathExtension);
+@@ -317,4 +317,4 @@ void import("electron/main")
+       if(new URL(event.senderFrame.url).protocol === "file:")
+         appConfig.value = config;
+     })
+-  );
+\ No newline at end of file
++  );

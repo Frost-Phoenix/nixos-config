@@ -1,0 +1,13 @@
+diff --git a/src/api/Settings.ts b/src/api/Settings.ts
+index 709050f..ced740f 100644
+--- a/src/api/Settings.ts
++++ b/src/api/Settings.ts
+@@ -93,7 +93,7 @@ const DefaultSettings: Settings = {
+ };
+ 
+ try {
+-    var settings = JSON.parse(VencordNative.settings.get()) as Settings;
++    var settings = @settings@ as Settings;
+     mergeDefaults(settings, DefaultSettings);
+ } catch (err) {
+     var settings = mergeDefaults({} as Settings, DefaultSettings);

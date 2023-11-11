@@ -1,0 +1,63 @@
+{
+    "settings": {
+        "general": {
+            "menuBar": {
+                "hide": true
+            },
+            "tray": {
+                "disable": true
+            },
+            "taskbar": {
+                "flash": true
+            },
+            "window": {
+                "transparent": true,
+                "hideOnClose": false
+            }
+        },
+        "privacy": {
+            "blockApi": {
+                "science": true,
+                "typingIndicator": true,
+                "fingerprinting": true
+            },
+            "permissions": {
+                "video": false,
+                "audio": false,
+                "fullscreen": true,
+                "notifications": true,
+                "display-capture": true,
+                "background-sync": true
+            }
+        },
+        "advanced": {
+            "currentInstance": {
+                "radio": 0
+            },
+            "devel": {
+                "enabled": true
+            },
+            "redirection": {
+                "warn": true
+            },
+            "optimize": {
+                "gpu": true
+            },
+            "webApi": {
+                "webGl": true
+            },
+            "unix": {
+                "autoscroll": false
+            }
+        }
+    },
+    "update": {
+        "notification": {
+            "version": "",
+            "till": ""
+        }
+    },
+    "screenShareStore": {
+        "audio": false
+    }
+}

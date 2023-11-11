@@ -11,6 +11,7 @@
     ++ [(import ./cava)]
     ++ [(import ./kitty)]
     ++ [(import ./aseprite)]
+    ++ [(import ./discord)]
     ++ [(import ./swaylock)]
     ++ [(import ./wofi)]
     ++ [(import ./zsh)]
