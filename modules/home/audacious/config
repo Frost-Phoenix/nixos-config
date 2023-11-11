@@ -1,7 +1,7 @@
 
 [audacious]
 equalizer_active=TRUE
-equalizer_bands=-1,1,2,3,1,-1,0,-1,-1,-1
+equalizer_bands=-1,1,2,2,1,-1,0,-1,-1,-1
 soft_clipping=TRUE
 
 [audgui]
