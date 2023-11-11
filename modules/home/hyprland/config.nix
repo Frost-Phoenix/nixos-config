@@ -70,7 +70,7 @@ in
       }
 
       decoration {
-          rounding = 10
+          rounding = 12
           
           active_opacity = 0.8;
           inactive_opacity = 0.8;
@@ -224,8 +224,8 @@ in
       windowrule = float,mpv
       windowrule = center,mpv
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*mpv.*)$
-      # windowrule = tile,aseprite
-      windowrulev2 = opacity 1.0 override 1.0 override, floating:0, class:(Aseprite)
+      # windowrule = tile,Aseprite
+      windowrulev2 = opacity 1.0 override 1.0 override, class:(Aseprite)
       windowrule = size 1200 725,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
