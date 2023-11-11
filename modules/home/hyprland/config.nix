@@ -117,10 +117,11 @@ in
       
       # keybindings
       bind = $mainMod, Return, exec, kitty
+      bind = $mainMod, Alt, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen,
       bind = $mainMod, Space, togglefloating,
-      bind = $mainMod, $mainMod, exec, pkill wofi || wofi --show drun
+      bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod, Escape, exec, swaylock
       bind = $mainMod, Suppr, exec, pkill wlogout || wlogout -b 4
       # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
