@@ -199,10 +199,10 @@ in
       # windowrule
       windowrule = float,audacious
       windowrule = workspace 8 silent, audacious
-      windowrule = float,wofi
-      windowrule = noanim,wofi
       windowrule = pin,wofi
-      windowrule = noborder,wofi
+      windowrule = float,wofi
+      # windowrule = noanim,wofi
+      # windowrule = noborder,wofi
       windowrule = tile, neovide
       windowrule = idleinhibit focus,mpv
       windowrule = float,udiskie
