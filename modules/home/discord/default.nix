@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs; [
     discord
-    webcord
     webcord-vencord
   ];
   
