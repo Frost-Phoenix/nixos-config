@@ -78,8 +78,8 @@ in
 
           blur {
             enabled = 1
-            size = 4
-            passes = 4
+            size = 2
+            passes = 2
             xray = true
             new_optimizations = true
           }
