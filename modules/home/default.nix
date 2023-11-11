@@ -21,7 +21,6 @@
     ++ [(import ./scripts)]
     ++ [(import ./neofetch)]
     ++ [(import ./starship)]
-    ++ [(import ./wlogout)]
     ++ [(import ./nvim)]
     ++ [(import ./package)];
 }

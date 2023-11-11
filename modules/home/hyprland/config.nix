@@ -123,7 +123,6 @@ in
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod, Escape, exec, swaylock
-      bind = $mainMod, Suppr, exec, pkill wlogout || wlogout -b 4
       # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
@@ -200,9 +199,7 @@ in
       # windowrule
       windowrule = float,audacious
       windowrule = workspace 8 silent, audacious
-      windowrule = float,wlogout
       windowrule = float,wofi
-      windowrule = noanim,wlogout
       windowrule = noanim,wofi
       windowrule = pin,wofi
       windowrule = noborder,wofi

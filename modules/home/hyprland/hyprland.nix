@@ -6,8 +6,6 @@
     inputs.hypr-contrib.packages.${pkgs.system}.grimblast
     hyprpicker
     wofi
-    rofi-wayland
-    wlogout
     grim
     slurp
     wl-clipboard
