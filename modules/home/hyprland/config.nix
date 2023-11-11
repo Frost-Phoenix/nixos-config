@@ -77,12 +77,14 @@ in
           fullscreen_opacity = 1.0;
 
           blur {
-            new_optimizations = true
             enabled = 1
             size = 4
             passes = 4
             xray = true
+            new_optimizations = true
           }
+
+          multisample_edges = true
 
           drop_shadow = 0
       }
