@@ -43,11 +43,11 @@
     }
 
     #workspaces button.active {
-        background-color: #89dceb;
+        background-color: #b4befe;
         color: #${custom.background};
         border-radius: 15px;
-        min-width: 50px;
-        background-size: 250% 250%;
+        min-width: 20px;
+        background-size: 200% 200%;
         transition: all 0.3s ease-in-out;
     }
 
@@ -55,8 +55,8 @@
         background-color: #${custom.tertiary_accent};
         color: #${custom.background};
         border-radius: 15px;
-        min-width: 50px;
-        background-size: 250% 250%;
+        min-width: 20px;
+        background-size: 200% 200%;
     }
 
     #tray, #pulseaudio, #network,
@@ -100,7 +100,7 @@
         background: #${custom.palette.tertiary_background_hex};
         border-radius: 0px 0px 40px 0px;
         margin: 0px;
-        padding: 0px 25px 0px 15px;
+        padding: 0px 20px 0px 15px;
         font-size: 28px;
     }
 
