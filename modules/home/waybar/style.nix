@@ -4,7 +4,7 @@
         fontsize = "12";
         primary_accent = "cba6f7";
         secondary_accent = "89b4fa";
-        tertiary_accent = "f5f5f5";
+        tertiary_accent = "cdd6f4";
         background = "11111B";
         opacity = ".85";
         cursor = "Numix-Cursor";
