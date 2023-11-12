@@ -81,11 +81,11 @@
     }
     #network {
         color: #${custom.tertiary_accent};
-        border-radius: 0px 24px 10px 0px;
-        margin-right: 5px
+        border-radius: 0px 24px 10px 0px;      
         padding: 0px 7px;
         margin-top: 5px;
         margin-bottom: 6px;
+        margin-right: 5px;
     }
     
     #clock {
