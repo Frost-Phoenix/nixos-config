@@ -15,7 +15,7 @@
   programs.waybar.settings.mainBar = {
     position= "top";
     layer= "top";
-    height= 20;
+    height= 15;
     margin-top= 0;
     margin-bottom= 0;
     margin-left= 0;
@@ -28,9 +28,7 @@
         "custom/playerlabel"
     ];
     modules-center= [
-        "cava#left"
         "hyprland/workspaces"
-        "cava#right"
     ];
     modules-right= [
         "tray" 
@@ -39,7 +37,7 @@
         "clock" 
     ];
     clock= {
-        format = " {:%a, %d %b, %I:%M %p}";
+        format = " {:%H:%M}";
         tooltip= "true";
         tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         format-alt= " {:%d/%m}";
@@ -58,56 +56,6 @@
             default = "";
             sort-by-number= true;
         };
-    };
-    "cava#left" = {
-        framerate = 60;
-        autosens = 1;
-        bars = 18;
-        lower_cutoff_freq = 50;
-        higher_cutoff_freq = 10000;
-        method = "pipewire";
-        source = "auto";
-        stereo = true;
-        reverse = false;
-        bar_delimiter = 0;
-        monstercat = false;
-        waves = false;
-        input_delay = 2;
-        format-icons = [ 
-          "<span foreground='#${custom.primary_accent}'>▁</span>" 
-          "<span foreground='#${custom.primary_accent}'>▂</span>" 
-          "<span foreground='#${custom.primary_accent}'>▃</span>" 
-          "<span foreground='#${custom.primary_accent}'>▄</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▅</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▆</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▇</span>" 
-          "<span foreground='#${custom.secondary_accent}'>█</span>" 
-        ];
-    };
-    "cava#right" = {
-        framerate = 60;
-        autosens = 1;
-        bars = 18;
-        lower_cutoff_freq = 50;
-        higher_cutoff_freq = 10000;
-        method = "pipewire";
-        source = "auto";
-        stereo = true;
-        reverse = false;
-        bar_delimiter = 0;
-        monstercat = false;
-        waves = false;
-        input_delay = 2;
-        format-icons = [ 
-          "<span foreground='#${custom.primary_accent}'>▁</span>" 
-          "<span foreground='#${custom.primary_accent}'>▂</span>" 
-          "<span foreground='#${custom.primary_accent}'>▃</span>" 
-          "<span foreground='#${custom.primary_accent}'>▄</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▅</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▆</span>" 
-          "<span foreground='#${custom.secondary_accent}'>▇</span>" 
-          "<span foreground='#${custom.secondary_accent}'>█</span>" 
-        ];
     };
     "custom/playerctl#backward"= {
         format= "󰙣 "; 
@@ -154,10 +102,10 @@
     };
     network = {
         format-wifi = "  {signalStrength}%";
-        format-ethernet = "󰈀 100% ";
+        format-ethernet = "󰈀 ";
         tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
         format-linked = "{ifname} (No IP)";
-        format-disconnected = "󰖪 0% ";
+        format-disconnected = "󰖪 ";
     };
     tray= {
         icon-size= 20;
@@ -169,20 +117,13 @@
         format-icons= {
             default= ["󰕿" "󰖀" "󰕾"];
         };
-        # on-scroll-up= "bash ~/.scripts/volume up";
-        # on-scroll-down= "bash ~/.scripts/volume down";
         scroll-step= 5;
         on-click= "pavucontrol";
     };
-    "custom/randwall"= {
-        format= "󰏘";
-        # on-click= "bash $HOME/.config/hypr/randwall.sh";
-        # on-click-right= "bash $HOME/.config/hypr/wall.sh";
-    };
     "custom/launcher"= {
         format= "";
-        # on-click= "bash $HOME/.config/rofi/launcher.sh";
-        # on-click-right= "bash $HOME/.config/rofi/run.sh"; 
+        on-click= "pkill wofi || wofi --show drun";
+        on-click-right= "pkill wofi || wallpaper-picker"; 
         tooltip= "false";
     };
   };
