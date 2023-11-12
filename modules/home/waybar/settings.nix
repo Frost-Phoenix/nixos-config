@@ -15,7 +15,7 @@
   programs.waybar.settings.mainBar = {
     position= "top";
     layer= "top";
-    height= 15;
+    # height= 15;
     margin-top= 0;
     margin-bottom= 0;
     margin-left= 0;
@@ -25,7 +25,6 @@
         "custom/playerctl#backward" 
         "custom/playerctl#play" 
         "custom/playerctl#foward" 
-        "custom/playerlabel"
     ];
     modules-center= [
         "hyprland/workspaces"
@@ -82,14 +81,6 @@
         on-scroll-up = "playerctl volume .05+";
         on-scroll-down = "playerctl volume .05-";
     };
-    "custom/playerlabel"= {
-        format= "<span>󰎈 {} 󰎈</span>";
-        return-type= "json";
-        max-length= 40;
-        exec = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
-        on-click= "";
-    };
-    
     memory= {
         format= "󰍛 {}%";
         format-alt= "󰍛 {used}/{total} GiB";

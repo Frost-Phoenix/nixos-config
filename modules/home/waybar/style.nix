@@ -25,18 +25,6 @@
         background: ${custom.palette.primary_background_rgba};
     }
 
-    #cava.left, #cava.right {
-        background: #${custom.palette.tertiary_background_hex};
-        margin: 5px; 
-        padding: 8px 16px;
-        color: #${custom.primary_accent};
-    }
-    #cava.left {
-        border-radius: 24px 10px 24px 10px;
-    }
-    #cava.right {
-        border-radius: 10px 24px 10px 24px;
-    }
     #workspaces {
         background: #${custom.palette.tertiary_background_hex};
         margin: 5px 5px;
@@ -122,14 +110,6 @@
         border-radius: 0px 10px 24px 0px;
         padding-right: 12px;
         margin-right: 7px
-    }
-    #custom-playerlabel {
-        background: #${custom.palette.tertiary_background_hex};
-        color: #${custom.tertiary_accent};
-        padding: 0 20px;
-        border-radius: 24px 10px 24px 10px;
-        margin: 5px 0;
-        font-weight: bold;
     }
     #window{
         background: #${custom.palette.tertiary_background_hex};
