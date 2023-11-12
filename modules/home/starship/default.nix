@@ -22,7 +22,7 @@
       };
 
       cmd_duration = {
-        format = "[]($style)[[神](bg:#161821 fg:#eba0ac bold)$duration](bg:#161821 fg:#BBC3DF)[ ]($style)";
+        format = "[]($style)[[󰔚](bg:#161821 fg:#d4c097 bold)$duration](bg:#161821 fg:#BBC3DF)[ ]($style)";
         disabled = false;
         style = "bg:none fg:#161821";
     };        
