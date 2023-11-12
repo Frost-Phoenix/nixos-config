@@ -69,8 +69,8 @@
         echo "[ERROR] => Wrong argument..."
     fi
   '';
-  toogle_blur = pkgs.writeScriptBin "toogle_blur" (builtins.readFile ./toogle_blur);
-  toogle_oppacity = pkgs.writeScriptBin "toogle_oppacity" (builtins.readFile ./toogle_oppacity);
+  toogle_blur = pkgs.writeScriptBin "toogle_blur" (builtins.readFile ./toogle_blur.sh);
+  toogle_oppacity = pkgs.writeScriptBin "toogle_oppacity" (builtins.readFile ./toogle_oppacity.sh);
 in {
   home.packages = with pkgs; [
     wall-change
