@@ -77,13 +77,13 @@
         border-radius: 10px 0px 0px 24px;
         padding-left: 15px;
         padding-right: 8px;
+        margin-left: 7px;
     }
     #network {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;      
         padding-left: 8px;
         padding-right: 15px;
-        margin-right: 5px;
     }
     
     #clock {
