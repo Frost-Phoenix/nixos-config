@@ -75,14 +75,11 @@
     #pulseaudio {
         color: #${custom.tertiary_accent};
         border-radius: 10px 0px 0px 24px;
-        padding: 0 0px;
-        margin-left: 7px;
     }
     #network {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;
-        padding: 0 0px;
-        margin-left: 7px;
+        margin-right: 5px
     }
     
     #clock {
