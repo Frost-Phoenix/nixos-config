@@ -9,7 +9,7 @@ let
     background = "11111B";
     opacity = "1";
     cursor = "Numix-Cursor";
-    palette = {
+    palette = rec {
       primary_accent_hex = "cba6f7";
       secondary_accent_hex = "89b4fa";
       tertiary_accent_hex = "f5f5f5";
