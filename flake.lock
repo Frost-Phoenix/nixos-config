@@ -230,6 +230,26 @@
         "type": "github"
       }
     },
+    "maxfetch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1690770330,
+        "narHash": "sha256-LzOhrFFjGs9GIDjk1lUFKhlnzJuEUrKjBcv1eT3kaY8=",
+        "owner": "jobcmax",
+        "repo": "maxfetch",
+        "rev": "17baa4047073e20572403b70703c69696af6b68d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jobcmax",
+        "repo": "maxfetch",
+        "type": "github"
+      }
+    },
     "nix-gaming": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -372,6 +392,7 @@
         "hypr-contrib": "hypr-contrib",
         "hyprland": "hyprland",
         "hyprpicker": "hyprpicker",
+        "maxfetch": "maxfetch",
         "nix-gaming": "nix-gaming",
         "nixpkgs": "nixpkgs_5",
         "nur": "nur"

@@ -14,8 +14,6 @@
     xfce.thunar
     yazi
 
-    inputs.maxfetch.packages.${pkgs.system}.default
-
     bleachbit
     bore-cli
     gparted
