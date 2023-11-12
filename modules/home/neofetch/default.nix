@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: 
 {
   home.packages = [ pkgs.neofetch ];
-  xdg.configFile."neofetch".source = ./config;
+  xdg.configFile."neofetch/config.conf".source = ./config.conf;
 }
