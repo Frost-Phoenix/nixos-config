@@ -20,6 +20,7 @@
         font-weight: bold;
         font-size: 14px;
         min-height: 0;
+        opacity: ${opacity};
     }
 
     window#waybar {
@@ -59,7 +60,7 @@
         background-size: 200% 200%;
     }
 
-    #tray, #pulseaudio, #network, cpu, memory,
+    #tray, #pulseaudio, #network, #cpu, #memory,
     #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward{
         background: #${custom.palette.tertiary_background_hex};
         font-weight: bold;
@@ -70,13 +71,13 @@
         color: #${custom.tertiary_accent};
         border-radius: 10px 0px 0px 24px;
         padding-left: 15px;
-        padding-right: 8px;
+        padding-right: 9px;
         margin-left: 7px;
     }
     #memory {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;      
-        padding-left: 8px;
+        padding-left: 9px;
         padding-right: 15px;
     }
 
@@ -91,13 +92,13 @@
         color: #${custom.tertiary_accent};
         border-radius: 10px 0px 0px 24px;
         padding-left: 15px;
-        padding-right: 8px;
+        padding-right: 9px;
         margin-left: 7px;
     }
     #network {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;      
-        padding-left: 8px;
+        padding-left: 9px;
         padding-right: 15px;
     }
     

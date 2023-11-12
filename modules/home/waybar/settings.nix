@@ -84,8 +84,8 @@
         on-scroll-down = "playerctl volume .05-";
     };
     memory= {
-        format= " {}%";
-        format-alt= " {used} GiB";
+        format= "  {}%";
+        format-alt= "  {used} GiB";
         interval= 5;
     };
     cpu= {
@@ -106,9 +106,9 @@
     };
     pulseaudio= {
         format= "{icon} {volume}%";
-        format-muted= "󰖁";
+        format-muted= "󰖁 ";
         format-icons= {
-            default= [""];
+            default= [" "];
         };
         scroll-step= 5;
         on-click= "pamixer -t";
