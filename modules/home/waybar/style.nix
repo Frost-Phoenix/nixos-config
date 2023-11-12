@@ -6,7 +6,7 @@
         secondary_accent = "89b4fa";
         tertiary_accent = "cdd6f4";
         background = "11111B";
-        opacity = ".95";
+        opacity = ".98";
         cursor = "Numix-Cursor";
     },
     ... 
