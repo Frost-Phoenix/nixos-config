@@ -112,7 +112,7 @@
         margin-right: 7px
     }
     #window{
-        background: none;
+        background: #${custom.palette.tertiary_background_hex};
         padding-left: 15px;
         padding-right: 15px;
         border-radius: 16px;
