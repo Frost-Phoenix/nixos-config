@@ -13,6 +13,7 @@
     ++ [(import ./aseprite)]
     ++ [(import ./audacious)]
     ++ [(import ./unity)]
+    ++ [(import ./rider)]
     # ++ [(import ./discord)]
     ++ [(import ./swaylock)]
     ++ [(import ./wofi)]
