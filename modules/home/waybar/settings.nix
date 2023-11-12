@@ -85,17 +85,17 @@
     };
     memory= {
         format= " {}%";
-        format-alt= " {used}/{total} GiB";
+        format-alt= " {used} GiB";
         interval= 5;
     };
     cpu= {
-        format= "󰍛 {usage}%";
-        format-alt= "󰍛 {avg_frequency} GHz";
+        format= "  {usage}%";
+        format-alt= "  {avg_frequency} GHz";
         interval= 5;
     };
     network = {
         format-wifi = "  {signalStrength}%";
-        format-ethernet = "󰈀 ";
+        format-ethernet = "󰀂 ";
         tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
         format-linked = "{ifname} (No IP)";
         format-disconnected = "󰖪 ";
@@ -106,9 +106,9 @@
     };
     pulseaudio= {
         format= "{icon} {volume}%";
-        format-muted= "󰝟";
+        format-muted= "󰖁";
         format-icons= {
-            default= ["󰕾"];
+            default= [""];
         };
         scroll-step= 5;
         on-click= "pamixer -t";
