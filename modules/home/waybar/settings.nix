@@ -15,7 +15,7 @@
   programs.waybar.settings.mainBar = {
     position= "top";
     layer= "top";
-    height= 35;
+    height= 20;
     margin-top= 0;
     margin-bottom= 0;
     margin-left= 0;
