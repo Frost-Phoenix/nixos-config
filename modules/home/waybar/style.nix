@@ -75,18 +75,14 @@
     #pulseaudio {
         color: #${custom.tertiary_accent};
         border-radius: 10px 0px 0px 24px;
-        padding-left: 10px;
+        padding-left: 15px;
         padding-right: 8px;
-        margin-top: 5px;
-        margin-bottom: 6px;
     }
     #network {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;      
         padding-left: 8px;
-        padding-right: 10px;
-        margin-top: 5px;
-        margin-bottom: 6px;
+        padding-right: 15px;
         margin-right: 5px;
     }
     
