@@ -39,23 +39,23 @@
         border-radius: 15px;
         color: #${custom.background};
         background: #89b4fa;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     #workspaces button.active {
-        background-color: #b4befe;
+        background-color: #cba6f7;
         color: #${custom.background};
         border-radius: 15px;
-        min-width: 20px;
+        min-width: 35px;
         background-size: 200% 200%;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     #workspaces button:hover {
         background-color: #${custom.tertiary_accent};
         color: #${custom.background};
         border-radius: 15px;
-        min-width: 20px;
+        min-width: 35px;
         background-size: 200% 200%;
     }
 
