@@ -8,6 +8,8 @@
     enableNushellIntegration = true;
 
     settings = {
+      right_format = """$cmd_duration""";
+      
       directory = {
         format = "[ ](bold #89b4fa)[ $path ]($style)";
         style = "bold #b4befe";
@@ -18,6 +20,12 @@
         error_symbol = "[ ](bold #89b4fa)[ ➜](bold red)";
         # error_symbol = "[ ](bold #89dceb)[ ✗](bold red)";
       };
+
+      cmd_duration = {
+        format = "[]($style)[[神](bg:#161821 fg:#eba0ac bold)$duration](bg:#161821 fg:#BBC3DF)[ ]($style)";
+        disabled = false;
+        style = "bg:none fg:#161821";
+    };        
 
       # directory.substitutions = {
         # "~" = "󰋞";
