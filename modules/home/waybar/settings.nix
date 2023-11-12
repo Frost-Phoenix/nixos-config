@@ -31,6 +31,8 @@
     ];
     modules-right= [
         "tray" 
+        "cpu"
+        "memory"
         "pulseaudio" 
         "network"
         "clock" 
