@@ -30,8 +30,8 @@
     #workspaces {
         background: #${custom.palette.tertiary_background_hex};
         margin: 5px 5px;
-        padding: 8px 10px;
-        border-radius: 10px 10px 24px 24px;
+        padding: 8px 12px;
+        border-radius: 12px 12px 24px 24px;
         color: #${custom.primary_accent}
     }
     #workspaces button {
