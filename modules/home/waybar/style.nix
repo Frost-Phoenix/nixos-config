@@ -1,14 +1,14 @@
-{ 
-  custom ? {
+{ ... }: 
+let
+  custom = {
     font = "JetBrainsMono Nerd Font";
     fontsize = "12";
     primary_accent = "cba6f7";
     secondary_accent = "89b4fa";
     tertiary_accent = "f5f5f5";
     background = "11111B";
-  },
-  ... 
-}: 
+  };
+in 
 {
   programs.waybar.style = ''
     * {
