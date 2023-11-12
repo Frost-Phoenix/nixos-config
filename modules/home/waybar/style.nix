@@ -38,12 +38,12 @@
         margin: 0px 3px;
         border-radius: 15px;
         color: #${custom.background};
-        background: #89b4fa;
+        background: #${custom.secondary_accent};
         transition: all 0.2s ease-in-out;
     }
 
     #workspaces button.active {
-        background-color: #cba6f7;
+        background-color: #${custom.primary_accent};
         color: #${custom.background};
         border-radius: 15px;
         min-width: 35px;
@@ -100,7 +100,7 @@
         background: #${custom.palette.tertiary_background_hex};
         border-radius: 0px 0px 40px 0px;
         margin: 0px;
-        padding: 0px 20px 0px 15px;
+        padding: 0px 25px 0px 10px;
         font-size: 28px;
     }
 
