@@ -1,131 +1,177 @@
 { ... }:
 {
-  programs.waybar.settings = [
-    {
-      "layer" = "top";
-      "position" = "top";
-      modules-left = [
-        "custom/launcher"
-        "wlr/workspaces"
-        "temperature"
-        "idle_inhibitor"
-      ];
-      modules-center = [
-        "clock"
-      ];
-      modules-right = [
-        "pulseaudio"
-        "pulseaudio#microphone"
-        "memory"
-        "cpu"
-        "disk"
-        # "keyboard-state"
+  programs.waybar.settings.mainBar = {
+    position= "top";
+    layer= "top";
+    height= 35;
+    margin-top= 0;
+    margin-bottom= 0;
+    margin-left= 0;
+    margin-right= 0;
+    modules-left= [
+        "custom/launcher" 
+        "custom/playerctl#backward" 
+        "custom/playerctl#play" 
+        "custom/playerctl#foward" 
+        "custom/playerlabel"
+    ];
+    modules-center= [
+        "cava#left"
+        "hyprland/workspaces"
+        "cava#right"
+    ];
+    modules-right= [
+        "tray" 
+        "pulseaudio" 
         "network"
-        "cava"
-        "tray"
-      ];
-      "custom/launcher" = {
-        "format" = " ";
-        "on-click" = "pkill wofi || wofi";
-        "tooltip" = false;
-      };
-      "idle_inhibitor" = {
-        "format" = "{icon}";
-        "format-icons" = {
-          "activated" = "";
-          "deactivated" = "";
+        "clock" 
+    ];
+    clock= {
+        format = " {:%a, %d %b, %I:%M %p}";
+        tooltip= "true";
+        tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
+        format-alt= " {:%d/%m}";
+    };
+    "wlr/workspaces"= {
+        active-only= false;
+        all-outputs= false;
+        disable-scroll= false;
+        on-scroll-up= "hyprctl dispatch workspace e-1";
+        on-scroll-down= "hyprctl dispatch workspace e+1";
+        format = "{name}";
+        on-click= "activate";
+        format-icons= {
+            urgent= "";
+            active= "";
+            default = "";
+            sort-by-number= true;
         };
-      };
-      "disk" = {
-        "path" = "/home";
-        "format" = "󰋊 {percentage_used}%";
-      };
-      "custom/wall" = {
-        "on-click" = "wallpaper_random";
-        "on-click-middle" = "default_wall";
-        "on-click-right" = "killall dynamic_wallpaper || dynamic_wallpaper &";
-        "format" = " ﴔ ";
-        "tooltip" = false;
-      };
-      "wlr/workspaces" = {
-        "format" = "{icon}";
-        "on-click" = "activate";
-      };
-      "pulseaudio" = {
-        "scroll-step" = 5;
-        "format" = "{icon} {volume}%";
-        "format-muted" = "󰸈 Muted";
-        "format-icons" = {
-          "default" = [ "" "" "󱄠" ];
+    };
+    "cava#left" = {
+        framerate = 60;
+        autosens = 1;
+        bars = 18;
+        lower_cutoff_freq = 50;
+        higher_cutoff_freq = 10000;
+        method = "pipewire";
+        source = "auto";
+        stereo = true;
+        reverse = false;
+        bar_delimiter = 0;
+        monstercat = false;
+        waves = false;
+        input_delay = 2;
+        format-icons = [ 
+          "<span foreground='#${custom.primary_accent}'>▁</span>" 
+          "<span foreground='#${custom.primary_accent}'>▂</span>" 
+          "<span foreground='#${custom.primary_accent}'>▃</span>" 
+          "<span foreground='#${custom.primary_accent}'>▄</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▅</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▆</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▇</span>" 
+          "<span foreground='#${custom.secondary_accent}'>█</span>" 
+        ];
+    };
+    "cava#right" = {
+        framerate = 60;
+        autosens = 1;
+        bars = 18;
+        lower_cutoff_freq = 50;
+        higher_cutoff_freq = 10000;
+        method = "pipewire";
+        source = "auto";
+        stereo = true;
+        reverse = false;
+        bar_delimiter = 0;
+        monstercat = false;
+        waves = false;
+        input_delay = 2;
+        format-icons = [ 
+          "<span foreground='#${custom.primary_accent}'>▁</span>" 
+          "<span foreground='#${custom.primary_accent}'>▂</span>" 
+          "<span foreground='#${custom.primary_accent}'>▃</span>" 
+          "<span foreground='#${custom.primary_accent}'>▄</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▅</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▆</span>" 
+          "<span foreground='#${custom.secondary_accent}'>▇</span>" 
+          "<span foreground='#${custom.secondary_accent}'>█</span>" 
+        ];
+    };
+    "custom/playerctl#backward"= {
+        format= "󰙣 "; 
+        on-click= "playerctl previous";
+        on-scroll-up = "playerctl volume .05+";
+        on-scroll-down = "playerctl volume .05-";
+    };
+    "custom/playerctl#play"= {
+        format= "{icon}";
+        return-type= "json";
+        exec= "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
+        on-click= "playerctl play-pause";
+        on-scroll-up = "playerctl volume .05+";
+        on-scroll-down = "playerctl volume .05-";
+        format-icons= {
+            Playing = "<span>󰏥 </span>";
+            Paused = "<span> </span>";
+            Stopped = "<span> </span>";
         };
-        "on-click" = "pamixer -t";
-        "on-click-right" = "pavucontrol";
-        "on-click-middle" = "$HOME/.local/bin/toggle_sound_output";
-        "tooltip" = false;
-      };
-      "pulseaudio#microphone" = {
-        "format" = "{format_source}";
-        "format-source" = "󰍬 {volume}%";
-        "format-source-muted" = "󰍭 Muted";
-        "on-click" = "pamixer --default-source -t";
-        "on-scroll-up" = "pamixer --default-source -i 5";
-        "on-scroll-down" = "pamixer --default-source -d 5";
-        "scroll-step" = 5;
-        "on-click-right" = "pavucontrol";
-      };
-      "clock" = {
-        "interval" = 1;
-        "format" = "{:%I:%M %p  %A %b %d}";
-        "tooltip" = true;
-        "tooltip-format" = "<tt>{calendar}</tt>";
-      };
-      "memory" = {
-        "interval" = 1;
-        "format" = "󰟜 {percentage}%";
-        "states" = {
-          "warning" = 85;
+    };
+    "custom/playerctl#foward"= {
+        format= "󰙡 ";
+        on-click= "playerctl next";
+        on-scroll-up = "playerctl volume .05+";
+        on-scroll-down = "playerctl volume .05-";
+    };
+    "custom/playerlabel"= {
+        format= "<span>󰎈 {} 󰎈</span>";
+        return-type= "json";
+        max-length= 40;
+        exec = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
+        on-click= "";
+    };
+    
+    memory= {
+        format= "󰍛 {}%";
+        format-alt= "󰍛 {used}/{total} GiB";
+        interval= 5;
+    };
+    cpu= {
+        format= "󰻠 {usage}%";
+        format-alt= "󰻠 {avg_frequency} GHz";
+        interval= 5;
+    };
+    network = {
+        format-wifi = "  {signalStrength}%";
+        format-ethernet = "󰈀 100% ";
+        tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
+        format-linked = "{ifname} (No IP)";
+        format-disconnected = "󰖪 0% ";
+    };
+    tray= {
+        icon-size= 20;
+        spacing= 8;
+    };
+    pulseaudio= {
+        format= "{icon} {volume}%";
+        format-muted= "󰝟";
+        format-icons= {
+            default= ["󰕿" "󰖀" "󰕾"];
         };
-      };
-      "cpu" = {
-        "interval" = 1;
-        "format" = "󰇖 {usage}%";
-      };
-      "network" = {
-        "interval" = 1;
-        "format" = "󰣺 Connected";
-        "format-alt" = "  {bandwidthUpBytes}    {bandwidthDownBytes}";
-        "format-disconnected" = "󰣼 Disconnected";
-        "tooltip" = false;
-      };
-      "temperature" = {
-        "tooltip" = false;
-        "thermal-zone" = 2;
-        "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
-        "format" = " {temperatureC}°C";
-      };
-      "cava" = {
-        "framerate" = 60;
-        "autosens" = 1;
-        "sensitivity" = 10;
-        "bars" = 6;
-        "lower_cutoff_freq" = 50;
-        "higher_cutoff_freq" = 10000;
-        "method" = "pulse";
-        "source" = "auto";
-        "stereo" = true;
-        "reverse" = false;
-        "bar_delimiter" = 0;
-        "monstercat" = false;
-        "waves" = false;
-        "noise_reduction" = 0.77;
-        "input_delay" = 2;
-        "format-icons" = [ "▁" "▂" "▃" "▄" "▅" "▆" "▇" "█" ];
-        "on-click-right" = "playerctl play-pause";
-      };
-      "tray" = {
-        "icon-size" = 12;
-        "spacing" = 5;
-      };
-    }
-  ];
+        # on-scroll-up= "bash ~/.scripts/volume up";
+        # on-scroll-down= "bash ~/.scripts/volume down";
+        scroll-step= 5;
+        on-click= "pavucontrol";
+    };
+    "custom/randwall"= {
+        format= "󰏘";
+        # on-click= "bash $HOME/.config/hypr/randwall.sh";
+        # on-click-right= "bash $HOME/.config/hypr/wall.sh";
+    };
+    "custom/launcher"= {
+        format= "";
+        # on-click= "bash $HOME/.config/rofi/launcher.sh";
+        # on-click-right= "bash $HOME/.config/rofi/run.sh"; 
+        tooltip= "false";
+    };
+  };
 }
