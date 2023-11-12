@@ -12,6 +12,7 @@
     ++ [(import ./kitty)]
     ++ [(import ./aseprite)]
     ++ [(import ./audacious)]
+    ++ [(import ./unity)]
     # ++ [(import ./discord)]
     ++ [(import ./swaylock)]
     ++ [(import ./wofi)]
