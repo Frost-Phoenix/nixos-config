@@ -65,12 +65,26 @@
         font-weight: bold;
         margin: 5px 0px;
     }
-    #tray, #pulseaudio, #network {
+    #tray {
         color: #${custom.tertiary_accent};
         border-radius: 10px 24px 10px 24px;
+        # padding: 0 20px;
+        margin-left: 7px;
+    }
+
+    #pulseaudio {
+        color: #${custom.tertiary_accent};
+        border-radius: 10px 0px 0px 24px;
+        # padding: 0 20px;
+        margin-left: 7px;
+    }
+    #network {
+        color: #${custom.tertiary_accent};
+        border-radius: 0px 24px 10px 0px;
         padding: 0 20px;
         margin-left: 7px;
     }
+    
     #clock {
         color: #${custom.tertiary_accent};
         background: #${custom.palette.tertiary_background_hex};
