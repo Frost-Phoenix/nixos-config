@@ -72,8 +72,8 @@ in
       decoration {
           rounding = 12
           
-          active_opacity = 0.8;
-          inactive_opacity = 0.8;
+          active_opacity = 0.85;
+          inactive_opacity = 0.85;
           fullscreen_opacity = 1.0;
 
           blur {
