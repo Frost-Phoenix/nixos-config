@@ -9,9 +9,10 @@
     };
     libinput = {
       enable = true;
-      mouse = {
-        # accelProfile = "flat";
-      };
+      # mouse = {
+      #   accelProfile = "flat";
+      # };
     };
   };
+  systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }
