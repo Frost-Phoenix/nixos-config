@@ -20,7 +20,7 @@
         font-weight: bold;
         font-size: 14px;
         min-height: 0;
-        opacity: ${opacity};
+        opacity: ${custom.opacity};
     }
 
     window#waybar {
