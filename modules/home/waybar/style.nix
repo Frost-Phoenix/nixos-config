@@ -22,7 +22,7 @@
     }
 
     window#waybar {
-        background: ${custom.palette.primary_background_rgba};
+        background: none;
     }
 
     #workspaces {
