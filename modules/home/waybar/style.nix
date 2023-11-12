@@ -30,33 +30,33 @@
         background: #${custom.palette.tertiary_background_hex};
         margin: 5px 5px;
         padding: 8px 5px;
-        border-radius: 16px;
+        border-radius: 15px;
         color: #${custom.primary_accent}
     }
     #workspaces button {
         padding: 0px 5px;
         margin: 0px 3px;
-        border-radius: 16px;
-        color: transparent;
-        background: ${custom.palette.primary_background_rgba};
+        border-radius: 15px;
+        color: #${custom.background};
+        background: #89b4fa;
         transition: all 0.3s ease-in-out;
     }
 
     #workspaces button.active {
-        background-color: #${custom.secondary_accent};
+        background-color: #89dceb;
         color: #${custom.background};
-        border-radius: 16px;
+        border-radius: 15px;
         min-width: 50px;
-        background-size: 400% 400%;
+        background-size: 250% 250%;
         transition: all 0.3s ease-in-out;
     }
 
     #workspaces button:hover {
         background-color: #${custom.tertiary_accent};
         color: #${custom.background};
-        border-radius: 16px;
+        border-radius: 15px;
         min-width: 50px;
-        background-size: 400% 400%;
+        background-size: 250% 250%;
     }
 
     #tray, #pulseaudio, #network,
@@ -100,7 +100,7 @@
         background: #${custom.palette.tertiary_background_hex};
         border-radius: 0px 0px 40px 0px;
         margin: 0px;
-        padding: 0px 35px 0px 15px;
+        padding: 0px 25px 0px 15px;
         font-size: 28px;
     }
 
