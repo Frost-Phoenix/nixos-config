@@ -100,7 +100,7 @@
         background: #${custom.palette.tertiary_background_hex};
         border-radius: 0px 0px 40px 0px;
         margin: 0px;
-        padding: 0px 25px 0px 10px;
+        padding: 0px 30px 0px 10px;
         font-size: 28px;
     }
 
