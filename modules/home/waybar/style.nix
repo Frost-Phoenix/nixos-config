@@ -18,7 +18,7 @@
         border-radius: 0px;
         font-family: ${custom.font};
         font-weight: bold;
-        font-size: 16px;
+        font-size: 14px;
         min-height: 0;
     }
 
@@ -93,7 +93,7 @@
         padding: 10px 10px 15px 25px;
         margin-left: 7px;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
     }
     #custom-launcher {
         color: #${custom.secondary_accent};
