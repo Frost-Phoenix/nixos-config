@@ -104,15 +104,15 @@
     };
     pulseaudio= {
         format= "{icon} {volume}%";
-        format-muted= "󰝟 ";
+        format-muted= "󰝟";
         format-icons= {
-            default= ["󰕾 "];
+            default= ["󰕾"];
         };
         scroll-step= 5;
         on-click= "pamixer -t";
     };
     "custom/launcher"= {
-        format= " ";
+        format= "";
         on-click= "pkill wofi || wofi --show drun";
         on-click-right= "pkill wofi || wallpaper-picker"; 
         tooltip= "false";
