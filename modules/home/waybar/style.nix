@@ -37,7 +37,7 @@
     #workspaces button {
         padding: 0px 5px;
         margin: 0px 3px;
-        border-radius: 15px;
+        border-radius: 10px 24px 10px 24px;
         color: #${custom.background};
         background: #${custom.secondary_accent};
         transition: all 0.2s ease-in-out;
