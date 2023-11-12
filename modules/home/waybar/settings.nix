@@ -86,12 +86,12 @@
     memory= {
         format= "  {}%";
         format-alt= "  {used} GiB";
-        interval= 5;
+        interval= 2;
     };
     cpu= {
         format= "  {usage}%";
         format-alt= "  {avg_frequency} GHz";
-        interval= 5;
+        interval= 2;
     };
     network = {
         format-wifi = "  {signalStrength}%";
