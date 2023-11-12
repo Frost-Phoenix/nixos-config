@@ -75,7 +75,7 @@
     #pulseaudio {
         color: #${custom.tertiary_accent};
         border-radius: 10px 0px 0px 24px;
-        padding: 0px 7px;
+        padding: 5px 7px;
         margin-top: 5px;
         margin-bottom: 6px;
     }
