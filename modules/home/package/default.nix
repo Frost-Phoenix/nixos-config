@@ -11,7 +11,6 @@
     rnix-lsp
     rustup
     spotify
-    spotify-tui
     xfce.thunar
     yazi
 
