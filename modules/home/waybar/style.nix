@@ -74,13 +74,13 @@
         padding-right: 9px;
         margin-left: 7px;
     }
-    #disk {
+    #memory {
         color: #${custom.tertiary_accent};
         border-radius: 0px 0 0px 0px;      
         padding-left: 9px;
         padding-right: 9px;
     }
-    #memory {
+    #disk {
         color: #${custom.tertiary_accent};
         border-radius: 0px 24px 10px 0px;      
         padding-left: 9px;
