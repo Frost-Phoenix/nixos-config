@@ -15,6 +15,9 @@
     yazi
     youtube-dl
 
+    libgcc
+    gnumake
+
     bleachbit
     bore-cli
     gparted
