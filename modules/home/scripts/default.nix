@@ -8,6 +8,7 @@
   music = pkgs.writeShellScriptBin "music" (builtins.readFile ./scripts/music.sh);
   toogle_blur = pkgs.writeScriptBin "toogle_blur" (builtins.readFile ./scripts/toogle_blur.sh);
   toogle_oppacity = pkgs.writeScriptBin "toogle_oppacity" (builtins.readFile ./scripts/toogle_oppacity.sh);
+  maxfetch = pkgs.writeScriptBin "maxfetch" (builtins.readFile ./scripts/maxfetch.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -22,5 +23,7 @@ in {
   
     toogle_blur
     toogle_oppacity
+
+    maxfetch
   ];
 }
