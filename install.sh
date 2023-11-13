@@ -5,6 +5,6 @@ mkdir -p ~/Documents
 mkdir -p ~/Pictures/wallpapers/others
 sleep 1
 cp wallpapers/wallpaper.png ~/Pictures/wallpapers
-cp wallpapers/otherWallpaper/* ~/Pictures/wallpapers/otherswallpapers/wallpaper.png
+cp wallpapers/otherWallpaper/* ~/Pictures/wallpapers/others/
 sleep 1
 sudo nixos-rebuild switch --flake .#nixos
