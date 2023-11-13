@@ -60,7 +60,7 @@
         background-size: 200% 200%;
     }
 
-    #tray, #pulseaudio, #network, #cpu, #memory,
+    #tray, #pulseaudio, #network, #cpu, #memory, #disk,
     #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward{
         background: #${custom.palette.tertiary_background_hex};
         font-weight: bold;
@@ -73,6 +73,12 @@
         padding-left: 15px;
         padding-right: 9px;
         margin-left: 7px;
+    }
+    #disk {
+        color: #${custom.tertiary_accent};
+        border-radius: 0px 0 0px 0px;      
+        padding-left: 9px;
+        padding-right: 9px;
     }
     #memory {
         color: #${custom.tertiary_accent};

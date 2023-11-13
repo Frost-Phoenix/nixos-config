@@ -33,6 +33,7 @@
         "tray" 
         "cpu"
         "memory"
+        "disk"
         "pulseaudio" 
         "network"
         "clock" 
@@ -92,6 +93,11 @@
         format= "  {usage}%";
         format-alt= "  {avg_frequency} GHz";
         interval= 2;
+    };
+    disk = {
+        path = "/";
+        format = "󰋊 {percentage_used}%";
+        interval= 60;
     };
     network = {
         format-wifi = "  {signalStrength}%";
