@@ -15,8 +15,10 @@
     yazi
     youtube-dl
 
+    # C / C++
     gcc
     gnumake
+    sfml
 
     bleachbit
     bore-cli
