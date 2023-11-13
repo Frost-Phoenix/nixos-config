@@ -10,6 +10,7 @@
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         return-youtube-dislikes
+        i-dont-care-about-cookies
         # youtube-time-tracker
         firefox-color
         stylus
