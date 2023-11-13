@@ -6,7 +6,7 @@
     profiles.frostphoenix = {
       settings = {};
       isDefault = true;
-      extraConfig = builtins.readFile ./user.js;
+      extraConfig = builtins.readFile ./user.js.conf;
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         return-youtube-dislikes
