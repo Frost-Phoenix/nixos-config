@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-wallpaper_folder=$HOME/Pictures/wallpapers
-wallpaper_location="$(ls $wallpaper_folder | wofi -n --show dmenu)"
-if [[ -d $wallpaper_folder/$wallpaper_location ]]; then
-    wallpaper_temp="$wallpaper_location"
-elif [[ -f $wallpaper_folder/$wallpaper_location ]]; then
-    wall-change $wallpaper_folder/$wallpaper_temp/$wallpaper_location
+wallpaper_path=$HOME/Pictures/wallpapers
+wallpapers_folder=$HOME/Pictures/wallpapers/others
+wallpaper_name="$(ls $wallpapers_folder | wofi -n --show dmenu --sort-order=alphabetical)"
+if [[ -f $wallpapers_folder/$wallpaper_name ]]; then
+    find ~/Pictures/wallpapers -maxdepth 1 -type f -delete
+    wall-change $wallpaper_path/$wallpaper_name
 else
     exit 1
 fi
