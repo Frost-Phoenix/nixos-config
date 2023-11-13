@@ -5,6 +5,7 @@
     eza
     fzf
     lazygit
+    libreoffice
     nix-prefetch-github
     python39
     ripgrep
