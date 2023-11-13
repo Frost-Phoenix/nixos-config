@@ -13,6 +13,7 @@
     spotify
     xfce.thunar
     yazi
+    youtube-dl
 
     bleachbit
     bore-cli
