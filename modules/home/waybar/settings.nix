@@ -85,8 +85,8 @@
         on-scroll-down = "playerctl volume .05-";
     };
     memory= {
-        format= "󰟜  {}%";
-        format-alt= "󰟜  {used} GiB"; # 
+        format= "󰟜 {}%";
+        format-alt= "󰟜 {used} GiB"; # 
         interval= 2;
     };
     cpu= {
