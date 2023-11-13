@@ -15,7 +15,7 @@
     yazi
     youtube-dl
 
-    libgcc
+    gcc
     gnumake
 
     bleachbit
