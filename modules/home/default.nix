@@ -21,7 +21,6 @@
     ++ [(import ./gtk)]
     ++ [(import ./mako)]
     ++ [(import ./scripts)]
-    ++ [(import ./neofetch)]
     ++ [(import ./starship)]
     ++ [(import ./nvim)]
     ++ [(import ./package)];
