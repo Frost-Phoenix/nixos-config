@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if (ps aux | grep Skype | grep -v grep > /dev/null) then
+if (ps aux | grep audacious | grep -v grep > /dev/null) then
     pkill audacious
 else
     hyprctl dispatch exec "[workspace 8 silent] audacious -t"
