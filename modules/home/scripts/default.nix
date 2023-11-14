@@ -10,6 +10,8 @@
   toogle_oppacity = pkgs.writeScriptBin "toogle_oppacity" (builtins.readFile ./scripts/toogle_oppacity.sh);
   maxfetch = pkgs.writeScriptBin "maxfetch" (builtins.readFile ./scripts/maxfetch.sh);
   lofi = pkgs.writeScriptBin "lofi" (builtins.readFile ./scripts/lofi.sh);
+  compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
+  extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -28,5 +30,8 @@ in {
     maxfetch
 
     lofi
+
+    compress
+    extract
   ];
 }
