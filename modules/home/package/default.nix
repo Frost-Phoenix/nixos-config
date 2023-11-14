@@ -6,8 +6,8 @@
     fzf
     lazygit
     libreoffice
-    lunar-client
-    minecraft
+    # lunar-client
+    # minecraft
     nix-prefetch-github
     python39
     ripgrep
