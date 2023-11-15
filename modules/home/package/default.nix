@@ -6,8 +6,9 @@
     fzf
     lazygit
     libreoffice
-    minecraft
+    # minecraft
     nix-prefetch-github
+    prismlauncher
     python39
     ripgrep
     rnix-lsp
