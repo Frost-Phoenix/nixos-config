@@ -6,7 +6,6 @@
     fzf
     lazygit
     libreoffice
-    # minecraft
     nix-prefetch-github
     prismlauncher
     python39
