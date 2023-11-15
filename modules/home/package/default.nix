@@ -6,7 +6,7 @@
     fzf
     lazygit
     libreoffice
-    # minecraft
+    minecraft
     nix-prefetch-github
     python39
     ripgrep
