@@ -3,16 +3,12 @@
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
-    wireless.iwd.enable = true;
-    networkmanager.wifi.backend = "iwd";
-    # wireless.enable = true;
-    # wireless.userControlled.enable = true;
+    # wireless.iwd.enable = true;
+    # networkmanager.wifi.backend = "iwd";
     nameservers = [ "1.1.1.1" ];
   };
 
   environment.systemPackages = with pkgs; [
-    # wpa_supplicant
-    # wpa_supplicant_gui
-    iwd
+    networkmanagerapplet
   ];
 }
