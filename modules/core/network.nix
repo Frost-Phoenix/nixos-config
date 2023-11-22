@@ -12,6 +12,7 @@
 
   environment.systemPackages = with pkgs; [
     wpa_supplicant
+    wpa_supplicant_gui
     # iwd
   ];
 }
