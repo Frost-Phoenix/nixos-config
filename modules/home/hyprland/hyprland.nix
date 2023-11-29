@@ -22,7 +22,7 @@
       enable = true;
       # hidpi = true;
     };
-    enableNvidiaPatches = false;
+    # enableNvidiaPatches = false;
     systemdIntegration = true;
   };
 }
