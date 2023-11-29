@@ -40,6 +40,7 @@ in
 {
   home.packages = with pkgs; [
     _rider
+    dotnet-sdk_7
   ];
 
   # Unity Rider plugin looks here for a .desktop file,
