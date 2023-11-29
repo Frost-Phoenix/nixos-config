@@ -120,10 +120,12 @@ in
       bind = $mainMod, Return, exec, kitty
       bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
-      bind = $mainMod, F, fullscreen,
+      bind = $mainMod, F, fullscreen, 0
+      bind = $mainMod SHIFT, F, fullscreen, 1
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod, Escape, exec, swaylock
+      bind = $mainMod SHIFT, Escape, exec, swaylock
       # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
