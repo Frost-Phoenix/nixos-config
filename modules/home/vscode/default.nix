@@ -5,6 +5,7 @@
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       bbenoist.nix
+      ms-python.python
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
     ];
