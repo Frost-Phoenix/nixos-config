@@ -8,6 +8,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" ];
+      plugins = [ "fzf" ];
 
     };
     shellAliases = {
@@ -33,18 +34,18 @@
       # nix-cleanboot = "sudo /run/current-system/bin/switch-to-configuration boot";
 
       # Git
-      ga = "git add";
-      gaa = "git add --all";
-      gs = "git status";
-      gb = "git branch";
-      gm = "git merge";
-      gpl = "git pull";
+      ga   = "git add";
+      gaa  = "git add --all";
+      gs   = "git status";
+      gb   = "git branch";
+      gm   = "git merge";
+      gpl  = "git pull";
       gplo = "git pull origin";
-      gps = "git push";
+      gps  = "git push";
       gpso = "git push origin";
-      gc = "git commit";
-      gcm = "git commit -m";
-      gch = "git checkout";
+      gc   = "git commit";
+      gcm  = "git commit -m";
+      gch  = "git checkout";
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
@@ -60,6 +61,5 @@
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
-
   };
 }
