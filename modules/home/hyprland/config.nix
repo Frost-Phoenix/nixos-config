@@ -18,7 +18,7 @@ in
       exec-once = nm-applet &
       exec-once = swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &
       exec-once = sleep 1 && swaylock
-      exec-once = hyprctl setcursor Catppuccin-Frappe-Dark 15 &
+      exec-once = hyprctl setcursor Nordzy-cursors 32 &
       exec-once = waybar &
       exec-once = mako &
 

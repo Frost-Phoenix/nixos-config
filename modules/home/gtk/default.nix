@@ -28,13 +28,15 @@
       };
     };
     cursorTheme = {
-      name = "Catppuccin-Frappe-Dark";
+      name = "Nordzy-cursors";
+      package = pkgs.nordzy-cursor-theme;
+      size = 32;
     };
   };
   
   home.pointerCursor = {
-    package = pkgs.catppuccin-cursors;
-    name = "Catppuccin-Frappe-Red";
-    size = 15;
+    name = "Nordzy-cursors";
+    package = pkgs.nordzy-cursor-theme;
+    size = 32;
   };
 }
