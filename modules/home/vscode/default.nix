@@ -10,7 +10,7 @@
       ms-python.python
 
       # .md preview
-      bierner.markdown-preview-github-styles
+      shd101wyy.markdown-preview-enhanced
 
       # Color theme
       catppuccin.catppuccin-vsc
