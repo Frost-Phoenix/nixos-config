@@ -6,5 +6,9 @@
     winetricks
     inputs.nix-gaming.packages.${pkgs.system}.proton-ge
     inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+
+    # games
+    celeste-classic
+    celeste-classic-pm
   ];
 }
