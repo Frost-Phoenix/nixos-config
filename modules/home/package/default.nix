@@ -3,6 +3,7 @@
   home.packages = (with pkgs; [
     discord
     eza
+    entr
     fzf
     lazygit
     libreoffice
