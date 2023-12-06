@@ -30,13 +30,13 @@
     cursorTheme = {
       name = "Nordzy-cursors";
       package = pkgs.nordzy-cursor-theme;
-      size = 32;
+      size = 20;
     };
   };
   
   home.pointerCursor = {
     name = "Nordzy-cursors";
     package = pkgs.nordzy-cursor-theme;
-    size = 32;
+    size = 20;
   };
 }
