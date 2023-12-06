@@ -56,4 +56,10 @@
       psv = "source .venv/bin/activate";
     };
   };
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+
+  };
 }
