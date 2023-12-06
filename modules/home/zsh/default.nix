@@ -24,7 +24,7 @@
       findw = "grep -rl";
 
       # Nixos
-      cdnix = "cd ~/nixos-config";
+      cdnix = "cd ~/nixos-config && codium ~/nixos-config";
       nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#nixos";
       nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos";
       nix-flake-update = "sudo nix flake update ~/nixos-config#";
