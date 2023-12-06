@@ -17,7 +17,7 @@
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
-      "editor.fontSize" = "16";
+      "editor.fontSize" = 16;
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
       "vsicons.dontShowNewVersionMessage" = true;
@@ -30,6 +30,7 @@
       # keyboard shortcuts    
       "editor.action.commentLine" = "ctrl+d";
       "workbench.action.files.saveFiles" = "ctrl+s";
+      "workbench.action.files.save" = "ctrl+shift+s";
     };
   };
 }
