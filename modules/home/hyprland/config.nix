@@ -136,8 +136,8 @@ in
       bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
       
       # screenshot
-      bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
-      bind = $mainMod, Print, exec, grimblast --notify --cursor  copy area
+      bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png
+      bind = ,Print, exec, grimblast --notify --cursor  copy area
       
       # switch focus
       bind = $mainMod, left, movefocus, l
