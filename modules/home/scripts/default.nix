@@ -12,6 +12,7 @@
   lofi = pkgs.writeScriptBin "lofi" (builtins.readFile ./scripts/lofi.sh);
   compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
   extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
+  shutdown-script = pkgs.writeScriptBin "shutdown-script" (builtins.readFile ./scripts/shutdown-script.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -33,5 +34,7 @@ in {
 
     compress
     extract
+
+    shutdown-script
   ];
 }

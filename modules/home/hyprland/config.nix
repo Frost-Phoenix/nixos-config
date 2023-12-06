@@ -125,7 +125,7 @@ in
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod, Escape, exec, swaylock
-      bind = $mainMod SHIFT, Escape, exec, swaylock
+      bind = $mainMod SHIFT, Escape, exec, shutdown-script
       # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
