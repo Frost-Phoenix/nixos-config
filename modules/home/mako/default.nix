@@ -12,8 +12,8 @@
       borderColor = "#b4befe";
       progressColor = "over #313244";
       textColor = "#cdd6f4";
-      icons = 1;
-      actions = 1;
+      icons = true;
+      actions = true;
       extraConfig = ''
         text-alignment=center
         [urgency=high]
