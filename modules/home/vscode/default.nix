@@ -4,8 +4,15 @@
     enable = true;
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
+      # nix language
       bbenoist.nix
+      # python
       ms-python.python
+
+      # .md preview
+      bierner.markdown-preview-github-styles
+
+      # Color theme
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
     ];
@@ -30,7 +37,6 @@
       # keyboard shortcuts    
       "editor.action.commentLine" = "ctrl+d";
       "workbench.action.files.saveFiles" = "ctrl+s";
-      "workbench.action.files.save" = "ctrl+shift+s";
     };
   };
 }
