@@ -227,6 +227,7 @@ in
       windowrulev2 = opacity 1.0 override 1.0 override, title:^(.*mpv.*)$
       windowrule = tile,Aseprite
       windowrulev2 = opacity 1.0 override 1.0 override, class:(Aseprite)
+      windowrulev2 = opacity 1.0 override 1.0 override, class:(Unity)
       windowrule = size 1200 725,mpv
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
