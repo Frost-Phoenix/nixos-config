@@ -49,7 +49,7 @@
       "editor.scrollbar.horizontalScrollbarSize" = 2;
       "editor.scrollbar.vertical" = "hidden";
       "editor.scrollbar.horizontal" = "hidden";
-      "workbench.layoutControl.enabled" = false
+      "workbench.layoutControl.enabled" = false;
 
       "editor.mouseWheelZoom" = true;
     };
