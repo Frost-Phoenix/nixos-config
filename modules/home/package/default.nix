@@ -7,6 +7,7 @@
     fzf
     lazygit
     libreoffice
+    nitch
     nix-prefetch-github
     prismlauncher
     python39
