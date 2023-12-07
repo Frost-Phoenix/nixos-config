@@ -33,8 +33,8 @@
       "workbench.startupEditor" = "none";
 
       "workbench.layoutControl.type" = "menu";
-      "workbench.editor.limit.enabled" = true;
-      "workbench.editor.limit.value" = 1;
+      # "workbench.editor.limit.enabled" = true;
+      # "workbench.editor.limit.value" = 1;
       "workbench.editor.limit.perEditorGroup" = true;
       "workbench.editor.showTabs" = false;
       "files.autoSave" = "onWindowChange";
