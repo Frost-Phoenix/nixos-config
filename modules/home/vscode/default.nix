@@ -32,8 +32,6 @@
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
 
-      "editor.renderWhitespace" = "all";
-      "editor.renderLineHighlight" = "none";
       "workbench.layoutControl.type" = "menu";
       "workbench.editor.limit.enabled" = true;
       "workbench.editor.limit.value" = 1;
@@ -43,7 +41,7 @@
       "explorer.openEditors.visible" = 0;
       "breadcrumbs.enabled" = false;
       "editor.renderControlCharacters" = false;
-      "workbench.activityBar.visible" = false;
+      "workbench.activityBar.location" = "hidden";
       "workbench.statusBar.visible" = false;
       "editor.scrollbar.verticalScrollbarSize" = 2;
       "editor.scrollbar.horizontalScrollbarSize" = 2;
