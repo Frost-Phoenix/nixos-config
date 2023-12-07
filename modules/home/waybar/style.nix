@@ -53,7 +53,7 @@
     }
 
     #workspaces button:hover {
-        background-color: #${custom.tertiary_accent};
+        background-color: #b4befe;
         color: #${custom.background};
         border-radius: 15px;
         min-width: 35px;
