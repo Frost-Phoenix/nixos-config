@@ -10,7 +10,7 @@
     nitch
     nix-prefetch-github
     prismlauncher
-    python39
+    # python39
     ripgrep
     rnix-lsp
     rustup

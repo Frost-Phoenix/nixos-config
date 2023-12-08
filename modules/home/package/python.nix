@@ -1,13 +1,8 @@
-{pkgs, ...}: let
-  my-python-packages = ps:
-    with ps; [
-      pandas
-
-      requests
-    ];
-in 
+{pkgs, ...}: 
 {
-  environment.systemPackages = [
-    (pkgs.python3.withPackages my-python-packages)
+  environment.systemPackages = with pkgs; [
+    (python311Full.withPackages(ps: with ps; [ 
+      pygame
+    ]))
   ];
 }
