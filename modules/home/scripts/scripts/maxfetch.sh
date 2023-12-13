@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-unicode=" ■" 
+unicode=" " 
 version="1.2.0"
 
 _black=$(tput setaf 0)
@@ -15,31 +15,46 @@ _bright=$(tput bold)
 normal=$(tput sgr0)
 _underline=$(tput smul)
 
-up=$(uptime | sed -E 's/^[^,]*up *//; s/mins/minutes/; s/hrs?/hours/;
-  s/([[:digit:]]+):0?([[:digit:]]+)/\1 hours, \2 minutes/;
-  s/^1 hours/1 hour/; s/ 1 hours/ 1 hour/;
-  s/min,/minutes,/; s/ 0 minutes,/ less than a minute,/; s/ 1 minutes/ 1 minute/;
-  s/  / /; s/, *[[:digit:]]* users?.*//')
+# up=$(uptime | sed -E 's/^[^,]*up *//; s/mins/minutes/; s/hrs?/hours/;
+  # s/([[:digit:]]+):0?([[:digit:]]+)/\1 hours, \2 minutes/;
+  # s/^1 hours/1 hour/; s/ 1 hours/ 1 hour/;
+  # s/min,/minutes,/; s/ 0 minutes,/ less than a minute,/; s/ 1 minutes/ 1 minute/;
+  # s/  / /; s/, *[[:digit:]]* users?.*//')
+
+up=$(
+  uptime | awk -F'( |,|:)+' '{
+      d=h=m=0;
+      if ($7=="min")
+          m=$6;
+      else {
+          if ($7~/^day/) { d=$6; h=$8; m=$9}
+          else {h=$6;m=$7}
+          }
+    }
+    {
+        print h+0,"h",m+0,"m" 
+    }'
+)
+
+pkgs=$(nix-store --query --requisites /run/current-system | wc -l)
 
 fetch() {
-    echo "${blue}    _   ___      ____      ${normal}"
-    echo "${blue}   / | / (_)  __/ __ \_____${normal}"
-    echo "${blue}  /  |/ / / |/_/ / / / ___/${normal}"
-    echo "${blue} / /|  / />  </ /_/ (__  ) ${normal}"
-    echo "${blue}/_/ |_/_/_/|_|\____/____/  ${normal}"
+    echo "${cyan}$(tput bold)     _  ___      ____  ____    ${normal}$(tput sgr0)"
+    echo "${cyan}$(tput bold)    / |/ (_)_ __/ __ \/ __/    ${normal}$(tput sgr0)"
+    echo "${cyan}$(tput bold)   /    / /\ \ / /_/ /\ \      ${normal}$(tput sgr0)"
+    echo "${cyan}$(tput bold)  /_/|_/_//_\_"'\\'"____/___/  ${normal}$(tput sgr0)"
     echo ""
-    echo "╭────────────╮ "
-    echo "│  ${red}${normal} user    │ ${red}$(whoami)${normal}"
-    echo "│  ${yellow}${normal} hname   │ ${yellow}$(cat /etc/hostname)${normal} "
-    echo "│  ${green}${normal} distro  │ ${green}$(sed -nE "s@PRETTY_NAME=\"([^\"]*)\"@\1@p" /etc/os-release)${normal} "
-    echo "│  ${cyan}${normal} kernel  │ ${cyan}$(uname -r)${normal} "
-    echo "│  ${blue}󱂬${normal} de/wm   │ ${blue}$XDG_CURRENT_DESKTOP${normal} "
-    echo "│  ${magenta}${normal} uptime  │ ${magenta}${up}${normal} "
-    echo "│  ${red}${normal} shell   │ ${red}$(echo ${SHELL##*/})${normal} "
-    echo "│  ${yellow}${normal} term    │ ${yellow}$(ps -o comm= -p "$(($(ps -o ppid= -p "$(($(ps -o sid= -p "$$")))")))")${normal} "
-    echo "├────────────┤ "
-    echo "│  ${green} ${normal}colors  │  ${red}$unicode${normal}${yellow}$unicode${normal}${green}$unicode${normal}${cyan}$unicode${normal}${blue}$unicode${normal}${magenta}$unicode${normal}"
-    echo "╰────────────╯ "
+    echo "  ╭─────────────╮ "
+    echo "  │  ${red} ${normal} user    │ ${red}$(whoami)${normal}"
+    echo "  │  ${yellow} ${normal} distro  │ ${yellow}$(sed -nE "s@PRETTY_NAME=\"([^\"]*)\"@\1@p" /etc/os-release)${normal} "
+    echo "  │  ${green} ${normal} kernel  │ ${green}$(uname -r)${normal} "
+    echo "  │  ${cyan}󱂬 ${normal} de/wm   │ ${cyan}$XDG_CURRENT_DESKTOP${normal} "
+    echo "  │  ${blue} ${normal} uptime  │ ${blue}${up}${normal} "
+    echo "  │  ${magenta} ${normal} shell   │ ${magenta}$(echo ${SHELL##*/})${normal} "
+    echo "  │  ${red}󰏖 ${normal} pkgs    │ ${red}${pkgs}${normal} "
+    echo "  ├─────────────┤ "
+    echo "  │  ${_white}  ${normal}colors  │${_white}$unicode${normal}${red}$unicode${normal}${yellow}$unicode${normal}${green}$unicode${normal}${cyan}$unicode${normal}${blue}$unicode${normal}${magenta}$unicode${normal}${_black}$unicode${normal}"
+    echo "  ╰─────────────╯ "
 }
 
 fetch && exit 0
