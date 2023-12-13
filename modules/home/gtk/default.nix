@@ -15,6 +15,7 @@
       size = 11;
     };
     iconTheme = {
+      name = "cat-macchiato-lavender";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "lavender";
