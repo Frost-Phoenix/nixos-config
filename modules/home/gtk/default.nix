@@ -17,8 +17,8 @@
     iconTheme = {
       name = "Catppuccin-Icons-Mocciatio";
       package = pkgs.catppuccin-papirus-folders.override {
-        flavor = [ "mocha" ];
-        accent = [ "lavender" ];
+        flavor = "mocha";
+        accent = "lavender";
       };
     };
     theme = {
