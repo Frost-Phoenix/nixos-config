@@ -2,39 +2,36 @@
 {
   home.packages = (with pkgs; [
     discord
-    eza
-    entr
-    fzf
+    eza                     # ls replacement
+    entr                    # perform action when file change
+    fzf                     # fuzzy finder
     lazygit
     libreoffice
-    nitch
+    nitch                   # systhem fetch util
     nix-prefetch-github
-    prismlauncher
-    # python39
-    ripgrep
+    prismlauncher           # minecraft launcher
+    ripgrep                 # grep replacement
     rnix-lsp
-    rustup
     spotify
-    xfce.thunar
-    yazi
+    xfce.thunar             # file manager
+    yazi                    # terminal file manager
     youtube-dl
 
     # C / C++
     gcc
     gnumake
 
-    bleachbit
-    bore-cli
-    gparted
+    bleachbit               # cache cleaner
+    gparted                 # partition manager
     ffmpeg
-    imv
+    imv                     # image viewer
     libnotify
-    mpv
+    mpv                     # video player
     openssl
-    pamixer
-    pavucontrol
-    playerctl
-    qalculate-gtk
+    pamixer                 # pulseaudio command line mixer
+    pavucontrol             # pulseaudio volume controle (GUI)
+    playerctl               # controller for media players
+    qalculate-gtk           # calculator
     unzip
     wget
     xdg-utils
