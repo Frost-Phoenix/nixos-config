@@ -13,7 +13,6 @@
     ripgrep                           # grep replacement
     rnix-lsp
     spotify
-    xfce.thunar                       # file manager
     cinnamon.nemo-with-extensions     # file manager
     yazi                              # terminal file manager
     youtube-dl

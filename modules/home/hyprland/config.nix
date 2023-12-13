@@ -129,7 +129,7 @@ in
       # bind = SUPER, V, exec, cliphist list | wofi -dmenu | cliphist decode | wl-copy
       bind = $mainMod, P, pseudo,
       bind = $mainMod, J, togglesplit,
-      bind = $mainMod, E, exec, thunar
+      bind = $mainMod, E, exec, nemo
       bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped
       bind = $mainMod, C ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
