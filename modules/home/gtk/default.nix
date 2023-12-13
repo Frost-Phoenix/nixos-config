@@ -14,9 +14,11 @@
       name = "JetBrainsMono Nerd Font";
       size = 11;
     };
-    iconTheme = pkgs.catppuccin-papirus-folders.override {
-      flavor = "mocha";
-      accent = "lavender";
+    iconTheme = {
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "lavender";
+      };
     };
     theme = {
       name = "Catppuccin-Macchiato-Compact-Lavender-Dark";
