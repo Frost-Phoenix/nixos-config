@@ -15,19 +15,19 @@
       size = 11;
     };
     iconTheme = {
-      name = "cat-macchiato-lavender";
+      name = "Catppuccin-Mocha-Lavender-Icons";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "lavender";
       };
     };
     theme = {
-      name = "Catppuccin-Macchiato-Compact-Lavender-Dark";
+      name = "Catppuccin-Mocha-Compact-Lavender-Dark";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "lavender" ];
         size = "compact";
         # tweaks = [ "rimless" ];
-        variant = "macchiato";
+        variant = "mocha";
       };
     };
     cursorTheme = {
