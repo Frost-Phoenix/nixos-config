@@ -14,6 +14,7 @@
     rnix-lsp
     spotify
     xfce.thunar             # file manager
+    gnome.nautilus          # file manager
     yazi                    # terminal file manager
     youtube-dl
 
