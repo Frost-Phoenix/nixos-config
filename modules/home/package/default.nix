@@ -2,36 +2,37 @@
 {
   home.packages = (with pkgs; [
     discord
-    eza                     # ls replacement
-    entr                    # perform action when file change
-    fzf                     # fuzzy finder
+    eza                               # ls replacement
+    entr                              # perform action when file change
+    fzf                               # fuzzy finder
     lazygit
     libreoffice
-    nitch                   # systhem fetch util
+    nitch                             # systhem fetch util
     nix-prefetch-github
-    prismlauncher           # minecraft launcher
-    ripgrep                 # grep replacement
+    prismlauncher                     # minecraft launcher
+    ripgrep                           # grep replacement
     rnix-lsp
     spotify
-    xfce.thunar             # file manager
-    yazi                    # terminal file manager
+    xfce.thunar                       # file manager
+    cinnamon.nemo-with-extensions     # file manager
+    yazi                              # terminal file manager
     youtube-dl
 
     # C / C++
     gcc
     gnumake
 
-    bleachbit               # cache cleaner
-    gparted                 # partition manager
+    bleachbit                         # cache cleaner
+    gparted                           # partition manager
     ffmpeg
-    imv                     # image viewer
+    imv                               # image viewer
     libnotify
-    mpv                     # video player
+    mpv                               # video player
     openssl
-    pamixer                 # pulseaudio command line mixer
-    pavucontrol             # pulseaudio volume controle (GUI)
-    playerctl               # controller for media players
-    qalculate-gtk           # calculator
+    pamixer                           # pulseaudio command line mixer
+    pavucontrol                       # pulseaudio volume controle (GUI)
+    playerctl                         # controller for media players
+    qalculate-gtk                     # calculator
     unzip
     wget
     xdg-utils
