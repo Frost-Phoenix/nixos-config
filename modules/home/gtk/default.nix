@@ -22,7 +22,7 @@
       };
     };
     theme = {
-      name = "Catppuccin-Macchiato";
+      name = "Catppuccin-Macchiato-Lavender";
       package = pkgs.catppuccin-gtk.override {
         accents = [ "lavender" ];
         size = "standard";
