@@ -15,7 +15,7 @@
       size = 11;
     };
     iconTheme = {
-      name = "Catppuccin-Mocha-Lavender-Icons";
+      name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
         accent = "lavender";
