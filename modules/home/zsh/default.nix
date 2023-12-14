@@ -16,6 +16,7 @@
       c = "clear";
       vim = "nvim";
       cat = "bat";
+      icat = "kitten icat";
       l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
