@@ -28,6 +28,7 @@
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
       "vsicons.dontShowNewVersionMessage" = true;
+      "explorer.confirmDragAndDrop" = false;
       "editor.fontLigatures" = true;
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
