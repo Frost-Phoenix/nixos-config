@@ -8,6 +8,9 @@
     inputs.nix-gaming.packages.${pkgs.system}.wine-ge
 
     # games
+    _2048-in-terminal
+    haskellPackages.tetris
+
     celeste-classic
     celeste-classic-pm
   ];
