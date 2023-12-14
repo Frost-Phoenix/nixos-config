@@ -7,6 +7,7 @@
     fzf                               # fuzzy finder
     lazygit
     libreoffice
+    lsix                              # like ls, show images
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
