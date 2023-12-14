@@ -14,7 +14,7 @@
     ++ [(import ./audacious)]       # music player
     ++ [(import ./unity)]
     ++ [(import ./rider)]           # C# JetBrain editor
-    # ++ [(import ./discord)]
+    ++ [(import ./discord)]         # discord with catppuccin theme
     ++ [(import ./swaylock)]
     ++ [(import ./wofi)]
     ++ [(import ./zsh)]
