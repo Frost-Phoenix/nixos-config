@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    bitwise                           # cli tool for bit / hex manipulation
     discord
     eza                               # ls replacement
     entr                              # perform action when file change
