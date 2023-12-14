@@ -9,8 +9,8 @@
 
     # games
     _2048-in-terminal
-    haskellPackages.tetris
-
+    vitetris
+    
     celeste-classic
     celeste-classic-pm
   ];
