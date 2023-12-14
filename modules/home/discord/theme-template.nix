@@ -1,5 +1,5 @@
 {
-    xdg.configFile."Vencord/themes/custom.css".text = with ui.colors; '' 
+    xdg.configFile."Vencord/themes/custom.css".text = '' 
     
         /**
         * @name Catppuccin Mocha
