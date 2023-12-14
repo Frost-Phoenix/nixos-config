@@ -14,6 +14,7 @@
     ripgrep                           # grep replacement
     rnix-lsp
     spotify
+    todo                              # cli todo list
     cinnamon.nemo-with-extensions     # file manager
     yazi                              # terminal file manager
     youtube-dl
