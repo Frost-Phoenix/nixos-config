@@ -8,6 +8,7 @@
     fzf                               # fuzzy finder
     lazygit
     libreoffice
+    micro                             # nano replacement
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
@@ -15,6 +16,7 @@
     rnix-lsp
     spotify
     todo                              # cli todo list
+    toipe                             # typing test in the terminal
     cinnamon.nemo-with-extensions     # file manager
     yazi                              # terminal file manager
     youtube-dl
