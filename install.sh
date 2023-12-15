@@ -20,7 +20,7 @@ init() {
 
 comfirm() {
     echo -en "[${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
-    read -n 1 -r 
+    read -n 1 -r
     echo
     if [[ $REPLY =~ ^[Nn]$ ]]
     then
@@ -39,9 +39,9 @@ print_header() {
     | \ | (_)_  __/ _ \ ___  |_ _|_ __  ___| |_ __ _| | | ___ _ __ 
     |  \| | \ \/ / | | / __|  | || '_ \/ __| __/ _' | | |/ _ \ '__|
     | |\  | |>  <| |_| \__ \  | || | | \__ \ || (_| | | |  __/ |   
-    |_| \_|_/_/\_\\\\___/|___/ |___|_| |_|___/\__\__,_|_|_|\___|_|   
-                                                                   
-    
+    |_| \_|_/_/\_\\\\___/|___/ |___|_| |_|___/\__\__,_|_|_|\___|_| 
+
+
                   $BLUE https://github.com/Frost-Phoenix $RED 
         ! TO MAKE SURE EVERYTHING RUNS CORRECTLY RUN AS ROOT ! $GREEN
                       -> '"sudo bash install.sh"' $NORMAL
@@ -50,7 +50,7 @@ print_header() {
 }
 
 get_username() {
-    echo -en "Enter your$GREEN username$NORMAL : $YELLOW" 
+    echo -en "Enter your$GREEN username$NORMAL : $YELLOW"
     read username
     echo -en "$NORMAL"
     echo -en "Use$YELLOW "$username"$NORMAL as ${GREEN}username${NORMAL} ? "
@@ -75,25 +75,25 @@ install() {
     mkdir -p ~/Documents
     mkdir -p ~/Pictures/wallpapers/others
     sleep 0.2
-    
+
     # Copy the wallpapers
     echo -e "Copying all ${MAGENTA}wallpapers${NORMAL}"
     cp wallpapers/wallpaper.png ~/Pictures/wallpapers
     cp wallpapers/otherWallpaper/* ~/Pictures/wallpapers/others/
     sleep 0.2
-    
+
     # Get the hardware configuration
     echo -e "Copying ${MAGENTA}/etc/nixos/hardware-configuration.nix${NORMAL} to ${MAGENTA}./hosts/nixos/${NORMAL}\n"
     cp /etc/nixos/hardware-configuration.nix hosts/nixos/hardware-configuration.nix
     sleep 0.2
-    
+
     # Last Confirmation
     echo -en "You are about to start the system build, do you want to process ? "
     comfirm
 
     # Build the systhem (flakes + home manager)
     echo -e "\nBuilding the system...\n"
-    # sudo nixos-rebuild switch --flake .#nixos
+    sudo nixos-rebuild switch --flake .#nixos
 }
 
 main() {
