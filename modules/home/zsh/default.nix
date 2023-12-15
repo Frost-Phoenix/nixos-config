@@ -9,7 +9,10 @@
       enable = true;
       plugins = [ "git" "fzf" ];
     };
-    initExtraFirst = "DISABLE_MAGIC_FUNCTIONS=true";
+    initExtraFirst = ''
+      DISABLE_MAGIC_FUNCTIONS=true
+      export "MICRO_TRUECOLOR=1"
+    '';
     shellAliases = {
       # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
 
@@ -17,11 +20,13 @@
       c = "clear";
       vim = "nvim";
       cat = "bat";
+      nano = "micro";
       icat = "kitten icat";
+      findw = "grep -rl";
+
       l = "eza --icons  -a --group-directories-first -1"; #EZA_ICON_SPACING=2
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
-      findw = "grep -rl";
 
       # Nixos
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
