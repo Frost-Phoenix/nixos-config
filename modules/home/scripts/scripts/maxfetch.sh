@@ -15,26 +15,17 @@ _bright=$(tput bold)
 normal=$(tput sgr0)
 _underline=$(tput smul)
 
-# up=$(uptime | sed -E 's/^[^,]*up *//; s/mins/minutes/; s/hrs?/hours/;
-  # s/([[:digit:]]+):0?([[:digit:]]+)/\1 hours, \2 minutes/;
-  # s/^1 hours/1 hour/; s/ 1 hours/ 1 hour/;
-  # s/min,/minutes,/; s/ 0 minutes,/ less than a minute,/; s/ 1 minutes/ 1 minute/;
-  # s/  / /; s/, *[[:digit:]]* users?.*//')
-
-up=$(
-  uptime | awk -F'( |,|:)+' '{
-      d=h=m=0;
-      if ($7=="min")
-          m=$6;
-      else {
-          if ($7~/^day/) { d=$6; h=$8; m=$9}
-          else {h=$6;m=$7}
-          }
+up=$(uptime | awk -F'( |,|:)+' '{
+        d=h=m=0;
+        if ($7=="min")
+            m=$6;
+        else {
+            if ($7~/^day/) { d=$6; h=$8; m=$9}
+            else {h=$6;m=$7}
+        }
     }
-    {
-        print h+0,"h",m+0,"m" 
-    }'
-)
+    { print h+0,"h",m+0,"m" }
+')
 
 pkgs=$(nix-store --query --requisites /run/current-system | wc -l)
 
