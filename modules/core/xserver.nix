@@ -5,7 +5,7 @@
     layout = "us";
     displayManager.autoLogin = {
       enable = true;
-      user = ${username};
+      user = "${username}";
     };
     libinput = {
       enable = true;
