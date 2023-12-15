@@ -1,9 +1,9 @@
-{ pkgs, lib, config,... }: 
+{ pkgs, lib, config, username, ... }: 
 {
   programs.firefox = {
     enable = true;
 
-    profiles.frostphoenix = {
+    profiles.${username} = {
       settings = {};
       isDefault = true;
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [

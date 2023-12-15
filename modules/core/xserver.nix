@@ -1,11 +1,11 @@
-{ pkgs, ... }: 
+{ pkgs, username, ... }: 
 {
   services.xserver = {
     enable = true;
     layout = "us";
     displayManager.autoLogin = {
       enable = true;
-      user = "frostphoenix";
+      user = ${username};
     };
     libinput = {
       enable = true;

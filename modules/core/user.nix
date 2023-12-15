@@ -1,7 +1,5 @@
-{ pkgs, inputs, ...}:
+{ pkgs, inputs, username, ...}:
 let
-  name = "FrostPhoenix";
-  username = "frostphoenix";
   packages = with pkgs; [
     fish
   ];
@@ -23,7 +21,7 @@ in
 
   users.users.${username} = {
     isNormalUser = true;
-    description = name;
+    description = ${username};
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };

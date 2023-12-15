@@ -1,7 +1,7 @@
-{ config, pkgs, ... }:
+{ config, pkgs, username, ... }:
 {
   # Add user to libvirtd group
-  users.users.frostphoenix.extraGroups = [ "libvirtd" ];
+  users.users.${username}.extraGroups = [ "libvirtd" ];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [

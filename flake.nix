@@ -40,6 +40,7 @@
     { nixpkgs, self, ...} @ inputs:
     let
       selfPkgs = import ./pkgs;
+      username = "frostphoenix";
     in
     {
       overlays.default = selfPkgs.overlay;
