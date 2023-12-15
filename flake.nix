@@ -36,8 +36,7 @@
     };
   };
 
-  outputs =
-    { nixpkgs, self, ...} @ inputs:
+  outputs = { nixpkgs, self, ...} @ inputs:
     let
       selfPkgs = import ./pkgs;
       username = "frostphoenix";
@@ -45,7 +44,7 @@
     {
       overlays.default = selfPkgs.overlay;
       nixosConfigurations = import ./modules/core/default.nix {
-        inherit self nixpkgs inputs;
+        inherit self nixpkgs inputs username;
       };
     };
 }
