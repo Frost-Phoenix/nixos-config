@@ -1,4 +1,4 @@
-{inputs, ...}: {
+{inputs, username, ...}: {
   imports =
        [(import ./waybar)]
     ++ [(import ./firefox)]

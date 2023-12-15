@@ -9,7 +9,7 @@ in
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = { inherit inputs username; };
     users.${username} = {
       imports = [ (import ./../home) ];
       home.username = "${username}";
