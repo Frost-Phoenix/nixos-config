@@ -1,4 +1,4 @@
-{ inputs, nixpkgs, self, ...}:
+{ inputs, nixpkgs, self, username, ...}:
 let
   system = "x86_64-linux";
   pkgs = import nixpkgs {
@@ -9,7 +9,7 @@ let
 in
 {
   nixos = nixpkgs.lib.nixosSystem {
-    specialArgs = { inherit self inputs; };
+    specialArgs = { inherit self inputs username; };
     modules =
       [ (import ./bootloader.nix) ]
       ++ [ (import ./hardware.nix) ]
