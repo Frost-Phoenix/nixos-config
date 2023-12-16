@@ -10,6 +10,7 @@
     ++ [(import ./bat)]
     ++ [(import ./cava)]
     ++ [(import ./kitty)]
+    ++ [(import ./micro)]           # nano replacement
     ++ [(import ./aseprite)]        # pixel art editor
     ++ [(import ./audacious)]       # music player
     ++ [(import ./unity)]

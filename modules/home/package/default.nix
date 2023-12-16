@@ -8,7 +8,6 @@
     fzf                               # fuzzy finder
     lazygit
     libreoffice
-    micro                             # nano replacement
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
