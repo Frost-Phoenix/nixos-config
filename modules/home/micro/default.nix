@@ -8,5 +8,5 @@
     };
   };
 
-  xdg.configFile."micro/colorschemes".source = ./catppuccin-mocha.micro;
+  xdg.configFile."micro".source = ./config;
 }
