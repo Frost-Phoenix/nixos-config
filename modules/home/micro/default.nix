@@ -8,7 +8,7 @@
     };
   };
 
-  xdg.configFile."micro/catppuccin-mocha.micro".text = ''
+  xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
     color-link comment "#585B70"
 
     color-link identifier "#89B4FA"
