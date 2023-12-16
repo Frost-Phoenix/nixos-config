@@ -8,5 +8,5 @@
     };
   };
 
-  xdg.configFile."micro".source = ./config;
+  xdg.configFile."micro".source = ./catppuccin-mocha.micro;
 }
