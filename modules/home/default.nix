@@ -2,7 +2,7 @@
   imports =
        [(import ./waybar)]
     ++ [(import ./firefox)]
-    ++ [(import ./vscode)]
+    ++ [(import ./vscodium)]
     ++ [(import ./hyprland)]
     ++ [(import ./gaming)]
     ++ [(import ./git)]
