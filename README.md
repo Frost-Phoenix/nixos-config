@@ -30,7 +30,7 @@
 </div>
 
 <p align="center">
-   <img src="./.github/assets/screenshot.png" width="700px" /> <br>
+   <img src="./.github/assets/screenshot.png" width="800px" /> <br>
 </p>
 <p align="center">
    Screeenshot last updated <b>2023-12-22</b>
