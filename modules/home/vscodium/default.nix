@@ -9,9 +9,6 @@
       # python
       ms-python.python
 
-      # .md preview
-      shd101wyy.markdown-preview-enhanced
-
       # Color theme
       catppuccin.catppuccin-vsc
       catppuccin.catppuccin-vsc-icons
