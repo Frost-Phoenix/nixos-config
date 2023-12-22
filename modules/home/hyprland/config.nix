@@ -119,7 +119,7 @@ in
         animation = fadeDim, 1, 4, fluent_decel # the easing of the dimming of inactive windows
         animation = border, 1, 2.7, easeOutCirc # for animating the border's color switch speed
         animation = borderangle, 1, 30, fluent_decel, once # for animating the border's gradient angle - styles: once (default), loop
-        animation = workspaces, 1, 3, easeOutCubic, fade # styles: slide, slidevert, fade, slidefade, slidefadevert
+        animation = workspaces, 1, 4, easeOutCubic, fade # styles: slide, slidevert, fade, slidefade, slidefadevert
       }
 
 
