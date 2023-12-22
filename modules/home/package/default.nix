@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    aichat                            # Chat with gpt-3.5/chatgpt in terminal.
     bitwise                           # cli tool for bit / hex manipulation
     # discord
     eza                               # ls replacement
