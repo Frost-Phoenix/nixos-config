@@ -24,31 +24,31 @@ in
       exec-once = mako &
 
       input {
-          kb_layout = us
-          numlock_by_default = true
-          follow_mouse = 1
-          sensitivity = 0
+        kb_layout = us
+        numlock_by_default = true
+        follow_mouse = 1
+        sensitivity = 0
       }
 
       misc {
-          disable_autoreload = true
-          disable_hyprland_logo = true
-          always_follow_on_dnd = true
-          layers_hog_keyboard_focus = true
-          animate_manual_resizes = false
-          enable_swallow = true
-          # swallow_regex =
-          focus_on_activate = true
+        disable_autoreload = true
+        disable_hyprland_logo = true
+        always_follow_on_dnd = true
+        layers_hog_keyboard_focus = true
+        animate_manual_resizes = false
+        enable_swallow = true
+        # swallow_regex =
+        focus_on_activate = true
       }
 
       general {
-          layout = dwindle
+        layout = dwindle
 
-          gaps_in = 5
-          gaps_out = 10
-          border_size = 2
-          col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
-          col.inactive_border = 0x00000000
+        gaps_in = 5
+        gaps_out = 10
+        border_size = 2
+        col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
+        col.inactive_border = 0x00000000
       }
 
       xwayland {
@@ -56,41 +56,50 @@ in
       }
 
       dwindle {
-          no_gaps_when_only = false
-          force_split = 0
-          special_scale_factor = 1.0
-          split_width_multiplier = 1.0
-          use_active_for_splits = true
-          pseudotile = yes
-          preserve_split = yes
+        no_gaps_when_only = false
+        force_split = 0
+        special_scale_factor = 1.0
+        split_width_multiplier = 1.0
+        use_active_for_splits = true
+        pseudotile = yes
+        preserve_split = yes
       }
 
       master {
-          new_is_master = true
-          special_scale_factor = 1
-          no_gaps_when_only = false
+        new_is_master = true
+        special_scale_factor = 1
+        no_gaps_when_only = false
       }
 
       decoration {
-          rounding = 12
-          
-          active_opacity = 0.90;
-          inactive_opacity = 0.90;
-          fullscreen_opacity = 1.0;
+        rounding = 12
+        
+        active_opacity = 0.90;
+        inactive_opacity = 0.90;
+        fullscreen_opacity = 1.0;
 
-          blur {
-            enabled = true
-            size = 1
-            passes = 2
-            new_optimizations = true   
-            xray = true
-          }
+        blur {
+          # enabled = true
+          # size = 1
+          # passes = 2
+          # new_optimizations = true   
+          # xray = true
+          brightness=1
+          contrast=1.200000
+          enabled=false
+          ignore_opacity=true
+          new_optimizations=true
+          noise=0.011700
+          passes=3
+          size=6
+          xray=false
+        }
 
-          drop_shadow = 0
+        drop_shadow = 0
       }
 
 
-    animations {
+      animations {
         enabled = true
         
         bezier = fluent_decel, 0, 0.2, 0.4, 1
@@ -112,7 +121,7 @@ in
         animation = border, 1, 2.7, easeOutCirc # for animating the border's color switch speed
         animation = borderangle, 1, 30, fluent_decel, once # for animating the border's gradient angle - styles: once (default), loop
         animation = workspaces, 1, 3, easeOutCubic, fade # styles: slide, slidevert, fade, slidefade, slidefadevert
-    }
+      }
 
 
       # ----------------------------------------------------------------
