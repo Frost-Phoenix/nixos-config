@@ -86,7 +86,7 @@ in
           # xray = true
           brightness=1
           contrast=1.200000
-          enabled=false
+          enabled=true
           ignore_opacity=true
           new_optimizations=true
           noise=0.011700
