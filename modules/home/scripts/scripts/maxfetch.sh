@@ -26,6 +26,8 @@ up=$(uptime | awk -F'( |,|:)+' '{
     }
     { print h+0,"h",m+0,"m" }
 ')
+up=$(sed -e "s/ h/h/g" <<< ${up})
+up=$(sed -e "s/ m/m/g" <<< ${up})
 
 pkgs=$(nix-store --query --requisites /run/current-system | wc -l)
 
