@@ -113,7 +113,7 @@ in
         
         # Fade
         animation = fadeIn, 1, 3, easeOutCubic  # fade in (open) -> layers and windows
-        animation = fadeOut, 1, 3, easeOutCubic # fade out (close) -> layers and windows
+        animation = fadeOut, 1, 2, easeOutCubic # fade out (close) -> layers and windows
         animation = fadeSwitch, 0, 1, easeOutCirc # fade on changing activewindow and its opacity
         animation = fadeShadow, 1, 10, easeOutCirc # fade on changing activewindow for shadows
         animation = fadeDim, 1, 4, fluent_decel # the easing of the dimming of inactive windows
