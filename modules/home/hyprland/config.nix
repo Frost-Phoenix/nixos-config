@@ -79,20 +79,19 @@ in
         fullscreen_opacity = 1.0;
 
         blur {
-          # enabled = true
-          # size = 1
-          # passes = 2
-          # new_optimizations = true   
-          # xray = true
-          brightness=1
-          contrast=1.200000
-          enabled=true
-          ignore_opacity=true
-          new_optimizations=true
-          noise=0.011700
-          passes=3
-          size=6
-          xray=false
+          enabled = true
+
+          size = 3
+          passes = 3
+          
+          brightness = 1
+          contrast = 1.300000
+          ignore_opacity = true
+          noise = 0.011700
+          
+          new_optimizations = true
+          
+          xray = true
         }
 
         drop_shadow = 0
