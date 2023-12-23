@@ -64,6 +64,7 @@
 | **File Manager**            | [nemo][nemo] + [yazi][yazi] |
 | **Fonts**                   | [Nerd fonts][Nerd fonts] |
 | **Color Scheme**            | [Catppuccin][Catppuccin] |
+| **Cursor**                  | [Nordzy-cursors][Nordzy-cursors] |
 | **Icons**                   | [catppuccin-papirus-folders][catppuccin-papirus-folders] |
 | **Lockscreen**              | [Swaylock-effects][Swaylock-effects] |
 | **Image Viewer**            | [imv][imv] |
@@ -81,10 +82,10 @@
 Other dotfiles that inspired me:
 
 - Nix Flakes
-  - [nomadics9/NixOS-Flake](https://github.com/nomadics9/NixOS-Flake2): This is where I start my hyprland journey.
+  - [nomadics9/NixOS-Flake](https://github.com/nomadics9/NixOS-Flake2): This is where I start my nixos / hyprland journey.
   - [samiulbasirfahim/Flakes](https://github.com/samiulbasirfahim/Flakes): General flake / files structure
   - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar
-  - [fufexan/dotfiles](https://github.com/fufexan/dotfiles): gtk theme, xdg, git, media, anyrun, etc.
+  - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
 
 - README
   - [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config)
@@ -92,7 +93,10 @@ Other dotfiles that inspired me:
   - [sioodmy/dotfiles](https://github.com/sioodmy/dotfiles)
   - [Ruixi-rebirth/flakes](https://github.com/Ruixi-rebirth/flakes)
 
----
+
+<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
+
+<!-- end of page, send back to the top -->
 
 <div align="right">
   <a href="#readme">Back to the Top</a>
@@ -125,3 +129,4 @@ Other dotfiles that inspired me:
 [hyprpicker]: https://github.com/hyprwm/hyprpicker
 [Catppuccin]: https://github.com/catppuccin/catppuccin
 [catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
+[Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
