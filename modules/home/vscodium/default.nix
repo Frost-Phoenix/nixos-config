@@ -55,10 +55,10 @@
       "C_Cpp.codeAnalysis.updateDelay" = 500;
       "C_Cpp.autocompleteAddParentheses" = true;
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.block" = "sameLine";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.function" = "ignore";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda" = "ignore";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace" = "ignore";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "ignore";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.function" = "sameLine";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda" = "sameLine";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace" = "sameLine";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "sameLine";
       "C_Cpp.vcFormat.space.pointerReferenceAlignment" = "right";
     };
     # Keybindings
