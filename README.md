@@ -36,7 +36,9 @@
    Screeenshot last updated <b>2023-12-22</b>
 </p>
 
-# 📦 Overview
+## 📦 Overview
+
+### 📚 Layout
 
 -   [flake.nix](flake.nix) base of the configuration
 -   [hosts](hosts) 🌳 per-host configurations that contain machine specific configurations
@@ -47,8 +49,34 @@
 -   [pkgs](flake/pkgs) 💿 packages exported by my flake
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
+### 📓 Components
+|                             | NixOS + Hyprland                                                                              |
+| --------------------------- | :---------------------------------------------------------------------------------------------|
+| **Window Manager**          |                                   [Hyprland][Hyprland]                                        |
+| **Bar**                     |                                     [Waybar][Waybar]                                          |
+| **Application Launcher**    |                                       [wofi][wofi]                                            |
+| **Notification Daemon**     |                                       [Mako][Mako]                                            |
+| **Terminal Emulator**       |                                      [Kitty][Kitty]                                           |
+| **Shell**                   |                 [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship]                    |
+| **Text Editor**             |                         [VSCodium][VSCodium] + [Neovim][Neovim]                               |
+| **network management tool** |      [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet]      |
+| **System resource monitor** |                                       [Btop][Btop]                                            |
+| **File Manager**            |                                [nemo][nemo] + [yazi][yazi]                                    |
+| **Fonts**                   |                                 [Nerd fonts][Nerd fonts]                                      |
+| **Color Scheme**            |                                 [Catppuccin][Catppuccin]                                      |
+| **Icons**                   |                 [catppuccin-papirus-folders][catppuccin-papirus-folders]                      |
+| **Lockscreen**              |                           [Swaylock-effects][Swaylock-effects]                                |
+| **Image Viewer**            |                                        [imv][imv]                                             |
+| **Media Player**            |                                        [mpv][mpv]                                             |
+| **Music Player**            |                                  [audacious][audacious]                                       |
+| **Screenshot Software**     |                                  [grimblast][grimblast]                                       |
+| **Screen Recording**        |                                [wf-recorder][wf-recorder]                                     |
+| **Clipboard**               |                               [wl-clipboard][wl-clipboard]                                    |
+| **Color Picker**            |                                 [hyprpicker][hyprpicker]                                      |
 
-# 👥 Credits
+### 📝 Scripts
+
+## 👥 Credits
 
 Other dotfiles that inspired me:
 
@@ -69,3 +97,31 @@ Other dotfiles that inspired me:
 <div align="right">
   <a href="#readme">Back to the Top</a>
 </div>
+
+<!-- Links -->
+[Hyprland]: https://github.com/hyprwm/Hyprland
+[Kitty]: https://github.com/kovidgoyal/kitty
+[Starship]: https://github.com/starship/starship
+[Waybar]: https://github.com/Alexays/Waybar
+[wofi]: https://hg.sr.ht/~scoopta/wofi
+[Btop]: https://github.com/aristocratos/btop
+[nemo]: https://github.com/linuxmint/nemo
+[yazi]: https://github.com/sxyazi/yazi
+[zsh]: https://ohmyz.sh/
+[oh-my-zsh]: https://ohmyz.sh/
+[Swaylock-effects]: https://github.com/mortie/swaylock-effects
+[audacious]: https://audacious-media-player.org/
+[mpv]: https://github.com/mpv-player/mpv
+[VSCodium]:https://vscodium.com/
+[Neovim]: https://github.com/neovim/neovim
+[grimblast]: https://github.com/hyprwm/contrib
+[imv]: https://sr.ht/~exec64/imv/
+[Mako]: https://github.com/emersion/mako
+[Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
+[NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
+[network-manager-applet]: https://gitlab.gnome.org/GNOME/network-manager-applet/
+[wl-clipboard]: https://github.com/bugaevc/wl-clipboard
+[wf-recorder]: https://github.com/ammen99/wf-recorder
+[hyprpicker]: https://github.com/hyprwm/hyprpicker
+[Catppuccin]: https://github.com/catppuccin/catppuccin
+[catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
