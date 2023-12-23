@@ -51,28 +51,28 @@
 
 ### 📓 Components
 |                             | NixOS + Hyprland                                                                              |
-| --------------------------- | :---------------------------------------------------------------------------------------------|
-| **Window Manager**          |                                   [Hyprland][Hyprland]                                        |
-| **Bar**                     |                                     [Waybar][Waybar]                                          |
-| **Application Launcher**    |                                       [wofi][wofi]                                            |
-| **Notification Daemon**     |                                       [Mako][Mako]                                            |
-| **Terminal Emulator**       |                                      [Kitty][Kitty]                                           |
-| **Shell**                   |                 [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship]                    |
-| **Text Editor**             |                         [VSCodium][VSCodium] + [Neovim][Neovim]                               |
-| **network management tool** |      [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet]      |
-| **System resource monitor** |                                       [Btop][Btop]                                            |
-| **File Manager**            |                                [nemo][nemo] + [yazi][yazi]                                    |
-| **Fonts**                   |                                 [Nerd fonts][Nerd fonts]                                      |
-| **Color Scheme**            |                                 [Catppuccin][Catppuccin]                                      |
-| **Icons**                   |                 [catppuccin-papirus-folders][catppuccin-papirus-folders]                      |
-| **Lockscreen**              |                           [Swaylock-effects][Swaylock-effects]                                |
-| **Image Viewer**            |                                        [imv][imv]                                             |
-| **Media Player**            |                                        [mpv][mpv]                                             |
-| **Music Player**            |                                  [audacious][audacious]                                       |
-| **Screenshot Software**     |                                  [grimblast][grimblast]                                       |
-| **Screen Recording**        |                                [wf-recorder][wf-recorder]                                     |
-| **Clipboard**               |                               [wl-clipboard][wl-clipboard]                                    |
-| **Color Picker**            |                                 [hyprpicker][hyprpicker]                                      |
+| --------------------------- | :---------------------------------------------------------------------------------------------:
+| **Window Manager**          | [Hyprland][Hyprland] |
+| **Bar**                     | [Waybar][Waybar] |
+| **Application Launcher**    | [wofi][wofi] |
+| **Notification Daemon**     | [Mako][Mako] |
+| **Terminal Emulator**       | [Kitty][Kitty] |
+| **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
+| **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
+| **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
+| **System resource monitor** | [Btop][Btop] |
+| **File Manager**            | [nemo][nemo] + [yazi][yazi] |
+| **Fonts**                   | [Nerd fonts][Nerd fonts] |
+| **Color Scheme**            | [Catppuccin][Catppuccin] |
+| **Icons**                   | [catppuccin-papirus-folders][catppuccin-papirus-folders] |
+| **Lockscreen**              | [Swaylock-effects][Swaylock-effects] |
+| **Image Viewer**            | [imv][imv] |
+| **Media Player**            | [mpv][mpv] |
+| **Music Player**            | [audacious][audacious] |
+| **Screenshot Software**     | [grimblast][grimblast] |
+| **Screen Recording**        | [wf-recorder][wf-recorder] |
+| **Clipboard**               | [wl-clipboard][wl-clipboard] |
+| **Color Picker**            | [hyprpicker][hyprpicker] |
 
 ### 📝 Scripts
 
