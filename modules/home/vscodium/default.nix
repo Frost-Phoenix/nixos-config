@@ -32,6 +32,8 @@
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
 
+      "editor.formatOnType" = true;
+
       "workbench.layoutControl.type" = "menu";
       "workbench.editor.limit.enabled" = true;
       "workbench.editor.limit.value" = 5;
