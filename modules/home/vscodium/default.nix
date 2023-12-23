@@ -23,7 +23,6 @@
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
-      "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited" = true;
       "editor.fontSize" = 16;
       "workbench.colorTheme" = "Catppuccin Mocha";
       "workbench.iconTheme" = "catppuccin-mocha";
@@ -51,6 +50,16 @@
       "workbench.layoutControl.enabled" = false;
 
       "editor.mouseWheelZoom" = true;
+
+      "C_Cpp.intelliSenseUpdateDelay" = 500;
+      "C_Cpp.codeAnalysis.updateDelay" = 500;
+      "C_Cpp.autocompleteAddParentheses" = true;
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.block" = "sameLine";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.function" = "ignore";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda" = "ignore";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace" = "ignore";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "ignore";
+      "C_Cpp.vcFormat.space.pointerReferenceAlignment" = "right";
     };
     # Keybindings
     keybindings = [
