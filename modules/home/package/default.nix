@@ -6,6 +6,7 @@
     # discord
     eza                               # ls replacement
     entr                              # perform action when file change
+    file                              # Show file information 
     fzf                               # fuzzy finder
     lazygit
     libreoffice
