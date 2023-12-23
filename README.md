@@ -36,6 +36,8 @@
    Screeenshot last updated <b>2023-12-22</b>
 </p>
 
+🖼️ Gallery
+
 ## 📦 Overview
 
 ### 📚 Layout
@@ -79,12 +81,13 @@
 
 ## 👥 Credits
 
-Other dotfiles that inspired me:
+Other dotfiles that I learned / copy from:
 
 - Nix Flakes
   - [nomadics9/NixOS-Flake](https://github.com/nomadics9/NixOS-Flake2): This is where I start my nixos / hyprland journey.
   - [samiulbasirfahim/Flakes](https://github.com/samiulbasirfahim/Flakes): General flake / files structure
   - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar
+  - [skiletro/nixfiles](https://github.com/skiletro/nixfiles): Vscodium config (that prevent it to crash)
   - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
 
 - README
