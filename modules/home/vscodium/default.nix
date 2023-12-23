@@ -54,6 +54,7 @@
       "C_Cpp.intelliSenseUpdateDelay" = 500;
       "C_Cpp.codeAnalysis.updateDelay" = 500;
       "C_Cpp.autocompleteAddParentheses" = true;
+      "C_Cpp.formatting" = "vcFormat";
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.block" = "sameLine";
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.function" = "sameLine";
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda" = "sameLine";
