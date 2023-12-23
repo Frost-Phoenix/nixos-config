@@ -8,6 +8,8 @@
       bbenoist.nix
       # python
       ms-python.python
+      # C/C++
+      ms-vscode.cpptools
 
       # Color theme
       catppuccin.catppuccin-vsc
