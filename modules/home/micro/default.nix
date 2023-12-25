@@ -5,8 +5,19 @@
     
     settings = {
       "colorscheme" = "catppuccin-mocha";
+
+      "lsp.server" = "python=pyls,go=gopls,c++=ccls";
+      "lsp.formatOnSave" = true;
+      "lsp.ignoreMessages" = "";
+      "lsp.tabcompletion" = true;
+      "lsp.ignoreTriggerCharacters" = "";
+      "lsp.autocompleteDetails" = true;
     };
   };
+
+  home.packages = (with pkgs; [ 
+    ccls        # c/c++ lsp
+  ]);
 
   xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
     color-link comment "#585B70"
