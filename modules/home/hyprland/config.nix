@@ -242,8 +242,8 @@ in
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
-      windowrulev2 = size 500 500,floating:1,title:^(float_kitty)$
-      # windowrule = float,title:^(float_kitty)$
+      windowrule = maxsize 950,600,title:^(float_kitty)$
+      windowrule = float,title:^(float_kitty)$
       # windowrule = tile,title:^(kitty)$
 
       windowrulev2 = float,class:^(pavucontrol)$
