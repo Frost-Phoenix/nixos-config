@@ -244,7 +244,7 @@ in
     
       windowrule = float,title:^(float_kitty)$
       windowrule = center,title:^(float_kitty)$
-      windowrule = size 950,600,kitty
+      windowrule = size 950 600,title:^(float_kitty)$
 
       windowrulev2 = float,class:^(pavucontrol)$
       windowrulev2 = float,class:^(SoundWireServer)$
