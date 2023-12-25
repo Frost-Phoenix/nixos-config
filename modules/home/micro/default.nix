@@ -16,8 +16,8 @@
   };
 
   home.packages = (with pkgs; [ 
-    ccls        # c/c++ lsp
-    clangd      # c/c++ lsp
+    ccls                                 # c/c++ lsp
+    llvmPackages_9.clang-unwrapped       # c/c++ lsp
   ]);
 
   xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
