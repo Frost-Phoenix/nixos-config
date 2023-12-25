@@ -15,6 +15,7 @@
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     rnix-lsp
+    soundwireserver                   # pass audio to android phone
     spotify
     todo                              # cli todo list
     toipe                             # typing test in the terminal
