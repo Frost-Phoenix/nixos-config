@@ -126,8 +126,11 @@ in
       # ----------------------------------------------------------------
       
       # keybindings
-      bind = $mainMod, Return, exec, kitty
-      bind = $mainMod SHIFT, Return, exec, kitty --title float_kitty
+      # bind = $mainMod, Return, exec, kitty
+      # bind = $mainMod SHIFT, Return, exec, kitty --title float_kitty
+      bind= SUPERSHIFT, t, exec,kitty --start-as=fullscreen -o 'font_size=18' --title all_is_kitty
+      bind= ALT,RETURN, exec, kitty --title fly_is_kitty
+      bind= SUPER,RETURN, exec, kitty --title kitty_term
       bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
@@ -242,9 +245,10 @@ in
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
-      windowrule = size 950,600,title:^(float_kitty)$
-      # windowrule = float,title:^(float_kitty)$
-      windowrule = tile,title:^(kitty)$
+      windowrule=size 200,200,title:^(float_kitty)$
+      windowrule=float,title:^(full_kitty)$
+      windowrule=tile,title:^(kitty)$
+      windowrule=float,title:^(fly_is_kitty)$
 
       windowrulev2 = float,class:^(pavucontrol)$
       windowrulev2 = float,class:^(SoundWireServer)$
