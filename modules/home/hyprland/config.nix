@@ -242,6 +242,7 @@ in
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
       windowrulev2 = float,class:^(pavucontrol)$
+      windowrulev2 = float,class:^(SoundWireServer)$
       windowrulev2 = float,class:^(file_progress)$
       windowrulev2 = float,class:^(confirm)$
       windowrulev2 = float,class:^(dialog)$
