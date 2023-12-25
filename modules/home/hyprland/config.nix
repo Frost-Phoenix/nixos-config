@@ -127,7 +127,8 @@ in
       
       # keybindings
       bind = $mainMod, Return, exec, kitty
-      bind = $mainMod SHIFT, Return, exec, kitty --title float_kitty
+      bind = ALT, Return, exec, kitty --title float_kitty
+      bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'
       bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
