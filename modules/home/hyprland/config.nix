@@ -95,8 +95,8 @@ in
           xray = true
         }
 
-        # drop_shadow = 0
         drop_shadow = true;
+        
         shadow_ignore_window = true;
         shadow_offset = 0 2
         shadow_range = 20
