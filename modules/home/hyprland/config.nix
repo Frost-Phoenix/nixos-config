@@ -242,9 +242,9 @@ in
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
-      windowrule=size 950,600,title:^(float_kitty)$
-      windowrule=float,title:^(float_kitty)$
-      windowrule=tile,title:^(kitty)$
+      windowrule = size 950,600,title:^(float_kitty)$
+      # windowrule = float,title:^(float_kitty)$
+      windowrule = tile,title:^(kitty)$
 
       windowrulev2 = float,class:^(pavucontrol)$
       windowrulev2 = float,class:^(SoundWireServer)$
