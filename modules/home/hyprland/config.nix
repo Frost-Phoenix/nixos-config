@@ -242,7 +242,7 @@ in
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
-      windowrule=size 200,200,title:^(float_kitty)$
+      windowrule=size 80,25,title:^(float_kitty)$
       windowrule=float,title:^(float_kitty)$
       windowrule=tile,title:^(kitty)$
 
