@@ -127,6 +127,7 @@ in
       
       # keybindings
       bind = $mainMod, Return, exec, kitty
+      bind = $mainMod SHIFT, Return, exec, kitty --title float_kitty
       bind = $mainMod, B, exec, firefox
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
@@ -241,6 +242,10 @@ in
       windowrulev2 = idleinhibit focus, class:^(mpv)$
       windowrulev2 = idleinhibit fullscreen, class:^(firefox)$
     
+      windowrule=size 200,200,title:^(float_kitty)$
+      windowrule=float,title:^(float_kitty)$
+      windowrule=tile,title:^(kitty)$
+
       windowrulev2 = float,class:^(pavucontrol)$
       windowrulev2 = float,class:^(SoundWireServer)$
       windowrulev2 = float,class:^(file_progress)$
