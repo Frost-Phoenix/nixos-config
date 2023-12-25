@@ -8,6 +8,7 @@
     entr                              # perform action when file change
     file                              # Show file information 
     fzf                               # fuzzy finder
+    go
     lazygit
     libreoffice
     nitch                             # systhem fetch util
