@@ -17,6 +17,7 @@
 
   home.packages = (with pkgs; [ 
     ccls        # c/c++ lsp
+    clangd      # c/c++ lsp
   ]);
 
   xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
