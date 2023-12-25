@@ -23,6 +23,6 @@
       # hidpi = true;
     };
     # enableNvidiaPatches = false;
-    systemdIntegration = true;
+    systemd.enable = true;
   };
 }
