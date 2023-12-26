@@ -65,6 +65,7 @@
       "C_Cpp.vcFormat.space.pointerReferenceAlignment" = "right";
       "C_Cpp.vcFormat.newLine.beforeElse" = false;
       "C_Cpp.vcFormat.newLine.beforeCatch" = false;
+      "C_Cpp.clang_format_fallbackStyle" = "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}";
     };
     # Keybindings
     keybindings = [
