@@ -63,6 +63,8 @@
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace" = "sameLine";
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "sameLine";
       "C_Cpp.vcFormat.space.pointerReferenceAlignment" = "right";
+      "C_Cpp.vcFormat.newLine.beforeElse" = false;
+      "C_Cpp.vcFormat.newLine.beforeCatch" = false;
     };
     # Keybindings
     keybindings = [
