@@ -33,6 +33,7 @@
     ffmpeg
     imv                               # image viewer
     libnotify
+	man-pages						  # extra man pages
     mpv                               # video player
     openssl
     pamixer                           # pulseaudio command line mixer
