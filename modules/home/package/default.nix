@@ -23,7 +23,7 @@
     cinnamon.nemo-with-extensions     # file manager
     yazi                              # terminal file manager
     youtube-dl
-    zenity
+    gnome.zenity
 
     # C / C++
     gcc
