@@ -1,5 +1,5 @@
 <h1 align="center">
-   <img src="./.github/assets/logo/nixos-logo.png" width="100px" /> 
+   <img src="./.github/assets/logo/nixos-logo.png  " width="100px" /> 
    <br>
       Frost-Phoenix's Flakes 
    <br>
@@ -33,7 +33,7 @@
    <img src="./.github/assets/screenshot.png" width="800px" /> <br>
 </p>
 <p align="center">
-   Screeenshot last updated <b>2023-12-22</b>
+   Screeenshot last updated <b>2024-01-01</b>
 </p>
 
 🖼️ Gallery
