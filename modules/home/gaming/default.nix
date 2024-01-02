@@ -13,5 +13,7 @@
     
     celeste-classic
     celeste-classic-pm
+
+    gzdoom
   ];
 }
