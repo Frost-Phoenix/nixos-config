@@ -16,5 +16,8 @@
     celeste-classic-pm
 
     gzdoom
+
+    # Emulation
+    cemu
   ];
 }
