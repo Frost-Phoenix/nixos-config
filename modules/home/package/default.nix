@@ -34,7 +34,7 @@
     ffmpeg
     imv                               # image viewer
     libnotify
-	  # man-pages					            	  # extra man pages
+	  man-pages					            	  # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     openssl
