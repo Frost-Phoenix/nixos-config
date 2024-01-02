@@ -6,6 +6,8 @@
     extensions = with pkgs.vscode-extensions; [
       # nix language
       bbenoist.nix
+      # nix-shell suport 
+      arrterian.nix-env-selector
       # python
       ms-python.python
       # C/C++
