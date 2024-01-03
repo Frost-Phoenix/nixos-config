@@ -4,7 +4,7 @@ rec{
       dirContents = builtins.readDir ../pkgs;
       genPackage = name: {
         inherit name;
-        value = final.callPackage (../pkgs + "/${name}") { };
+        value = final.callPackage (../pkgs/_2048) { };
       };
       names = builtins.attrNames dirContents;
     in

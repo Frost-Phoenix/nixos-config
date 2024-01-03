@@ -1,6 +1,6 @@
-{ lib, stasdasdfdenv, fetchFromGitHub, ... }:
+{ stdenv, lib, stasdasdfdenv, fetchFromGitHub, ... }:
 
-lib.mkDerivation rec {
+stdenv.mkDerivation rec {
   pname = "_2048";
   version = "1.0";
 
