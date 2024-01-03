@@ -10,7 +10,7 @@ lib.mkDerivation rec {
     rev = "main";
     sha256 = ""; # Replace with the actual hash
   };
-;dofhgodsag
+
   buildInputs = [
 
   ];
