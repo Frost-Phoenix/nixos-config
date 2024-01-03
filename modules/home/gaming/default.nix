@@ -19,5 +19,6 @@
 
     # Emulation
     cemu
+    dolphin-emu
   ];
 }
