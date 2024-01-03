@@ -18,7 +18,7 @@
     gzdoom
 
     # Emulation
-    cemu
+    # cemu
     dolphin-emu
   ];
 }
