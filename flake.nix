@@ -34,6 +34,10 @@
       url = "github:catppuccin/starship";
       flake = false;
     };
+
+    imports = [
+      ./pkgs
+    ];
   };
 
   outputs = { nixpkgs, self, ...} @ inputs:

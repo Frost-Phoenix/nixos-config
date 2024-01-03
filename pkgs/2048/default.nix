@@ -15,11 +15,13 @@ lib.mkDerivation rec {
 
   ];
 
-  # buildPhase = ''
-    # make release
-  # '';
+  buildPhase = ''
+    make release
+  '';
 
   installPhase = ''
+    mkdir -p $out/bin
     make install INSTALL_DIR=$out/bin
+    chmod +x $out/bin/2048
   '';
 }
