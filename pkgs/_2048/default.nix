@@ -1,7 +1,7 @@
 { lib, stdenv, fetchFromGitHub, ... }:
 
 lib.mkDerivation rec {
-  pname = "2048";
+  pname = "_2048";
   version = "1.0";
 
   src = fetchFromGitHub {
