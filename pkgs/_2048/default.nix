@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchFromGitHub, ... }:
+{ lib, stasdasdfdenv, fetchFromGitHub, ... }:
 
 lib.mkDerivation rec {
   pname = "_2048";
