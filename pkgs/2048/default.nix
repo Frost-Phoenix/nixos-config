@@ -8,7 +8,7 @@ lib.mkDerivation rec {
     owner = "Frost-Phoenix";
     repo = "nixos-config";
     rev = "main";
-    sha256 = "..."; # Replace with the actual hash
+    sha256 = ""; # Replace with the actual hash
   };
 
   buildInputs = [
