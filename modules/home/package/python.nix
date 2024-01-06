@@ -8,7 +8,7 @@
       
       # github-email-explorer
       jinja2
-      markupSafe
+      markupsafe
       python-
       requests
       sendgrid
