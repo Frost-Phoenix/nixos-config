@@ -7,8 +7,8 @@
       shapely
       
       # github-email-explorer
-      Jinja2
-      MarkupSafe
+      jinja2
+      markupSafe
       python-
       requests
       sendgrid
