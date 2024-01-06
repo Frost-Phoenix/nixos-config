@@ -9,7 +9,7 @@
       # github-email-explorer
       jinja2
       markupsafe
-      python-
+      python-http-client
       requests
       sendgrid
       tabulate
