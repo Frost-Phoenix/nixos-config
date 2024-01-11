@@ -30,15 +30,27 @@
 </div>
 
 <p align="center">
-   <img src="./.github/assets/screenshot.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/1.png" width="800px" /> <br>
 </p>
 <p align="center">
    Screeenshot last updated <b>2024-01-01</b>
 </p>
 
-🖼️ Gallery
+### 🖼️ Gallery
 
-## 📦 Overview
+<details>
+<summary>
+EXPAND
+</summary>
+<p align="center">
+   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
+</p>
+<p align="center">
+   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
+</p>
+</details>
+
+# 🗃️ Overview
 
 ### 📚 Layout
 
@@ -48,7 +60,7 @@
 -   [modules](modules) 🍱 modularized NixOS configurations
     -   [core](modules/core/) ⚙️ Core NixOS configuration
     -   [homes](modules/home/) 🏠 my [Home-Manager](https://github.com/nix-community/home-manager) config
--   [pkgs](flake/pkgs) 💿 packages exported by my flake
+-   [pkgs](flake/pkgs) 📦 packages exported by my flake
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
 ### 📓 Components
@@ -79,7 +91,7 @@
 
 ### 📝 Scripts
 
-## 👥 Credits
+# 👥 Credits
 
 Other dotfiles that I learned / copy from:
 
