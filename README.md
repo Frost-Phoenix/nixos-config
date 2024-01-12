@@ -151,7 +151,7 @@ All the scripts are in ```modules/home/scripts/scripts/``` and are exported as p
 
 ### ⌨️ Keybinds
 
-View all keybinds by pressing ```$mainMod F1```
+View all keybinds by pressing ```$mainMod F1```. By default ```$mainMod``` is ```SUPER```
 
 <details>
 <summary>
@@ -243,18 +243,18 @@ Complete list (EXPAND)
    Window control 
    </summary>
    
-   - ```bind = SUPER SHIFT, left, movewindow, l```
-   - ```bind = SUPER SHIFT, right, movewindow, r```
-   - ```bind = SUPER SHIFT, up, movewindow, u```
-   - ```bind = SUPER SHIFT, down, movewindow, d```
-   - ```bind = SUPER CTRL, left, resizeactive, -80 0```
-   - ```bind = SUPER CTRL, right, resizeactive, 80 0```
-   - ```bind = SUPER CTRL, up, resizeactive, 0 -80```
-   - ```bind = SUPER CTRL, down, resizeactive, 0 80```
-   - ```bind = SUPER ALT, left, moveactive,  -80 0```
-   - ```bind = SUPER ALT, right, moveactive, 80 0```
-   - ```bind = SUPER ALT, up, moveactive, 0 -80```
-   - ```bind = SUPER ALT, down, moveactive, 0 80```
+   - ```bind = $mainMod SHIFT, left, movewindow, l```
+   - ```bind = $mainMod SHIFT, right, movewindow, r```
+   - ```bind = $mainMod SHIFT, up, movewindow, u```
+   - ```bind = $mainMod SHIFT, down, movewindow, d```
+   - ```bind = $mainMod CTRL, left, resizeactive, -80 0```
+   - ```bind = $mainMod CTRL, right, resizeactive, 80 0```
+   - ```bind = $mainMod CTRL, up, resizeactive, 0 -80```
+   - ```bind = $mainMod CTRL, down, resizeactive, 0 80```
+   - ```bind = $mainMod ALT, left, moveactive,  -80 0```
+   - ```bind = $mainMod ALT, right, moveactive, 80 0```
+   - ```bind = $mainMod ALT, up, moveactive, 0 -80```
+   - ```bind = $mainMod ALT, down, moveactive, 0 80```
    </details>
 
    <details>
