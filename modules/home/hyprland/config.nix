@@ -132,6 +132,9 @@ in
 
       # ----------------------------------------------------------------
       
+      # show keybinds list
+      bind = $mainMod, F1, exec, ~/.config/hypr/keybind
+
       # keybindings
       bind = $mainMod, Return, exec, kitty
       bind = ALT, Return, exec, kitty --title float_kitty
