@@ -155,8 +155,133 @@ View all keybinds by pressing ```$mainMod F1```
 
 <details>
 <summary>
-COMPLETE LIST (EXPAND)
+Complete list (EXPAND)
 </summary>
+   
+   <details>
+   <summary>
+   Keybindings 
+   </summary>
+   
+   - ```bind = $mainMod, Return, exec, kitty```
+   - ```bind = ALT, Return, exec, kitty --title float_kitty```
+   - ```bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
+   - ```bind = $mainMod, B, exec, firefox```
+   - ```bind = $mainMod, Q, killactive,```
+   - ```bind = $mainMod, F, fullscreen, 0```
+   - ```bind = $mainMod SHIFT, F, fullscreen, 1```
+   - ```bind = $mainMod, Space, togglefloating,```
+   - ```bind = $mainMod, D, exec, pkill wofi || wofi --show drun```
+   - ```bind = $mainMod, Escape, exec, swaylock```
+   - ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
+   - ```bind = $mainMod, P, pseudo,```
+   - ```bind = $mainMod, J, togglesplit,```
+   - ```bind = $mainMod, E, exec, nemo```
+   - ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
+   - ```bind = $mainMod, C ,exec, hyprpicker -a```
+   - ```bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout```
+   - ```bind = $mainMod, W,exec, pkill wofi || wallpaper-picker```
+   </details>
+
+   <details>
+   <summary>
+   Screenshot 
+   </summary>
+   
+   - ```bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
+   - ```bind = ,Print, exec, grimblast --notify --cursor  copy area```
+   </details>
+
+   <details>
+   <summary>
+   Switch window focus 
+   </summary>
+   
+   - ```bind = $mainMod, left, movefocus, l```
+   - ```bind = $mainMod, right, movefocus, r```
+   - ```bind = $mainMod, up, movefocus, u```
+   - ```bind = $mainMod, down, movefocus, d```
+   </details>
+
+   <details>
+   <summary>
+   Switch workspace 
+   </summary>
+   
+   - ```bind = $mainMod, 1, workspace, 1```
+   - ```bind = $mainMod, 2, workspace, 2```
+   - ```bind = $mainMod, 3, workspace, 3```
+   - ```bind = $mainMod, 4, workspace, 4```
+   - ```bind = $mainMod, 5, workspace, 5```
+   - ```bind = $mainMod, 6, workspace, 6```
+   - ```bind = $mainMod, 7, workspace, 7```
+   - ```bind = $mainMod, 8, workspace, 8```
+   - ```bind = $mainMod, 9, workspace, 9```
+   - ```bind = $mainMod, 0, workspace, 10```
+   </details>
+
+   <details>
+   <summary>
+   Switch window to workspace 
+   </summary>
+
+   - ```bind = $mainMod SHIFT, 1, movetoworkspace, 1```
+   - ```bind = $mainMod SHIFT, 2, movetoworkspace, 2```
+   - ```bind = $mainMod SHIFT, 3, movetoworkspace, 3```
+   - ```bind = $mainMod SHIFT, 4, movetoworkspace, 4```
+   - ```bind = $mainMod SHIFT, 5, movetoworkspace, 5```
+   - ```bind = $mainMod SHIFT, 6, movetoworkspace, 6```
+   - ```bind = $mainMod SHIFT, 7, movetoworkspace, 7```
+   - ```bind = $mainMod SHIFT, 8, movetoworkspace, 8```
+   - ```bind = $mainMod SHIFT, 9, movetoworkspace, 9```
+   - ```bind = $mainMod SHIFT, 0, movetoworkspace, 10```
+   - ```bind = $mainMod CTRL, c, movetoworkspace, empty```
+   </details>
+
+   <details>
+   <summary>
+   Window control 
+   </summary>
+   
+   - ```bind = SUPER SHIFT, left, movewindow, l```
+   - ```bind = SUPER SHIFT, right, movewindow, r```
+   - ```bind = SUPER SHIFT, up, movewindow, u```
+   - ```bind = SUPER SHIFT, down, movewindow, d```
+   - ```bind = SUPER CTRL, left, resizeactive, -80 0```
+   - ```bind = SUPER CTRL, right, resizeactive, 80 0```
+   - ```bind = SUPER CTRL, up, resizeactive, 0 -80```
+   - ```bind = SUPER CTRL, down, resizeactive, 0 80```
+   - ```bind = SUPER ALT, left, moveactive,  -80 0```
+   - ```bind = SUPER ALT, right, moveactive, 80 0```
+   - ```bind = SUPER ALT, up, moveactive, 0 -80```
+   - ```bind = SUPER ALT, down, moveactive, 0 80```
+   </details>
+
+   <details>
+   <summary>
+   Media and volume controls 
+   </summary>
+      
+   - ```bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2```
+   - ```bind = ,XF86AudioLowerVolume,exec, pamixer -d 2```
+   - ```bind = ,XF86AudioMute,exec, pamixer -t```
+   - ```bind = ,XF86AudioPlay,exec, playerctl play-pause```
+   - ```bind = ,XF86AudioNext,exec, playerctl next```
+   - ```bind = ,XF86AudioPrev,exec, playerctl previous```
+   - ```bind = , XF86AudioStop, exec, playerctl stop```
+   - ```bind = $mainMod, mouse_down, workspace, e-1```
+   - ```bind = $mainMod, mouse_up, workspace, e+1```
+   </details>
+
+   <details>
+   <summary>
+   Mouse binding 
+   </summary>
+
+   - ```bindm = $mainMod, mouse:272, movewindow```
+   - ```bindm = $mainMod, mouse:273, resizewindow```
+   </details>
+
 </details>
 
 # 🛠️ Instalation 
