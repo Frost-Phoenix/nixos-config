@@ -92,67 +92,62 @@ EXPAND
 
 ### 🔧 Shell aliases
 
-#### Utils
-
 <details>
 <summary>
-EXPAND
+Utils (EXPAND)
 </summary>
 
-- ```c``` -> "clear"
-- ```vim``` -> "nvim"
-- ```cat``` -> "bat"
-- ```nano``` -> "micro"
-- ```icat``` -> "kitten icat"
-- ```dsize``` -> "du -hs"
-- ```findw``` -> "grep -rl"
-- ```l``` -> "eza --icons  -a --group-directories-first -1"
-- ```ll``` -> "eza --icons  -a --group-directories-first -1 --no-user --long"
-- ```tree``` -> "eza --icons --tree --group-directories-first"
+- ```c```     $\rightarrow$ ```clear```
+- ```vim```   $\rightarrow$ ```nvim```
+- ```cat```   $\rightarrow$ ```bat```
+- ```nano```  $\rightarrow$ ```micro```
+- ```icat```  $\rightarrow$ ```kitten icat```
+- ```dsize``` $\rightarrow$ ```du -hs```
+- ```findw``` $\rightarrow$ ```grep -rl```
+- ```l```     $\rightarrow$ ```eza --icons  -a --group-directories-first -1```
+- ```ll```    $\rightarrow$ ```eza --icons  -a --group-directories-first -1 --no-user --long```
+- ```tree```  $\rightarrow$ ```eza --icons --tree --group-directories-first```
 </details>
 
-#### Nixos
-
 <details>
 <summary>
-EXPAND
+Nixos (EXPAND)
 </summary>
 
-- ```cdnix``` -> "cd ~/nixos-config && codium ~/nixos-config"
-- ```nix-shell``` -> "nix-shell --run zsh"
-- ```nix-switch``` -> "sudo nixos-rebuild switch --flake ~/nixos-config#nixos"
-- ```nix-switchu``` -> "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos"
-- ```nix-flake-update``` -> "sudo nix flake update ~/nixos-config#"
-- ```nix-clean``` -> "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d"
+- ```cdnix```            $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
+- ```nix-shell```        $\rightarrow$ ```nix-shell --run zsh```
+- ```nix-switch```       $\rightarrow$ ```sudo nixos-rebuild switch --flake ~/nixos-config#nixos```
+- ```nix-switchu```      $\rightarrow$ ```sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos```
+- ```nix-flake-update``` $\rightarrow$ ```sudo nix flake update ~/nixos-config#```
+- ```nix-clean```        $\rightarrow$ ```sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d```
 </details>
 
-#### Git
 <details>
 <summary>
-EXPAND
+Git (EXPAND)
 </summary>
 
-- ```ga```   -> "git add"
-- ```gaa```  -> "git add --all"
-- ```gs```   -> "git status"
-- ```gb```   -> "git branch"
-- ```gm```   -> "git merge"
-- ```gpl```  -> "git pull"
-- ```gplo``` -> "git pull origin"
-- ```gps```  -> "git push"
-- ```gpso``` -> "git push origin"
-- ```gc```   -> "git commit"
-- ```gcm```  -> "git commit -m"
-- ```gch```  -> "git checkout"
-- ```gchb``` -> "git checkout -b"
-- ```gcoe``` -> "git config user.email"
-- ```gcon``` -> "git config user.name"
-- ```g``` -> "lazygit"
+- ```ga```   $\rightarrow$ ```git add```
+- ```gaa```  $\rightarrow$ ```git add --all```
+- ```gs```   $\rightarrow$ ```git status```
+- ```gb```   $\rightarrow$ ```git branch```
+- ```gm```   $\rightarrow$ ```git merge```
+- ```gpl```  $\rightarrow$ ```git pull```
+- ```gplo``` $\rightarrow$ ```git pull origin```
+- ```gps```  $\rightarrow$ ```git push```
+- ```gpso``` $\rightarrow$ ```git push origin```
+- ```gc```   $\rightarrow$ ```git commit```
+- ```gcm```  $\rightarrow$ ```git commit -m```
+- ```gch```  $\rightarrow$ ```git checkout```
+- ```gchb``` $\rightarrow$ ```git checkout -b```
+- ```gcoe``` $\rightarrow$ ```git config user.email```
+- ```gcon``` $\rightarrow$ ```git config user.name```
+- ```g```    $\rightarrow$ ```lazygit```
 </details>
 
 ### 📝 Scripts
 
-All Scripts are exported as packages in ```modules/home/scripts/default.nix```
+All the scripts are in ```modules/home/scripts/scripts/``` and are exported as packages in ```modules/home/scripts/default.nix```
 
 ### ⌨️ Keybinds
 
