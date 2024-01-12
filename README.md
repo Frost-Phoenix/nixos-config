@@ -33,7 +33,7 @@
    <img src="./.github/assets/screenshots/1.png" width="800px" /> <br>
 </p>
 <p align="center">
-   Screeenshot last updated <b>2024-01-01</b>
+   Screeenshot last updated <b>2024-01-12</b>
 </p>
 
 ### 🖼️ Gallery
@@ -43,10 +43,10 @@
 EXPAND
 </summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
 </p>
 <p align="center">
-   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
 </p>
 </details>
 
@@ -89,7 +89,82 @@ EXPAND
 | **Clipboard**               | [wl-clipboard][wl-clipboard] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
+
+### 🔧 Shell aliases
+
+#### Utils
+
+<details>
+<summary>
+EXPAND
+</summary>
+
+- ```c``` -> "clear"
+- ```vim``` -> "nvim"
+- ```cat``` -> "bat"
+- ```nano``` -> "micro"
+- ```icat``` -> "kitten icat"
+- ```dsize``` -> "du -hs"
+- ```findw``` -> "grep -rl"
+- ```l``` -> "eza --icons  -a --group-directories-first -1"
+- ```ll``` -> "eza --icons  -a --group-directories-first -1 --no-user --long"
+- ```tree``` -> "eza --icons --tree --group-directories-first"
+</details>
+
+#### Nixos
+
+<details>
+<summary>
+EXPAND
+</summary>
+
+- ```cdnix``` -> "cd ~/nixos-config && codium ~/nixos-config"
+- ```nix-shell``` -> "nix-shell --run zsh"
+- ```nix-switch``` -> "sudo nixos-rebuild switch --flake ~/nixos-config#nixos"
+- ```nix-switchu``` -> "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos"
+- ```nix-flake-update``` -> "sudo nix flake update ~/nixos-config#"
+- ```nix-clean``` -> "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d"
+</details>
+
+#### Git
+<details>
+<summary>
+EXPAND
+</summary>
+
+- ```ga```   -> "git add"
+- ```gaa```  -> "git add --all"
+- ```gs```   -> "git status"
+- ```gb```   -> "git branch"
+- ```gm```   -> "git merge"
+- ```gpl```  -> "git pull"
+- ```gplo``` -> "git pull origin"
+- ```gps```  -> "git push"
+- ```gpso``` -> "git push origin"
+- ```gc```   -> "git commit"
+- ```gcm```  -> "git commit -m"
+- ```gch```  -> "git checkout"
+- ```gchb``` -> "git checkout -b"
+- ```gcoe``` -> "git config user.email"
+- ```gcon``` -> "git config user.name"
+- ```g``` -> "lazygit"
+</details>
+
 ### 📝 Scripts
+
+All Scripts are exported as packages in ```modules/home/scripts/default.nix```
+
+### ⌨️ Keybinds
+
+View all keybinds by pressing ```$mainMod F1```
+
+<details>
+<summary>
+COMPLETE LIST (EXPAND)
+</summary>
+</details>
+
+# 🛠️ Instalation 
 
 # 👥 Credits
 
