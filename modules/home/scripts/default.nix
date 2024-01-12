@@ -2,9 +2,6 @@
   wall-change = pkgs.writeShellScriptBin "wall-change" ''swaybg -m fill -i $1'';
   wallpaper-picker = pkgs.writeShellScriptBin "wallpaper-picker" (builtins.readFile ./scripts/wallpaper-picker.sh);
   
-  push = pkgs.writeShellScriptBin "push" (builtins.readFile ./scripts/push.sh);
-  commit = pkgs.writeShellScriptBin "commit" (builtins.readFile ./scripts/commit.sh);
-  
   dsize = pkgs.writeShellScriptBin "dsize" (builtins.readFile ./scripts/dsize.sh);
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
   music = pkgs.writeShellScriptBin "music" (builtins.readFile ./scripts/music.sh);
@@ -26,9 +23,6 @@ in {
     wall-change
     wallpaper-picker
     
-    push
-    commit
-
     dsize
     runbg
     music
