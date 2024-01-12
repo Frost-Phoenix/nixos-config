@@ -151,7 +151,7 @@ All the scripts are in ```modules/home/scripts/scripts/``` and are exported as p
 
 ### ⌨️ Keybinds
 
-View all keybinds by pressing ```$mainMod F1```. By default ```$mainMod``` is ```SUPER```
+View all keybinds by pressing ```$mainMod F1```. By default ```$mainMod``` is the ```SUPER``` key
 
 <details>
 <summary>
