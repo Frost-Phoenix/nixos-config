@@ -19,6 +19,8 @@
   extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
   
   shutdown-script = pkgs.writeScriptBin "shutdown-script" (builtins.readFile ./scripts/shutdown-script.sh);
+  
+  show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -41,5 +43,7 @@ in {
     extract
 
     shutdown-script
+    
+    show-keybinds
   ];
 }

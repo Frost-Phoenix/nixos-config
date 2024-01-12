@@ -133,7 +133,7 @@ in
       # ----------------------------------------------------------------
       
       # show keybinds list
-      bind = $mainMod, F1, exec, ~/.config/hypr/keybind
+      bind = $mainMod, F1, exec, show-keybinds
 
       # keybindings
       bind = $mainMod, Return, exec, kitty
