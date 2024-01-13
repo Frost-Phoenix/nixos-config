@@ -368,13 +368,12 @@ Mouse binding
    ```
 3. Install script
 
+   > First make sure to read the install script, it isn't long. And make sure to execute it as root
+   
    Execute and follow the installation script :
-   > Make sure to execute as root
    ```
    sudo ./install.sh
    ```
-
-
 
 # 👥 Credits
 
