@@ -355,18 +355,18 @@ Mouse binding
 
 > It is highly recommended to review the configuration contents and make necessary modifications to customize it to your needs before attempting the installation.
 
-1. Install NixOs
+1. **Install NixOs**
 
    First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso). 
    > Only been tested using the Gnome graphical installer and choosing the ```No desktop``` option durring instalation.
 
-2. Clone the repo
+2. **Clone the repo**
 
    ```
    git clone https://github.com/Frost-Phoenix/nixos-config
    cd nixos-config
    ```
-3. Install script
+3. **Install script**
 
    > First make sure to read the install script, it isn't long. And make sure to execute it as root
    
@@ -374,6 +374,40 @@ Mouse binding
    ```
    sudo ./install.sh
    ```
+4. **Reboot**
+
+   After rebooting, you'll be greeted by swaylock prompting for your password, with the wallpaper in the background.
+
+### Install script walkthrough
+
+A brief walkthrough of what the install script does.
+
+1. **Get username**
+
+   You will receive a prompt to enter your username, with a confirmation check.
+
+2. **Set username**
+
+   The script will replace all occurancies of the default usename ```CURRENT_USERNAME``` by the given one stored in ```$username```
+
+3. Create basic directories
+
+   The following directories will be created:
+   - ```~/Music```
+   - ```~/Documents```
+   - ```~/Pictures/wallpapers/others```
+
+4. Copy the wallpapers
+
+   Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for wallpapers.
+
+5. Get the hardware configuration
+
+   It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/nixos/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
+
+6. Build the system
+
+   Lastly, it will build the system, which includes both the flake config and home-manager config.
 
 # 👥 Credits
 
