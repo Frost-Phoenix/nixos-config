@@ -149,139 +149,195 @@ Git (EXPAND)
 
 All the scripts are in ```modules/home/scripts/scripts/``` and are exported as packages in ```modules/home/scripts/default.nix```
 
-### ⌨️ Keybinds
+<details>
+<summary>
+extract.sh 
+</summary>
 
-View all keybinds by pressing ```$mainMod F1```. By default ```$mainMod``` is the ```SUPER``` key
+**Description:** This script extract ```tar.gz``` archives in the current directory. <br>
+**Usage:** ```extract <archive_file>```
+</details>
 
 <details>
 <summary>
-Complete list (EXPAND)
+compress.sh 
+</summary>
+
+**Description:** This script compress a file or a folder into a ```tar.gz``` archives wich is created in the current directory with the name of the chosen file or folder. <br>
+**Usage:** ```compress <file>``` or ```compress <folder>```
+</details>
+
+<details>
+<summary>
+toogle_blur.sh 
+</summary>
+
+**Description:** This script toggles the Hyprland blur effect. If the blur is currently enabled, it will be disabled, and if it's disabled, it will be turned on. <br>
+**Usage:** ```toogle_blur```
+</details>
+
+<details>
+<summary>
+toogle_oppacity.sh 
+</summary>
+
+**Description:** This script toggles the Hyperland oppacity effect. If the oppacity is currently set to 0.90, it will be set to 1, and if it's set to 1, it will be set to 0.90. <br>
+**Usage:** ```toogle_oppacity```
+</details>
+
+<details>
+<summary>
+maxfetch.sh 
+</summary>
+
+**Description:** This script is a modified verssion of the [jobcmax/maxfetch][maxfetch] script<br>
+**Usage:** ```maxfetch```
+</details>
+
+<details>
+<summary>
+music.sh 
+</summary>
+
+**Description:** This script is for managing Audacious (music player). If Audacious is currently running, it will be killed (stoping the music); otherwise, it will start Audacious in the 8th workspace and resume the music. <br>
+**Usage:** ```music```
+</details>
+
+<details>
+<summary>
+runbg.sh 
+</summary>
+
+**Description:** This script runs a provided command along with its arguments and detaches it from the terminal. Handy for launching apps from the command line without blocking it. <br>
+**Usage:** ```runbg <command> <arg1> <arg2> <...>```
+</details>
+
+### ⌨️ Keybinds
+
+View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing ```$mainMod w```. By default ```$mainMod``` is the ```SUPER``` key. 
+
+<details>
+<summary>
+Keybindings 
+</summary>
+
+- ```bind = $mainMod, Return, exec, kitty```
+- ```bind = ALT, Return, exec, kitty --title float_kitty```
+- ```bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
+- ```bind = $mainMod, B, exec, firefox```
+- ```bind = $mainMod, Q, killactive,```
+- ```bind = $mainMod, F, fullscreen, 0```
+- ```bind = $mainMod SHIFT, F, fullscreen, 1```
+- ```bind = $mainMod, Space, togglefloating,```
+- ```bind = $mainMod, D, exec, pkill wofi || wofi --show drun```
+- ```bind = $mainMod, Escape, exec, swaylock```
+- ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
+- ```bind = $mainMod, P, pseudo,```
+- ```bind = $mainMod, J, togglesplit,```
+- ```bind = $mainMod, E, exec, nemo```
+- ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
+- ```bind = $mainMod, C ,exec, hyprpicker -a```
+- ```bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout```
+- ```bind = $mainMod, W,exec, pkill wofi || wallpaper-picker```
+</details>
+
+<details>
+<summary>
+Screenshot 
+</summary>
+
+- ```bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
+- ```bind = ,Print, exec, grimblast --notify --cursor  copy area```
+</details>
+
+<details>
+<summary>
+Switch window focus 
+</summary>
+
+- ```bind = $mainMod, left, movefocus, l```
+- ```bind = $mainMod, right, movefocus, r```
+- ```bind = $mainMod, up, movefocus, u```
+- ```bind = $mainMod, down, movefocus, d```
+</details>
+
+<details>
+<summary>
+Switch workspace 
+</summary>
+
+- ```bind = $mainMod, 1, workspace, 1```
+- ```bind = $mainMod, 2, workspace, 2```
+- ```bind = $mainMod, 3, workspace, 3```
+- ```bind = $mainMod, 4, workspace, 4```
+- ```bind = $mainMod, 5, workspace, 5```
+- ```bind = $mainMod, 6, workspace, 6```
+- ```bind = $mainMod, 7, workspace, 7```
+- ```bind = $mainMod, 8, workspace, 8```
+- ```bind = $mainMod, 9, workspace, 9```
+- ```bind = $mainMod, 0, workspace, 10```
+</details>
+
+<details>
+<summary>
+Switch window to workspace 
+</summary>
+
+- ```bind = $mainMod SHIFT, 1, movetoworkspace, 1```
+- ```bind = $mainMod SHIFT, 2, movetoworkspace, 2```
+- ```bind = $mainMod SHIFT, 3, movetoworkspace, 3```
+- ```bind = $mainMod SHIFT, 4, movetoworkspace, 4```
+- ```bind = $mainMod SHIFT, 5, movetoworkspace, 5```
+- ```bind = $mainMod SHIFT, 6, movetoworkspace, 6```
+- ```bind = $mainMod SHIFT, 7, movetoworkspace, 7```
+- ```bind = $mainMod SHIFT, 8, movetoworkspace, 8```
+- ```bind = $mainMod SHIFT, 9, movetoworkspace, 9```
+- ```bind = $mainMod SHIFT, 0, movetoworkspace, 10```
+- ```bind = $mainMod CTRL, c, movetoworkspace, empty```
+</details>
+
+<details>
+<summary>
+Window control 
+</summary>
+
+- ```bind = $mainMod SHIFT, left, movewindow, l```
+- ```bind = $mainMod SHIFT, right, movewindow, r```
+- ```bind = $mainMod SHIFT, up, movewindow, u```
+- ```bind = $mainMod SHIFT, down, movewindow, d```
+- ```bind = $mainMod CTRL, left, resizeactive, -80 0```
+- ```bind = $mainMod CTRL, right, resizeactive, 80 0```
+- ```bind = $mainMod CTRL, up, resizeactive, 0 -80```
+- ```bind = $mainMod CTRL, down, resizeactive, 0 80```
+- ```bind = $mainMod ALT, left, moveactive,  -80 0```
+- ```bind = $mainMod ALT, right, moveactive, 80 0```
+- ```bind = $mainMod ALT, up, moveactive, 0 -80```
+- ```bind = $mainMod ALT, down, moveactive, 0 80```
+</details>
+
+<details>
+<summary>
+Media and volume controls 
 </summary>
    
-   <details>
-   <summary>
-   Keybindings 
-   </summary>
-   
-   - ```bind = $mainMod, Return, exec, kitty```
-   - ```bind = ALT, Return, exec, kitty --title float_kitty```
-   - ```bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
-   - ```bind = $mainMod, B, exec, firefox```
-   - ```bind = $mainMod, Q, killactive,```
-   - ```bind = $mainMod, F, fullscreen, 0```
-   - ```bind = $mainMod SHIFT, F, fullscreen, 1```
-   - ```bind = $mainMod, Space, togglefloating,```
-   - ```bind = $mainMod, D, exec, pkill wofi || wofi --show drun```
-   - ```bind = $mainMod, Escape, exec, swaylock```
-   - ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
-   - ```bind = $mainMod, P, pseudo,```
-   - ```bind = $mainMod, J, togglesplit,```
-   - ```bind = $mainMod, E, exec, nemo```
-   - ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
-   - ```bind = $mainMod, C ,exec, hyprpicker -a```
-   - ```bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout```
-   - ```bind = $mainMod, W,exec, pkill wofi || wallpaper-picker```
-   </details>
+- ```bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2```
+- ```bind = ,XF86AudioLowerVolume,exec, pamixer -d 2```
+- ```bind = ,XF86AudioMute,exec, pamixer -t```
+- ```bind = ,XF86AudioPlay,exec, playerctl play-pause```
+- ```bind = ,XF86AudioNext,exec, playerctl next```
+- ```bind = ,XF86AudioPrev,exec, playerctl previous```
+- ```bind = , XF86AudioStop, exec, playerctl stop```
+- ```bind = $mainMod, mouse_down, workspace, e-1```
+- ```bind = $mainMod, mouse_up, workspace, e+1```
+</details>
 
-   <details>
-   <summary>
-   Screenshot 
-   </summary>
-   
-   - ```bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
-   - ```bind = ,Print, exec, grimblast --notify --cursor  copy area```
-   </details>
+<details>
+<summary>
+Mouse binding 
+</summary>
 
-   <details>
-   <summary>
-   Switch window focus 
-   </summary>
-   
-   - ```bind = $mainMod, left, movefocus, l```
-   - ```bind = $mainMod, right, movefocus, r```
-   - ```bind = $mainMod, up, movefocus, u```
-   - ```bind = $mainMod, down, movefocus, d```
-   </details>
-
-   <details>
-   <summary>
-   Switch workspace 
-   </summary>
-   
-   - ```bind = $mainMod, 1, workspace, 1```
-   - ```bind = $mainMod, 2, workspace, 2```
-   - ```bind = $mainMod, 3, workspace, 3```
-   - ```bind = $mainMod, 4, workspace, 4```
-   - ```bind = $mainMod, 5, workspace, 5```
-   - ```bind = $mainMod, 6, workspace, 6```
-   - ```bind = $mainMod, 7, workspace, 7```
-   - ```bind = $mainMod, 8, workspace, 8```
-   - ```bind = $mainMod, 9, workspace, 9```
-   - ```bind = $mainMod, 0, workspace, 10```
-   </details>
-
-   <details>
-   <summary>
-   Switch window to workspace 
-   </summary>
-
-   - ```bind = $mainMod SHIFT, 1, movetoworkspace, 1```
-   - ```bind = $mainMod SHIFT, 2, movetoworkspace, 2```
-   - ```bind = $mainMod SHIFT, 3, movetoworkspace, 3```
-   - ```bind = $mainMod SHIFT, 4, movetoworkspace, 4```
-   - ```bind = $mainMod SHIFT, 5, movetoworkspace, 5```
-   - ```bind = $mainMod SHIFT, 6, movetoworkspace, 6```
-   - ```bind = $mainMod SHIFT, 7, movetoworkspace, 7```
-   - ```bind = $mainMod SHIFT, 8, movetoworkspace, 8```
-   - ```bind = $mainMod SHIFT, 9, movetoworkspace, 9```
-   - ```bind = $mainMod SHIFT, 0, movetoworkspace, 10```
-   - ```bind = $mainMod CTRL, c, movetoworkspace, empty```
-   </details>
-
-   <details>
-   <summary>
-   Window control 
-   </summary>
-   
-   - ```bind = $mainMod SHIFT, left, movewindow, l```
-   - ```bind = $mainMod SHIFT, right, movewindow, r```
-   - ```bind = $mainMod SHIFT, up, movewindow, u```
-   - ```bind = $mainMod SHIFT, down, movewindow, d```
-   - ```bind = $mainMod CTRL, left, resizeactive, -80 0```
-   - ```bind = $mainMod CTRL, right, resizeactive, 80 0```
-   - ```bind = $mainMod CTRL, up, resizeactive, 0 -80```
-   - ```bind = $mainMod CTRL, down, resizeactive, 0 80```
-   - ```bind = $mainMod ALT, left, moveactive,  -80 0```
-   - ```bind = $mainMod ALT, right, moveactive, 80 0```
-   - ```bind = $mainMod ALT, up, moveactive, 0 -80```
-   - ```bind = $mainMod ALT, down, moveactive, 0 80```
-   </details>
-
-   <details>
-   <summary>
-   Media and volume controls 
-   </summary>
-      
-   - ```bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2```
-   - ```bind = ,XF86AudioLowerVolume,exec, pamixer -d 2```
-   - ```bind = ,XF86AudioMute,exec, pamixer -t```
-   - ```bind = ,XF86AudioPlay,exec, playerctl play-pause```
-   - ```bind = ,XF86AudioNext,exec, playerctl next```
-   - ```bind = ,XF86AudioPrev,exec, playerctl previous```
-   - ```bind = , XF86AudioStop, exec, playerctl stop```
-   - ```bind = $mainMod, mouse_down, workspace, e-1```
-   - ```bind = $mainMod, mouse_up, workspace, e+1```
-   </details>
-
-   <details>
-   <summary>
-   Mouse binding 
-   </summary>
-
-   - ```bindm = $mainMod, mouse:272, movewindow```
-   - ```bindm = $mainMod, mouse:273, resizewindow```
-   </details>
-
+- ```bindm = $mainMod, mouse:272, movewindow```
+- ```bindm = $mainMod, mouse:273, resizewindow```
 </details>
 
 # 🛠️ Instalation 
@@ -340,3 +396,4 @@ Other dotfiles that I learned / copy from:
 [Catppuccin]: https://github.com/catppuccin/catppuccin
 [catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
 [Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
+[maxfetch]: https://github.com/jobcmax/maxfetch
