@@ -154,7 +154,8 @@ All the scripts are in ```modules/home/scripts/scripts/``` and are exported as p
 extract.sh 
 </summary>
 
-**Description:** This script extract ```tar.gz``` archives in the current directory. <br>
+**Description:** This script extract ```tar.gz``` archives in the current directory.
+
 **Usage:** ```extract <archive_file>```
 </details>
 
@@ -163,7 +164,8 @@ extract.sh
 compress.sh 
 </summary>
 
-**Description:** This script compress a file or a folder into a ```tar.gz``` archives wich is created in the current directory with the name of the chosen file or folder. <br>
+**Description:** This script compress a file or a folder into a ```tar.gz``` archives wich is created in the current directory with the name of the chosen file or folder. 
+
 **Usage:** ```compress <file>``` or ```compress <folder>```
 </details>
 
@@ -172,7 +174,8 @@ compress.sh
 toogle_blur.sh 
 </summary>
 
-**Description:** This script toggles the Hyprland blur effect. If the blur is currently enabled, it will be disabled, and if it's disabled, it will be turned on. <br>
+**Description:** This script toggles the Hyprland blur effect. If the blur is currently enabled, it will be disabled, and if it's disabled, it will be turned on. 
+
 **Usage:** ```toogle_blur```
 </details>
 
@@ -181,7 +184,8 @@ toogle_blur.sh
 toogle_oppacity.sh 
 </summary>
 
-**Description:** This script toggles the Hyperland oppacity effect. If the oppacity is currently set to 0.90, it will be set to 1, and if it's set to 1, it will be set to 0.90. <br>
+**Description:** This script toggles the Hyperland oppacity effect. If the oppacity is currently set to 0.90, it will be set to 1, and if it's set to 1, it will be set to 0.90. 
+
 **Usage:** ```toogle_oppacity```
 </details>
 
@@ -190,7 +194,8 @@ toogle_oppacity.sh
 maxfetch.sh 
 </summary>
 
-**Description:** This script is a modified verssion of the [jobcmax/maxfetch][maxfetch] script<br>
+**Description:** This script is a modified verssion of the [jobcmax/maxfetch][maxfetch] script.
+
 **Usage:** ```maxfetch```
 </details>
 
@@ -199,7 +204,8 @@ maxfetch.sh
 music.sh 
 </summary>
 
-**Description:** This script is for managing Audacious (music player). If Audacious is currently running, it will be killed (stoping the music); otherwise, it will start Audacious in the 8th workspace and resume the music. <br>
+**Description:** This script is for managing Audacious (music player). If Audacious is currently running, it will be killed (stoping the music); otherwise, it will start Audacious in the 8th workspace and resume the music. 
+
 **Usage:** ```music```
 </details>
 
@@ -208,7 +214,8 @@ music.sh
 runbg.sh 
 </summary>
 
-**Description:** This script runs a provided command along with its arguments and detaches it from the terminal. Handy for launching apps from the command line without blocking it. <br>
+**Description:** This script runs a provided command along with its arguments and detaches it from the terminal. Handy for launching apps from the command line without blocking it. 
+
 **Usage:** ```runbg <command> <arg1> <arg2> <...>```
 </details>
 
