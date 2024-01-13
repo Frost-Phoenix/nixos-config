@@ -353,7 +353,26 @@ Mouse binding
 > Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly on all systems. <br>
 > **I am not responsible for any issues that may arise from using this configuration.**
 
+> It is highly recommended to review the configuration contents and make necessary modifications to customize it to your needs before attempting the installation.
 
+1. Install NixOs
+
+   First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso). 
+   > Only been tested using the Gnome graphical installer and choosing the ```No desktop``` option durring instalation.
+
+2. Clone the repo
+
+   ```
+   git clone https://github.com/Frost-Phoenix/nixos-config
+   cd nixos-config
+   ```
+3. Install script
+
+   Execute and follow the installation script :
+   > Make sure to execute as root
+   ```
+   sudo ./install.sh
+   ```
 
 
 
