@@ -349,11 +349,9 @@ Mouse binding
 
 # 🚀 Installation 
 
-**⚠️ Use this configuration at your own risk! ⚠️**
-
-Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly on all systems.
-
-**I am not responsible for any issues that may arise from using this configuration.**
+> **⚠️ Use this configuration at your own risk! ⚠️** <br>
+> Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly on all systems. <br>
+> **I am not responsible for any issues that may arise from using this configuration.**
 
 
 
