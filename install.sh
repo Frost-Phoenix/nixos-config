@@ -91,7 +91,7 @@ install() {
     echo -en "You are about to start the system build, do you want to process ? "
     comfirm
 
-    # Build the systhem (flakes + home manager)
+    # Build the system (flakes + home manager)
     echo -e "\nBuilding the system...\n"
     sudo nixos-rebuild switch --flake .#nixos
 }
