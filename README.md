@@ -90,7 +90,7 @@ EXPAND
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
 
-### 🔧 Shell aliases
+### 📝 Shell aliases
 
 <details>
 <summary>
@@ -145,7 +145,7 @@ Git (EXPAND)
 - ```g```    $\rightarrow$ ```lazygit```
 </details>
 
-### 📝 Scripts
+### 🛠️ Scripts
 
 All the scripts are in ```modules/home/scripts/scripts/``` and are exported as packages in ```modules/home/scripts/default.nix```
 
@@ -347,7 +347,17 @@ Mouse binding
 - ```bindm = $mainMod, mouse:273, resizewindow```
 </details>
 
-# 🛠️ Installation 
+# 🚀 Installation 
+
+**⚠️ Use this configuration at your own risk! ⚠️**
+
+Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly on all systems.
+
+**I am not responsible for any issues that may arise from using this configuration.**
+
+
+
+
 
 # 👥 Credits
 
