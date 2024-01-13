@@ -349,7 +349,7 @@ Mouse binding
 
 # 🚀 Installation 
 
-<blockquote style="border-left: 3px solid #ee0000;">
+<blockquote style="border-left: 5px solid #ff0000; padding-left: 15px;">
 
 **⚠️ Use this configuration at your own risk! ⚠️** <br>
 
