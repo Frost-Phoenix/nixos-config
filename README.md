@@ -363,6 +363,7 @@ Mouse binding
 2. **Clone the repo**
 
    ```
+   nix-shell -p git
    git clone https://github.com/Frost-Phoenix/nixos-config
    cd nixos-config
    ```
