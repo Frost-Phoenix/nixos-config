@@ -171,22 +171,22 @@ compress.sh
 
 <details>
 <summary>
-toogle_blur.sh 
+toggle_blur.sh 
 </summary>
 
 **Description:** This script toggles the Hyprland blur effect. If the blur is currently enabled, it will be disabled, and if it's disabled, it will be turned on. 
 
-**Usage:** ```toogle_blur```
+**Usage:** ```toggle_blur```
 </details>
 
 <details>
 <summary>
-toogle_oppacity.sh 
+toggle_oppacity.sh 
 </summary>
 
 **Description:** This script toggles the Hyperland oppacity effect. If the oppacity is currently set to 0.90, it will be set to 1, and if it's set to 1, it will be set to 0.90. 
 
-**Usage:** ```toogle_oppacity```
+**Usage:** ```toggle_oppacity```
 </details>
 
 <details>
@@ -347,7 +347,7 @@ Mouse binding
 - ```bindm = $mainMod, mouse:273, resizewindow```
 </details>
 
-# 🛠️ Instalation 
+# 🛠️ Installation 
 
 # 👥 Credits
 
