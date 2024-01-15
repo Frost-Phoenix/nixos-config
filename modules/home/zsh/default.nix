@@ -18,7 +18,7 @@
 
       # Utils
       c = "clear";
-      vim = "nvim";
+      # vim = "nvim";
       cat = "bat";
       nano = "micro";
       icat = "kitten icat";

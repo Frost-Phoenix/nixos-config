@@ -1,4 +1,7 @@
 { pkgs, ... }:
 {
-  programs.neovim.enable = true;
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+  };
 }
