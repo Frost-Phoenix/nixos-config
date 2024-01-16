@@ -375,6 +375,15 @@ Mouse binding
    ```
    sudo ./install.sh
    ```
+   > You will need to change the git account yourself in ./modules/git/default.nix
+   ```
+      programs.git = {
+         ...
+         userName = "Frost-Phoenix";
+         userEmail = "67cyril6767@gmail.com";
+         ...
+      };
+   ```
 4. **Reboot**
 
    After rebooting, you'll be greeted by swaylock prompting for your password, with the wallpaper in the background.
