@@ -5,14 +5,6 @@
       requests
       pygame
       shapely
-      
-      # github-email-explorer
-      # jinja2
-      # markupsafe
-      # python-http-client
-      requests
-      # sendgrid
-      # tabulate
     ]))
   ];
 }
