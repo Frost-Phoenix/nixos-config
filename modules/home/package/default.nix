@@ -9,6 +9,7 @@
     file                              # Show file information 
     fzf                               # fuzzy finder
     go
+    jdk17                             # java
     lazygit
     libreoffice
     nitch                             # systhem fetch util
