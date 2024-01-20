@@ -13,6 +13,7 @@
         # youtube-time-tracker
         firefox-color
         stylus
+        scroll_anywhere
       ];
       extraConfig = builtins.readFile ./user.js;
     };
