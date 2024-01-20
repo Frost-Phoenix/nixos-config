@@ -14,6 +14,7 @@
         firefox-color
         stylus
         scroll_anywhere
+        clearurls
       ];
       extraConfig = builtins.readFile ./user.js;
     };
