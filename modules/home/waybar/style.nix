@@ -61,7 +61,7 @@
     }
 
     #tray, #pulseaudio, #network, #cpu, #memory, #disk,
-    #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward{
+    #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.forward{
         background: #${custom.palette.tertiary_background_hex};
         font-weight: bold;
         margin: 5px 0px;
@@ -126,11 +126,11 @@
         font-size: 28px;
     }
 
-    #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.foward {
+    #custom-playerctl.backward, #custom-playerctl.play, #custom-playerctl.forward {
         background: #${custom.palette.tertiary_background_hex};
         font-size: 22px;
     }
-    #custom-playerctl.backward:hover, #custom-playerctl.play:hover, #custom-playerctl.foward:hover{
+    #custom-playerctl.backward:hover, #custom-playerctl.play:hover, #custom-playerctl.forward:hover{
         color: #${custom.tertiary_accent};
     }
     #custom-playerctl.backward {
@@ -143,7 +143,7 @@
         color: #${custom.secondary_accent};
         padding: 0 5px;
     }
-    #custom-playerctl.foward {
+    #custom-playerctl.forward {
         color: #${custom.primary_accent};
         border-radius: 0px 10px 24px 0px;
         padding-right: 12px;
