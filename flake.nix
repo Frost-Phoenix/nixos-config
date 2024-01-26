@@ -42,7 +42,7 @@
       username = "frostphoenix";
     in
     {
-      # overlays.default = selfPkgs.overlay;
+      overlays.default = selfPkgs.overlay;
       nixosConfigurations = import ./modules/core/default.nix {
         inherit self nixpkgs inputs username;
       };
