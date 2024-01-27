@@ -29,4 +29,9 @@
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
+
+  vmware.host = {
+    enable = true;
+    package = pkgs.vmware-workstation;
+  };
 }
