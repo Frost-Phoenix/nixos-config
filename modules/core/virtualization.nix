@@ -1,7 +1,7 @@
 { config, pkgs, username, ... }:
 {
   # Enable dconf (System Management Tool)
-  programs.dconf.enable = true;
+  # programs.dconf.enable = true;
 
   # Add user to libvirtd group
   users.users.${username}.extraGroups = [ "libvirtd" ];
