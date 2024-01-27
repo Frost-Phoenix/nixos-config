@@ -1,5 +1,8 @@
 { config, pkgs, username, ... }:
 {
+  # Enable dconf (System Management Tool)
+  programs.dconf.enable = true;
+
   # Add user to libvirtd group
   users.users.${username}.extraGroups = [ "libvirtd" ];
 
@@ -7,22 +10,15 @@
   environment.systemPackages = with pkgs; [
     virt-manager
     virt-viewer
-    spice
-    spice-gtk
+    spice spice-gtk
     spice-protocol
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
-    virtiofsd
   ];
 
   # Manage the virtualisation services
   virtualisation = {
-    vmware.host = {
-      enable = true;
-      package = pkgs.vmware-workstation;
-    };
-
     libvirtd = {
       enable = true;
       qemu = {
