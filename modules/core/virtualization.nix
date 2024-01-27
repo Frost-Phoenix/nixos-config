@@ -18,6 +18,11 @@
 
   # Manage the virtualisation services
   virtualisation = {
+    vmware.host = {
+      enable = true;
+      package = pkgs.vmware-workstation;
+    };
+
     libvirtd = {
       enable = true;
       qemu = {
@@ -29,9 +34,4 @@
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
-
-  vmware.host = {
-    enable = true;
-    package = pkgs.vmware-workstation;
-  };
 }
