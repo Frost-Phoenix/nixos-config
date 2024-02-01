@@ -2,6 +2,7 @@
   imports =
        [(import ./waybar)]
     ++ [(import ./firefox)]
+    ++ [(import ./floorp)]          # firefox based browser
     ++ [(import ./vscodium)]
     ++ [(import ./hyprland)]
     ++ [(import ./gaming)]
