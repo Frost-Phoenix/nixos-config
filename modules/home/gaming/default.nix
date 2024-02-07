@@ -16,6 +16,7 @@
     celeste-classic-pm
 
     gzdoom
+    crispy-doom
 
     # Emulation
     # cemu
