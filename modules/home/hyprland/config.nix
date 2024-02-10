@@ -175,16 +175,16 @@
       bind = $mainMod, 0, workspace, 10
       
       # same as above, but switch to the workspace
-      bind = $mainMod SHIFT, 1, movetoworkspace, 1     # movetoworkspacesilent
-      bind = $mainMod SHIFT, 2, movetoworkspace, 2
-      bind = $mainMod SHIFT, 3, movetoworkspace, 3
-      bind = $mainMod SHIFT, 4, movetoworkspace, 4
-      bind = $mainMod SHIFT, 5, movetoworkspace, 5
-      bind = $mainMod SHIFT, 6, movetoworkspace, 6
-      bind = $mainMod SHIFT, 7, movetoworkspace, 7
-      bind = $mainMod SHIFT, 8, movetoworkspace, 8
-      bind = $mainMod SHIFT, 9, movetoworkspace, 9
-      bind = $mainMod SHIFT, 0, movetoworkspace, 10
+      bind = $mainMod SHIFT, 1, movetoworkspacesilent, 1     # movetoworkspacesilent
+      bind = $mainMod SHIFT, 2, movetoworkspacesilent, 2
+      bind = $mainMod SHIFT, 3, movetoworkspacesilent, 3
+      bind = $mainMod SHIFT, 4, movetoworkspacesilent, 4
+      bind = $mainMod SHIFT, 5, movetoworkspacesilent, 5
+      bind = $mainMod SHIFT, 6, movetoworkspacesilent, 6
+      bind = $mainMod SHIFT, 7, movetoworkspacesilent, 7
+      bind = $mainMod SHIFT, 8, movetoworkspacesilent, 8
+      bind = $mainMod SHIFT, 9, movetoworkspacesilent, 9
+      bind = $mainMod SHIFT, 0, movetoworkspacesilent, 10
       bind = $mainMod CTRL, c, movetoworkspace, empty
       
       # window control
