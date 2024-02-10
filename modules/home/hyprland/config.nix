@@ -44,7 +44,7 @@
         gaps_out = 0
         border_size = 2
         col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
-        col.inactive_border = 0x11111111
+        col.inactive_border = 0x111111
         border_part_of_window = true
 
         # gaps_in = 5
@@ -76,13 +76,11 @@
       }
 
       decoration {
-        rounding = 12
+        rounding = 0
+        # rounding = 12
         
-        active_opacity = 0.95;
-        inactive_opacity = 0.95;
-
-        # active_opacity = 0.90;
-        # inactive_opacity = 0.90;
+        active_opacity = 0.90;
+        inactive_opacity = 0.90;
         fullscreen_opacity = 1.0;
 
         blur {
