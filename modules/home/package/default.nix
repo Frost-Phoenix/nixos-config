@@ -3,7 +3,6 @@
   home.packages = (with pkgs; [
     aichat                            # Chat with gpt-3.5/chatgpt in terminal.
     bitwise                           # cli tool for bit / hex manipulation
-    # discord
     eza                               # ls replacement
     entr                              # perform action when file change
     file                              # Show file information 
@@ -44,7 +43,6 @@
     pamixer                           # pulseaudio command line mixer
     pavucontrol                       # pulseaudio volume controle (GUI)
     playerctl                         # controller for media players
-    pulseaudioFull
     qalculate-gtk                     # calculator
     unzip
     wget
