@@ -44,7 +44,7 @@
         gaps_out = 0
         border_size = 2
         col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
-        col.inactive_border = 0x66666666
+        col.inactive_border = 0x00000000
         border_part_of_window = true
 
         # gaps_in = 5
