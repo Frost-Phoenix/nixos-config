@@ -40,12 +40,19 @@
       general {
         layout = dwindle
 
-        gaps_in = 5
-        gaps_out = 10
+        gaps_in = 0
+        gaps_out = 0
         border_size = 2
         col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
-        col.inactive_border = 0x00000000
-        border_part_of_window = false
+        col.inactive_border = 0x11111111
+        border_part_of_window = true
+
+        # gaps_in = 5
+        # gaps_out = 10
+        # border_size = 2
+        # col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
+        # col.inactive_border = 0x00000000
+        # border_part_of_window = false
       }
 
       xwayland {
@@ -53,7 +60,7 @@
       }
 
       dwindle {
-        no_gaps_when_only = false
+        no_gaps_when_only = true
         force_split = 0
         special_scale_factor = 1.0
         split_width_multiplier = 1.0
@@ -71,8 +78,11 @@
       decoration {
         rounding = 12
         
-        active_opacity = 0.90;
-        inactive_opacity = 0.90;
+        active_opacity = 0.95;
+        inactive_opacity = 0.95;
+
+        # active_opacity = 0.90;
+        # inactive_opacity = 0.90;
         fullscreen_opacity = 1.0;
 
         blur {
