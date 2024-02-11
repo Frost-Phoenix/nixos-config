@@ -1,13 +1,11 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
-    aichat                            # Chat with gpt-3.5/chatgpt in terminal.
     bitwise                           # cli tool for bit / hex manipulation
     eza                               # ls replacement
     entr                              # perform action when file change
     file                              # Show file information 
     fzf                               # fuzzy finder
-    go
     jdk17                             # java
     lazygit
     libreoffice
@@ -18,7 +16,6 @@
     ripgrep                           # grep replacement
     rnix-lsp
     soundwireserver                   # pass audio to android phone
-    spotify
     todo                              # cli todo list
     toipe                             # typing test in the terminal
     cinnamon.nemo-with-extensions     # file manager
