@@ -11,6 +11,7 @@
     libreoffice
     nitch                             # systhem fetch util
     nix-prefetch-github
+    opam                              # ocaml
     pipx                              # Install Python applications in isolated environments
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
