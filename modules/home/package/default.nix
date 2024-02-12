@@ -28,6 +28,10 @@
     gcc
     gnumake
 
+    #tmp
+    gmp
+    mpir
+
     bleachbit                         # cache cleaner
     cmatrix
     gparted                           # partition manager
