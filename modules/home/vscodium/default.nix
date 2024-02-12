@@ -12,6 +12,8 @@
       ms-python.python
       # C/C++
       ms-vscode.cpptools
+      # OCaml
+      ocamllabs.ocaml-platform
 
       # Color theme
       catppuccin.catppuccin-vsc
