@@ -16,6 +16,12 @@
       window_padding_width = 10;
       scrollback_lines = 10000;
       enable_audio_bell = false;
+      mouse_hide_wait = 60;
+    };
+
+    keybindings = {  
+      "ctrl+shift+left" = "no_op";
+      "ctrl+shift+right" = "no_op";
     };
   };
 }
