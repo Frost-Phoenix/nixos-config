@@ -8,7 +8,7 @@
     };
   };
 
-  xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
+  xdg.configFile."micro/bindings.json".text = ''
     {
       "Ctrl-up": "CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp",
       "CtrlDown": "CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown"
