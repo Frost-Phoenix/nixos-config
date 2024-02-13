@@ -9,6 +9,13 @@
   };
 
   xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
+    {
+      "Ctrl-up": "CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp",
+      "CtrlDown": "CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown"
+    }
+  '';
+
+  xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
     color-link comment "#585B70"
 
     color-link identifier "#89B4FA"
