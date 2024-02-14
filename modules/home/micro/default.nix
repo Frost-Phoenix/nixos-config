@@ -10,8 +10,10 @@
 
   xdg.configFile."micro/bindings.json".text = ''
     {
-      "Ctrl-up": "CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp",
-      "CtrlDown": "CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown"
+      "Ctrl-Up": "CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp,CursorUp",
+      "Ctrl-Down": "CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown,CursorDown",
+      "Ctrl-Backspace": "DeleteWordLeft",
+      "Ctrl-Delete": "DeleteWordRight"
     }
   '';
 
