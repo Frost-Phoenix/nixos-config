@@ -49,9 +49,11 @@
       gpl  = "git pull";
       gplo = "git pull origin";
       gps  = "git push";
+      gpst = "git push --follow-tags";
       gpso = "git push origin";
       gc   = "git commit";
       gcm  = "git commit -m";
+      gtag = "git tag -ma";
       gch  = "git checkout";
       gchb = "git checkout -b";
       gcoe = "git config user.email";
