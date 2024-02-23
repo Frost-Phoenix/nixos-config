@@ -24,7 +24,7 @@
       inactive_tab_font_style = "normal";
       tab_bar_style = "powerline";
       tab_powerline_style = "round";
-      active_tab_foreground = "#bac2de";
+      active_tab_foreground = "#1e1e2e";
       active_tab_background = "#cba6f7";
       inactive_tab_foreground = "#bac2de";
       inactive_tab_background = "#313244";
