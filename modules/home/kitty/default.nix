@@ -24,18 +24,18 @@
       inactive_tab_font_style = "normal";
       tab_bar_style = "powerline";
       tab_powerline_style = "round";
-      active_tab_foreground = "#bac2de";
+      active_tab_foreground = "#181825";
       active_tab_background = "#cba6f7";
-      inactive_tab_foreground = "#bac2de";
-      inactive_tab_background = "#b4befe";
+      inactive_tab_foreground = "#181825";
+      inactive_tab_background = "#7f849c";
     };
 
     keybindings = {  
       ## Tabs
-      "ctrl+1" = "goto_tab 1";
-      "ctrl+2" = "goto_tab 2";
-      "ctrl+3" = "goto_tab 3";
-      "ctrl+4" = "goto_tab 4";
+      "alt+1" = "goto_tab 1";
+      "alt+2" = "goto_tab 2";
+      "alt+3" = "goto_tab 3";
+      "alt+4" = "goto_tab 4";
 
       ## Unbind
       "ctrl+shift+left" = "no_op";
