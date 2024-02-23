@@ -60,7 +60,7 @@
       gcoe = "git config user.email";
       gcon = "git config user.name";
 
-      g = "lazygit";
+      # g = "lazygit";
 
       # python
       piv = "python -m venv .venv";
