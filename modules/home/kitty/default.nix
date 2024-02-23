@@ -23,8 +23,6 @@
       active_tab_font_style = "normal";
       inactive_tab_font_style = "normal";
       tab_powerline_style = "round";
-      tab_activity_symbol = "◉";
-      tab_bar_edge = "top";
     };
 
     keybindings = {  
