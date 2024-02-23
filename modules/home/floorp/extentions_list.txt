@@ -1,0 +1,8 @@
+uBlock Origin                   # + filter for shorts
+ScrollAnywhere                  # disable momentum + reverse dirrection
+Return YouTube Dislike
+Stylus                          # import file import.json
+Firefox Color                   # catppuccin
+Dark Reader                     # theme dracula
+I don't care about cookies
+ClearURLs
