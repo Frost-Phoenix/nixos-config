@@ -11,13 +11,20 @@
     };
 
     settings = {
-      confirm_os_window_close = 1;
+      confirm_os_window_close = 0;
       background_opacity = "0.55";  
       window_padding_width = 10;
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;
-      tab_title_template = "{title}";
+      
+      ## Tabs
+      tab_title_template = "{index}";
+      active_tab_font_style = "normal";
+      inactive_tab_font_style = "normal";
+      tab_powerline_style = "round";
+      tab_activity_symbol = "◉";
+      tab_bar_edge = "top";
     };
 
     keybindings = {  
