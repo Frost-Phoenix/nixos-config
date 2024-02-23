@@ -26,8 +26,8 @@
       tab_powerline_style = "round";
       active_tab_foreground = "#181825";
       active_tab_background = "#cba6f7";
-      inactive_tab_foreground = "#181825";
-      inactive_tab_background = "#7f849c";
+      inactive_tab_foreground = "#bac2de";
+      inactive_tab_background = "#1e1e2e";
     };
 
     keybindings = {  
