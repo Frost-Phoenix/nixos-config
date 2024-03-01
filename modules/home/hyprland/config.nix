@@ -86,8 +86,8 @@
         blur {
           enabled = true
 
-          size = 3
-          passes = 3
+          size = 4
+          passes = 2
           
           brightness = 1
           contrast = 1.300000
