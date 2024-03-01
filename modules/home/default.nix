@@ -1,6 +1,6 @@
 {inputs, username, ...}: {
   imports =
-    ++ [(import ./aseprite)]        # pixel art editor
+       [(import ./aseprite)]        # pixel art editor
     ++ [(import ./audacious)]       # music player
     ++ [(import ./bat)]
     ++ [(import ./btop)]
