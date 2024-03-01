@@ -1,30 +1,15 @@
-{ 
-    custom ? {
-        font = "JetBrainsMono Nerd Font";
-        fontsize = "12";
-        primary_accent = "cba6f7";
-        secondary_accent = "89b4fa";
-        tertiary_accent = "f5f5f5";
-        background = "11111B";
-        opacity = ".85";
-        cursor = "Numix-Cursor";
-    },
-    ... 
-}:
+{ ... }:
 {
   programs.waybar.settings.mainBar = {
-    position= "top";
-    layer= "top";
-    # height= 15;
+    position= "bottom";
+    layer= "bottom";
+    height= 5;
     margin-top= 0;
     margin-bottom= 0;
     margin-left= 0;
     margin-right= 0;
     modules-left= [
         "custom/launcher" 
-        "custom/playerctl#backward" 
-        "custom/playerctl#play" 
-        "custom/playerctl#forward" 
     ];
     modules-center= [
         "hyprland/workspaces"
@@ -58,31 +43,6 @@
             default = "";
             sort-by-number= true;
         };
-    };
-    "custom/playerctl#backward"= {
-        format= "󰙣 "; 
-        on-click= "playerctl previous";
-        on-scroll-up = "playerctl volume .05+";
-        on-scroll-down = "playerctl volume .05-";
-    };
-    "custom/playerctl#play"= {
-        format= "{icon}";
-        return-type= "json";
-        exec= "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
-        on-click= "playerctl play-pause";
-        on-scroll-up = "playerctl volume .05+";
-        on-scroll-down = "playerctl volume .05-";
-        format-icons= {
-            Playing = "<span>󰏥 </span>";
-            Paused = "<span> </span>";
-            Stopped = "<span> </span>";
-        };
-    };
-    "custom/playerctl#forward"= {
-        format= "󰙡 ";
-        on-click= "playerctl next";
-        on-scroll-up = "playerctl volume .05+";
-        on-scroll-down = "playerctl volume .05-";
     };
     memory= {
         format= "󰟜 {}%";
