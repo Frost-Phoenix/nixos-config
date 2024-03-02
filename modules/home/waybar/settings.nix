@@ -2,7 +2,7 @@
 {
   programs.waybar.settings.mainBar = {
     position= "bottom";
-    layer= "bottom";
+    layer= "top";
     height= 5;
     margin-top= 0;
     margin-bottom= 0;
@@ -10,9 +10,10 @@
     margin-right= 0;
     modules-left= [
         "custom/launcher" 
+        "hyprland/workspaces"
     ];
     modules-center= [
-        "hyprland/workspaces"
+        "clock"
     ];
     modules-right= [
         "tray" 
@@ -21,7 +22,6 @@
         "disk"
         "pulseaudio" 
         "network"
-        "clock" 
     ];
     clock= {
         format = " {:%H:%M}";

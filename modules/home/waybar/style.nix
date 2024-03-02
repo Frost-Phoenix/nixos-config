@@ -1,7 +1,17 @@
-{ custom, ... }:
+{ ... }:
+let custom = {
+    font = "JetBrainsMono Nerd Font";
+    font_size = "15px";
+    font_weight = "bold";
+    text_color = "#cdd6f4";
+    secondary_accent= "89b4fa";
+    tertiary_accent = "f5f5f5";
+    background = "11111B";
+    opacity = "0.98";
+};
+in 
 {
   programs.waybar.style = ''
-    * { all: initial; }
 
     * {
         border: none;
@@ -10,47 +20,23 @@
         margin: 0;
         min-height: 0px;
         font-family: ${custom.font};
-        font-weight: bold;
-        font-size: 15px;
+        font-weight: ${custom.font_weight};
+        font-size: ${custom.font_size};
+        color: ${custom.text_color};
         opacity: ${custom.opacity};
     }
 
     window#waybar {
-        background: rgba(24, 24, 37, 0.5);
+        background: none;
     }
 
     #workspaces {
-        color: #${custom.primary_accent}
     }
     #workspaces button {
-        padding: 0px 5px;
-        margin: 0px 3px;
-        border-radius: 15px;
-        color: #${custom.background};
-        background: #${custom.secondary_accent};
-        transition: all 0.2s ease-in-out;
     }
-
     #workspaces button.active {
-        background-color: #${custom.primary_accent};
-        color: #${custom.background};
-        border-radius: 15px;
-        min-width: 35px;
-        background-size: 200% 200%;
-        transition: all 0.2s ease-in-out;
     }
-
     #workspaces button:hover {
-        background-color: #b4befe;
-        color: #${custom.background};
-        border-radius: 15px;
-        min-width: 35px;
-        background-size: 200% 200%;
-    }
-
-    #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock, custom-launcher {
-        color: #${custom.tertiary_accent};
-        font-weight: bold;
     }
 
     #cpu {
@@ -89,10 +75,6 @@
     #custom-launcher {
         margin-left: 10px;
         font-size: 22px;
-    }
-
-    #window{
-        background: #${custom.palette.tertiary_background_hex};
     }
   '';
 }
