@@ -40,13 +40,28 @@
 
 <details>
 <summary>
-EXPAND
+CURRENT (EXPAND)
 </summary>
 <p align="center">
    <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
 </p>
 <p align="center">
    <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
+</p>
+</details>
+
+<details>
+<summary>
+OLD (EXPAND)
+</summary>
+<p align="center">
+   <img src="./.github/assets/screenshots/1.old.png" width="800px" /> <br>
+</p>
+<p align="center">
+   <img src="./.github/assets/screenshots/2.old.png" width="800px" /> <br>
+</p>
+<p align="center">
+   <img src="./.github/assets/screenshots/3.old.png" width="800px" /> <br>
 </p>
 </details>
 
