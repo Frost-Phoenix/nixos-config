@@ -33,7 +33,7 @@
    <img src="./.github/assets/screenshots/1.png" width="800px" /> <br>
 </p>
 <p align="center">
-   Screeenshot last updated <b>2024-01-12</b>
+   Screeenshot last updated <b>2024-03-3</b>
 </p>
 
 ### 🖼️ Gallery
