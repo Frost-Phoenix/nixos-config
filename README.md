@@ -46,7 +46,7 @@ EXPAND
    <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
 </p>
 <p align="center">
-   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
 </p>
 </details>
 
