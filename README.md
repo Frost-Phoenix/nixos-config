@@ -43,7 +43,7 @@
 EXPAND
 </summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
 </p>
 <p align="center">
    <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
@@ -426,7 +426,7 @@ Other dotfiles that I learned / copy from:
 - Nix Flakes
   - [nomadics9/NixOS-Flake](https://github.com/nomadics9/NixOS-Flake2): This is where I start my nixos / hyprland journey.
   - [samiulbasirfahim/Flakes](https://github.com/samiulbasirfahim/Flakes): General flake / files structure
-  - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar
+  - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar (old design)
   - [skiletro/nixfiles](https://github.com/skiletro/nixfiles): Vscodium config (that prevent it to crash)
   - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
 
