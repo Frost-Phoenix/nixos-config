@@ -18,6 +18,7 @@
 
       # Utils
       c = "clear";
+      cd = "z";
       # vim = "nvim";
       cat = "bat";
       nano = "micro";
