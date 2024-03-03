@@ -143,13 +143,14 @@
       bind = $mainMod, Return, exec, kitty
       bind = ALT, Return, exec, kitty --title float_kitty
       bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'
-      bind = $mainMod, B, exec, floorp
+      bind = $mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'
       bind = $mainMod, Q, killactive,
       bind = $mainMod, F, fullscreen, 0
       bind = $mainMod SHIFT, F, fullscreen, 1
       bind = $mainMod, Space, togglefloating,
       bind = $mainMod, D, exec, pkill wofi || wofi --show drun
       bind = $mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 3 silent] discord'
+      bind = $mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'
       bind = $mainMod, Escape, exec, swaylock
       bind = $mainMod SHIFT, Escape, exec, shutdown-script
       bind = $mainMod, P, pseudo,
