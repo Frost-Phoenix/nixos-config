@@ -21,8 +21,6 @@ in
         min-height: 0px;
         font-family: ${custom.font};
         font-weight: ${custom.font_weight};
-        font-size: ${custom.font_size};
-        color: ${custom.text_color};
         opacity: ${custom.opacity};
     }
 
@@ -31,12 +29,25 @@ in
     }
 
     #workspaces {
+        font-size: 18px;
+        padding-left: 15px;
+        
     }
     #workspaces button {
+        color: ${custom.text_color};
+        padding-left:  6px;
+        padding-right: 6px;
+    }
+    #workspaces button.empty {
+        color: #6c7086;
     }
     #workspaces button.active {
+        color: #b4befe;
     }
-    #workspaces button:hover {
+
+    #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
+        font-size: ${custom.font_size};
+        color: ${custom.text_color};
     }
 
     #cpu {
@@ -72,9 +83,13 @@ in
         padding-left: 9px;
         padding-right: 15px;
     }
+
     #custom-launcher {
-        margin-left: 10px;
-        font-size: 22px;
+        font-size: 20px;
+        color: #b4befe;
+        font-weight: ${custom.font_weight};
+        padding-left: 10px;
+        padding-right: 15px;
     }
   '';
 }

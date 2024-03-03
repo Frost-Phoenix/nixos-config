@@ -29,19 +29,27 @@
         tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         format-alt= " {:%d/%m}";
     };
-    "wlr/workspaces"= {
+    "hyprland/workspaces"= {
         active-only= false;
-        all-outputs= false;
-        disable-scroll= false;
-        on-scroll-up= "hyprctl dispatch workspace e-1";
-        on-scroll-down= "hyprctl dispatch workspace e+1";
-        format = "{name}";
+        disable-scroll= true;
+        format = "{icon}";
         on-click= "activate";
         format-icons= {
-            urgent= "";
-            active= "";
-            default = "";
+            "1"= "󰈹";
+            "2"= "";
+            "3"= "󰙯";
+            "4"= "󰘙";
+            "5"= "";
+            urgent= "";
+            default = "";
             sort-by-number= true;
+        };
+        persistent-workspaces = {
+            "1"= [];
+            "2"= [];
+            "3"= [];
+            "4"= [];
+            "5"= [];
         };
     };
     memory= {
