@@ -98,6 +98,7 @@ Utils (EXPAND)
 </summary>
 
 - ```c```     $\rightarrow$ ```clear```
+- ```cd```     $\rightarrow$ ```z```
 - ```vim```   $\rightarrow$ ```nvim```
 - ```cat```   $\rightarrow$ ```bat```
 - ```nano```  $\rightarrow$ ```micro```
@@ -142,7 +143,6 @@ Git (EXPAND)
 - ```gchb``` $\rightarrow$ ```git checkout -b```
 - ```gcoe``` $\rightarrow$ ```git config user.email```
 - ```gcon``` $\rightarrow$ ```git config user.name```
-- ```g```    $\rightarrow$ ```lazygit```
 </details>
 
 ### 🛠️ Scripts
