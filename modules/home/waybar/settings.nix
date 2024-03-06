@@ -40,6 +40,7 @@
             "3"= "󰘙";
             "4"= "󰙯";
             "5"= "";
+            "6"= "";
             urgent= "";
             default = "";
             sort-by-number= true;
