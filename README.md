@@ -131,7 +131,7 @@ Nixos (EXPAND)
 </summary>
 
 - ```cdnix```            $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
-- ```nix-shell```        $\rightarrow$ ```nix-shell --run zsh```
+- ```ns```               $\rightarrow$ ```nix-shell --run zsh -p```
 - ```nix-switch```       $\rightarrow$ ```sudo nixos-rebuild switch --flake ~/nixos-config#nixos```
 - ```nix-switchu```      $\rightarrow$ ```sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos```
 - ```nix-flake-update``` $\rightarrow$ ```sudo nix flake update ~/nixos-config#```
