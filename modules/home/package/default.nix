@@ -14,7 +14,6 @@
     pipx                              # Install Python applications in isolated environments
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
-    rnix-lsp
     soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
     toipe                             # typing test in the terminal
@@ -26,6 +25,9 @@
     # C / C++
     gcc
     gnumake
+
+    # Python
+    python3
 
     bleachbit                         # cache cleaner
     cmatrix

@@ -18,7 +18,6 @@ in
       ++ [ (import ./network.nix) ]
       ++ [ (import ./pipewire.nix) ]
       ++ [ (import ./program.nix) ]
-      ++ [ (import ./../home/package/python.nix) ]
       ++ [ (import ./security.nix) ]
       ++ [ (import ./services.nix) ]
       ++ [ (import ./system.nix) ]
