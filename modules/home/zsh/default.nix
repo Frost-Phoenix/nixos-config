@@ -32,7 +32,7 @@
 
       # Nixos
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
-      ns = "nix-shell --run zsh -p";
+      ns = "nix-shell --run zsh";
       nix-shell = "nix-shell --run zsh";
       nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#nixos";
       nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos";
