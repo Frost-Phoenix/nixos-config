@@ -4,6 +4,7 @@
     bitwise                           # cli tool for bit / hex manipulation
     eza                               # ls replacement
     entr                              # perform action when file change
+    fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
     jdk17                             # java
