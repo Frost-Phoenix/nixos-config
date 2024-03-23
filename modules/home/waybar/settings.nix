@@ -24,6 +24,9 @@
         "network"
     ];
     clock= {
+        calendar = {
+          format = { today = "<span color='#ff6699'><b><u>{}</u></b></span>"; };
+        };
         format = " {:%H:%M}";
         tooltip= "true";
         tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
