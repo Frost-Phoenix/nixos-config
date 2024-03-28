@@ -36,7 +36,9 @@
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
 
+      "editor.formatOnSave" = true;
       "editor.formatOnType" = true;
+      "editor.formatOnPaste" = true;
 
       "workbench.layoutControl.type" = "menu";
       "workbench.editor.limit.enabled" = true;
@@ -72,7 +74,9 @@
       "C_Cpp.vcFormat.indent.caseLabels" = true;
       "C_Cpp.intelliSenseCacheSize" = 2048;
       "C_Cpp.intelliSenseMemoryLimit" = 2048;
-      "C_Cpp.default.browse.path" = ''[''${workspaceFolder}/**]'';
+      "C_Cpp.default.browse.path" = [
+        ''''${workspaceFolder}/**''
+      ];
       "C_Cpp.default.cStandard" = "c11";
       "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores" = false;
       "C_Cpp.intelliSenseUpdateDelay" = 500;
