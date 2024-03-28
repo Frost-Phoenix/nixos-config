@@ -7,6 +7,7 @@
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
+    hexdump
     jdk17                             # java
     lazygit
     libreoffice
