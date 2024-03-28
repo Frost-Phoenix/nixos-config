@@ -57,20 +57,30 @@
 
       "editor.mouseWheelZoom" = true;
 
-      "C_Cpp.intelliSenseUpdateDelay" = 500;
-      "C_Cpp.codeAnalysis.updateDelay" = 500;
       "C_Cpp.autocompleteAddParentheses" = true;
       "C_Cpp.formatting" = "vcFormat";
+      "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction" = true;
+      "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType" = true;
+      "C_Cpp.vcFormat.space.beforeEmptySquareBrackets" = true;
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.block" = "sameLine";
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.function" = "sameLine";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda" = "sameLine";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace" = "sameLine";
-      "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "sameLine";
-      "C_Cpp.vcFormat.space.pointerReferenceAlignment" = "right";
       "C_Cpp.vcFormat.newLine.beforeElse" = false;
       "C_Cpp.vcFormat.newLine.beforeCatch" = false;
-      "C_Cpp.vcFormat.indent.caseLabels" = true;
-      "C_Cpp.clang_format_fallbackStyle" = "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}";
+      "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "sameLine";
+      "C_Cpp.vcFormat.space.betweenEmptyBraces" = true;
+      "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets" = true;
+      "C_Cpp.vcFormat.indent.caseLabels" = true
+      "C_Cpp.intelliSenseCacheSize" = 2048;
+      "C_Cpp.intelliSenseMemoryLimit" = 2048;
+      "C_Cpp.default.browse.path" = [
+          "${workspaceFolder}/**"
+      ];
+      "C_Cpp.default.cStandard" = "c11";
+      "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores" = false;
+      "C_Cpp.intelliSenseUpdateDelay" = 500;
+      "C_Cpp.workspaceParsingPriority" = "medium";
+      "C_Cpp.clang_format_sortIncludes" = true;
+      "C_Cpp.doxygen.generatedStyle" = "/**";
     };
     # Keybindings
     keybindings = [
