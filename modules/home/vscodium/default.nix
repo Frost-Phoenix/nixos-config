@@ -69,7 +69,7 @@
       "C_Cpp.vcFormat.newLine.beforeOpenBrace.type" = "sameLine";
       "C_Cpp.vcFormat.space.betweenEmptyBraces" = true;
       "C_Cpp.vcFormat.space.betweenEmptyLambdaBrackets" = true;
-      "C_Cpp.vcFormat.indent.caseLabels" = true
+      "C_Cpp.vcFormat.indent.caseLabels" = true;
       "C_Cpp.intelliSenseCacheSize" = 2048;
       "C_Cpp.intelliSenseMemoryLimit" = 2048;
       "C_Cpp.default.browse.path" = [
