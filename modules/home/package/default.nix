@@ -7,6 +7,7 @@
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
+    gtt                               # google translate TUI
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
     jdk17                             # java
