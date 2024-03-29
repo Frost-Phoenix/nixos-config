@@ -15,7 +15,7 @@
       background_opacity = "0.55";  
       window_padding_width = 10;
       scrollback_lines = 10000;
-      enable_audio_bell = false;
+      enable_audio_bell = true;
       mouse_hide_wait = 60;
       
       ## Tabs
