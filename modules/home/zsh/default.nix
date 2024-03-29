@@ -19,7 +19,7 @@
       # Utils
       c = "clear";
       cd = "z";
-      # vim = "nvim";
+      tt = "gtrash put";
       cat = "bat";
       nano = "micro";
       icat = "kitten icat";

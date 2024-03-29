@@ -113,7 +113,8 @@ Utils (EXPAND)
 </summary>
 
 - ```c```     $\rightarrow$ ```clear```
-- ```cd```     $\rightarrow$ ```z```
+- ```cd```    $\rightarrow$ ```z```
+- ```tt```    $\rightarrow$ ```gtrash put```
 - ```vim```   $\rightarrow$ ```nvim```
 - ```cat```   $\rightarrow$ ```bat```
 - ```nano```  $\rightarrow$ ```micro```
