@@ -77,7 +77,7 @@
       "C_Cpp.default.browse.path" = [
         ''''${workspaceFolder}/**''
       ];
-      "C_Cpp.default.cStandard" = "c11";
+      "C_Cpp.default.cStandard" = "gnu11";
       "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores" = false;
       "C_Cpp.intelliSenseUpdateDelay" = 500;
       "C_Cpp.workspaceParsingPriority" = "medium";
