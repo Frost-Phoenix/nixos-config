@@ -42,7 +42,7 @@
 
       "workbench.layoutControl.type" = "menu";
       "workbench.editor.limit.enabled" = true;
-      "workbench.editor.limit.value" = 5;
+      "workbench.editor.limit.value" = 10;
       "workbench.editor.limit.perEditorGroup" = true;
       "workbench.editor.showTabs" = "single";
       "files.autoSave" = "onWindowChange";
