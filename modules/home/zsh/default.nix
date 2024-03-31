@@ -22,6 +22,7 @@
       tt = "gtrash put";
       cat = "bat";
       nano = "micro";
+      code = "codium";
       icat = "kitten icat";
       dsize = "du -hs";
       findw = "grep -rl";
