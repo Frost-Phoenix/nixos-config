@@ -45,7 +45,8 @@
         border_size = 2
         col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
         col.inactive_border = 0x00000000
-        border_part_of_window = true
+        border_part_of_window = false
+        no_border_on_floating = false
 
         # gaps_in = 5
         # gaps_out = 10
@@ -60,7 +61,7 @@
       }
 
       dwindle {
-        no_gaps_when_only = false
+        no_gaps_when_only = true
         force_split = 0
         special_scale_factor = 1.0
         split_width_multiplier = 1.0
