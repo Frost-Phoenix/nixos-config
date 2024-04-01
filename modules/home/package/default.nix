@@ -21,6 +21,7 @@
     todo                              # cli todo list
     toipe                             # typing test in the terminal
     cinnamon.nemo-with-extensions     # file manager
+    valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
     gnome.zenity
