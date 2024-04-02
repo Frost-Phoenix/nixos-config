@@ -77,7 +77,8 @@
       }
 
       decoration {
-        rounding = 5
+        rounding = 0
+        # rounding = 5
         # rounding = 12
         
         active_opacity = 0.90;
