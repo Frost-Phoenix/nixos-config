@@ -1,11 +1,121 @@
-{...}: {
+{ ... }: 
+{
   wayland.windowManager.hyprland = {
     settings = {
-      # mouse binding
-      bindm = [
-        "$mainMod, mouse:272, movewindow"
-        "$mainMod, mouse:273, resizewindow"
+      
+      # autostart
+      exec-once = [
+        "systemctl --user import-environment &"
+        "hash dbus-update-activation-environment 2>/dev/null &"
+        "dbus-update-activation-environment --systemd &"
+        "nm-applet &"
+        "wl-paste --primary --watch wl-copy --primary --clear"
+        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
+        "sleep 1 && swaylock"
+        "hyprctl setcursor Nordzy-cursors 22 &"
+        "waybar &"
+        "mako &"
       ];
+
+      input = {
+        kb_layout = "us";
+        numlock_by_default = true;
+        follow_mouse = 1;
+        sensitivity = 0;
+      };
+
+      general = {
+        "$mainMod" = "SUPER";
+        layout = "dwindle";
+        gaps_in = 0;
+        gaps_out = 0;
+        border_size = 2;
+        "col.active_border" = "rgb(cba6f7) rgb(94e2d5) 45deg";
+        "col.inactive_border" = "0x00000000";
+        border_part_of_window = false;
+        no_border_on_floating = false;
+      };
+
+      misc = {
+        disable_autoreload = true;
+        disable_hyprland_logo = true;
+        always_follow_on_dnd = true;
+        layers_hog_keyboard_focus = true;
+        animate_manual_resizes = false;
+        enable_swallow = true;
+        focus_on_activate = true;
+      };
+
+      dwindle = {
+        no_gaps_when_only = true;
+        force_split = 0;
+        special_scale_factor = 1.0;
+        split_width_multiplier = 1.0;
+        use_active_for_splits = true;
+        pseudotile = "yes";
+        preserve_split = "yes";
+      };
+
+      master = {
+        new_is_master = true;
+        special_scale_factor = 1;
+        no_gaps_when_only = false;
+      };
+
+      decoration = {
+        rounding = 0;
+        active_opacity = 0.90;
+        inactive_opacity = 0.90;
+        fullscreen_opacity = 1.0;
+
+        blur = {
+          enabled = true;
+          size = 4;
+          passes = 2;
+          brightness = 1;
+          contrast = 1.300;
+          ignore_opacity = true;
+          noise = 0.01170;
+          new_optimizations = true;
+          xray = true;
+        };
+
+        drop_shadow = true;
+
+        shadow_ignore_window = true;
+        shadow_offset = "0 2";
+        shadow_range = 20;
+        shadow_render_power = 3;
+        "col.shadow" = "rgba(00000055)";
+      };
+
+      animations = {
+        enabled = true;
+
+        bezier = [
+          "fluent_decel, 0, 0.2, 0.4, 1"
+          "easeOutCirc, 0, 0.55, 0.45, 1"
+          "easeOutCubic, 0.33, 1, 0.68, 1"
+          "easeinoutsine, 0.37, 0, 0.63, 1"
+        ];
+
+        animation = [
+          # Windows
+          "windowsIn, 1, 3, easeOutCubic, popin 30%" # window open
+          "windowsOut, 1, 3, fluent_decel, popin 70%" # window close.
+          "windowsMove, 1, 2, easeinoutsine, slide" # everything in between, moving, dragging, resizing.
+
+          # Fade
+          "fadeIn, 1, 3, easeOutCubic" # fade in (open) -> layers and windows
+          "fadeOut, 1, 2, easeOutCubic" # fade out (close) -> layers and windows
+          "fadeSwitch, 0, 1, easeOutCirc" # fade on changing activewindow and its opacity
+          "fadeShadow, 1, 10, easeOutCirc" # fade on changing activewindow for shadows
+          "fadeDim, 1, 4, fluent_decel" # the easing of the dimming of inactive windows
+          "border, 1, 2.7, easeOutCirc" # for animating the border's color switch speed
+          "borderangle, 1, 30, fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
+          "workspaces, 1, 4, easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
+        ];
+      };
 
       bind = [
         # show keybinds list
@@ -95,59 +205,10 @@
         "$mainMod, mouse_up, workspace, e+1"
       ];
 
-      animations = {
-        enabled = true;
-
-        bezier = [
-          "fluent_decel, 0, 0.2, 0.4, 1"
-          "easeOutCirc, 0, 0.55, 0.45, 1"
-          "easeOutCubic, 0.33, 1, 0.68, 1"
-          "easeinoutsine, 0.37, 0, 0.63, 1"
-        ];
-
-        # Windows
-        animation = [
-          "windowsIn, 1, 3, easeOutCubic, popin 30%" # window open
-          "windowsOut, 1, 3, fluent_decel, popin 70%" # window close.
-          "windowsMove, 1, 2, easeinoutsine, slide" # everything in between, moving, dragging, resizing.
-
-          "fadeIn, 1, 3, easeOutCubic" # fade in (open) -> layers and windows
-          "fadeOut, 1, 2, easeOutCubic" # fade out (close) -> layers and windows
-          "fadeSwitch, 0, 1, easeOutCirc" # fade on changing activewindow and its opacity
-          "fadeShadow, 1, 10, easeOutCirc" # fade on changing activewindow for shadows
-          "fadeDim, 1, 4, fluent_decel" # the easing of the dimming of inactive windows
-          "border, 1, 2.7, easeOutCirc" # for animating the border's color switch speed
-          "borderangle, 1, 30, fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
-          "workspaces, 1, 4, easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
-        ];
-
-        # Fade
-      };
-      # windowrulev2
-      windowrulev2 = [
-        #"opacity 1.0 override 1.0 override, title:^(.*YouTube.*)$"
-        "float, title:^(Picture-in-Picture)$"
-        "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
-        "pin, title:^(Picture-in-Picture)$"
-        "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
-        "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
-        "opacity 1.0 override 1.0 override, class:(Aseprite)"
-        "opacity 1.0 override 1.0 override, class:(Unity)"
-        "idleinhibit focus, class:^(mpv)$"
-        "idleinhibit fullscreen, class:^(firefox)$"
-        "float,class:^(pavucontrol)$"
-        "float,class:^(SoundWireServer)$"
-        "float,class:^(file_progress)$"
-        "float,class:^(confirm)$"
-        "float,class:^(dialog)$"
-        "float,class:^(download)$"
-        "float,class:^(notification)$"
-        "float,class:^(error)$"
-        "float,class:^(confirmreset)$"
-        "float,title:^(Open File)$"
-        "float,title:^(branchdialog)$"
-        "float,title:^(Confirm to replace files)$"
-        "float,title:^(File Operation Progress)$"
+      # mouse binding
+      bindm = [
+        "$mainMod, mouse:272, movewindow"
+        "$mainMod, mouse:273, resizewindow"
       ];
 
       # windowrule
@@ -178,99 +239,32 @@
         "move 40 55%,title:^(Volume Control)$"
       ];
 
-      general = {
-        "$mainMod" = "SUPER";
-        layout = "dwindle";
-        gaps_in = 0;
-        gaps_out = 0;
-        border_size = 2;
-        "col.active_border" = "rgb(cba6f7) rgb(94e2d5) 45deg";
-        "col.inactive_border" = "0x00000000";
-        border_part_of_window = false;
-        no_border_on_floating = false;
-
-        # gaps_in = 5
-        # gaps_out = 10
-        # border_size = 2
-        # col.active_border = rgb(cba6f7) rgb(94e2d5) 45deg
-        # col.inactive_border = 0x00000000
-        # border_part_of_window = false
-      };
-
-      input = {
-        kb_layout = "us";
-        numlock_by_default = true;
-        follow_mouse = 1;
-        sensitivity = 0;
-      };
-
-      # autostart
-      exec-once = [
-        "systemctl --user import-environment &"
-        "hash dbus-update-activation-environment 2>/dev/null &"
-        "dbus-update-activation-environment --systemd &"
-        "nm-applet &"
-        "wl-paste --primary --watch wl-copy --primary --clear"
-        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
-        "sleep 1 && swaylock"
-        "hyprctl setcursor Nordzy-cursors 22 &"
-        "waybar &"
-        "mako &"
+      # windowrulev2
+      windowrulev2 = [
+        "float, title:^(Picture-in-Picture)$"
+        "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
+        "pin, title:^(Picture-in-Picture)$"
+        "opacity 1.0 override 1.0 override, title:^(.*imv.*)$"
+        "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
+        "opacity 1.0 override 1.0 override, class:(Aseprite)"
+        "opacity 1.0 override 1.0 override, class:(Unity)"
+        "idleinhibit focus, class:^(mpv)$"
+        "idleinhibit fullscreen, class:^(firefox)$"
+        "float,class:^(pavucontrol)$"
+        "float,class:^(SoundWireServer)$"
+        "float,class:^(file_progress)$"
+        "float,class:^(confirm)$"
+        "float,class:^(dialog)$"
+        "float,class:^(download)$"
+        "float,class:^(notification)$"
+        "float,class:^(error)$"
+        "float,class:^(confirmreset)$"
+        "float,title:^(Open File)$"
+        "float,title:^(branchdialog)$"
+        "float,title:^(Confirm to replace files)$"
+        "float,title:^(File Operation Progress)$"
       ];
 
-      misc = {
-        disable_autoreload = true;
-        disable_hyprland_logo = true;
-        always_follow_on_dnd = true;
-        layers_hog_keyboard_focus = true;
-        animate_manual_resizes = false;
-        enable_swallow = true;
-        # swallow_regex =
-        focus_on_activate = true;
-      };
-
-      dwindle = {
-        no_gaps_when_only = true;
-        force_split = 0;
-        special_scale_factor = 1.0;
-        split_width_multiplier = 1.0;
-        use_active_for_splits = true;
-        pseudotile = "yes";
-        preserve_split = "yes";
-      };
-
-      master = {
-        new_is_master = true;
-        special_scale_factor = 1;
-        no_gaps_when_only = false;
-      };
-
-      decoration = {
-        rounding = 0; #5    #12
-        active_opacity = 0.90;
-        inactive_opacity = 0.90;
-        fullscreen_opacity = 1.0;
-
-        blur = {
-          enabled = true;
-          size = 4;
-          passes = 2;
-          brightness = 1;
-          contrast = 1.300;
-          ignore_opacity = true;
-          noise = 0.01170;
-          new_optimizations = true;
-          xray = true;
-        };
-
-        drop_shadow = true;
-
-        shadow_ignore_window = true;
-        shadow_offset = 0 2;
-        shadow_range = 20;
-        shadow_render_power = 3;
-        "col.shadow" = "rgba(00000055)";
-      };
     };
 
     extraConfig = "
