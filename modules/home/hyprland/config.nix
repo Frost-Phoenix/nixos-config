@@ -73,7 +73,7 @@
           size = 4;
           passes = 2;
           brightness = 1;
-          contrast = 1.300;
+          contrast = 1.400;
           ignore_opacity = true;
           noise = 0.01170;
           new_optimizations = true;
