@@ -1,4 +1,10 @@
+{ pkgs, ... }: 
 {
+  home.packages = with pkgs; [
+    (discord.override { 
+      withVencord = true; 
+    })
+  ];
   xdg.configFile."Vencord/themes/custom.css".text = '' 
     /**
     * @name Catppuccin Mocha
