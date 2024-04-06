@@ -13,6 +13,7 @@
     jdk17                             # java
     lazygit
     libreoffice
+    cinnamon.nemo-with-extensions     # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
@@ -20,7 +21,7 @@
     soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
     toipe                             # typing test in the terminal
-    cinnamon.nemo-with-extensions     # file manager
+    unityhub
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl

@@ -15,12 +15,11 @@
     ++ [(import ./mako)]            # notification deamon
     ++ [(import ./micro)]           # nano replacement
     ++ [(import ./nvim)]
-    ++ [(import ./package)]
+    ++ [(import ./packages)]
     ++ [(import ./rider)]           # C# JetBrain editor
     ++ [(import ./scripts)]         # personal scripts
     ++ [(import ./starship)]
     ++ [(import ./swaylock)]
-    ++ [(import ./unity)]
     ++ [(import ./vscodium)]
     ++ [(import ./waybar)]
     ++ [(import ./wofi)]

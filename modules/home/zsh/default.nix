@@ -39,9 +39,6 @@
       nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#nixos";
       nix-flake-update = "sudo nix flake update ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
-      # nix-clean = "sudo nix-collect-garbage -d";
-      # nix-cleanold = "sudo nix-collect-garbage --delete-old";
-      # nix-cleanboot = "sudo /run/current-system/bin/switch-to-configuration boot";
 
       # Git
       ga   = "git add";
@@ -61,8 +58,6 @@
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
-
-      # g = "lazygit";
 
       # python
       piv = "python -m venv .venv";
