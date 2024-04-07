@@ -29,26 +29,14 @@
 <br>
 </div>
 
-<p align="center">
-   <img src="./.github/assets/screenshots/1.png" width="800px" /> <br>
-</p>
-<p align="center">
-   Screeenshot last updated <b>2024-04-05</b>
-</p>
-
 ### 🖼️ Gallery
 
-<details>
-<summary>
-CURRENT (EXPAND)
-</summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/2.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/1.png" /> <br>
+   <img src="./.github/assets/screenshots/2.png" /> <br>
+   <img src="./.github/assets/screenshots/3.png" /> <br>
+   Screeenshots last updated <b>2024-04-05</b>
 </p>
-<p align="center">
-   <img src="./.github/assets/screenshots/3.png" width="800px" /> <br>
-</p>
-</details>
 
 <details>
 <summary>
@@ -56,11 +44,7 @@ OLD (EXPAND)
 </summary>
 <p align="center">
    <img src="./.github/assets/screenshots/1.old.png" width="800px" /> <br>
-</p>
-<p align="center">
    <img src="./.github/assets/screenshots/2.old.png" width="800px" /> <br>
-</p>
-<p align="center">
    <img src="./.github/assets/screenshots/3.old.png" width="800px" /> <br>
 </p>
 </details>
