@@ -409,7 +409,9 @@ A brief walkthrough of what the install script does.
 
 4. Copy the wallpapers
 
-   Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for wallpapers.
+   Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
+
+   > Sometime the copy doesn't work and you will need to copy them yourself.
 
 5. Get the hardware configuration
 
