@@ -254,6 +254,7 @@
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
+        "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"
         "float,class:^(confirm)$"
         "float,class:^(dialog)$"

@@ -21,6 +21,7 @@
     crispy-doom
 
     ## Emulation
+    sameboy
     # cemu
     # dolphin-emu
   ];
