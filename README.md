@@ -35,7 +35,7 @@
    <img src="./.github/assets/screenshots/1.png" /> <br>
    <img src="./.github/assets/screenshots/2.png" /> <br>
    <img src="./.github/assets/screenshots/3.png" /> <br>
-   Screeenshots last updated <b>2024-04-05</b>
+   Screeenshots last updated <b>2024-04-09</b>
 </p>
 
 <details>
