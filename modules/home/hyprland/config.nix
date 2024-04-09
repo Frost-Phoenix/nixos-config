@@ -64,7 +64,7 @@
 
       decoration = {
         rounding = 0;
-        active_opacity = 0.90;
+        active_opacity = 1.0;
         inactive_opacity = 0.90;
         fullscreen_opacity = 1.0;
 
