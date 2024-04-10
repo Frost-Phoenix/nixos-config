@@ -272,7 +272,6 @@
 
     extraConfig = "
       monitor=,preferred,auto,auto
-      monitor=,1920x1200,auto,auto
 
       xwayland {
         force_zero_scaling = true
