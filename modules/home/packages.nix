@@ -26,6 +26,8 @@
     yazi                              # terminal file manager
     youtube-dl
     gnome.zenity
+    winetricks
+    wineWowPackages.wayland
 
     # C / C++
     gcc
