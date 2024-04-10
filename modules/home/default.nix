@@ -22,6 +22,6 @@
     ++ [(import ./swaylock.nix)]
     ++ [(import ./vscodium.nix)]
     ++ [(import ./waybar)]
-    ++ [(import ./wofi/wofi.nix)]
+    ++ [(import ./wofi.nix)]
     ++ [(import ./zsh.nix)];
 }
