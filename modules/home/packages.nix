@@ -21,7 +21,6 @@
     soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
     toipe                             # typing test in the terminal
-    unityhub
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
