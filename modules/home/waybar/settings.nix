@@ -93,17 +93,15 @@
         on-click= "pamixer -t";
     };
     battery = {
-        format = "{icon} {capacity}% - {time}";
+        format = "{icon} {capacity}%";
         format-icons = ["" "" "" "" ""];
-        format-time = "{H}h{M}m";
         format-charging = " {icon} {capacity}%";
-        format-full = " {icon} {capacity}%";
         interval = 30;
-        states = {
-            warning = 20;
-            critical = 5;
-        };
-        tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
+        # states = {
+        #     warning = 20;
+        #     critical = 5;
+        # };
+        # tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
     };
     "custom/launcher"= {
         format= "";
