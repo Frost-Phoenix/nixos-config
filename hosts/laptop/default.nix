@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     powertop
+    cpupower-gui
   ];
   
   hardware.trackpoint = {
@@ -18,9 +19,8 @@
   };
 
   services = {
-    thermald.enable = true;
+    # thermald.enable = true;
     power-profiles-daemon.enable = true;
-    cpupower-gui.enable = true;
  
     upower = {
       enable = true;
@@ -47,11 +47,6 @@
 
   boot = {
     kernelModules = ["acpi_call"];
-    extraModulePackages = with config.boot.kernelPackages;
-      [
-        acpi_call
-        cpupower
-      ]
-      ++ [pkgs.cpupower-gui];
+    extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
   };
 }
