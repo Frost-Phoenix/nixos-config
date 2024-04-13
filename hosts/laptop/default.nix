@@ -11,16 +11,7 @@
     cpupower-gui
   ];
   
-  hardware.trackpoint = {
-    enable = true;
-    emulateWheel = true;
-    speed = 255;
-    sensitivity = 200;
-  };
-
-  services = {
-    xserver.libinput.touchpad.naturalScrolling = true;
-    
+  services = {    
     # thermald.enable = true;
     power-profiles-daemon.enable = true;
  
