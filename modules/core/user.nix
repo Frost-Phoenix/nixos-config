@@ -1,9 +1,4 @@
-{ pkgs, inputs, username, ...}:
-let
-  packages = with pkgs; [
-    fish
-  ];
-in
+{ pkgs, inputs, username, host, ...}:
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
   home-manager = {
@@ -11,7 +6,10 @@ in
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs username; };
     users.${username} = {
-      imports = [ (import ./../home) ];
+      imports = 
+        if (host == "desktop") then 
+          [ ./../home/default.desktop.nix ] 
+        else [ ./../home ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "22.11";

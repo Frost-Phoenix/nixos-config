@@ -37,14 +37,29 @@
   };
 
   outputs = { nixpkgs, self, ...} @ inputs:
-    let
-      selfPkgs = import ./pkgs;
-      username = "frostphoenix";
-    in
-    {
-      overlays.default = selfPkgs.overlay;
-      nixosConfigurations = import ./modules/core/default.nix {
-        inherit self nixpkgs inputs username;
+  let
+    selfPkgs = import ./pkgs;
+    username = "frostphoenix";
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    lib = nixpkgs.lib;
+  in
+  {
+    overlays.default = selfPkgs.overlay;
+    nixosConfigurations = {
+      desktop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [ (import ./hosts/desktop) ];
+        specialArgs = { host="desktop"; inherit self inputs username ; };
+      };
+      laptop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [ (import ./hosts/laptop) ];
+        specialArgs = { host="laptop"; inherit self inputs username ; };
       };
     };
+  };
 }

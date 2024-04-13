@@ -16,12 +16,9 @@
     ++ [(import ./micro.nix)]                     # nano replacement
     ++ [(import ./nvim.nix)]
     ++ [(import ./packages.nix)]
-    ++ [(import ./rider.nix)]                     # C# JetBrain editor
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]
-    # ++ [ (import ./steam.nix) ]
     ++ [(import ./swaylock.nix)]
-    ++ [(import ./unity.nix)]
     ++ [(import ./vscodium.nix)]
     ++ [(import ./waybar)]
     ++ [(import ./wofi.nix)]
