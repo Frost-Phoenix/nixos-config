@@ -94,14 +94,14 @@
     };
     battery = {
         format = "{icon} {capacity}%";
-        format-icons = ["" "" "" "" ""];
-        format-charging = " {icon} {capacity}%";
+        format-icons = [" " " " " " " " " "];
+        format-charging = " {capacity}%";
+        format-full = " {capacity}%";
+        format-warning = " {capacity}%";
         interval = 30;
-        # states = {
-        #     warning = 20;
-        #     critical = 5;
-        # };
-        # tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
+        states = {
+            warning = 20;
+        };
     };
     "custom/launcher"= {
         format= "";
