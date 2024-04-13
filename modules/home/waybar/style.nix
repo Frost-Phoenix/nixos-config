@@ -45,7 +45,7 @@ in
         color: #b4befe;
     }
 
-    #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock {
+    #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock, #battery {
         font-size: ${custom.font_size};
         color: ${custom.text_color};
     }
@@ -73,6 +73,10 @@ in
         padding-left: 15px;
         padding-right: 9px;
         margin-left: 7px;
+    }
+    #battery {
+        padding-left: 9px;
+        padding-right: 9px;
     }
     #network {
         padding-left: 9px;

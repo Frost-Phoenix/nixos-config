@@ -21,11 +21,12 @@
         "memory"
         "disk"
         "pulseaudio" 
+        "battery"
         "network"
     ];
     clock= {
         calendar = {
-          format = { today = "<span color='#b4befe'><b>{}</b></span>"; };
+          format = { today = "<span color='#b4befe'><b>{}</b>"; };
         };
         format = " {:%H:%M}";
         tooltip= "true";
@@ -90,6 +91,19 @@
         };
         scroll-step= 5;
         on-click= "pamixer -t";
+    };
+    battery = {
+        format = "{icon} {capacity}% - {time}";
+        format-icons = ["" "" "" "" ""];
+        format-time = "{H}h{M}m";
+        format-charging = " {icon} {capacity}%";
+        format-full = " {icon} {capacity}%";
+        interval = 30;
+        states = {
+            warning = 20;
+            critical = 5;
+        };
+        tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
     };
     "custom/launcher"= {
         format= "";
