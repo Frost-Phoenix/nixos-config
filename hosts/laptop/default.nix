@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
     acpi
     powertop
+    cpupower-gui
   ];
   
   hardware.trackpoint = {
@@ -18,6 +19,8 @@
   };
 
   services = {
+    xserver.libinput.touchpad.naturalScrolling = true;
+    
     # thermald.enable = true;
     power-profiles-daemon.enable = true;
  
