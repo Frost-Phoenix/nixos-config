@@ -20,6 +20,7 @@
   services = {
     thermald.enable = true;
     power-profiles-daemon.enable = true;
+    cpupower-gui.enable = true;
  
     upower = {
       enable = true;
