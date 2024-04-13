@@ -7,8 +7,9 @@
 
   environment.systemPackages = with pkgs; [
     acpi
-    powertop
+    brightnessctl
     cpupower-gui
+    powertop
   ];
   
   services = {    
