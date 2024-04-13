@@ -14,7 +14,6 @@ in
       [ (import ./bootloader.nix) ]
       ++ [ (import ./hardware.nix) ]
       ++ [ (import ./xserver.nix) ]
-      # ++ [ (import ./steam.nix) ]
       ++ [ (import ./network.nix) ]
       ++ [ (import ./pipewire.nix) ]
       ++ [ (import ./program.nix) ]
@@ -24,7 +23,7 @@ in
       ++ [ (import ./user.nix) ]
       ++ [ (import ./wayland.nix) ]
       ++ [ (import ./virtualization.nix) ]
-      ++ [ (import ./../../hosts/nixos/hardware-configuration.nix) ]
+      ++ [ (import ./../../hosts/desktop/hardware-configuration.nix) ]
     ;
   };
 }

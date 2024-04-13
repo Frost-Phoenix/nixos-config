@@ -19,6 +19,7 @@
     ++ [(import ./rider.nix)]                     # C# JetBrain editor
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./starship.nix)]
+    # ++ [ (import ./steam.nix) ]
     ++ [(import ./swaylock.nix)]
     ++ [(import ./vscodium.nix)]
     ++ [(import ./waybar)]
