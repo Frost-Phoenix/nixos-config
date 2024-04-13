@@ -14,7 +14,7 @@
       
       effect-blur = "7x5";
       effect-vignette = "0.5:0.5";
-      effect-pixelate = 7;
+      effect-pixelate = 5;
       
       color="1e1e2e";
       bs-hl-color="f5e0dc";
