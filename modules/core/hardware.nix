@@ -7,5 +7,4 @@
   hardware.opengl.extraPackages = with pkgs; [
     
   ];
-  powerManagement.cpuFreqGovernor = "performance";
 }
