@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, config, ... }: 
 {
   imports = [
     ./hardware-configuration.nix
@@ -33,8 +33,8 @@
       enable = true;
       settings = {
         battery = {
-          governor = "ondemand";
-          turbo = "never";
+          governor = "performance";
+          turbo = "auto";
         };
         charger = {
           governor = "performance";
