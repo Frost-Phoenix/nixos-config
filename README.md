@@ -85,7 +85,7 @@ OLD (EXPAND)
 | **Music Player**            | [audacious][audacious] |
 | **Screenshot Software**     | [grimblast][grimblast] |
 | **Screen Recording**        | [wf-recorder][wf-recorder] |
-| **Clipboard**               | [wl-clipboard][wl-clipboard] |
+| **Clipboard**               | [wl-clip-persist][wl-clip-persist] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
 
@@ -473,7 +473,7 @@ Other dotfiles that I learned / copy from:
 [Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
 [network-manager-applet]: https://gitlab.gnome.org/GNOME/network-manager-applet/
-[wl-clipboard]: https://github.com/bugaevc/wl-clipboard
+[wl-clip-persist]: https://github.com/Linus789/wl-clip-persist
 [wf-recorder]: https://github.com/ammen99/wf-recorder
 [hyprpicker]: https://github.com/hyprwm/hyprpicker
 [Catppuccin]: https://github.com/catppuccin/catppuccin
