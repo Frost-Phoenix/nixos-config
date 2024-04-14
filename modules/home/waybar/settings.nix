@@ -102,6 +102,8 @@
         states = {
             warning = 20;
         };
+        format-time = "{H}h{M}m";
+        tooltip = true;
         tooltip-format = "{time}";
     };
     "custom/launcher"= {
