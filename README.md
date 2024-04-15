@@ -35,7 +35,7 @@
    <img src="./.github/assets/screenshots/1.png" /> <br>
    <img src="./.github/assets/screenshots/2.png" /> <br>
    <img src="./.github/assets/screenshots/3.png" /> <br>
-   Screeenshots last updated <b>2024-04-09</b>
+   Screenshots last updated <b>2024-04-09</b>
 </p>
 
 <details>
@@ -167,7 +167,7 @@ extract.sh
 compress.sh 
 </summary>
 
-**Description:** This script compress a file or a folder into a ```tar.gz``` archives wich is created in the current directory with the name of the chosen file or folder. 
+**Description:** This script compress a file or a folder into a ```tar.gz``` archives which is created in the current directory with the name of the chosen file or folder. 
 
 **Usage:** ```compress <file>``` or ```compress <folder>```
 </details>
@@ -197,7 +197,7 @@ toggle_oppacity.sh
 maxfetch.sh 
 </summary>
 
-**Description:** This script is a modified verssion of the [jobcmax/maxfetch][maxfetch] script.
+**Description:** This script is a modified version of the [jobcmax/maxfetch][maxfetch] script.
 
 **Usage:** ```maxfetch```
 </details>
@@ -207,7 +207,7 @@ maxfetch.sh
 music.sh 
 </summary>
 
-**Description:** This script is for managing Audacious (music player). If Audacious is currently running, it will be killed (stoping the music); otherwise, it will start Audacious in the 8th workspace and resume the music. 
+**Description:** This script is for managing Audacious (music player). If Audacious is currently running, it will be killed (stopping the music); otherwise, it will start Audacious in the 8th workspace and resume the music. 
 
 **Usage:** ```music```
 </details>
@@ -413,8 +413,6 @@ A brief walkthrough of what the install script does.
 4. Copy the wallpapers
 
    Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
-
-   > Sometime the copy doesn't work and you will need to copy them yourself.
 
 5. Get the hardware configuration
 
