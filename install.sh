@@ -93,7 +93,7 @@ install() {
 
     # Build the system (flakes + home manager)
     echo -e "\nBuilding the system...\n"
-    sudo nixos-rebuild switch --flake .#nixos
+    sudo nixos-rebuild switch --flake .#desktop
 }
 
 main() {
