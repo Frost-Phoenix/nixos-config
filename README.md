@@ -391,6 +391,13 @@ Mouse binding
 
    After rebooting, you'll be greeted by swaylock prompting for your password, with the wallpaper in the background.
 
+5. **Manual config**
+
+   Even though I use home manager, there is still a little bit of manual configuration to do:
+      - Set Aseprite theme (they are in the folder `./nixos-config/modules/home/aseprite/themes`).
+      - Enable Discord theme (in Discord settings under VENCORD > Themes).
+      - Configure the browser (for now, all browser configuration is done manually).
+
 ### Install script walkthrough
 
 A brief walkthrough of what the install script does.
