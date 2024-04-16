@@ -84,7 +84,7 @@ install() {
 
     # Get the hardware configuration
     echo -e "Copying ${MAGENTA}/etc/nixos/hardware-configuration.nix${NORMAL} to ${MAGENTA}./hosts/nixos/${NORMAL}\n"
-    cp /etc/nixos/hardware-configuration.nix hosts/nixos/hardware-configuration.nix
+    cp /etc/nixos/hardware-configuration.nix hosts/desktop/hardware-configuration.nix
     sleep 0.2
 
     # Last Confirmation
