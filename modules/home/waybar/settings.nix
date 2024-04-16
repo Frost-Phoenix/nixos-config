@@ -85,7 +85,7 @@
     };
     pulseaudio= {
         format= "{icon} {volume}%";
-        format-muted= "󰖁  {volume}% ";
+        format-muted= "󰖁  {volume}%";
         format-icons= {
             default= [" "];
         };
@@ -98,7 +98,7 @@
         format-charging = " {capacity}%";
         format-full = " {capacity}%";
         format-warning = " {capacity}%";
-        interval = 30;
+        interval = 5;
         states = {
             warning = 20;
         };
