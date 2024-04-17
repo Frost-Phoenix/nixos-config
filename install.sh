@@ -18,11 +18,11 @@ init() {
     UNDERLINE=$(tput smul)
 }
 
-comfirm() {
+confirm() {
     echo -en "[${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
     read -n 1 -r
     echo
-    if [[ $REPLY =~ ^[Nn]$ ]]
+    if [[ ! $REPLY =~ ^[Yy]$ ]]
     then
         exit 0
     fi
