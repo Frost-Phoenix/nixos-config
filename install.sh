@@ -43,8 +43,8 @@ print_header() {
 
 
                   $BLUE https://github.com/Frost-Phoenix $RED 
-        ! TO MAKE SURE EVERYTHING RUNS CORRECTLY RUN AS ROOT ! $GREEN
-                      -> '"sudo bash install.sh"' $NORMAL
+      ! To make sure everything runs correctly DONT run as root ! $GREEN
+                        -> '"./install.sh"' $NORMAL
 
     "
 }
@@ -54,7 +54,7 @@ get_username() {
     read username
     echo -en "$NORMAL"
     echo -en "Use$YELLOW "$username"$NORMAL as ${GREEN}username${NORMAL} ? "
-    comfirm
+    confirm
 }
 
 set_username() {
@@ -78,7 +78,7 @@ get_host() {
     
     echo -en "$NORMAL"
     echo -en "Use the$YELLOW "$HOST"$NORMAL ${GREEN}host${NORMAL} ? "
-    comfirm
+    confirm
 }
 
 install() {
@@ -110,7 +110,7 @@ install() {
 
     # Last Confirmation
     echo -en "You are about to start the system build, do you want to process ? "
-    comfirm
+    confirm
 
     # Build the system (flakes + home manager)
     echo -e "\nBuilding the system...\n"
