@@ -372,13 +372,13 @@ Mouse binding
    ```
 3. **Install script**
 
-   > First make sure to read the install script, it isn't long. And make sure to execute it as root
+   > First make sure to read the install script, it isn't long
    
    Execute and follow the installation script :
    ```
-   sudo ./install.sh
+   ./install.sh
    ```
-   > You will need to change the git account yourself in ./modules/git/default.nix
+   > You will need to change the git account yourself in ./modules/home/git.nix
    ```
       programs.git = {
          ...
