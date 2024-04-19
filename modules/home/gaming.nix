@@ -23,7 +23,6 @@
     ## Emulation
     sameboy
     snes9x
-    retroarch
     # cemu
     # dolphin-emu
   ];
