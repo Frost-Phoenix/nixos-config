@@ -12,5 +12,5 @@
     };
   };
 
-  home.packages = [ pkgs.gh pkgs.git-lfs ];
+  # home.packages = [ pkgs.gh pkgs.git-lfs ];
 }
