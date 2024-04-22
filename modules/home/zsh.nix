@@ -53,6 +53,7 @@
       gpso = "git push origin";
       gc   = "git commit";
       gcm  = "git commit -m";
+      gcma = "git add --all && git commit -m";
       gtag = "git tag -ma";
       gch  = "git checkout";
       gchb = "git checkout -b";
