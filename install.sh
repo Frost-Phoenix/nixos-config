@@ -63,7 +63,7 @@ set_username() {
 }
 
 get_host() {
-    echo -en "Chose a ${GREEN}host${NORMAL}, either [${YELLOW}D${NORMAL}]esktop or [${YELLOW}L${NORMAL}]aptop: "
+    echo -en "Choose a ${GREEN}host${NORMAL}, either [${YELLOW}D${NORMAL}]esktop or [${YELLOW}L${NORMAL}]aptop: "
     read -n 1 -r
     echo
 
