@@ -26,7 +26,7 @@
     ];
     clock= {
         calendar = {
-          format = { today = "<span color='#b4befe'><b>{}</b></span>"; };
+          format = { today = "<span color='#b4befe'><b><u>{}</u></b></span>"; };
         };
         format = " {:%H:%M}";
         tooltip= "true";
