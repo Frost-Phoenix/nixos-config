@@ -8,7 +8,7 @@
     enableNushellIntegration = true;
 
     settings = {
-      right_format = "$cmd_duration";
+      # right_format = "$cmd_duration";
       
       directory = {
         format = "[ ](bold #89b4fa)[ $path ]($style)";
