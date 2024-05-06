@@ -17,6 +17,7 @@
       extraConfig = ''
         text-alignment=center
         [urgency=high]
+        default-timeout=100000000
         border-color=#fab387
       '';
     };
