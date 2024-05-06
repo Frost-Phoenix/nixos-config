@@ -451,9 +451,9 @@ Other dotfiles that I learned / copy from:
   - [Ruixi-rebirth/flakes](https://github.com/Ruixi-rebirth/flakes)
 
 
-# ✨ Stars History
+<!-- # ✨ Stars History -->
 
-<p align="center"><img src="https://api.star-history.com/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark" /></p>
+<!-- <p align="center"><img src="https://api.star-history.com/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark" /></p> -->
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
 
