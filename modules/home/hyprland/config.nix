@@ -9,11 +9,11 @@
         "hash dbus-update-activation-environment 2>/dev/null &"
         "dbus-update-activation-environment --systemd &"
         "nm-applet &"
-        "poweralertd &"
         "wl-clip-persist --clipboard both"
         "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
         "sleep 1 && swaylock"
         "hyprctl setcursor Nordzy-cursors 22 &"
+        "poweralertd &"
         "waybar &"
         "mako &"
       ];
