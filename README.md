@@ -425,7 +425,7 @@ A brief walkthrough of what the install script does.
 
    It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/nixos/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
 
-6. Chose a host (desktop / laptop)
+6. Choose a host (desktop / laptop)
 
    Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop.
 
