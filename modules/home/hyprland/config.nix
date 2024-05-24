@@ -16,6 +16,7 @@
         "poweralertd &"
         "waybar &"
         "mako &"
+        "wl-paste --watch cliphist store &"
       ];
 
       input = {
@@ -215,6 +216,9 @@
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+
+        # clipboard manager
+        "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
       ];
 
       # mouse binding
