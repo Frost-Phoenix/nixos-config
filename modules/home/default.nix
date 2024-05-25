@@ -8,7 +8,7 @@
     ++ [(import ./discord.nix)]                   # discord with catppuccin theme
     ++ [(import ./floorp/floorp.nix)]             # firefox based browser
     ++ [(import ./gaming.nix)]                    # packages related to gaming
-    ++ [(import ./git.nix)]                       # vertion controle
+    ++ [(import ./git.nix)]                       # version control
     ++ [(import ./gtk.nix)]                       # gtk theme
     ++ [(import ./hyprland)]                      # window manager
     ++ [(import ./kitty.nix)]                     # terminal
