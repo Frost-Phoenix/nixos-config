@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
-respond="$(echo "---------------- Yes ----------------\n-------------- Restart --------------\n---------------- Nah ----------------" | wofi --show dmenu -k /dev/null)"
+respond="$(echo "------------- Shutdown --------------\n------------- Restart ---------------\n-------------- Cancel ---------------" | wofi --show dmenu -k /dev/null)"
 
-if [ $respond = '---------------- Yes ----------------' ] 
+if [ $respond = '------------- Shutdown --------------' ] 
 then
     echo "shutdown"
 	shutdown now    
-elif [ $respond = '-------------- Restart --------------' ] 
+elif [ $respond = '------------- Restart ---------------' ] 
 then
     echo "restart"
     reboot
