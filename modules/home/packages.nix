@@ -41,6 +41,7 @@
     gparted                           # partition manager
     ffmpeg
     imv                               # image viewer
+    killall
     libnotify
 	  man-pages					            	  # extra man pages
     mpv                               # video player
