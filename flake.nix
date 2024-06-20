@@ -13,8 +13,9 @@
     nix-gaming.url = "github:fufexan/nix-gaming";
   
     hyprland = {
-      url = "github:hyprwm/Hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
+      type = "git";
+      url = "https://github.com/hyprwm/Hyprland";
+      submodules = true;
     };
   
     home-manager = {
