@@ -5,11 +5,11 @@ respond="$(echo " Shutdown\n Restart\n Cancel" | fuzzel --dmenu --lines=3 --widt
 if [ $respond = ' Shutdown' ] 
 then
     echo "shutdown"
-	# shutdown now    
+	shutdown now    
 elif [ $respond = ' Restart' ] 
 then
     echo "restart"
-    # reboot
+    reboot
 else
     notify-send "cancel shutdown"
 fi
