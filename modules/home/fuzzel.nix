@@ -20,7 +20,7 @@
         background = "1e1e2eaa";
         text = "cdd6f4ff";
         match = "f38ba8ff";
-        selection = "585b70ff";
+        selection = "b4befeaa>";
         selection-match = "f38ba8ff";
         selection-text = "cdd6f4ff";
         border = "b4befeff";
