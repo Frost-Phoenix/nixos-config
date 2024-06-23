@@ -10,14 +10,14 @@
         terminal = "kitty";
         prompt = "' ➜  '" ;
         icon-theme = "Papirus-Dark";
-        layer = "overlay";
+        layer = "top";
         lines = 10;
         width = 35;
         horizontal-pad = 25;
         inner-pad = 5;
       };
       colors = {
-        background = "1e1e2eaa";
+        background = "1e1e2ecc";
         text = "cdd6f4ff";
         match = "f38ba8ff";
         selection = "b4befeaa";
