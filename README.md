@@ -68,7 +68,7 @@ OLD (EXPAND)
 | --------------------------- | :---------------------------------------------------------------------------------------------:
 | **Window Manager**          | [Hyprland][Hyprland] |
 | **Bar**                     | [Waybar][Waybar] |
-| **Application Launcher**    | [wofi][wofi] |
+| **Application Launcher**    | [fuzzel][fuzzel] |
 | **Notification Daemon**     | [Mako][Mako] |
 | **Terminal Emulator**       | [Kitty][Kitty] |
 | **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
@@ -239,7 +239,7 @@ Keybindings
 - ```bind = $mainMod, F, fullscreen, 0```
 - ```bind = $mainMod SHIFT, F, fullscreen, 1```
 - ```bind = $mainMod, Space, togglefloating,```
-- ```bind = $mainMod, D, exec, pkill wofi || wofi --show drun```
+- ```bind = $mainMod, D, exec, pkill fuzzel || fuzzel```
 - ```bind = $mainMod, Escape, exec, swaylock```
 - ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
 - ```bind = $mainMod, P, pseudo,```
@@ -248,7 +248,7 @@ Keybindings
 - ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
 - ```bind = $mainMod, C ,exec, hyprpicker -a```
 - ```bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout```
-- ```bind = $mainMod, W,exec, pkill wofi || wallpaper-picker```
+- ```bind = $mainMod, W,exec, pkill fuzzel || wallpaper-picker```
 </details>
 
 <details>
@@ -468,7 +468,7 @@ Other dotfiles that I learned / copy from:
 [Kitty]: https://github.com/kovidgoyal/kitty
 [Starship]: https://github.com/starship/starship
 [Waybar]: https://github.com/Alexays/Waybar
-[wofi]: https://hg.sr.ht/~scoopta/wofi
+[fuzzel]: https://codeberg.org/dnkl/fuzzel>
 [Btop]: https://github.com/aristocratos/btop
 [nemo]: https://github.com/linuxmint/nemo
 [yazi]: https://github.com/sxyazi/yazi
