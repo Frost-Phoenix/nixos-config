@@ -13,7 +13,7 @@
     ++ [(import ./gtk.nix)]                       # gtk theme
     ++ [(import ./hyprland)]                      # window manager
     ++ [(import ./kitty.nix)]                     # terminal
-    ++ [(import ./mako.nix)]                      # notification deamon
+    ++ [(import ./swaync/swaync.nix)]             # notification deamon
     ++ [(import ./micro.nix)]                     # nano replacement
     ++ [(import ./nvim.nix)]                      # neovim editor
     ++ [(import ./packages.nix)]                  # other packages

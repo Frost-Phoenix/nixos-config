@@ -69,7 +69,7 @@ OLD (EXPAND)
 | **Window Manager**          | [Hyprland][Hyprland] |
 | **Bar**                     | [Waybar][Waybar] |
 | **Application Launcher**    | [fuzzel][fuzzel] |
-| **Notification Daemon**     | [Mako][Mako] |
+| **Notification Daemon**     | [swaync][swaync] |
 | **Terminal Emulator**       | [Kitty][Kitty] |
 | **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
@@ -481,7 +481,7 @@ Other dotfiles that I learned / copy from:
 [Neovim]: https://github.com/neovim/neovim
 [grimblast]: https://github.com/hyprwm/contrib
 [imv]: https://sr.ht/~exec64/imv/
-[Mako]: https://github.com/emersion/mako
+[swaync]: https://github.com/ErikReider/SwayNotificationCenter
 [Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
 [network-manager-applet]: https://gitlab.gnome.org/GNOME/network-manager-applet/

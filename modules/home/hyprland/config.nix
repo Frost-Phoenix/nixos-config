@@ -16,7 +16,7 @@
         "hyprctl setcursor Nordzy-cursors 22 &"
         "poweralertd &"
         "waybar &"
-        "mako &"
+        "swaync &"
         "wl-paste --watch cliphist store &"
       ];
 
