@@ -64,11 +64,11 @@
         "actions": [
           {
             "label": "Whole screen",
-            "command": "grimblast --notify --cursor --freeze copysave output"
+            "command": "grimblast --notify --cursor --freeze copysave output ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
           },
           {
             "label": "Window / Region",
-            "command": "grimblast --notify --cursor --freeze copysave area"
+            "command": "grimblast --notify --cursor --freeze copysave area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
           }
         ]
       },
