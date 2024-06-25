@@ -63,12 +63,12 @@
         "position": "left",
         "actions": [
           {
-            "label": "Whole screen",
-            "command": "grimblast --notify --cursor --freeze copysave output ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+            "label": "󰹑  Whole screen",
+            "command": "grimblast --notify --cursor --freeze copy output"
           },
           {
-            "label": "Window / Region",
-            "command": "grimblast --notify --cursor --freeze copysave area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png"
+            "label": "󰩭  Window / Region",
+            "command": "grimblast --notify --cursor --freeze copy area"
           }
         ]
       },
@@ -77,16 +77,20 @@
         "position": "left",
         "actions": [
           {
-            "label": "todo",
-            "command": "sh -c 'swaync-client -cp; pkexec ~/.config/scripts/fancontrol.sh 0'"
+            "label": "  Record screen",
+            "command": "record screen & ; swaync-client -t"
           },
           {
-            "label": "todo",
-            "command": "sh -c 'swaync-client -cp; pkexec ~/.config/scripts/fancontrol.sh 25'"
+            "label": "  Record selection",
+            "command": "record area & ; swaync-client -t"
           },
           {
-            "label": "Full speed",
-            "command": "sh -c 'swaync-client -cp; pkexec ~/.config/scripts/fancontrol.sh 100'"
+            "label": "  Record GIF",
+            "command": "record gif & ; swaync-client -t"
+          },
+          {
+            "label": "󰻃  Stop",
+            "command": "record stop"
           }
         ]
       },
