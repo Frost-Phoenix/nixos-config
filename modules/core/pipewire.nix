@@ -1,4 +1,4 @@
-{ ... }: 
+{ pkgs, ... }: 
 {
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -9,4 +9,7 @@
     pulse.enable = true;
     # lowLatency.enable = true;
   };
+  environment.systemPackages = with pkgs; [
+    pulseaudioFull
+  ];
 }
