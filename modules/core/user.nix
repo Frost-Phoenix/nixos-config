@@ -12,7 +12,7 @@
         else [ ./../home ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
-      home.stateVersion = "22.11";
+      home.stateVersion = "24.05";
       programs.home-manager.enable = true;
     };
   };
