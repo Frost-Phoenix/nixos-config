@@ -22,8 +22,7 @@
 
       input = {
         kb_layout = "us,fr";
-        kb_options ="grp:alt_shift_toggle"; 
-        kb_options = "caps:swapescape";
+        kb_options ="grp:alt_shift_toggle,caps:swapescape"; 
         numlock_by_default = true;
         follow_mouse = 1;
         sensitivity = 0;
@@ -65,7 +64,7 @@
       };
 
       master = {
-      #  new_is_master = true;
+        new_status = "master";
         special_scale_factor = 1;
         no_gaps_when_only = false;
       };
