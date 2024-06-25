@@ -7,6 +7,7 @@
       "colorscheme" = "catppuccin-mocha";
       "*.nix" = {"tabsize" = 2;};
       "*.ml"  = {"tabsize" = 2;};
+      "*.sh"  = {"tabsize" = 2;};
       "tabstospaces" = true;
       "tabsize" = 4;
     };
