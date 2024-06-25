@@ -8,6 +8,7 @@
     file                              # Show file information 
     fzf                               # fuzzy finder
     gtt                               # google translate TUI
+    gifsicle                          # gif utility
     gimp
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
