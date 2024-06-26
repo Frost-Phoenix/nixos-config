@@ -22,7 +22,7 @@
 
       input = {
         kb_layout = "us,fr";
-        kb_options ="grp:alt_shift_toggle,caps:swapescape"; 
+        kb_options ="grp:alt_caps_toggle,caps:swapescape"; 
         numlock_by_default = true;
         follow_mouse = 1;
         sensitivity = 0;
