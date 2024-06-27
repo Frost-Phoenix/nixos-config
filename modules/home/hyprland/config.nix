@@ -7,7 +7,6 @@
       exec-once = [
         "systemctl --user import-environment &"
         "hash dbus-update-activation-environment 2>/dev/null &"
-        # "dbus-update-activation-environment --systemd &"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
         "nm-applet &"
         "wl-clip-persist --clipboard both"
@@ -16,13 +15,13 @@
         "poweralertd &"
         "waybar &"
         "swaync &"
-        "wl-paste --watch cliphist store &"
+        # "wl-paste --watch cliphist store &"
         "hyprlock"
       ];
 
       input = {
         kb_layout = "us,fr";
-        kb_options ="grp:alt_caps_toggle,caps:swapescape"; 
+        kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
         follow_mouse = 1;
         sensitivity = 0;
