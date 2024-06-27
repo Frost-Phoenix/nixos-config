@@ -109,8 +109,8 @@
     };
     "custom/launcher"= {
         format= "";
-        on-click= "pkill fuzzel || fuzzel";
-        on-click-right= "pkill fuzzel || wallpaper-picker"; 
+        on-click= "fuzzel";
+        on-click-right= "wallpaper-picker"; 
         tooltip= "false";
     };
     "custom/notification" = {

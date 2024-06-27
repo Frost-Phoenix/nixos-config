@@ -139,7 +139,7 @@
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
-        "$mainMod, D, exec, pkill fuzzel || fuzzel"
+        "$mainMod, D, exec, fuzzel"
         "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord'"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
@@ -149,8 +149,7 @@
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mainMod, C ,exec, hyprpicker -a"
-        "$mainMod, G,exec, $HOME/.local/bin/toggle_layout"
-        "$mainMod, W,exec, pkill fuzzel || wallpaper-picker"
+        "$mainMod, W,exec, wallpaper-picker"
         "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot

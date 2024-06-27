@@ -239,7 +239,7 @@ Keybindings
 - ```bind = $mainMod, F, fullscreen, 0```
 - ```bind = $mainMod SHIFT, F, fullscreen, 1```
 - ```bind = $mainMod, Space, togglefloating,```
-- ```bind = $mainMod, D, exec, pkill fuzzel || fuzzel```
+- ```bind = $mainMod, D, exec, fuzzel```
 - ```bind = $mainMod, Escape, exec, swaylock```
 - ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
 - ```bind = $mainMod, P, pseudo,```
@@ -247,8 +247,7 @@ Keybindings
 - ```bind = $mainMod, E, exec, nemo```
 - ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
 - ```bind = $mainMod, C ,exec, hyprpicker -a```
-- ```bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout```
-- ```bind = $mainMod, W,exec, pkill fuzzel || wallpaper-picker```
+- ```bind = $mainMod, W,exec, wallpaper-picker```
 </details>
 
 <details>
