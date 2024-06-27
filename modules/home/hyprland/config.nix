@@ -15,7 +15,7 @@
         "poweralertd &"
         "waybar &"
         "swaync &"
-        # "wl-paste --watch cliphist store &"
+        "wl-paste --watch cliphist store &"
         "hyprlock"
       ];
 
