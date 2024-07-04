@@ -25,7 +25,7 @@
         format = "[󰔛 $duration]($style)";
         disabled = false;
         style = "bg:none fg:#f9e2af";
-        show_notifications = true;
+        show_notifications = false;
         min_time_to_notify = 60000;
       };        
 
