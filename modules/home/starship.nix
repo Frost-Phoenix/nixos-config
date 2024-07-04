@@ -22,18 +22,12 @@
       };
 
       cmd_duration = {
-        format = "[]($style)[[󰔚 ](bg:#161821 fg:#d4c097 bold)$duration](bg:#161821 fg:#BBC3DF)[ ]($style)";
+        format = "[󰔛 $duration]($style)";
         disabled = false;
-        style = "bg:none fg:#161821";
-    };        
-
-      # directory.substitutions = {
-        # "~" = "󰋞";
-        # "Documents" = " ";
-        # "Downloads" = " ";
-        # "Music" = " ";
-        # "Pictures" = " ";
-      # };
+        style = "bg:none fg:#f9e2af";
+        show_notifications = true;
+        min_time_to_notify = 60000;
+      };        
 
       palette = "catppuccin_mocha";
     } // builtins.fromTOML (builtins.readFile "${inputs.catppuccin-starship}/palettes/mocha.toml");
