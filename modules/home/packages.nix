@@ -28,7 +28,7 @@
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
-    gnome.zenity
+    zenity
     winetricks
     wineWowPackages.wayland
 
