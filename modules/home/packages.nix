@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    audacity
     bitwise                           # cli tool for bit / hex manipulation
     evince                            # gnome pdf viewer
     eza                               # ls replacement
