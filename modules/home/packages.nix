@@ -8,6 +8,7 @@ in
     
     audacity
     bitwise                           # cli tool for bit / hex manipulation
+    cbonsai                           # terminal screensaver
     evince                            # gnome pdf viewer
     eza                               # ls replacement
     entr                              # perform action when file change
@@ -25,6 +26,7 @@ in
     nautilus     # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
+    pipes                             # terminal screensaver
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
     soundwireserver                   # pass audio to android phone
