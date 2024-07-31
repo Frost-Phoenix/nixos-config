@@ -1,6 +1,11 @@
 { inputs, pkgs, ... }: 
+let 
+  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
+in
 {
   home.packages = (with pkgs; [
+    _2048
+    
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     evince                            # gnome pdf viewer

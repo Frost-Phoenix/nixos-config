@@ -1,4 +1,7 @@
-{ stdenv, lib, stdenv, fetchFromGitHub, ... }:
+#let pkgs = import <nixpkgs> {}; in
+{ stdenv, fetchFromGitHub, pkgs, ... }:
+
+with pkgs;
 
 stdenv.mkDerivation rec {
   pname = "2048";
@@ -6,14 +9,12 @@ stdenv.mkDerivation rec {
 
   src = fetchFromGitHub {
     owner = "Frost-Phoenix";
-    repo = "nixos-config";
-    rev = "main";
-    sha256 = ""; # Replace with the actual hash
+    repo = "2048-cli";
+    rev = "e5b5e2b";
+    sha256 = "sha256-DqOSfKQC7WdslEknzFByZPc20AsjX6+5PwKR3gqucOM="; 
   };
 
-  buildInputs = [
-
-  ];
+  buildInputs = [ ];
 
   buildPhase = ''
     make release

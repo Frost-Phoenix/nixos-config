@@ -16,7 +16,6 @@
   };
   nixpkgs = {
     overlays = [
-      self.overlays.default
       inputs.nur.overlay
     ];
   };
