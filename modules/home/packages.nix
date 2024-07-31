@@ -22,7 +22,7 @@ in
     jdk17                             # java
     lazygit
     libreoffice
-    cinnamon.nemo-with-extensions     # file manager
+    nautilus     # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
