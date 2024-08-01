@@ -4,7 +4,7 @@
     enable = true;
     config = {
       pager = "less -FR";
-      theme = "Dracula";
+      theme = "gruvbox-dark";
     };
   };
 }
