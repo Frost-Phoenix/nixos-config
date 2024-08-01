@@ -77,7 +77,7 @@
 
     [git_status]
     style = "bg:color_aqua bold fg:color_fg0"
-    format = '[$all_status$ahead_behind ]($style)'
+    format = '[$all_status$ahead_behind]($style)'
 
     [nodejs]
     symbol = ""
