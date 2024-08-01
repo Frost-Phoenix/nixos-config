@@ -5,7 +5,7 @@
     ++ [(import ./bat.nix)]                       # better cat command
     ++ [(import ./btop.nix)]                      # resouces monitor 
     ++ [(import ./cava.nix)]                      # audio visualizer
-    ++ [(import ./discord.nix)]                   # discord with catppuccin theme
+    ++ [(import ./discord/discord.nix)]                   # discord with catppuccin theme
     ++ [(import ./floorp/floorp.nix)]             # firefox based browser
     ++ [(import ./fuzzel.nix)]                    # launcher
     ++ [(import ./gaming.nix)]                    # packages related to gaming

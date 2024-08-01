@@ -1,0 +1,218 @@
+/**
+ * @name Gruvbox Hard Dark
+ * @author Ethan McTague
+ * @version 1.0
+ * @description Themes your Discord using Gruvbox colors.
+ * @source https: //gist.github.com/emctague/aab1d43a90174930939ae51c8db09553
+ */
+
+/* BetterDiscord Gruvbox Theme - By Ethan McTague
+
+
+   Compatible with the latest version of Discord (as of Jan 23, 2020.)
+
+
+   Copyright 2020 Ethan McTague <ethan@tague.me>
+   Licensed under the BSD 3-clause license.
+   
+
+   Based on the Gruvbox color scheme by Pavel Pertsev: https://github.com/morhetz/gruvbox
+
+
+   Using CSS from highlight.js themes, to style code blocks: https://highlightjs.org/
+   highlight.js is licensed under the BSD 3-clause license - see its section in the code for more details.
+   
+
+   Be aware: BetterDiscord use is against the discord TOS.
+             I am not responsible for your use of BetterDiscord or of this theme.
+
+             [ ...discord, if you want to add builtin color scheme support, hmu :) ]
+             
+
+   Installation:
+    1. Install BetterDiscord.
+    2. Go to "Themes" in discord's settings.
+    3. Select "Open Themes Folder", and save this file there as: gruvbox.theme.css
+    4. Go back to discord and switch the theme on!
+
+*/
+
+
+/* Set basic color variables. Some parts of Discord don't use these, so we need to do more after... */
+:root {
+    --interactive-normal: #ebdbb2;
+    --text-normal: #ebdbb2;
+    --background-primary: #1d2021;
+    --background-secondary: #181B1B;
+    --background-tertiary: #1d2021;
+    --channels-default: #83a598;
+    --deprecated-panel-background: #161818;
+    --channeltextarea-background: #32302f;
+}
+
+/* Popout / menu colors. */
+.da-popouts .da-container,
+.da-friendsTableHeader,
+.da-friendsTable,
+.da-autocomplete,
+.da-themedPopout,
+.da-header,
+.da-footer,
+.da-userPopout>*,
+.da-systemPad,
+.da-autocompleteHeaderBackground {
+    background-color: var(--background-secondary) !important;
+    border-color: transparent !important;
+}
+
+.theme-dark .da-messageGroupWrapper {
+    background-color: var(--background-tertiary) !important;
+    border-color: transparent;
+}
+
+/* Each individual item in popouts has a slight gradient - we clear it here. */
+.theme-dark .da-option:after {
+    background-image: none !important;
+}
+
+/* Force BetterDiscord settings items to match normal settings items. */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item {
+    color: var(--interactive-normal);
+}
+
+/* Recolor BD settings headers, Nitro settings item and Add Channel icon */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-header,
+div[style*="color: rgb(114, 137, 218);"],
+.da-addButtonIcon {
+    color: var(--channels-default) !important;
+}
+
+/* Force BetterDiscord *active* settings items to match normal active settings items. */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected,
+.theme-dark .da-autocompleteRow .da-selectorSelected {
+    background-color: var(--background-modifier-selected);
+    color: var(--interactive-active);
+}
+
+/* Recolor the emoji button in the chat bar to match the color scheme. */
+.da-emojiButtonNormal .da-contents .da-sprite {
+    filter: sepia(1) !important;
+}
+
+
+/* Recolor scrollbar track. */
+.da-messagesWrapper .da-scroller::-webkit-scrollbar,
+.da-messagesWrapper .da-scroller::-webkit-scrollbar-track-piece {
+    background-color: var(--background-tertiary) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Recolor scrollbar thumbs. */
+.da-scrollerThemed .da-scroller::-webkit-scrollbar-thumb,
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--background-tertiary) !important;
+}
+
+
+
+
+
+/* CSS below this comment is from highlight.js gruvbox-dark theme.
+   https://github.com/highlightjs/highlight.js/blob/master/src/styles/gruvbox-dark.css
+
+   This CSS makes code blocks within Discord match gruvbox.
+
+   hightlight.js is copyright 2006 Ivan Sagalaev and licensed under the BSD 3-clause license,
+   as specified here: https://github.com/highlightjs/highlight.js/blob/master/LICENSE            */
+
+/* Gruvbox Red */
+.hljs-deletion,
+.hljs-formula,
+.hljs-keyword,
+.hljs-link,
+.hljs-selector-tag {
+    color: #fb4934;
+}
+
+/* Gruvbox Blue */
+.hljs-built_in,
+.hljs-emphasis,
+.hljs-name,
+.hljs-quote,
+.hljs-strong,
+.hljs-title,
+.hljs-variable {
+    color: #83a598;
+}
+
+/* Gruvbox Yellow */
+.hljs-attr,
+.hljs-params,
+.hljs-template-tag,
+.hljs-type {
+    color: #fabd2f;
+}
+
+/* Gruvbox Purple */
+.hljs-builtin-name,
+.hljs-doctag,
+.hljs-literal,
+.hljs-number {
+    color: #8f3f71;
+}
+
+/* Gruvbox Orange */
+.hljs-code,
+.hljs-meta,
+.hljs-regexp,
+.hljs-selector-id,
+.hljs-template-variable {
+    color: #fe8019;
+}
+
+/* Gruvbox Green */
+.hljs-addition,
+.hljs-meta-string,
+.hljs-section,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-string,
+.hljs-symbol {
+    color: #b8bb26;
+}
+
+/* Gruvbox Aqua */
+.hljs-attribute,
+.hljs-bullet,
+.hljs-class,
+.hljs-function,
+.hljs-function .hljs-keyword,
+.hljs-meta-keyword,
+.hljs-selector-pseudo,
+.hljs-tag {
+    color: #8ec07c;
+}
+
+/* Gruvbox Gray */
+.hljs-comment {
+    color: #928374;
+}
+
+/* Gruvbox Purple */
+.hljs-link_label,
+.hljs-literal,
+.hljs-number {
+    color: #d3869b;
+}
+
+.hljs-comment,
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-section,
+.hljs-strong,
+.hljs-tag {
+    font-weight: bold;
+}
