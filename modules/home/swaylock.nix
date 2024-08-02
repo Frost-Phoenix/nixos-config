@@ -12,11 +12,11 @@
       ignore-empty-password=true;
       
       indicator = true;
-      indicator-radius = 125;
+      indicator-radius = 111;
       indicator-thickness = 8;
       
       effect-blur = "7x5";
-      effect-vignette = "0.5:0.5";
+      effect-vignette = "0.75:0.75";
       effect-pixelate = 5;
       
       font="JetBrainsMono Nerd Font";
@@ -26,13 +26,9 @@
       text-clear-color="FFFFFFFF";
       key-hl-color="fabd2fFF";
       bs-hl-color="fb4934FF";
-      inside-color="2828287F";
-      inside-clear-color="2828287F";
-      inside-wrong-color="2828287F";
       ring-clear-color="d65d0eFF";
       ring-wrong-color="cc241dff";
       ring-ver-color="b8bb26FF";
-      inside-ver-color="2828287F";
       ring-color="689d6aff";
       line-clear-color="FFFFFF00";
       line-ver-color="FFFFFF00";
@@ -40,6 +36,10 @@
       separator-color="FFFFFF00";
       line-color="FFFFFF00";
       text-color="FFFFFFFF";
+      inside-color="3C3836BB";
+      inside-ver-color="3C3836BB";
+      inside-clear-color="3C3836BB";
+      inside-wrong-color="3C3836BB";
     };
   };
 }
