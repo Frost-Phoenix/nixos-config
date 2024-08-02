@@ -12,18 +12,19 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 11;
+      size = 12;
+    };
+    theme = {
+      name = "Gruvbox-Dark";
+      package = pkgs.gruvbox-gtk-theme.override {
+        colorVariants = [ "dark" ];
+      };
     };
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "lavender";
+      package = pkgs.papirus-icon-theme.override {
+        color = "black";
       };
-    };
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
     };
     cursorTheme = {
       name = "Nordzy-cursors";
