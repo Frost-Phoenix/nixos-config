@@ -23,7 +23,7 @@
         kb_layout = "us,fr";
         kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
-        follow_mouse = 1;
+        follow_mouse = 0;
         sensitivity = 0;
         touchpad = {
           natural_scroll = true;
