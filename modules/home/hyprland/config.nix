@@ -76,8 +76,8 @@
 
         blur = {
           enabled = true;
-          size = 1;
-          passes = 1;
+          size = 3;
+          passes = 2;
           # size = 4;
           # passes = 2;
           brightness = 1;
@@ -145,6 +145,7 @@
         "$mainMod SHIFT, Escape, exec, shutdown-script"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
+        "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nautilus"
         "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
         "$mainMod, C ,exec, hyprpicker -a"
@@ -264,6 +265,7 @@
         "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
         "opacity 1.0 override 1.0 override, class:(Aseprite)"
         "opacity 1.0 override 1.0 override, class:(Unity)"
+        "opacity 1.0 override 1.0 override, class:(floorp)"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
