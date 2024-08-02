@@ -8,7 +8,7 @@
     enableNushellIntegration = true;
 
   };
-
+  
   xdg.configFile."starship.toml".text = ''
     "$schema" = 'https://starship.rs/config-schema.json'
 
@@ -21,15 +21,7 @@
     $git_branch\
     $git_status\
     [](fg:color_aqua bg:color_blue)\
-    $c\
-    $rust\
-    $golang\
-    $nodejs\
-    $php\
-    $java\
-    $kotlin\
-    $haskell\
-    $python\
+    $nix_shell\
     [](fg:color_blue bg:color_bg3)\
     $cmd_duration\
     [](fg:color_bg3 bg:color_bg1)\
@@ -72,55 +64,9 @@
     style = "bg:color_aqua bold fg:color_fg0"
     format = '[$all_status$ahead_behind]($style)'
 
-    [nodejs]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [c]
-    symbol = " "
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [rust]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [golang]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [php]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [java]
-    symbol = " "
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [kotlin]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [haskell]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [python]
-    symbol = ""
-    style = "bg:color_blue"
-    format = '[[ $symbol( $version) ](bold fg:color_fg0 bg:color_blue)]($style)'
-
-    [docker_context]
-    symbol = ""
-    style = "bg:color_bg3"
-    format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+    [nix_shell]
+    format = "[ via nix $name ]($style)"
+    style = "bg:color_blue bold fg:color_fg0"
 
     [time]
     disabled = false
