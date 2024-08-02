@@ -33,6 +33,8 @@ in
     tdf                               # cli pdf viewer
     todo                              # cli todo list
     toipe                             # typing test in the terminal
+    ttyper                            # cli typing test
+    tty-clock                         # cli clock
     valgrind                          # c memory analyzer
     yazi                              # terminal file manager
     yt-dlp-light
