@@ -24,10 +24,7 @@
     $nix_shell\
     [](fg:color_blue bg:color_bg3)\
     $cmd_duration\
-    [](fg:color_bg3 bg:color_bg1)\
-    $time\
-    [ ](fg:color_bg1)\
-    $line_break$character"""
+    [](fg:color_bg3) """
 
     palette = 'gruvbox_dark'
 
