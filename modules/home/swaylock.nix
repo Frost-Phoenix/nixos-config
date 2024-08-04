@@ -36,10 +36,10 @@
       separator-color="FFFFFF00";
       line-color="FFFFFF00";
       text-color="FFFFFFFF";
-      inside-color="3C3836BB";
-      inside-ver-color="3C3836BB";
-      inside-clear-color="3C3836BB";
-      inside-wrong-color="3C3836BB";
+      inside-color="3C3836CC";
+      inside-ver-color="3C3836CC";
+      inside-clear-color="3C3836CC";
+      inside-wrong-color="3C3836CC";
     };
   };
 }
