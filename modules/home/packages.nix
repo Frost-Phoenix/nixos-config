@@ -29,6 +29,7 @@ in
     pipes                             # terminal screensaver
     prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
+    sl
     soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
     todo                              # cli todo list
