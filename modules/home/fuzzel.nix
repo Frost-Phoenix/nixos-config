@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       main = {
-        font = "JetBrainsMono Nerd Font:weight=bold:size=14";
+        font = "JetBrainsMono Nerd Font:weight=bold:size=15";
         line-height = 25;
         fields = "name,generic,comment,categories,filename,keywords";
         terminal = "kitty";
@@ -12,22 +12,22 @@
         icon-theme = "Papirus-Dark";
         layer = "top";
         lines = 10;
-        width = 35;
+        width = 30;
         horizontal-pad = 25;
         inner-pad = 5;
       };
       colors = {
-        background = "1e1e2ecc";
-        text = "cdd6f4ff";
-        match = "f38ba8ff";
-        selection = "b4befeaa";
-        selection-match = "f38ba8ff";
-        selection-text = "cdd6f4ff";
-        border = "b4befeff";
+        background = "1D2021FF";
+        text = "FBF1C7FF";
+        match = "98971AFF";
+        selection = "D65D0E44";
+        selection-match = "98971AFF";
+        selection-text = "FBF1C7FF";
+        border = "D65D0EFF";
       };
       border = {
-        radius = 15;
-        width = 3;
+        radius = 5;
+        width = 2;
       };
     };
   };
