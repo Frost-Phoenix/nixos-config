@@ -28,6 +28,7 @@ in
     nix-prefetch-github
     pipes                             # terminal screensaver
     prismlauncher                     # minecraft launcher
+    onefetch                          # fetch utility for git repo
     ripgrep                           # grep replacement
     sl
     soundwireserver                   # pass audio to android phone
