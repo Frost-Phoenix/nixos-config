@@ -62,6 +62,7 @@
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
+      gf = "onefetch --number-of-file-churns 0 --no-color-palette";
 
       # python
       piv = "python -m venv .venv";
