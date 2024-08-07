@@ -20,7 +20,7 @@
         background = "1D2021FF";
         text = "FBF1C7FF";
         match = "98971AFF";
-        selection = "D65D0E44";
+        selection = "FBF1C722";
         selection-match = "98971AFF";
         selection-text = "FBF1C7FF";
         border = "D65D0EFF";
