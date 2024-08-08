@@ -8,11 +8,11 @@
         line-height = 25;
         fields = "name,generic,comment,categories,filename,keywords";
         terminal = "kitty";
-        prompt = "' ➜  '" ;
+        prompt = "'➜ '" ;
         icon-theme = "Papirus-Dark";
         layer = "top";
         lines = 10;
-        width = 30;
+        width = 25;
         horizontal-pad = 25;
         inner-pad = 5;
       };
