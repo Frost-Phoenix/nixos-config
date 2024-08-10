@@ -5,7 +5,7 @@
     # BACKGROUND
     background {
       monitor =
-      path = ~/Pictures/wallpapers/others/spac.jpg
+      path = ~/Pictures/wallpapers/others/gruv_spac.jpg
       blur_passes = 1
       contrast = 0.8916
       brightness = 0.8172
