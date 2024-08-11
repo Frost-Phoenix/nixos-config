@@ -5,7 +5,8 @@ in
 {
   home.packages = (with pkgs; [
     _2048
-    
+
+    ani-cli
     audacity
     bitwise                           # cli tool for bit / hex manipulation
     cbonsai                           # terminal screensaver
