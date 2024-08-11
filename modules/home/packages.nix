@@ -27,6 +27,7 @@ in
     nautilus     # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
+    nix-search-cli
     pipes                             # terminal screensaver
     prismlauncher                     # minecraft launcher
     onefetch                          # fetch utility for git repo
