@@ -149,7 +149,7 @@
         "$mainMod, J, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nautilus"
-        "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
+        "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
         "$mainMod SHIFT, W, exec, vm-start"
