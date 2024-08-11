@@ -35,6 +35,7 @@ in
     sl
     soundwireserver                   # pass audio to android phone
     tdf                               # cli pdf viewer
+    tldr
     todo                              # cli todo list
     toipe                             # typing test in the terminal
     ttyper                            # cli typing test
