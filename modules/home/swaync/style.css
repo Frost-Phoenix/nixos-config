@@ -18,7 +18,7 @@
 @define-color surface1 #665C54;
 @define-color surface2 #7C6F64;
 
-@define-color lavender #D65D0E;
+@define-color green #98971A;
 
 * {
     font-family: "NotoSansMono Nerd Font";
@@ -34,7 +34,7 @@ label {
 }
 
 .notification {
-    border: @lavender;
+    border: @green;
     box-shadow: none;
     /* margin: 0px; */
     /* margin: -15px -10px -15px -10px; */
@@ -550,7 +550,7 @@ carouselindicatordots {
     font-size: initial;
     border-radius: 12px;
     background: @surface0;
-    border: 1px solid @lavender;
+    border: 1px solid @green;
     box-shadow: none;
 }
 
@@ -559,7 +559,7 @@ carouselindicatordots {
 }
 
 .widget-dnd>switch slider {
-    background: @lavender;
+    background: @green;
     border-radius: 12px;
 }
 
