@@ -23,7 +23,7 @@
         selection = "FBF1C722";
         selection-match = "98971AFF";
         selection-text = "FBF1C7FF";
-        border = "D65D0EFF";
+        border = "98971AFF";
       };
       border = {
         radius = 5;
