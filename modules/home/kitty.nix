@@ -6,8 +6,9 @@
     theme = "Gruvbox Dark Hard";
     
     font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 14;
+      # name = "JetBrainsMono Nerd Font";
+      name = "CaskaydiaCove Nerd Font";
+      size = 16;
     };
 
     settings = {

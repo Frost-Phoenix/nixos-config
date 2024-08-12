@@ -29,7 +29,7 @@ in
       text = cmd[update:1000] echo "- $(date +"%A, %B %d") -"
       color = rgba(242, 243, 244, 0.75)
       font_size = 20
-      font_family = JetBrainsMono Nerd Font
+      font_family = CaskaydiaCove Nerd Font
       position = 0, 160
       halign = center
       valign = center
@@ -41,7 +41,7 @@ in
       text = cmd[update:1000] echo "$(date +"%k:%M")"
       color = rgba(242, 243, 244, 0.75)
       font_size = 111
-      font_family = JetBrainsMono Nerd Font
+      font_family = CaskaydiaCove Nerd Font
       position = 0, 270
       halign = center
       valign = center
@@ -68,7 +68,7 @@ in
       text =   $USER
       color = rgba(216, 222, 233, 0.80)
       font_size = 16
-      font_family = JetBrainsMono Nerd Font
+      font_family = CaskaydiaCove Nerd Font
       position = 0, -230
       halign = center
       valign = center

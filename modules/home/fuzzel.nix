@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       main = {
-        font = "JetBrainsMono Nerd Font:weight=bold:size=15";
+        font = "CaskaydiaCove Nerd Font:weight=bold:size=15";
         line-height = 25;
         fields = "name,generic,comment,categories,filename,keywords";
         terminal = "kitty";

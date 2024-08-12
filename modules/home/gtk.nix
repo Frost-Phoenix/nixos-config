@@ -3,7 +3,8 @@
   fonts.fontconfig.enable = true;
   home.packages = [
     pkgs.nerdfonts
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Noto" ]; })
+    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "CascadiaCode" "FiraCode" "Noto" ]; })
+    pkgs.cascadia-code
     pkgs.twemoji-color-font
     pkgs.noto-fonts-emoji
   ];
@@ -11,7 +12,7 @@
   gtk = {
     enable = true;
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "CaskaydiaCove Nerd Font";
       size = 12;
     };
     theme = {
