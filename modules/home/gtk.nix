@@ -12,7 +12,7 @@
   gtk = {
     enable = true;
     font = {
-      name = "CaskaydiaCove Nerd Font";
+      name = "JetBrainsMono Nerd Font";
       size = 12;
     };
     theme = {
