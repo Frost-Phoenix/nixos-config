@@ -30,7 +30,7 @@ in
       color = rgba(242, 243, 244, 0.75)
       font_size = 20
       font_family = JetBrainsMono Nerd Font
-      position = 0, 190
+      position = 0, 160
       halign = center
       valign = center
     }
@@ -42,7 +42,7 @@ in
       color = rgba(242, 243, 244, 0.75)
       font_size = 111
       font_family = JetBrainsMono Nerd Font
-      position = 0, 300
+      position = 0, 270
       halign = center
       valign = center
     }
@@ -57,7 +57,7 @@ in
       border_color = rgba(255, 255, 255, 0)
       rotate = 0
 
-      position = 0, -190
+      position = 0, -230
       halign = center
       valign = center
     }
@@ -67,13 +67,9 @@ in
       monitor =
       text =   $USER
       color = rgba(216, 222, 233, 0.80)
-      outline_thickness = 2
-      dots_size = 0.25 # Scale of input-field height, 0.2 - 0.8
-      dots_spacing = 0.2 # Scale of dots' absolute size, 0.0 - 1.0
-      dots_center = true
       font_size = 16
       font_family = JetBrainsMono Nerd Font
-      position = 0, -190
+      position = 0, -230
       halign = center
       valign = center
     }
@@ -91,10 +87,9 @@ in
       inner_color = rgba(255, 255, 255, 0.2)
       font_color = rgb(200, 200, 200)
       fade_on_empty = false
-      font_family = JetBrainsMono Nerd Font
       placeholder_text = <i><span foreground="##ffffff99">Enter Password</span></i>
       hide_input = false
-      position = 0, -260
+      position = 0, -300
       halign = center
       valign = center
     }
