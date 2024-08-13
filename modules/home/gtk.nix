@@ -1,12 +1,17 @@
 { pkgs, config, ... }:
+let 
+  monolisa = pkgs.callPackage ../../pkgs/monolisa/monolisa.nix {}; 
+  monolisa-nerd = pkgs.callPackage ../../pkgs/monolisa/monolisa-nerd.nix { inherit monolisa; }; 
+in
 {
   fonts.fontconfig.enable = true;
-  home.packages = [
-    pkgs.nerdfonts
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "CascadiaCode" "FiraCode" "Noto" ]; })
-    pkgs.cascadia-code
-    pkgs.twemoji-color-font
-    pkgs.noto-fonts-emoji
+  home.packages = with pkgs; [
+    nerdfonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Noto" ]; })
+    twemoji-color-font
+    noto-fonts-emoji
+    monolisa
+    monolisa-nerd
   ];
 
   gtk = {
