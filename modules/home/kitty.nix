@@ -6,8 +6,8 @@
     theme = "Gruvbox Dark Hard";
     
     font = {
-      # name = "JetBrainsMono Nerd Font";
       name = "JetBrainsMono Nerd Font";
+      # name = "MonoLisa Nerd Font";
       size = 14;
     };
 
