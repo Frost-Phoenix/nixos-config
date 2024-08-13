@@ -29,7 +29,7 @@ in
       text = cmd[update:1000] echo "$(date +"%k:%M")"
       color = rgba(235, 219, 178, .9)
       font_size = 111
-      font_family = JetBrainsMono Nerd Font
+      font_family = JetBrainsMono NF Bold
       position = 0, 270
       halign = center
       valign = center
