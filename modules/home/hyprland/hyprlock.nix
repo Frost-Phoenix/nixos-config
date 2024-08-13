@@ -23,23 +23,11 @@ in
       disable_loading_bar = false
     }
 
-    # Day
-    label {
-      monitor =
-      text = cmd[update:1000] echo "- $(date +"%A, %B %d") -"
-      color = rgba(242, 243, 244, 0.75)
-      font_size = 20
-      font_family = JetBrainsMono Nerd Font
-      position = 0, 160
-      halign = center
-      valign = center
-    }
-
     # Time
     label {
       monitor = 
       text = cmd[update:1000] echo "$(date +"%k:%M")"
-      color = rgba(242, 243, 244, 0.75)
+      color = rgba(235, 219, 178, .9)
       font_size = 111
       font_family = JetBrainsMono Nerd Font
       position = 0, 270
@@ -47,11 +35,24 @@ in
       valign = center
     }
 
+    # Day
+    label {
+      monitor =
+      text = cmd[update:1000] echo "- $(date +"%A, %B %d") -"
+      color = rgba(235, 219, 178, .9)
+      font_size = 20
+      font_family = JetBrainsMono Nerd Font
+      position = 0, 160
+      halign = center
+      valign = center
+    }
+
+
     # USER-BOX
     shape {
       monitor =
       size = 350, 50
-      color = rgba(255, 255, 255, .2)
+      color = rgba(225, 225, 225, .2)
       rounding = 15
       border_size = 0
       border_color = rgba(255, 255, 255, 0)
@@ -66,7 +67,7 @@ in
     label {
       monitor =
       text =   $USER
-      color = rgba(216, 222, 233, 0.80)
+      color = rgba(235, 219, 178, .9)
       font_size = 16
       font_family = JetBrainsMono Nerd Font
       position = 0, -230
@@ -84,10 +85,11 @@ in
       dots_spacing = 0.4 # Scale of dots' absolute size, 0.0 - 1.0
       dots_center = true
       outer_color = rgba(255, 255, 255, 0)
-      inner_color = rgba(255, 255, 255, 0.2)
-      font_color = rgb(200, 200, 200)
+      inner_color = rgba(225, 225, 225, 0.2)
+      color = rgba(235, 219, 178, .9)
+      font_color = rgba(235, 219, 178, .9)
       fade_on_empty = false
-      placeholder_text = <i><span foreground="##ffffff99">Enter Password</span></i>
+      placeholder_text = <i><span foreground="##ebdbb2e5">Enter Password</span></i>
       hide_input = false
       position = 0, -300
       halign = center
