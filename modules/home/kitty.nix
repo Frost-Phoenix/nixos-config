@@ -8,7 +8,7 @@
     font = {
       name = "JetBrainsMono Nerd Font";
       # name = "MonoLisa Nerd Font";
-      size = 14;
+      size = 16;
     };
 
     settings = {
