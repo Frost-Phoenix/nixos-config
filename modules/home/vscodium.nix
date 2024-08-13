@@ -48,7 +48,6 @@ in
       "terminal.integrated.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont'";
       "editor.fontSize" = 16;
       "workbench.colorTheme" = "Gruvbox Dark Hard";
-      # "workbench.colorTheme" = "Gruvbox Material Dark";
       "workbench.iconTheme" = "gruvbox-material-icon-theme";
       "material-icon-theme.folders.theme" = "classic";
       "vsicons.dontShowNewVersionMessage" = true;
@@ -56,13 +55,6 @@ in
       "editor.fontLigatures" = true;
       "editor.minimap.enabled" = false;
       "workbench.startupEditor" = "none";
-
-      # "gruvboxMaterial.darkContrast" = "hard";
-      # "gruvboxMaterial.darkPalette" = "original";
-      # "gruvboxMaterial.darkSelection" = "orange";
-      # "gruvboxMaterial.darkWorkbench" = "high-contrast";
-      # "gruvboxMaterial.colorfulSyntax" = true;
-      # "gruvboxMaterial.highContrast" = true;
 
       "editor.formatOnSave" = true;
       "editor.formatOnType" = true;
