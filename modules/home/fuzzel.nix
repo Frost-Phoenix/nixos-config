@@ -20,13 +20,16 @@
         background = "1D2021FF";
         text = "FBF1C7FF";
         match = "98971AFF";
-        selection = "FBF1C722";
-        selection-match = "98971AFF";
+        selection = "FBF1C733";
         selection-text = "FBF1C7FF";
-        border = "98971AFF";
+        # selection = "FBF1C7FF";
+        # selection-text = "1D2021FF";
+        selection-match = "98971AFF";
+        # border = "98971AFF";
+        border = "#D5C4A1EE";
       };
       border = {
-        radius = 5;
+        radius = 2;
         width = 2;
       };
     };
