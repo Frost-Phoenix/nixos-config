@@ -7,7 +7,6 @@
     ++ [(import ./cava.nix)]                      # audio visualizer
     ++ [(import ./discord/discord.nix)]                   # discord with catppuccin theme
     ++ [(import ./floorp/floorp.nix)]             # firefox based browser
-    ++ [(import ./fuzzel.nix)]                    # launcher
     ++ [(import ./gaming.nix)]                    # packages related to gaming
     ++ [(import ./git.nix)]                       # version control
     ++ [(import ./gtk.nix)]                       # gtk theme
@@ -18,7 +17,7 @@
     ++ [(import ./nvim.nix)]                      # neovim editor
     ++ [(import ./packages.nix)]                  # other packages
     ++ [(import ./retroarch.nix)]
-    ++ [(import ./rofi.nix)]
+    ++ [(import ./rofi.nix)]                      # launcher
     ++ [(import ./scripts/scripts.nix)]           # personal scripts
     ++ [(import ./spicetify.nix)]                 # spotify client
     ++ [(import ./starship.nix)]                  # shell prompt

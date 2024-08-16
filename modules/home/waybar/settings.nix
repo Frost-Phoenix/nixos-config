@@ -109,7 +109,7 @@
     };
     "custom/launcher"= {
         format= "";
-        on-click= "fuzzel";
+        on-click= "rofi -show drun";
         on-click-right= "wallpaper-picker"; 
         tooltip= "false";
     };
