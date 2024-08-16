@@ -12,6 +12,7 @@
       fg-col: #FBF1C7;
       fg-col2: #EBDBB2;
       grey: #BDAE93;
+      highlight: @green;
     }
   '';
 
@@ -95,7 +96,7 @@
       padding: 8px;
       margin: 0px 10px 4px 4px;
       background-color: @bg-col;
-      text-color: @fg-col  ;
+      text-color: @fg-col;
     }
 
     element-icon {
