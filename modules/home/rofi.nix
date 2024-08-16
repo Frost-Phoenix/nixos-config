@@ -19,7 +19,8 @@
     configuration{
       modi: "run,drun,window";
       lines: 5;
-      font: "JetBrainsMono Nerd Font 15";
+      cycle: false;
+      font: "JetBrainsMono NF Bold 15";
       show-icons: true;
       icon-theme: "Papirus-dark";
       terminal: "kitty";
@@ -43,7 +44,7 @@
     }
 
     window {
-      height: 470px;
+      height: 480px;
       width: 400px;
       border: 3px;
       border-color: @border-col;
@@ -108,11 +109,11 @@
     }
 
     mode-switcher {
-        spacing: 0;
-      }
+      spacing: 0;
+    }
 
     button {
-      padding: 5px;
+      padding: 10px;
       background-color: @bg-col-light;
       text-color: @grey;
       vertical-align: 0.5; 
