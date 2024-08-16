@@ -145,7 +145,7 @@
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
         "ALT, Escape, exec, hyprlock"
-        "$mainMod SHIFT, Escape, exec, shutdown-script"
+        "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"

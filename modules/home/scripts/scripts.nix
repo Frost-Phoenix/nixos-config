@@ -24,6 +24,9 @@
   ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
   
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
+  
+  rofi-power-menu = pkgs.writeScriptBin "rofi-power-menu" (builtins.readFile ./scripts/rofi-power-menu.sh);
+  power-menu = pkgs.writeScriptBin "power-menu" (builtins.readFile ./scripts/power-menu.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -51,5 +54,8 @@ in {
     ascii
 
     record
+
+    rofi-power-menu
+    power-menu
   ];
 }
