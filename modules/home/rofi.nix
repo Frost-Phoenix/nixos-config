@@ -4,9 +4,9 @@
 
   home.file.".config/rofi/theme.rasi".text = ''
     * {
-      bg-col: #282828;
-      bg-col-light: #1D2021;
-      border-col: #1D2021;
+      bg-col: #1D2021;
+      bg-col-light: #282828;
+      border-col: #928374;
       selected-col: #3C3836;
       green: #98971A;
       fg-col: #FBF1C7;
@@ -43,7 +43,7 @@
     }
 
     window {
-      height: 460px;
+      height: 470px;
       width: 400px;
       border: 3px;
       border-color: @border-col;
@@ -56,7 +56,7 @@
 
     inputbar {
       children: [prompt,entry];
-      background-color: @bg-col;
+      background-color: @bg-col-light;
       border-radius: 5px;
       padding: 0px;
     }
@@ -64,9 +64,9 @@
     prompt {
       background-color: @green;
       padding: 4px;
-      text-color: @bg-col;
-      border-radius: 2px;
-      margin: 10px 0px 0px 10px;
+      text-color: @bg-col-light;
+      border-radius: 3px;
+      margin: 10px 0px 10px 10px;
     }
 
     textbox-prompt-colon {
@@ -76,9 +76,10 @@
 
     entry {
       padding: 6px;
-      margin: 10px 0px 0px 5px;
+      margin: 10px 10px 10px 5px;
       text-color: @fg-col;
       background-color: @bg-col;
+      border-radius: 3px;
     }
 
     listview {
@@ -103,7 +104,7 @@
     element selected {
       background-color:  @selected-col ;
       text-color: @fg-col2  ;
-      border-radius: 2px;
+      border-radius: 3px;
     }
 
     mode-switcher {
