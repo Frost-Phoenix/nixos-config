@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       main = {
-        font = "JetBrainsMono Nerd Font:weight=bold:size=15";
+        font = "FiraCode Nerd Font:size=15";
         line-height = 25;
         fields = "name,generic,comment,categories,filename,keywords";
         terminal = "kitty";
@@ -26,7 +26,7 @@
         # selection-text = "1D2021FF";
         selection-match = "98971AFF";
         # border = "98971AFF";
-        border = "#D5C4A1EE";
+        border = "#D5C4A199";
       };
       border = {
         radius = 2;

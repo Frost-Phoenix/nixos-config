@@ -17,7 +17,7 @@ in
   gtk = {
     enable = true;
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "FiraCode Nerd Font";
       size = 12;
     };
     theme = {
