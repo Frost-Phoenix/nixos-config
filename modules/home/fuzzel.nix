@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       main = {
-        font = "FiraCode Nerd Font:size=15";
+        font = "JetBrainsMono Nerd Font:weight=bold:size=15";
         line-height = 25;
         fields = "name,generic,comment,categories,filename,keywords";
         terminal = "kitty";
