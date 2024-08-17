@@ -15,7 +15,6 @@ in
     entr                              # perform action when file change
     fd                                # find replacement
     file                              # Show file information 
-    fzf                               # fuzzy finder
     gtt                               # google translate TUI
     gifsicle                          # gif utility
     gimp
