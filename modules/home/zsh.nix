@@ -13,12 +13,7 @@
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
     '';
-    # initExtra = ''
-    #   source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
-    # '';
     shellAliases = {
-      # record = "wf-recorder --audio=alsa_output.pci-0000_08_00.6.analog-stereo.monitor -f $HOME/Videos/$(date +'%Y%m%d%H%M%S_1.mp4')";
-
       # Utils
       c = "clear";
       cd = "z";
@@ -47,6 +42,7 @@
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
+      g    = "lazygit";
       ga   = "git add";
       gaa  = "git add --all";
       gs   = "git status";
@@ -65,7 +61,7 @@
       gchb = "git checkout -b";
       gcoe = "git config user.email";
       gcon = "git config user.name";
-      gf = "onefetch --number-of-file-churns 0 --no-color-palette";
+      gf   = "onefetch --number-of-file-churns 0 --no-color-palette";
 
       # python
       piv = "python -m venv .venv";
