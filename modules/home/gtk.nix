@@ -10,8 +10,8 @@ in
     (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "Noto" ]; })
     twemoji-color-font
     noto-fonts-emoji
-    monolisa
-    monolisa-nerd
+    # monolisa
+    # monolisa-nerd
   ];
 
   gtk = {
