@@ -77,7 +77,7 @@
       cmd_duration = {
         format = "[ 󰔛 $duration ]($style)";
         disabled = false;
-        style = "bg:color_bg3 bold fg:color_fg0";
+        style = "bg:color_bg3 fg:color_fg0";
         show_notifications = false;
         min_time_to_notify = 60000;
       };
