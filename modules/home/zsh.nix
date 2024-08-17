@@ -86,6 +86,7 @@
       gps   = "git push";
       gpst  = "git push --follow-tags";
       gpso  = "git push origin";
+      gcl   = "git clone";
       gc    = "git commit";
       gcm   = "git commit -m";
       gcma  = "git add --all && git commit -m";
