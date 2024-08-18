@@ -44,6 +44,7 @@ in
     yazi                              # terminal file manager
     yt-dlp-light
     zenity
+    vlc
     winetricks
     wineWowPackages.wayland
 
