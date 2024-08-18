@@ -270,6 +270,7 @@
         "opacity 1.0 override 1.0 override, class:(Aseprite)"
         "opacity 1.0 override 1.0 override, class:(Unity)"
         "opacity 1.0 override 1.0 override, class:(floorp)"
+        "opacity 1.0 override 1.0 override, class:(evince)"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
