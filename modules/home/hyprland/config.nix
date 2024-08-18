@@ -153,6 +153,7 @@
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
