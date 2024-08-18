@@ -14,6 +14,7 @@ let
     office = [ "libreoffice.desktop" ];
     pdf = [ "org.gnome.Evince.desktop" ];
     terminal = [ "kitty.desktop" ];
+    archive = [ "org.gnome.FileRoller.desktop" ];
   };
 
   mimeMap = {
@@ -70,6 +71,12 @@ let
     ];
     pdf = [ "application/pdf" ];
     terminal = [ "terminal" ];
+    archive = [
+      "application/zip"
+      "application/rar"
+      "application/7z"
+      "application/*tar"
+    ];
   };
 
   associations =

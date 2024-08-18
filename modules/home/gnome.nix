@@ -2,6 +2,7 @@
 {
   home.packages = (with pkgs; [
     gnome-text-editor
+    file-roller
   ]);
 
   dconf.settings = {
