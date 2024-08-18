@@ -10,6 +10,7 @@
     ++ [(import ./fzf.nix)]                       # fuzzy finder
     ++ [(import ./gaming.nix)]                    # packages related to gaming
     ++ [(import ./git.nix)]                       # version control
+    ++ [(import ./gnome.nix)]                       # gnome apps
     ++ [(import ./gtk.nix)]                       # gtk theme
     ++ [(import ./hyprland)]                      # window manager
     ++ [(import ./kitty.nix)]                     # terminal
