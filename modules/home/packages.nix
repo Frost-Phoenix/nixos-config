@@ -9,6 +9,7 @@ in
     ani-cli
     audacity
     bitwise                           # cli tool for bit / hex manipulation
+    caligula                          # User-friendly, lightweight TUI for disk imaging
     cbonsai                           # terminal screensaver
     evince                            # gnome pdf viewer
     eza                               # ls replacement
