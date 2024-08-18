@@ -24,6 +24,8 @@
         kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
         follow_mouse = 0;
+        float_switch_override_focus = 0;
+        mouse_refocus = 0;
         sensitivity = 0;
         touchpad = {
           natural_scroll = true;
@@ -50,6 +52,8 @@
         animate_manual_resizes = false;
         enable_swallow = true;
         focus_on_activate = true;
+        new_window_takes_over_fullscreen = 2;
+        middle_click_paste = false;
       };
 
       dwindle = {
@@ -70,9 +74,9 @@
 
       decoration = {
         rounding = 0;
-        active_opacity = 0.90;
-        inactive_opacity = 0.90;
-        fullscreen_opacity = 1.0;
+        # active_opacity = 0.90;
+        # inactive_opacity = 0.90;
+        # fullscreen_opacity = 1.0;
 
         blur = {
           enabled = true;
@@ -245,11 +249,7 @@
         "center,title:^(float_kitty)$"
         "size 950 600,title:^(float_kitty)$"
         "float,audacious"
-        "workspace 5 silent, audacious"
-        "workspace 5 silent, spotify"
-        # "pin,wofi"
-        # "float,wofi"
-        # "noborder,wofi"
+        "pin,rofi"
         "tile, neovide"
         "idleinhibit focus,mpv"
         "float,udiskie"
@@ -272,6 +272,9 @@
         "opacity 1.0 override 1.0 override, class:(Unity)"
         "opacity 1.0 override 1.0 override, class:(floorp)"
         "opacity 1.0 override 1.0 override, class:(evince)"
+        "workspace 5, class:^(Audacious)$"
+        "workspace 5, class:^(Spotify)$"
+        "workspace 4, class:^(discord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
