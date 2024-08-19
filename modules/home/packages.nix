@@ -28,7 +28,6 @@ in
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
-    nix-search-cli
     openssl
     onefetch                          # fetch utility for git repo
     pamixer                           # pulseaudio command line mixer
