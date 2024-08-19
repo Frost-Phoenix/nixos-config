@@ -10,6 +10,7 @@
       "*.sh"  = {"tabsize" = 2;};
       "tabstospaces" = true;
       "tabsize" = 4;
+      "mkparents" = true;
     };
   };
 
