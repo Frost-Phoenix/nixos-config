@@ -8,7 +8,7 @@
     font = {
       name = "FiraCode Nerd Font";
       # name = "MonoLisa Nerd Font";
-      size = 15;
+      size = 16;
     };
 
     settings = {
