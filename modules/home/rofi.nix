@@ -2,7 +2,7 @@
 {
   home.packages = (with pkgs; [ rofi-wayland ]);
 
-  home.file.".config/rofi/theme.rasi".text = ''
+  xdg.configFile"rofi/theme.rasi".text = ''
     * {
       bg-col: #1D2021;
       bg-col-light: #282828;
@@ -16,7 +16,7 @@
     }
   '';
 
-  home.file.".config/rofi/config.rasi".text = ''
+  xdg.configFile"rofi/config.rasi".text = ''
     configuration{
       modi: "run,drun,window";
       lines: 5;
