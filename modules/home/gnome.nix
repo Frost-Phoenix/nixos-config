@@ -1,8 +1,10 @@
 { pkgs, ... }:
 {
   home.packages = (with pkgs; [
-    gnome-text-editor
-    file-roller
+    evince                                        # pdf
+    file-roller                                   # archive
+    gnome-text-editor                             # gedit
+    nautilus                                      # file manager
   ]);
 
   dconf.settings = {

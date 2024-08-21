@@ -59,11 +59,9 @@ in
     ## GUI Apps
     audacity
     bleachbit                         # cache cleaner
-    evince                            # gnome pdf viewer
     gimp
     jdk17                             # java
     libreoffice
-    nautilus                          # file manager
     nix-prefetch-github
     pavucontrol                       # pulseaudio volume controle (GUI)
     prismlauncher                     # minecraft launcher
