@@ -3,7 +3,7 @@
   programs.waybar.settings.mainBar = {
     position= "bottom";
     layer= "top";
-    height= 5;
+    height= 30;
     margin-top= 0;
     margin-bottom= 0;
     margin-left= 0;
@@ -27,12 +27,12 @@
     ];
     clock= {
         calendar = {
-          format = { today = "<span color='#b4befe'><b><u>{}</u></b></span>"; };
+          format = { today = "<span color='#98971A'><b>{}</b></span>"; };
         };
-        format = " {:%H:%M}";
+        format = "  {:%H:%M}";
         tooltip= "true";
         tooltip-format= "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-        format-alt= " {:%d/%m}";
+        format-alt= "  {:%d/%m}";
     };
     "hyprland/workspaces"= {
         active-only= false;
@@ -40,14 +40,15 @@
         format = "{icon}";
         on-click= "activate";
         format-icons= {
-            "1"= "󰈹";
-            "2"= "";
-            "3"= "󰘙";
-            "4"= "󰙯";
-            "5"= "";
-            "6"= "";
-            urgent= "";
-            default = "";
+            "1"= "I";
+            "2"= "II";
+            "3"= "III";
+            "4"= "IV";
+            "5"= "V";
+            "6"= "VI";
+            "7"= "VII";
+            "8"= "VII";
+            "9"= "IX";
             sort-by-number= true;
         };
         persistent-workspaces = {
@@ -117,14 +118,14 @@
         tooltip = false;
         format = "{icon} ";
         format-icons = {
-            notification = "<span foreground='red'><sup></sup></span>   ";
-            none = "   ";
-            dnd-notification = "<span foreground='red'><sup></sup></span>   ";
-            dnd-none = "   ";
-            inhibited-notification = "<span foreground='red'><sup></sup></span>   ";
-            inhibited-none = "   ";
-            dnd-inhibited-notification = "<span foreground='red'><sup></sup></span>   ";
-            dnd-inhibited-none = "   ";
+            notification = "<span foreground='red'><sup></sup></span>  ";
+            none = "  ";
+            dnd-notification = "<span foreground='red'><sup></sup></span>  ";
+            dnd-none = "  ";
+            inhibited-notification = "<span foreground='red'><sup></sup></span>  ";
+            inhibited-none = "  ";
+            dnd-inhibited-notification = "<span foreground='red'><sup></sup></span>  ";
+            dnd-inhibited-none = "  ";
         };
         return-type = "json";
         exec-if = "which swaync-client";
