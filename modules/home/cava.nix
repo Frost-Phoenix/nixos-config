@@ -4,7 +4,7 @@
     enable = true;  
   };
   
-  home.file.".config/cava/config".text = ''
+  xdg.configFile."cava/config".text = ''
     # custom cava config
 
     [general]
