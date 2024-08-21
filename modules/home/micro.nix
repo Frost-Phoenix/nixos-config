@@ -4,7 +4,7 @@
     enable = true;
     
     settings = {
-      "colorscheme" = "catppuccin-mocha";
+      "colorscheme" = "gruvbox";
       "*.nix" = {"tabsize" = 2;};
       "*.ml"  = {"tabsize" = 2;};
       "*.sh"  = {"tabsize" = 2;};
@@ -25,7 +25,7 @@
     }
   '';
 
-  xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
+  xdg.configFile."micro/colorschemes/gruvbox.micro".text = ''
     color-link default "#ebdbb2,#1d2021"
     color-link comment "#928374,#1d2021"
     color-link symbol "#d79921,#1d2021"
