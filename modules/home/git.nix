@@ -13,14 +13,14 @@
       diff.colorMoved = "default";
     };
 
-    # delta = {
-    #   enable = true;
-    #   options = {
-    #     line-numbers = true;
-    #     # side-by-side = true;
-    #     navigate = true;
-    #   };
-    # };
+    delta = {
+      enable = true;
+      options = {
+        line-numbers = true;
+        # side-by-side = true;
+        navigate = true;
+      };
+    };
   };
 
   # home.packages = [ pkgs.gh pkgs.git-lfs ];

@@ -10,7 +10,7 @@
       batman
       batpipe
       batgrep
-      # batdiff
+      batdiff
     ];
   };
 }
