@@ -60,7 +60,6 @@ in
     audacity
     bleachbit                         # cache cleaner
     gimp
-    jdk17                             # java
     libreoffice
     nix-prefetch-github
     pavucontrol                       # pulseaudio volume controle (GUI)
