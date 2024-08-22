@@ -54,54 +54,6 @@
         "type": "github"
       }
     },
-    "catppuccin-bat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1722864529,
-        "narHash": "sha256-s0CHTihXlBMCKmbBBb8dUhfgOOQu9PBCQ+uviy7o47w=",
-        "owner": "catppuccin",
-        "repo": "bat",
-        "rev": "d3feec47b16a8e99eabb34cdfbaa115541d374fc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "bat",
-        "type": "github"
-      }
-    },
-    "catppuccin-cava": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1716595578,
-        "narHash": "sha256-1+CCUaf8U/NH/eHuYRbQo8inbhSMJ3vji6UH52hrF1s=",
-        "owner": "catppuccin",
-        "repo": "cava",
-        "rev": "6ec25ba688e30f3e5d6004ef6a295e6ba90c64d4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "cava",
-        "type": "github"
-      }
-    },
-    "catppuccin-starship": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1716565281,
-        "narHash": "sha256-KzXO4dqpufxTew064ZLp3zKIXBwbF8Bi+I0Xa63j/lI=",
-        "owner": "catppuccin",
-        "repo": "starship",
-        "rev": "ca2fb0600730fd3958a2cb4d4ca97c401877b365",
-        "type": "github"
-      },
-      "original": {
-        "owner": "catppuccin",
-        "repo": "starship",
-        "type": "github"
-      }
-    },
     "fenix": {
       "inputs": {
         "nixpkgs": [
@@ -565,9 +517,6 @@
     "root": {
       "inputs": {
         "alejandra": "alejandra",
-        "catppuccin-bat": "catppuccin-bat",
-        "catppuccin-cava": "catppuccin-cava",
-        "catppuccin-starship": "catppuccin-starship",
         "home-manager": "home-manager",
         "hypr-contrib": "hypr-contrib",
         "hyprland": "hyprland",
