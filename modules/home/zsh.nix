@@ -82,34 +82,6 @@
       nix-search = "nh search";
       nix-test = "nh os test";
 
-      # Git
-      g     = "lazygit";
-      ga    = "git add";
-      gaa   = "git add --all";
-      gs    = "git status";
-      gb    = "git branch";
-      gm    = "git merge";
-      gd    = "git diff";
-      gpl   = "git pull";
-      gplo  = "git pull origin";
-      gps   = "git push";
-      gpst  = "git push --follow-tags";
-      gpso  = "git push origin";
-      gcl   = "git clone";
-      gc    = "git commit";
-      gcm   = "git commit -m";
-      gcma  = "git add --all && git commit -m";
-      gtag  = "git tag -ma";
-      gch   = "git checkout";
-      gchb  = "git checkout -b";
-      gcoe  = "git config user.email";
-      gcon  = "git config user.name";
-      gf    = "onefetch --number-of-file-churns 0 --no-color-palette";
-      glog  = "git log --oneline --decorate --graph";
-      glol  = "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'";
-      glola = "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --all";
-      glols = "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --stat";
-
       # python
       piv = "python -m venv .venv";
       psv = "source .venv/bin/activate";
