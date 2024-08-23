@@ -6,6 +6,7 @@
     ++ [(import ./btop.nix)]                      # resouces monitor 
     ++ [(import ./cava.nix)]                      # audio visualizer
     ++ [(import ./discord/discord.nix)]                   # discord with catppuccin theme
+    ++ [(import ./fastfetch.nix)]                       # fetch tool
     ++ [(import ./floorp/floorp.nix)]             # firefox based browser
     ++ [(import ./fzf.nix)]                       # fuzzy finder
     ++ [(import ./gaming.nix)]                    # packages related to gaming
