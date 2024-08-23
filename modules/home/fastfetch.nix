@@ -161,7 +161,6 @@
           "type": "colors",
           "symbol": "block"
         },
-        "break"
       ]
     }
   '';
