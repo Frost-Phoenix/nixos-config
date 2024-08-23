@@ -68,20 +68,20 @@ OLD (EXPAND)
 | --------------------------- | :---------------------------------------------------------------------------------------------:
 | **Window Manager**          | [Hyprland][Hyprland] |
 | **Bar**                     | [Waybar][Waybar] |
-| **Application Launcher**    | [fuzzel][fuzzel] |
+| **Application Launcher**    | [rofi][rofi] |
 | **Notification Daemon**     | [swaync][swaync] |
 | **Terminal Emulator**       | [Kitty][Kitty] |
 | **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
 | **System resource monitor** | [Btop][Btop] |
-| **File Manager**            | [nemo][nemo] + [yazi][yazi] |
-| **Fonts**                   | [Nerd fonts][Nerd fonts] |
-| **Color Scheme**            | [Catppuccin][Catppuccin] |
-| **Cursor**                  | [Nordzy-cursors][Nordzy-cursors] |
-| **Icons**                   | [catppuccin-papirus-folders][catppuccin-papirus-folders] |
-| **Lockscreen**              | [Swaylock-effects][Swaylock-effects] |
-| **Image Viewer**            | [imv][imv] |
+| **File Manager**            | [nautilus][nautilus] + [yazi][yazi] |
+| **Fonts**                   | [FiraCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
+| **Color Scheme**            | [Gruvbox Dark Hard][Gruvbox] |
+| **Cursor**                  | [Bibata-Modern-Ice][Bibata-Modern-Ice] |
+| **Icons**                   | [Papirus-Dark][Papirus-Dark] |
+| **Lockscreen**              | [Hyprlock][Hyprlock] + [Swaylock-effects][Swaylock-effects] |
+| **Image Viewer**            | [qview][qview] |
 | **Media Player**            | [mpv][mpv] |
 | **Music Player**            | [audacious][audacious] |
 | **Screenshot Software**     | [grimblast][grimblast] |
@@ -239,12 +239,12 @@ Keybindings
 - ```bind = $mainMod, F, fullscreen, 0```
 - ```bind = $mainMod SHIFT, F, fullscreen, 1```
 - ```bind = $mainMod, Space, togglefloating,```
-- ```bind = $mainMod, D, exec, fuzzel```
+- ```bind = $mainMod, D, exec, rofi -show drun```
 - ```bind = $mainMod, Escape, exec, swaylock```
 - ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
 - ```bind = $mainMod, P, pseudo,```
 - ```bind = $mainMod, J, togglesplit,```
-- ```bind = $mainMod, E, exec, nemo```
+- ```bind = $mainMod, E, exec, nautilus```
 - ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
 - ```bind = $mainMod, C ,exec, hyprpicker -a```
 - ```bind = $mainMod, W,exec, wallpaper-picker```
@@ -467,19 +467,20 @@ Other dotfiles that I learned / copy from:
 [Kitty]: https://github.com/kovidgoyal/kitty
 [Starship]: https://github.com/starship/starship
 [Waybar]: https://github.com/Alexays/Waybar
-[fuzzel]: https://codeberg.org/dnkl/fuzzel>
+[rofi]: https://github.com/lbonn/rofi
 [Btop]: https://github.com/aristocratos/btop
-[nemo]: https://github.com/linuxmint/nemo
+[nautilus]: https://apps.gnome.org/Nautilus/
 [yazi]: https://github.com/sxyazi/yazi
 [zsh]: https://ohmyz.sh/
 [oh-my-zsh]: https://ohmyz.sh/
 [Swaylock-effects]: https://github.com/mortie/swaylock-effects
+[Hyprlock]: https://github.com/hyprwm/hyprlock
 [audacious]: https://audacious-media-player.org/
 [mpv]: https://github.com/mpv-player/mpv
 [VSCodium]:https://vscodium.com/
 [Neovim]: https://github.com/neovim/neovim
 [grimblast]: https://github.com/hyprwm/contrib
-[imv]: https://sr.ht/~exec64/imv/
+[qview]: https://interversehq.com/qview/
 [swaync]: https://github.com/ErikReider/SwayNotificationCenter
 [Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
@@ -487,7 +488,7 @@ Other dotfiles that I learned / copy from:
 [wl-clip-persist]: https://github.com/Linus789/wl-clip-persist
 [wf-recorder]: https://github.com/ammen99/wf-recorder
 [hyprpicker]: https://github.com/hyprwm/hyprpicker
-[Catppuccin]: https://github.com/catppuccin/catppuccin
-[catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
-[Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
+[Gruvbox]: https://github.com/morhetz/gruvbox
+[Papirus-Dark]: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+[Bibata-Modern-Ice]: https://www.gnome-look.org/p/1197198
 [maxfetch]: https://github.com/jobcmax/maxfetch
