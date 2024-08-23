@@ -57,10 +57,11 @@ OLD (EXPAND)
 -   [hosts](hosts) 🌳 per-host configurations that contain machine specific configurations
     - [desktop](hosts/desktop/) 🖥️ Desktop specific configuration
     - [laptop](hosts/laptop/) 💻 Laptop specific configuration
+    - [vm](hosts/vm/) 🗄️ VM specific configuration
 -   [modules](modules) 🍱 modularized NixOS configurations
     -   [core](modules/core/) ⚙️ Core NixOS configuration
     -   [homes](modules/home/) 🏠 my [Home-Manager](https://github.com/nix-community/home-manager) config
--   [pkgs](flake/pkgs) 📦 packages exported by my flake
+-   [pkgs](flake/pkgs) 📦 Packages Build from source
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
 ### 📓 Components
@@ -103,9 +104,14 @@ Utils (EXPAND)
 - ```vim```   $\rightarrow$ ```nvim```
 - ```cat```   $\rightarrow$ ```bat```
 - ```nano```  $\rightarrow$ ```micro```
+- ```code```  $\rightarrow$ ```codium```
+- ```py```    $\rightarrow$ ```python```
 - ```icat```  $\rightarrow$ ```kitten icat```
 - ```dsize``` $\rightarrow$ ```du -hs```
-- ```findw``` $\rightarrow$ ```grep -rl```
+- ```pdf```   $\rightarrow$ ```tdf```
+- ```open```  $\rightarrow$ ```xdg-open```
+- ```space``` $\rightarrow$ ```ncdu```
+- ```man```   $\rightarrow$ ```BAT_THEME='default' batman```
 - ```l```     $\rightarrow$ ```eza --icons  -a --group-directories-first -1```
 - ```ll```    $\rightarrow$ ```eza --icons  -a --group-directories-first -1 --no-user --long```
 - ```tree```  $\rightarrow$ ```eza --icons --tree --group-directories-first```
@@ -116,14 +122,13 @@ Utils (EXPAND)
 Nixos (EXPAND)
 </summary>
 
-> ${host} is either `desktop` or `laptop`
-
-- ```cdnix```            $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
-- ```ns```               $\rightarrow$ ```nix-shell --run zsh```
-- ```nix-switch```       $\rightarrow$ ```sudo nixos-rebuild switch --flake ~/nixos-config#${host}```
-- ```nix-switchu```      $\rightarrow$ ```sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}```
-- ```nix-flake-update``` $\rightarrow$ ```sudo nix flake update ~/nixos-config#```
-- ```nix-clean```        $\rightarrow$ ```sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d```
+- ```cdnix```      $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
+- ```ns```         $\rightarrow$ ```nom-shell --run zsh```
+- ```nix-test```   $\rightarrow$ ```nh os test```
+- ```nix-switch``` $\rightarrow$ ```nh os switch```
+- ```nix-update``` $\rightarrow$ ```nh os switch --update```
+- ```nix-clean```  $\rightarrow$ ```nh clean all --keep 5```
+- ```nix-search``` $\rightarrow$ ```nh search```
 </details>
 
 <details>
@@ -131,21 +136,31 @@ Nixos (EXPAND)
 Git (EXPAND)
 </summary>
 
-- ```ga```   $\rightarrow$ ```git add```
-- ```gaa```  $\rightarrow$ ```git add --all```
-- ```gs```   $\rightarrow$ ```git status```
-- ```gb```   $\rightarrow$ ```git branch```
-- ```gm```   $\rightarrow$ ```git merge```
-- ```gpl```  $\rightarrow$ ```git pull```
-- ```gplo``` $\rightarrow$ ```git pull origin```
-- ```gps```  $\rightarrow$ ```git push```
-- ```gpso``` $\rightarrow$ ```git push origin```
-- ```gc```   $\rightarrow$ ```git commit```
-- ```gcm```  $\rightarrow$ ```git commit -m```
-- ```gch```  $\rightarrow$ ```git checkout```
-- ```gchb``` $\rightarrow$ ```git checkout -b```
-- ```gcoe``` $\rightarrow$ ```git config user.email```
-- ```gcon``` $\rightarrow$ ```git config user.name```
+- ```g```     $\rightarrow$ ```lazygit```
+- ```gf```    $\rightarrow$ ```onefetch --number-of-file-churns 0 --no-color-palette```
+- ```ga```    $\rightarrow$ ```git add```
+- ```gaa```   $\rightarrow$ ```git add --all```
+- ```gs```    $\rightarrow$ ```git status```
+- ```gb```    $\rightarrow$ ```git branch```
+- ```gm```    $\rightarrow$ ```git merge```
+- ```gd```    $\rightarrow$ ```git diff```
+- ```gpl```   $\rightarrow$ ```git pull```
+- ```gplo```  $\rightarrow$ ```git pull origin```
+- ```gps```   $\rightarrow$ ```git push```
+- ```gpso```  $\rightarrow$ ```git push origin```
+- ```gpst```  $\rightarrow$ ```git push --follow-tags```
+- ```gcl```   $\rightarrow$ ```git clone```
+- ```gc```    $\rightarrow$ ```git commit```
+- ```gcm```   $\rightarrow$ ```git commit -m```
+- ```gcma```  $\rightarrow$ ```git add --all && git commit -m```
+- ```gtag```  $\rightarrow$ ```git tag -ma```
+- ```gch```   $\rightarrow$ ```git checkout```
+- ```gchb```  $\rightarrow$ ```git checkout -b```
+- ```glog```  $\rightarrow$ ```git log --oneline --decorate --graph```
+- ```glol```  $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'```
+- ```glola``` $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --all```
+- ```glols``` $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --stat```
+  
 </details>
 
 ### 🛠️ Scripts
