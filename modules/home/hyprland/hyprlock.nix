@@ -8,7 +8,7 @@ in
     # BACKGROUND
     background {
       monitor =
-      path = ~/Pictures/wallpapers/others/gruv_forest.jpg
+      path = ${../../../wallpapers/otherWallpaper/gruvbox/gruv_forest.jpg}
       blur_passes = 1
       contrast = 0.8916
       brightness = 0.8172
