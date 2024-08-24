@@ -438,6 +438,7 @@ Other dotfiles that I learned / copy from:
   - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar (old design)
   - [skiletro/nixfiles](https://github.com/skiletro/nixfiles): Vscodium config (that prevent it to crash)
   - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
+  - [tluijken/.dotfiles](https://github.com/tluijken/.dotfiles): base rofi config
 
 - README
   - [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config)
