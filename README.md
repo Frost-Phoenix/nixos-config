@@ -35,15 +35,26 @@
    Screenshots last updated <b>2024-04-09</b>
 </p>
 
+Here is my previous Catppuccin rice. You can find it [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin)
 <details>
 <summary>
-OLD (EXPAND)
+Catppuccin (EXPAND)
 </summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/1.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/2.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/3.old.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/1.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/2.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/3.png" width="800px" /> <br>
 </p>
+   <details>
+   <summary>
+   Old Catppuccin (EXPAND)
+   </summary>
+   <p align="center">
+      <img src="./.github/assets/screenshots/catppuccin/old/1.old.png" width="800px" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/2.old.png" width="800px" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/3.old.png" width="800px" /> <br>
+   </p>
+   </details>
 </details>
 
 # 🗃️ Overview
