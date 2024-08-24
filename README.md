@@ -4,7 +4,6 @@
       Frost-Phoenix's Flakes 
    <br>
       <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
-   <div align="center">
 
    <div align="center">
       <p></p>
@@ -26,10 +25,8 @@
    </div>
 </h1>
 
-<br>
-</div>
 
-## 🖼️ Gallery
+### 🖼️ Gallery
 
 <p align="center">
    <img src="./.github/assets/screenshots/1.png" /> <br>
@@ -361,7 +358,7 @@ First install nixos using any [graphical ISO image](https://nixos.org/download.h
 
 #### 2. **Clone the repo**
 
-```
+```bash
 nix-shell -p git
 git clone https://github.com/Frost-Phoenix/nixos-config
 cd nixos-config
@@ -372,7 +369,7 @@ cd nixos-config
 > As it is better to know what a script does before running it, you are advised to read it or at least see the [Install script walkthrough](#Install-script-walkthrough) section before execution.
    
 Execute and follow the installation script :
-```
+```bash
 ./install.sh
 ```
   
@@ -387,7 +384,7 @@ Even though I use home manager, there is still a little bit of manual configurat
 - Enable Discord theme (in Discord settings under VENCORD > Themes).
 - Configure the browser (for now, all browser configuration is done manually).
 - Change the git account information in `./modules/home/git.nix`
-```
+```nix
 programs.git = {
    ...
    userName = "Frost-Phoenix";
