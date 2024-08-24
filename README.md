@@ -29,7 +29,7 @@
 <br>
 </div>
 
-### 🖼️ Gallery
+## 🖼️ Gallery
 
 <p align="center">
    <img src="./.github/assets/screenshots/1.png" /> <br>
@@ -51,7 +51,7 @@ OLD (EXPAND)
 
 # 🗃️ Overview
 
-### 📚 Layout
+## 📚 Layout
 
 -   [flake.nix](flake.nix) base of the configuration
 -   [hosts](hosts) 🌳 per-host configurations that contain machine specific configurations
@@ -64,7 +64,7 @@ OLD (EXPAND)
 -   [pkgs](flake/pkgs) 📦 Packages Build from source
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
-### 📓 Components
+## 📓 Components
 |                             | NixOS + Hyprland                                                                              |
 | --------------------------- | :---------------------------------------------------------------------------------------------:
 | **Window Manager**          | [Hyprland][Hyprland] |
@@ -91,7 +91,7 @@ OLD (EXPAND)
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
 
-### 📝 Shell aliases
+## 📝 Shell aliases
 
 <details>
 <summary>
@@ -163,7 +163,7 @@ Git (EXPAND)
   
 </details>
 
-### 🛠️ Scripts
+## 🛠️ Scripts
 
 All the scripts are in ```modules/home/scripts/scripts/``` and are exported as packages in ```modules/home/scripts/default.nix```
 
@@ -237,7 +237,7 @@ runbg.sh
 **Usage:** ```runbg <command> <arg1> <arg2> <...>```
 </details>
 
-### ⌨️ Keybinds
+## ⌨️ Keybinds
 
 View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing ```$mainMod w```. By default ```$mainMod``` is the ```SUPER``` key. 
 
@@ -246,10 +246,10 @@ View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing
 Keybindings 
 </summary>
 
-###### show keybinds list
+##### show keybinds list
 - ```$mainMod, F1, exec, show-keybinds```
 
-###### keybindings
+##### keybindings
 - ```$mainMod, Return, exec, kitty```
 - ```ALT, Return, exec, kitty --title float_kitty```
 - ```$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
@@ -274,17 +274,17 @@ Keybindings
 - ```$mainMod, N, exec, swaync-client -t -sw```
 - ```$mainMod SHIFT, W, exec, vm-start```
 
-###### screenshot
+##### screenshot
 - ```$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
 - ```,Print, exec, grimblast --notify --cursor --freeze copy area```
 
-###### switch focus
+##### switch focus
 - ```$mainMod, left, movefocus, l```
 - ```$mainMod, right, movefocus, r```
 - ```$mainMod, up, movefocus, u```
 - ```$mainMod, down, movefocus, d```
 
-###### switch workspace
+##### switch workspace
 - ```$mainMod, 1, workspace, 1```
 - ```$mainMod, 2, workspace, 2```
 - ```$mainMod, 3, workspace, 3```
@@ -296,7 +296,7 @@ Keybindings
 - ```$mainMod, 9, workspace, 9```
 - ```$mainMod, 0, workspace, 10```
 
-###### same as above, but switch to the workspace
+##### same as above, but switch to the workspace
 - ```$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent```
 - ```$mainMod SHIFT, 2, movetoworkspacesilent, 2"```
 - ```$mainMod SHIFT, 3, movetoworkspacesilent, 3"```
@@ -309,7 +309,7 @@ Keybindings
 - ```$mainMod SHIFT, 0, movetoworkspacesilent, 10"```
 - ```$mainMod CTRL, c, movetoworkspace, empty"```
 
-###### window control
+##### window control
 - ```$mainMod SHIFT, left, movewindow, l```
 - ```$mainMod SHIFT, right, movewindow, r```
 - ```$mainMod SHIFT, up, movewindow, u```
@@ -323,7 +323,7 @@ Keybindings
 - ```$mainMod ALT, up, moveactive, 0 -80```
 - ```$mainMod ALT, down, moveactive, 0 80```
 
-###### media and volume controls
+##### media and volume controls
 - ```,XF86AudioRaiseVolume,exec, pamixer -i 2```
 - ```,XF86AudioLowerVolume,exec, pamixer -d 2```
 - ```,XF86AudioMute,exec, pamixer -t```
@@ -334,13 +334,13 @@ Keybindings
 - ```$mainMod, mouse_down, workspace, e-1```
 - ```$mainMod, mouse_up, workspace, e+1```
 
-###### laptop brigthness
+##### laptop brigthness
 - ```,XF86MonBrightnessUp, exec, brightnessctl set 5%+```
 - ```,XF86MonBrightnessDown, exec, brightnessctl set 5%-```
 - ```$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+```
 - ```$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-```
 
-###### clipboard manager
+##### clipboard manager
 - ```$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy```
 </details>
 
@@ -396,7 +396,7 @@ programs.git = {
 };
 ```
 
-### Install script walkthrough
+## Install script walkthrough
 
 A brief walkthrough of what the install script does.
 
