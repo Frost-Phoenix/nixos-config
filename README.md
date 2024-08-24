@@ -29,10 +29,10 @@
 ### 🖼️ Gallery
 
 <p align="center">
-   <img src="./.github/assets/screenshots/1.png" /> <br>
-   <img src="./.github/assets/screenshots/3.png" /> <br>
-   <img src="./.github/assets/screenshots/2.png" /> <br>
-   Screenshots last updated <b>2024-04-09</b>
+   <img src="./.github/assets/screenshots/1.png" style="margin-bottom: 5px;"/> <br>
+   <img src="./.github/assets/screenshots/3.png" style="margin-bottom: 5px;"/> <br>
+   <img src="./.github/assets/screenshots/2.png" style="margin-bottom: 5px;"/> <br>
+   Screenshots last updated <b>2024-08-24</b>
 </p>
 
 Here is my previous Catppuccin rice. You can find it [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin)
@@ -41,18 +41,18 @@ Here is my previous Catppuccin rice. You can find it [here](https://github.com/F
 Catppuccin (EXPAND)
 </summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/catppuccin/1.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/catppuccin/2.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/catppuccin/3.png" width="800px" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/1.png" style="margin-bottom: 5px;" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/2.png" style="margin-bottom: 5px;" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/3.png" style="margin-bottom: 5px;" /> <br>
 </p>  
    <details>
    <summary>
    Old Catppuccin (EXPAND)
    </summary>
    <p align="center">
-      <img src="./.github/assets/screenshots/catppuccin/old/1.old.png" width="800px" /> <br>
-      <img src="./.github/assets/screenshots/catppuccin/old/2.old.png" width="800px" /> <br>
-      <img src="./.github/assets/screenshots/catppuccin/old/3.old.png" width="800px" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/1.old.png" style="margin-bottom: 5px;" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/2.old.png" style="margin-bottom: 5px;" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/3.old.png" style="margin-bottom: 5px;" /> <br>
    </p>
    </details>
 </details>
