@@ -397,36 +397,36 @@ programs.git = {
 
 A brief walkthrough of what the install script does.
 
-1. **Get username**
+#### 1. **Get username**
 
-   You will receive a prompt to enter your username, with a confirmation check.
+You will receive a prompt to enter your username, with a confirmation check.
 
-2. **Set username**
+#### 2. **Set username**
 
-   The script will replace all occurancies of the default usename ```CURRENT_USERNAME``` by the given one stored in ```$username```
+The script will replace all occurancies of the default usename ```CURRENT_USERNAME``` by the given one stored in ```$username```
 
-3. Create basic directories
+#### 3. Create basic directories
 
-   The following directories will be created:
-   - ```~/Music```
-   - ```~/Documents```
-   - ```~/Pictures/wallpapers/others```
+The following directories will be created:
+- ```~/Music```
+- ```~/Documents```
+- ```~/Pictures/wallpapers/others```
 
-4. Copy the wallpapers
+#### 4. Copy the wallpapers
 
-   Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
+Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
 
-5. Get the hardware configuration
+#### 5. Get the hardware configuration
 
-   It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/nixos/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
+It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/${host}/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
 
-6. Choose a host (desktop / laptop)
+#### 6. Choose a host (desktop / laptop)
 
-   Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop.
+Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop (or a VM altho it can be realy buggy).
 
-7. Build the system
+#### 7. Build the system
 
-   Lastly, it will build the system, which includes both the flake config and home-manager config.
+Lastly, it will build the system, which includes both the flake config and home-manager config.
 
 # 👥 Credits
 
