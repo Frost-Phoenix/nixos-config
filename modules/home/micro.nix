@@ -4,12 +4,13 @@
     enable = true;
     
     settings = {
-      "colorscheme" = "catppuccin-mocha";
+      "colorscheme" = "gruvbox";
       "*.nix" = {"tabsize" = 2;};
       "*.ml"  = {"tabsize" = 2;};
       "*.sh"  = {"tabsize" = 2;};
       "tabstospaces" = true;
       "tabsize" = 4;
+      "mkparents" = true;
     };
   };
 
@@ -24,47 +25,33 @@
     }
   '';
 
-  xdg.configFile."micro/colorschemes/catppuccin-mocha.micro".text = ''
-    color-link comment "#585B70"
-
-    color-link identifier "#89B4FA"
-    color-link identifier.class "#89B4FA"
-    color-link identifier.var "#89B4FA"
-
-    color-link constant "#FAB387"
-    color-link constant.number "#FAB387"
-    color-link constant.string "#A6E3A1"
-
-    color-link symbol "#F5C2E7"
-    color-link symbol.brackets "#F2CDCD"
-    color-link symbol.tag "#89B4FA"
-
-    color-link type "#89B4FA"
-    color-link type.keyword "#F9E2AF"
-
-    color-link special "#F5C2E7"
-    color-link statement "#CBA6F7"
-    color-link preproc "#F5C2E7"
-
-    color-link underlined "#89DCEB"
-    color-link error "bold #F38BA8"
-    color-link todo "bold #F9E2AF"
-
-    color-link diff-added "#A6E3A1"
-    color-link diff-modified "#F9E2AF"
-    color-link diff-deleted "#F38BA8"
-
-    color-link gutter-error "#F38BA8"
-    color-link gutter-warning "#F9E2AF"
-
-    color-link statusline "#CDD6F4,#181825"
-    color-link tabbar "#CDD6F4"
-    color-link indent-char "#45475A"
-    color-link line-number "#45475A"
-    color-link current-line-number "#B4BEFE"
-
-    color-link color-column "#313244"
-    color-link type.extended "default"
-
+  xdg.configFile."micro/colorschemes/gruvbox.micro".text = ''
+    color-link default "#ebdbb2,#1d2021"
+    color-link comment "#928374,#1d2021"
+    color-link symbol "#d79921,#1d2021"
+    color-link constant "#d3869b,#1d2021"
+    color-link constant.string "#b8bb26,#1d2021"
+    color-link constant.string.char "#b8bb26,#1d2021"
+    color-link identifier "#8ec07c,#1d2021"
+    color-link statement "#fb4934,#1d2021"
+    color-link preproc "#fb4934,235"
+    color-link type "#fb4934,#1d2021"
+    color-link special "#d79921,#1d2021"
+    color-link underlined "underline #1d2021"
+    color-link error "#9d0006,#1d2021"
+    color-link hlsearch "#1d2021,#fabd2f"
+    color-link diff-added "#00AF00"
+    color-link diff-modified "#FFAF00"
+    color-link diff-deleted "#D70000"
+    color-link gutter-error "#fb4934,#1d2021"
+    color-link gutter-warning "#d79921,#1d2021"
+    color-link line-number "#665c54"
+    color-link current-line-number "#8ec07c,#1d2021"
+    color-link cursor-line "#3c3836"
+    color-link color-column "#665c54"
+    color-link statusline "#8ec07c"
+    color-link tabbar "#ebdbb2,#665c54"
+    color-link type "#fe8019,#1d2021"
+    color-link todo "#ffcc00,#1d2021"
   '';
 }

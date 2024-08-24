@@ -3,85 +3,94 @@
    <br>
       Frost-Phoenix's Flakes 
    <br>
-      <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px" /> <br>
-   <div align="center">
+      <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
 
    <div align="center">
       <p></p>
       <div align="center">
          <a href="https://github.com/Frost-Phoenix/nixos-config/stargazers">
-            <img src="https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=F5BDE6&labelColor=303446&style=for-the-badge&logo=starship&logoColor=F5BDE6">
+            <img src="https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=FABD2F&labelColor=282828&style=for-the-badge&logo=starship&logoColor=FABD2F">
          </a>
          <a href="https://github.com/Frost-Phoenix/nixos-config/">
-            <img src="https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=C6A0F6&labelColor=303446&style=for-the-badge&logo=github&logoColor=C6A0F6">
+            <img src="https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=B16286&labelColor=282828&style=for-the-badge&logo=github&logoColor=B16286">
          </a>
          <a = href="https://nixos.org">
-            <img src="https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=303446&logo=NixOS&logoColor=white&color=91D7E3">
+            <img src="https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=282828&logo=NixOS&logoColor=458588&color=458588">
          </a>
          <a href="https://github.com/Frost-Phoenix/nixos-config/blob/main/LICENSE">
-            <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&colorA=313244&colorB=F5A97F&logo=unlicense&logoColor=F5A97F&"/>
+            <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&colorA=282828&colorB=98971A&logo=unlicense&logoColor=98971A&"/>
          </a>
       </div>
       <br>
    </div>
 </h1>
 
-<br>
-</div>
 
 ### 🖼️ Gallery
 
 <p align="center">
-   <img src="./.github/assets/screenshots/1.png" /> <br>
-   <img src="./.github/assets/screenshots/2.png" /> <br>
-   <img src="./.github/assets/screenshots/3.png" /> <br>
-   Screenshots last updated <b>2024-04-09</b>
+   <img src="./.github/assets/screenshots/1.png" style="margin-bottom: 10px;"/> <br>
+   <img src="./.github/assets/screenshots/3.png" style="margin-bottom: 10px;"/> <br>
+   <img src="./.github/assets/screenshots/2.png" style="margin-bottom: 10px;"/> <br>
+   Screenshots last updated <b>2024-08-24</b>
 </p>
 
+Here is my previous Catppuccin rice. You can find it [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin)
 <details>
 <summary>
-OLD (EXPAND)
+Catppuccin (EXPAND)
 </summary>
 <p align="center">
-   <img src="./.github/assets/screenshots/1.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/2.old.png" width="800px" /> <br>
-   <img src="./.github/assets/screenshots/3.old.png" width="800px" /> <br>
-</p>
+   <img src="./.github/assets/screenshots/catppuccin/1.png" style="margin-bottom: 10px;" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/2.png" style="margin-bottom: 10px;" /> <br>
+   <img src="./.github/assets/screenshots/catppuccin/3.png" style="margin-bottom: 10px;" /> <br>
+</p>  
+   <details>
+   <summary>
+   Old Catppuccin (EXPAND)
+   </summary>
+   <p align="center">
+      <img src="./.github/assets/screenshots/catppuccin/old/1.old.png" style="margin-bottom: 10px;" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/2.old.png" style="margin-bottom: 10px;" /> <br>
+      <img src="./.github/assets/screenshots/catppuccin/old/3.old.png" style="margin-bottom: 10px;" /> <br>
+   </p>
+   </details>
 </details>
 
 # 🗃️ Overview
 
-### 📚 Layout
+## 📚 Layout
 
 -   [flake.nix](flake.nix) base of the configuration
 -   [hosts](hosts) 🌳 per-host configurations that contain machine specific configurations
     - [desktop](hosts/desktop/) 🖥️ Desktop specific configuration
     - [laptop](hosts/laptop/) 💻 Laptop specific configuration
+    - [vm](hosts/vm/) 🗄️ VM specific configuration
 -   [modules](modules) 🍱 modularized NixOS configurations
     -   [core](modules/core/) ⚙️ Core NixOS configuration
     -   [homes](modules/home/) 🏠 my [Home-Manager](https://github.com/nix-community/home-manager) config
--   [pkgs](flake/pkgs) 📦 packages exported by my flake
+-   [pkgs](flake/pkgs) 📦 Packages Build from source
 -   [wallpapers](wallpapers/) 🌄 wallpapers collection
 
-### 📓 Components
+## 📓 Components
 |                             | NixOS + Hyprland                                                                              |
 | --------------------------- | :---------------------------------------------------------------------------------------------:
 | **Window Manager**          | [Hyprland][Hyprland] |
 | **Bar**                     | [Waybar][Waybar] |
-| **Application Launcher**    | [fuzzel][fuzzel] |
+| **Application Launcher**    | [rofi][rofi] |
 | **Notification Daemon**     | [swaync][swaync] |
 | **Terminal Emulator**       | [Kitty][Kitty] |
 | **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
 | **System resource monitor** | [Btop][Btop] |
-| **File Manager**            | [nemo][nemo] + [yazi][yazi] |
-| **Fonts**                   | [Nerd fonts][Nerd fonts] |
-| **Color Scheme**            | [Catppuccin][Catppuccin] |
-| **Cursor**                  | [Nordzy-cursors][Nordzy-cursors] |
-| **Icons**                   | [catppuccin-papirus-folders][catppuccin-papirus-folders] |
-| **Lockscreen**              | [Swaylock-effects][Swaylock-effects] |
-| **Image Viewer**            | [imv][imv] |
+| **File Manager**            | [nautilus][nautilus] + [yazi][yazi] |
+| **Fonts**                   | [FiraCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
+| **Color Scheme**            | [Gruvbox Dark Hard][Gruvbox] |
+| **Cursor**                  | [Bibata-Modern-Ice][Bibata-Modern-Ice] |
+| **Icons**                   | [Papirus-Dark][Papirus-Dark] |
+| **Lockscreen**              | [Hyprlock][Hyprlock] + [Swaylock-effects][Swaylock-effects] |
+| **Image Viewer**            | [qview][qview] |
 | **Media Player**            | [mpv][mpv] |
 | **Music Player**            | [audacious][audacious] |
 | **Screenshot Software**     | [grimblast][grimblast] |
@@ -90,7 +99,7 @@ OLD (EXPAND)
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
 
-### 📝 Shell aliases
+## 📝 Shell aliases
 
 <details>
 <summary>
@@ -103,9 +112,14 @@ Utils (EXPAND)
 - ```vim```   $\rightarrow$ ```nvim```
 - ```cat```   $\rightarrow$ ```bat```
 - ```nano```  $\rightarrow$ ```micro```
+- ```code```  $\rightarrow$ ```codium```
+- ```py```    $\rightarrow$ ```python```
 - ```icat```  $\rightarrow$ ```kitten icat```
 - ```dsize``` $\rightarrow$ ```du -hs```
-- ```findw``` $\rightarrow$ ```grep -rl```
+- ```pdf```   $\rightarrow$ ```tdf```
+- ```open```  $\rightarrow$ ```xdg-open```
+- ```space``` $\rightarrow$ ```ncdu```
+- ```man```   $\rightarrow$ ```BAT_THEME='default' batman```
 - ```l```     $\rightarrow$ ```eza --icons  -a --group-directories-first -1```
 - ```ll```    $\rightarrow$ ```eza --icons  -a --group-directories-first -1 --no-user --long```
 - ```tree```  $\rightarrow$ ```eza --icons --tree --group-directories-first```
@@ -116,14 +130,13 @@ Utils (EXPAND)
 Nixos (EXPAND)
 </summary>
 
-> ${host} is either `desktop` or `laptop`
-
-- ```cdnix```            $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
-- ```ns```               $\rightarrow$ ```nix-shell --run zsh```
-- ```nix-switch```       $\rightarrow$ ```sudo nixos-rebuild switch --flake ~/nixos-config#${host}```
-- ```nix-switchu```      $\rightarrow$ ```sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}```
-- ```nix-flake-update``` $\rightarrow$ ```sudo nix flake update ~/nixos-config#```
-- ```nix-clean```        $\rightarrow$ ```sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d```
+- ```cdnix```      $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
+- ```ns```         $\rightarrow$ ```nom-shell --run zsh```
+- ```nix-test```   $\rightarrow$ ```nh os test```
+- ```nix-switch``` $\rightarrow$ ```nh os switch```
+- ```nix-update``` $\rightarrow$ ```nh os switch --update```
+- ```nix-clean```  $\rightarrow$ ```nh clean all --keep 5```
+- ```nix-search``` $\rightarrow$ ```nh search```
 </details>
 
 <details>
@@ -131,24 +144,34 @@ Nixos (EXPAND)
 Git (EXPAND)
 </summary>
 
-- ```ga```   $\rightarrow$ ```git add```
-- ```gaa```  $\rightarrow$ ```git add --all```
-- ```gs```   $\rightarrow$ ```git status```
-- ```gb```   $\rightarrow$ ```git branch```
-- ```gm```   $\rightarrow$ ```git merge```
-- ```gpl```  $\rightarrow$ ```git pull```
-- ```gplo``` $\rightarrow$ ```git pull origin```
-- ```gps```  $\rightarrow$ ```git push```
-- ```gpso``` $\rightarrow$ ```git push origin```
-- ```gc```   $\rightarrow$ ```git commit```
-- ```gcm```  $\rightarrow$ ```git commit -m```
-- ```gch```  $\rightarrow$ ```git checkout```
-- ```gchb``` $\rightarrow$ ```git checkout -b```
-- ```gcoe``` $\rightarrow$ ```git config user.email```
-- ```gcon``` $\rightarrow$ ```git config user.name```
+- ```g```     $\rightarrow$ ```lazygit```
+- ```gf```    $\rightarrow$ ```onefetch --number-of-file-churns 0 --no-color-palette```
+- ```ga```    $\rightarrow$ ```git add```
+- ```gaa```   $\rightarrow$ ```git add --all```
+- ```gs```    $\rightarrow$ ```git status```
+- ```gb```    $\rightarrow$ ```git branch```
+- ```gm```    $\rightarrow$ ```git merge```
+- ```gd```    $\rightarrow$ ```git diff```
+- ```gpl```   $\rightarrow$ ```git pull```
+- ```gplo```  $\rightarrow$ ```git pull origin```
+- ```gps```   $\rightarrow$ ```git push```
+- ```gpso```  $\rightarrow$ ```git push origin```
+- ```gpst```  $\rightarrow$ ```git push --follow-tags```
+- ```gcl```   $\rightarrow$ ```git clone```
+- ```gc```    $\rightarrow$ ```git commit```
+- ```gcm```   $\rightarrow$ ```git commit -m```
+- ```gcma```  $\rightarrow$ ```git add --all && git commit -m```
+- ```gtag```  $\rightarrow$ ```git tag -ma```
+- ```gch```   $\rightarrow$ ```git checkout```
+- ```gchb```  $\rightarrow$ ```git checkout -b```
+- ```glog```  $\rightarrow$ ```git log --oneline --decorate --graph```
+- ```glol```  $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'```
+- ```glola``` $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --all```
+- ```glols``` $\rightarrow$ ```git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --stat```
+  
 </details>
 
-### 🛠️ Scripts
+## 🛠️ Scripts
 
 All the scripts are in ```modules/home/scripts/scripts/``` and are exported as packages in ```modules/home/scripts/default.nix```
 
@@ -222,7 +245,7 @@ runbg.sh
 **Usage:** ```runbg <command> <arg1> <arg2> <...>```
 </details>
 
-### ⌨️ Keybinds
+## ⌨️ Keybinds
 
 View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing ```$mainMod w```. By default ```$mainMod``` is the ```SUPER``` key. 
 
@@ -231,206 +254,190 @@ View all keybinds by pressing ```$mainMod F1``` and wallpaper picker by pressing
 Keybindings 
 </summary>
 
-- ```bind = $mainMod, Return, exec, kitty```
-- ```bind = ALT, Return, exec, kitty --title float_kitty```
-- ```bind = $mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
-- ```bind = $mainMod, B, exec, firefox```
-- ```bind = $mainMod, Q, killactive,```
-- ```bind = $mainMod, F, fullscreen, 0```
-- ```bind = $mainMod SHIFT, F, fullscreen, 1```
-- ```bind = $mainMod, Space, togglefloating,```
-- ```bind = $mainMod, D, exec, fuzzel```
-- ```bind = $mainMod, Escape, exec, swaylock```
-- ```bind = $mainMod SHIFT, Escape, exec, shutdown-script```
-- ```bind = $mainMod, P, pseudo,```
-- ```bind = $mainMod, J, togglesplit,```
-- ```bind = $mainMod, E, exec, nemo```
-- ```bind = $mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped```
-- ```bind = $mainMod, C ,exec, hyprpicker -a```
-- ```bind = $mainMod, W,exec, wallpaper-picker```
-</details>
+##### show keybinds list
+- ```$mainMod, F1, exec, show-keybinds```
 
-<details>
-<summary>
-Screenshot 
-</summary>
+##### keybindings
+- ```$mainMod, Return, exec, kitty```
+- ```ALT, Return, exec, kitty --title float_kitty```
+- ```$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
+- ```$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'```
+- ```$mainMod, Q, killactive,```
+- ```$mainMod, F, fullscreen, 0```
+- ```$mainMod SHIFT, F, fullscreen, 1```
+- ```$mainMod, Space, togglefloating,```
+- ```$mainMod, D, exec, rofi -show drun```
+- ```$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'```
+- ```$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'```
+- ```$mainMod, Escape, exec, swaylock```
+- ```ALT, Escape, exec, hyprlock```
+- ```$mainMod SHIFT, Escape, exec, power-menu```
+- ```$mainMod, P, pseudo,```
+- ```$mainMod, J, togglesplit,```
+- ```$mainMod, T, exec, toggle_oppacity```
+- ```$mainMod, E, exec, nautilus```
+- ```$mainMod SHIFT, B, exec, toggle_waybar```
+- ```$mainMod, C ,exec, hyprpicker -a```
+- ```$mainMod, W,exec, wallpaper-picker```
+- ```$mainMod, N, exec, swaync-client -t -sw```
+- ```$mainMod SHIFT, W, exec, vm-start```
 
-- ```bind = $mainMod, Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
-- ```bind = ,Print, exec, grimblast --notify --cursor  copy area```
-</details>
+##### screenshot
+- ```$mainMod, Print, exec, grimblast --notify --cursor --freeze save area ~/Pictures/$(date +'%Y-%m-%d-At-%Ih%Mm%Ss').png```
+- ```,Print, exec, grimblast --notify --cursor --freeze copy area```
 
-<details>
-<summary>
-Switch window focus 
-</summary>
+##### switch focus
+- ```$mainMod, left, movefocus, l```
+- ```$mainMod, right, movefocus, r```
+- ```$mainMod, up, movefocus, u```
+- ```$mainMod, down, movefocus, d```
 
-- ```bind = $mainMod, left, movefocus, l```
-- ```bind = $mainMod, right, movefocus, r```
-- ```bind = $mainMod, up, movefocus, u```
-- ```bind = $mainMod, down, movefocus, d```
-</details>
+##### switch workspace
+- ```$mainMod, 1, workspace, 1```
+- ```$mainMod, 2, workspace, 2```
+- ```$mainMod, 3, workspace, 3```
+- ```$mainMod, 4, workspace, 4```
+- ```$mainMod, 5, workspace, 5```
+- ```$mainMod, 6, workspace, 6```
+- ```$mainMod, 7, workspace, 7```
+- ```$mainMod, 8, workspace, 8```
+- ```$mainMod, 9, workspace, 9```
+- ```$mainMod, 0, workspace, 10```
 
-<details>
-<summary>
-Switch workspace 
-</summary>
+##### same as above, but switch to the workspace
+- ```$mainMod SHIFT, 1, movetoworkspacesilent, 1" # movetoworkspacesilent```
+- ```$mainMod SHIFT, 2, movetoworkspacesilent, 2"```
+- ```$mainMod SHIFT, 3, movetoworkspacesilent, 3"```
+- ```$mainMod SHIFT, 4, movetoworkspacesilent, 4"```
+- ```$mainMod SHIFT, 5, movetoworkspacesilent, 5"```
+- ```$mainMod SHIFT, 6, movetoworkspacesilent, 6"```
+- ```$mainMod SHIFT, 7, movetoworkspacesilent, 7"```
+- ```$mainMod SHIFT, 8, movetoworkspacesilent, 8"```
+- ```$mainMod SHIFT, 9, movetoworkspacesilent, 9"```
+- ```$mainMod SHIFT, 0, movetoworkspacesilent, 10"```
+- ```$mainMod CTRL, c, movetoworkspace, empty"```
 
-- ```bind = $mainMod, 1, workspace, 1```
-- ```bind = $mainMod, 2, workspace, 2```
-- ```bind = $mainMod, 3, workspace, 3```
-- ```bind = $mainMod, 4, workspace, 4```
-- ```bind = $mainMod, 5, workspace, 5```
-- ```bind = $mainMod, 6, workspace, 6```
-- ```bind = $mainMod, 7, workspace, 7```
-- ```bind = $mainMod, 8, workspace, 8```
-- ```bind = $mainMod, 9, workspace, 9```
-- ```bind = $mainMod, 0, workspace, 10```
-</details>
+##### window control
+- ```$mainMod SHIFT, left, movewindow, l```
+- ```$mainMod SHIFT, right, movewindow, r```
+- ```$mainMod SHIFT, up, movewindow, u```
+- ```$mainMod SHIFT, down, movewindow, d```
+- ```$mainMod CTRL, left, resizeactive, -80 0```
+- ```$mainMod CTRL, right, resizeactive, 80 0```
+- ```$mainMod CTRL, up, resizeactive, 0 -80```
+- ```$mainMod CTRL, down, resizeactive, 0 80```
+- ```$mainMod ALT, left, moveactive,  -80 0```
+- ```$mainMod ALT, right, moveactive, 80 0```
+- ```$mainMod ALT, up, moveactive, 0 -80```
+- ```$mainMod ALT, down, moveactive, 0 80```
 
-<details>
-<summary>
-Switch window to workspace 
-</summary>
+##### media and volume controls
+- ```,XF86AudioRaiseVolume,exec, pamixer -i 2```
+- ```,XF86AudioLowerVolume,exec, pamixer -d 2```
+- ```,XF86AudioMute,exec, pamixer -t```
+- ```,XF86AudioPlay,exec, playerctl play-pause```
+- ```,XF86AudioNext,exec, playerctl next```
+- ```,XF86AudioPrev,exec, playerctl previous```
+- ```,XF86AudioStop, exec, playerctl stop```
+- ```$mainMod, mouse_down, workspace, e-1```
+- ```$mainMod, mouse_up, workspace, e+1```
 
-- ```bind = $mainMod SHIFT, 1, movetoworkspace, 1```
-- ```bind = $mainMod SHIFT, 2, movetoworkspace, 2```
-- ```bind = $mainMod SHIFT, 3, movetoworkspace, 3```
-- ```bind = $mainMod SHIFT, 4, movetoworkspace, 4```
-- ```bind = $mainMod SHIFT, 5, movetoworkspace, 5```
-- ```bind = $mainMod SHIFT, 6, movetoworkspace, 6```
-- ```bind = $mainMod SHIFT, 7, movetoworkspace, 7```
-- ```bind = $mainMod SHIFT, 8, movetoworkspace, 8```
-- ```bind = $mainMod SHIFT, 9, movetoworkspace, 9```
-- ```bind = $mainMod SHIFT, 0, movetoworkspace, 10```
-- ```bind = $mainMod CTRL, c, movetoworkspace, empty```
-</details>
+##### laptop brigthness
+- ```,XF86MonBrightnessUp, exec, brightnessctl set 5%+```
+- ```,XF86MonBrightnessDown, exec, brightnessctl set 5%-```
+- ```$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+```
+- ```$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-```
 
-<details>
-<summary>
-Window control 
-</summary>
-
-- ```bind = $mainMod SHIFT, left, movewindow, l```
-- ```bind = $mainMod SHIFT, right, movewindow, r```
-- ```bind = $mainMod SHIFT, up, movewindow, u```
-- ```bind = $mainMod SHIFT, down, movewindow, d```
-- ```bind = $mainMod CTRL, left, resizeactive, -80 0```
-- ```bind = $mainMod CTRL, right, resizeactive, 80 0```
-- ```bind = $mainMod CTRL, up, resizeactive, 0 -80```
-- ```bind = $mainMod CTRL, down, resizeactive, 0 80```
-- ```bind = $mainMod ALT, left, moveactive,  -80 0```
-- ```bind = $mainMod ALT, right, moveactive, 80 0```
-- ```bind = $mainMod ALT, up, moveactive, 0 -80```
-- ```bind = $mainMod ALT, down, moveactive, 0 80```
-</details>
-
-<details>
-<summary>
-Media and volume controls 
-</summary>
-   
-- ```bind = ,XF86AudioRaiseVolume,exec, pamixer -i 2```
-- ```bind = ,XF86AudioLowerVolume,exec, pamixer -d 2```
-- ```bind = ,XF86AudioMute,exec, pamixer -t```
-- ```bind = ,XF86AudioPlay,exec, playerctl play-pause```
-- ```bind = ,XF86AudioNext,exec, playerctl next```
-- ```bind = ,XF86AudioPrev,exec, playerctl previous```
-- ```bind = , XF86AudioStop, exec, playerctl stop```
-- ```bind = $mainMod, mouse_down, workspace, e-1```
-- ```bind = $mainMod, mouse_up, workspace, e+1```
-</details>
-
-<details>
-<summary>
-Mouse binding 
-</summary>
-
-- ```bindm = $mainMod, mouse:272, movewindow```
-- ```bindm = $mainMod, mouse:273, resizewindow```
+##### clipboard manager
+- ```$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy```
 </details>
 
 # 🚀 Installation 
 
-> **⚠️ Use this configuration at your own risk! ⚠️** <br>
-> Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly on all systems. <br>
+> [!CAUTION]
+> Applying custom configurations, especially those related to your operating system, can have unexpected consequences and may interfere with your system's normal behavior. While I have tested these configurations on my own setup, there is no guarantee that they will work flawlessly for you.
 > **I am not responsible for any issues that may arise from using this configuration.**
 
+> [!NOTE]
 > It is highly recommended to review the configuration contents and make necessary modifications to customize it to your needs before attempting the installation.
 
-1. **Install NixOs**
+#### 1. **Install NixOs**
 
-   First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso). 
-   > Only been tested using the Gnome graphical installer and choosing the ```No desktop``` option durring instalation.
+First install nixos using any [graphical ISO image](https://nixos.org/download.html#nixos-iso). 
+> [!NOTE]
+> Only been tested using the Gnome graphical installer and choosing the ```No desktop``` option durring instalation.
 
-2. **Clone the repo**
+#### 2. **Clone the repo**
 
-   ```
-   nix-shell -p git
-   git clone https://github.com/Frost-Phoenix/nixos-config
-   cd nixos-config
-   ```
-3. **Install script**
+```bash
+nix-shell -p git
+git clone https://github.com/Frost-Phoenix/nixos-config
+cd nixos-config
+```
+#### 3. **Install script**
 
-   > First make sure to read the install script, it isn't long
+> [!TIP]
+> As it is better to know what a script does before running it, you are advised to read it or at least see the [Install script walkthrough](#Install-script-walkthrough) section before execution.
    
-   Execute and follow the installation script :
-   ```
-   ./install.sh
-   ```
-   > You will need to change the git account yourself in ./modules/home/git.nix
-   ```
-      programs.git = {
-         ...
-         userName = "Frost-Phoenix";
-         userEmail = "67cyril6767@gmail.com";
-         ...
-      };
-   ```
-4. **Reboot**
+Execute and follow the installation script :
+```bash
+./install.sh
+```
+  
+#### 4. **Reboot**
 
-   After rebooting, you'll be greeted by swaylock prompting for your password, with the wallpaper in the background.
+After rebooting, the config should be applied, you'll be greeted by hyprlock prompting for your password.
 
-5. **Manual config**
+#### 5. **Manual config**
 
-   Even though I use home manager, there is still a little bit of manual configuration to do:
-      - Set Aseprite theme (they are in the folder `./nixos-config/modules/home/aseprite/themes`).
-      - Enable Discord theme (in Discord settings under VENCORD > Themes).
-      - Configure the browser (for now, all browser configuration is done manually).
+Even though I use home manager, there is still a little bit of manual configuration to do:
+- Set Aseprite theme (they are in the folder `./nixos-config/modules/home/aseprite/themes`).
+- Enable Discord theme (in Discord settings under VENCORD > Themes).
+- Configure the browser (for now, all browser configuration is done manually).
+- Change the git account information in `./modules/home/git.nix`
+```nix
+programs.git = {
+   ...
+   userName = "Frost-Phoenix";
+   userEmail = "67cyril6767@gmail.com";
+   ...
+};
+```
 
-### Install script walkthrough
+## Install script walkthrough
 
 A brief walkthrough of what the install script does.
 
-1. **Get username**
+#### 1. **Get username**
 
-   You will receive a prompt to enter your username, with a confirmation check.
+You will receive a prompt to enter your username, with a confirmation check.
 
-2. **Set username**
+#### 2. **Set username**
 
-   The script will replace all occurancies of the default usename ```CURRENT_USERNAME``` by the given one stored in ```$username```
+The script will replace all occurancies of the default usename ```CURRENT_USERNAME``` by the given one stored in ```$username```
 
-3. Create basic directories
+#### 3. Create basic directories
 
-   The following directories will be created:
-   - ```~/Music```
-   - ```~/Documents```
-   - ```~/Pictures/wallpapers/others```
+The following directories will be created:
+- ```~/Music```
+- ```~/Documents```
+- ```~/Pictures/wallpapers/others```
 
-4. Copy the wallpapers
+#### 4. Copy the wallpapers
 
-   Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
+Then the wallpapers will be copied into ```~/Pictures/wallpapers/others``` which is the folder in which the ```wallpaper-picker.sh``` script will be looking for them.
 
-5. Get the hardware configuration
+#### 5. Get the hardware configuration
 
-   It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/nixos/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
+It will also automatically copy the hardware configuration from ```/etc/nixos/hardware-configuration.nix``` to ```./hosts/${host}/hardware-configuration.nix``` so that the hardware configuration used is yours and not the default one.
 
-6. Choose a host (desktop / laptop)
+#### 6. Choose a host (desktop / laptop)
 
-   Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop.
+Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop (or a VM altho it can be realy buggy).
 
-7. Build the system
+#### 7. Build the system
 
-   Lastly, it will build the system, which includes both the flake config and home-manager config.
+Lastly, it will build the system, which includes both the flake config and home-manager config.
 
 # 👥 Credits
 
@@ -442,6 +449,7 @@ Other dotfiles that I learned / copy from:
   - [justinlime/dotfiles](https://github.com/justinlime/dotfiles): Mainly waybar (old design)
   - [skiletro/nixfiles](https://github.com/skiletro/nixfiles): Vscodium config (that prevent it to crash)
   - [fufexan/dotfiles](https://github.com/fufexan/dotfiles)
+  - [tluijken/.dotfiles](https://github.com/tluijken/.dotfiles): base rofi config
 
 - README
   - [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config)
@@ -467,19 +475,20 @@ Other dotfiles that I learned / copy from:
 [Kitty]: https://github.com/kovidgoyal/kitty
 [Starship]: https://github.com/starship/starship
 [Waybar]: https://github.com/Alexays/Waybar
-[fuzzel]: https://codeberg.org/dnkl/fuzzel>
+[rofi]: https://github.com/lbonn/rofi
 [Btop]: https://github.com/aristocratos/btop
-[nemo]: https://github.com/linuxmint/nemo
+[nautilus]: https://apps.gnome.org/Nautilus/
 [yazi]: https://github.com/sxyazi/yazi
 [zsh]: https://ohmyz.sh/
 [oh-my-zsh]: https://ohmyz.sh/
 [Swaylock-effects]: https://github.com/mortie/swaylock-effects
+[Hyprlock]: https://github.com/hyprwm/hyprlock
 [audacious]: https://audacious-media-player.org/
 [mpv]: https://github.com/mpv-player/mpv
 [VSCodium]:https://vscodium.com/
 [Neovim]: https://github.com/neovim/neovim
 [grimblast]: https://github.com/hyprwm/contrib
-[imv]: https://sr.ht/~exec64/imv/
+[qview]: https://interversehq.com/qview/
 [swaync]: https://github.com/ErikReider/SwayNotificationCenter
 [Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
@@ -487,7 +496,7 @@ Other dotfiles that I learned / copy from:
 [wl-clip-persist]: https://github.com/Linus789/wl-clip-persist
 [wf-recorder]: https://github.com/ammen99/wf-recorder
 [hyprpicker]: https://github.com/hyprwm/hyprpicker
-[Catppuccin]: https://github.com/catppuccin/catppuccin
-[catppuccin-papirus-folders]: https://github.com/catppuccin/papirus-folders
-[Nordzy-cursors]: https://github.com/alvatip/Nordzy-cursors
+[Gruvbox]: https://github.com/morhetz/gruvbox
+[Papirus-Dark]: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+[Bibata-Modern-Ice]: https://www.gnome-look.org/p/1197198
 [maxfetch]: https://github.com/jobcmax/maxfetch

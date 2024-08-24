@@ -1,104 +1,129 @@
 { ... }:
 let custom = {
-    font = "JetBrainsMono Nerd Font";
-    font_size = "15px";
-    font_weight = "bold";
-    text_color = "#cdd6f4";
-    secondary_accent= "89b4fa";
-    tertiary_accent = "f5f5f5";
-    background = "11111B";
-    opacity = "0.98";
+  font = "JetBrainsMono Nerd Font";
+  font_size = "18px";
+  font_weight = "bold";
+  text_color = "#FBF1C7";
+  background_0 = "#1D2021";
+  background_1 = "#282828";
+  border_color = "#928374";
+  red = "#CC241D";
+  green = "#98971A";
+  yellow = "#FABD2F";
+  blue = "#458588";
+  magenta = "#B16286";
+  cyant = "#689D6A";
+  orange = "#D65D0E";
+  opacity = "1";
+  indicator_height = "2px";
 };
 in 
 {
-  programs.waybar.style = ''
-
+  programs.waybar.style = with custom; ''
     * {
-        border: none;
-        border-radius: 0px;
-        padding: 0;
-        margin: 0;
-        min-height: 0px;
-        font-family: ${custom.font};
-        font-weight: ${custom.font_weight};
-        opacity: ${custom.opacity};
+      border: none;
+      border-radius: 0px;
+      padding: 0;
+      margin: 0;
+      font-family: ${font};
+      font-weight: ${font_weight};
+      opacity: ${opacity};
+      font-size: ${font_size};
     }
 
     window#waybar {
-        background: none;
+      background: ${background_0};
+    }
+
+    tooltip {
+      background: ${background_1};
+      border: 1px solid ${border_color};
+    }
+    tooltip label {
+      margin: 5px;
+      color: ${text_color};
     }
 
     #workspaces {
-        font-size: 18px;
-        padding-left: 15px;
-        
+      padding-left: 15px;
     }
     #workspaces button {
-        color: ${custom.text_color};
-        padding-left:  6px;
-        padding-right: 6px;
+      color: ${yellow};
+      padding-left:  5px;
+      padding-right: 5px;
+      margin-right: 10px;
+      border-bottom: ${indicator_height} solid ${background_0};
     }
     #workspaces button.empty {
-        color: #6c7086;
+      color: ${text_color};
     }
     #workspaces button.active {
-        color: #b4befe;
+      color: ${yellow};
+      border-bottom: ${indicator_height} solid ${yellow};
     }
 
-    #tray, #pulseaudio, #network, #cpu, #memory, #disk, #clock, #battery, #custom-notification {
-        font-size: ${custom.font_size};
-        color: ${custom.text_color};
-    }
-
-    #cpu {
-        padding-left: 15px;
-        padding-right: 9px;
-        margin-left: 7px;
-    }
-    #memory {
-        padding-left: 9px;
-        padding-right: 9px;
-    }
-    #disk {
-        padding-left: 9px;
-        padding-right: 15px;
+    #clock {
+      color: ${text_color};
+      border-bottom: ${indicator_height} solid ${background_0};
     }
 
     #tray {
-        padding: 0 20px;
-        margin-left: 7px;
+      padding-right: 20px;
+      margin-left: 10px;
+      color: ${text_color};
+    }
+    #tray menu {
+      background: ${background_1};
+      border: 1px solid ${border_color};
+      padding: 8px;
+    }
+    #tray menuitem {
+      padding: 1px;
+    }
+
+    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #custom-notification {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-right: 10px;
+      color: ${text_color};
+    }
+
+    #cpu {
+      margin-left: 15px;
+      border-bottom: ${indicator_height} solid ${green};
+    }
+    #memory {
+      border-bottom: ${indicator_height} solid ${cyant};
+    }
+    #disk {
+      border-bottom: ${indicator_height} solid ${orange};
     }
 
     #pulseaudio {
-        padding-left: 15px;
-        padding-right: 9px;
-        margin-left: 7px;
+      margin-left: 15px;
+      border-bottom: ${indicator_height} solid ${blue};
     }
     #battery {
-        padding-left: 9px;
-        padding-right: 9px;
+      border-bottom: ${indicator_height} solid ${yellow};
     }
     #network {
-        padding-left: 9px;
-        padding-right: 30px;
+      border-bottom: ${indicator_height} solid ${magenta};
     }
 
-    custom-notification {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    #clock {
-        padding-left: 9px;
-        padding-right: 15px;
+    #custom-notification {
+      margin-left: 15px;
+      padding-right: 2px;
+      margin-right: 5px;
+      border-bottom: ${indicator_height} solid ${red};
     }
 
     #custom-launcher {
-        font-size: 20px;
-        color: #b4befe;
-        font-weight: ${custom.font_weight};
-        padding-left: 10px;
-        padding-right: 15px;
+      font-size: 20px;
+      color: ${text_color};
+      font-weight: bold;
+      margin-left: 15px;
+      padding-right: 10px;
+      border-bottom: ${indicator_height} solid ${background_0};
     }
   '';
 }

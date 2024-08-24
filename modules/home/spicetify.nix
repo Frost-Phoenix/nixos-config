@@ -17,7 +17,7 @@ in
        hidePodcasts
        shuffle # shuffle+ (special characters are sanitized out of extension names)
      ];
-     theme = spicePkgs.themes.catppuccin;
-     colorScheme = "mocha";
+     theme = spicePkgs.themes.dribbblish;
+     colorScheme = "gruvbox-material-dark";
   };
 }

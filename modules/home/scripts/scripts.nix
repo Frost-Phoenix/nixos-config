@@ -8,6 +8,7 @@
   
   toggle_blur = pkgs.writeScriptBin "toggle_blur" (builtins.readFile ./scripts/toggle_blur.sh);
   toggle_oppacity = pkgs.writeScriptBin "toggle_oppacity" (builtins.readFile ./scripts/toggle_oppacity.sh);
+  toggle_waybar = pkgs.writeScriptBin "toggle_waybar" (builtins.readFile ./scripts/toggle_waybar.sh);
   
   maxfetch = pkgs.writeScriptBin "maxfetch" (builtins.readFile ./scripts/maxfetch.sh);
   
@@ -23,6 +24,9 @@
   ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
   
   record = pkgs.writeScriptBin "record" (builtins.readFile ./scripts/record.sh);
+  
+  rofi-power-menu = pkgs.writeScriptBin "rofi-power-menu" (builtins.readFile ./scripts/rofi-power-menu.sh);
+  power-menu = pkgs.writeScriptBin "power-menu" (builtins.readFile ./scripts/power-menu.sh);
 in {
   home.packages = with pkgs; [
     wall-change
@@ -34,6 +38,7 @@ in {
   
     toggle_blur
     toggle_oppacity
+    toggle_waybar
 
     maxfetch
 
@@ -49,5 +54,8 @@ in {
     ascii
 
     record
+
+    rofi-power-menu
+    power-menu
   ];
 }

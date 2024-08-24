@@ -5,6 +5,7 @@
     ++ [ (import ./hardware.nix) ]
     ++ [ (import ./xserver.nix) ]
     ++ [ (import ./network.nix) ]
+    ++ [ (import ./nh.nix) ]
     ++ [ (import ./pipewire.nix) ]
     ++ [ (import ./program.nix) ]
     ++ [ (import ./security.nix) ]

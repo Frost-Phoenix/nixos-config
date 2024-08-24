@@ -11,19 +11,25 @@
         "nm-applet &"
         "wl-clip-persist --clipboard both"
         "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
-        "hyprctl setcursor Nordzy-cursors 22 &"
+        "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "poweralertd &"
         "waybar &"
         "swaync &"
         "wl-paste --watch cliphist store &"
         "hyprlock"
+
+        ## App auto start
+        "[workspace 1 silent] floorp"
+        "[workspace 2 silent] kitty"
       ];
 
       input = {
         kb_layout = "us,fr";
         kb_options ="grp:alt_caps_toggle"; 
         numlock_by_default = true;
-        follow_mouse = 1;
+        follow_mouse = 0;
+        float_switch_override_focus = 0;
+        mouse_refocus = 0;
         sensitivity = 0;
         touchpad = {
           natural_scroll = true;
@@ -36,7 +42,7 @@
         gaps_in = 0;
         gaps_out = 0;
         border_size = 2;
-        "col.active_border" = "rgb(cba6f7) rgb(94e2d5) 45deg";
+        "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
         "col.inactive_border" = "0x00000000";
         border_part_of_window = false;
         no_border_on_floating = false;
@@ -50,6 +56,8 @@
         animate_manual_resizes = false;
         enable_swallow = true;
         focus_on_activate = true;
+        new_window_takes_over_fullscreen = 2;
+        middle_click_paste = false;
       };
 
       dwindle = {
@@ -76,8 +84,8 @@
 
         blur = {
           enabled = true;
-          size = 1;
-          passes = 1;
+          size = 2;
+          passes = 2;
           # size = 4;
           # passes = 2;
           brightness = 1;
@@ -138,17 +146,22 @@
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, togglefloating,"
-        "$mainMod, D, exec, fuzzel"
+        "$mainMod, Space, centerwindow,"
+        "$mainMod, Space, resizeactive, exact 950 600"
+        "$mainMod, D, exec, rofi -show drun"
         "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
-        "$mainMod SHIFT, Escape, exec, shutdown-script"
+        "ALT, Escape, exec, hyprlock"
+        "$mainMod SHIFT, Escape, exec, power-menu"
         "$mainMod, P, pseudo,"
         "$mainMod, J, togglesplit,"
+        "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nautilus"
-        "$mainMod SHIFT, B, exec, pkill -SIGUSR1 .waybar-wrapped"
+        "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod, N, exec, swaync-client -t -sw"
         "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
@@ -218,7 +231,7 @@
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
 
         # clipboard manager
-        "$mainMod, V, exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"
+        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
       ];
 
       # mouse binding
@@ -229,6 +242,9 @@
 
       # windowrule
       windowrule = [
+        "float,qView"
+        "center,qView"
+        "size 1200 725,qView"
         "float,imv"
         "center,imv"
         "size 1200 725,imv"
@@ -240,10 +256,7 @@
         "center,title:^(float_kitty)$"
         "size 950 600,title:^(float_kitty)$"
         "float,audacious"
-        "workspace 8 silent, audacious"
-        # "pin,wofi"
-        # "float,wofi"
-        # "noborder,wofi"
+        "pin,rofi"
         "tile, neovide"
         "idleinhibit focus,mpv"
         "float,udiskie"
@@ -264,11 +277,20 @@
         "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
         "opacity 1.0 override 1.0 override, class:(Aseprite)"
         "opacity 1.0 override 1.0 override, class:(Unity)"
+        "opacity 1.0 override 1.0 override, class:(floorp)"
+        "opacity 1.0 override 1.0 override, class:(evince)"
+        "workspace 5, class:^(floorp)$"
+        "workspace 4, class:^(Aseprite)$"
+        "workspace 4, class:^(Gimp-2.10)$"
+        "workspace 5, class:^(Audacious)$"
+        "workspace 5, class:^(Spotify)$"
+        "workspace 4, class:^(discord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
         "center,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"
+        "size 850 500,title:^(File Upload)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
         "float,class:^(.sameboy-wrapped)$"
@@ -280,6 +302,7 @@
         "float,class:^(error)$"
         "float,class:^(confirmreset)$"
         "float,title:^(Open File)$"
+        "float,title:^(File Upload)$"
         "float,title:^(branchdialog)$"
         "float,title:^(Confirm to replace files)$"
         "float,title:^(File Operation Progress)$"

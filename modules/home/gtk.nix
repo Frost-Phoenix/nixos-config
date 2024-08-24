@@ -1,40 +1,46 @@
 { pkgs, config, ... }:
+let 
+  monolisa = pkgs.callPackage ../../pkgs/monolisa/monolisa.nix {}; 
+  monolisa-nerd = pkgs.callPackage ../../pkgs/monolisa/monolisa-nerd.nix { inherit monolisa; }; 
+in
 {
   fonts.fontconfig.enable = true;
-  home.packages = [
-    pkgs.nerdfonts
-    (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" "Noto" ]; })
-    pkgs.twemoji-color-font
-    pkgs.noto-fonts-emoji
+  home.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" ]; })
+    twemoji-color-font
+    noto-fonts-emoji
+    # monolisa
+    # monolisa-nerd
   ];
 
   gtk = {
     enable = true;
     font = {
-      name = "JetBrainsMono Nerd Font";
-      size = 11;
+      name = "FiraCode Nerd Font";
+      size = 12;
+    };
+    theme = {
+      name = "Gruvbox-Dark";
+      package = pkgs.gruvbox-gtk-theme.override {
+        colorVariants = [ "dark" ];
+      };
     };
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.catppuccin-papirus-folders.override {
-        flavor = "mocha";
-        accent = "lavender";
+      package = pkgs.papirus-icon-theme.override {
+        color = "black";
       };
     };
-    theme = {
-      name = "Dracula";
-      package = pkgs.dracula-theme;
-    };
     cursorTheme = {
-      name = "Nordzy-cursors";
-      package = pkgs.nordzy-cursor-theme;
-      size = 22;
+      name = "Bibata-Modern-Ice";
+      package = pkgs.bibata-cursors;
+      size = 24;
     };
   };
   
   home.pointerCursor = {
-    name = "Nordzy-cursors";
-    package = pkgs.nordzy-cursor-theme;
-    size = 22;
+    name = "Bibata-Modern-Ice";
+    package = pkgs.bibata-cursors;
+    size = 24;
   };
 }

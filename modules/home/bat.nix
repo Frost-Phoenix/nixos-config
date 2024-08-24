@@ -1,10 +1,16 @@
-{ inputs, ... }: 
+{ pkgs, ... }: 
 {
   programs.bat = {
     enable = true;
     config = {
       pager = "less -FR";
-      theme = "Dracula";
+      theme = "gruvbox-dark";
     };
+    extraPackages = with pkgs.bat-extras; [
+      batman
+      batpipe
+      batgrep
+      batdiff
+    ];
   };
 }
