@@ -11,12 +11,12 @@
     modules-left= [
         "custom/launcher" 
         "hyprland/workspaces"
+        "tray"
     ];
     modules-center= [
         "clock"
     ];
     modules-right= [
-        "tray" 
         "cpu"
         "memory"
         "disk"

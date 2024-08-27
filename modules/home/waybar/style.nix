@@ -68,7 +68,6 @@ in
     }
 
     #tray {
-      padding-right: 20px;
       margin-left: 10px;
       color: ${text_color};
     }
@@ -89,7 +88,6 @@ in
     }
 
     #cpu {
-      margin-left: 15px;
       border-bottom: ${indicator_height} solid ${green};
     }
     #memory {
