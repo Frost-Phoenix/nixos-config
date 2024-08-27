@@ -63,7 +63,6 @@ in
     libreoffice
     nix-prefetch-github
     pavucontrol                       # pulseaudio volume controle (GUI)
-    prismlauncher                     # minecraft launcher
     qalculate-gtk                     # calculator
     soundwireserver                   # pass audio to android phone
     vlc
