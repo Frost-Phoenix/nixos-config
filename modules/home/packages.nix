@@ -57,6 +57,7 @@ in
     tty-clock                         # cli clock
 
     ## GUI Apps
+    activitywatch
     audacity
     bleachbit                         # cache cleaner
     gimp
