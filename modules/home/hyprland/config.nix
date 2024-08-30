@@ -21,7 +21,6 @@
         ## App auto start
         "[workspace 1 silent] floorp"
         "[workspace 2 silent] kitty"
-        "aw-qt"
       ];
 
       input = {
