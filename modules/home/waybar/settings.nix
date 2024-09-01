@@ -1,6 +1,25 @@
 { ... }:
+let custom = {
+  font = "JetBrainsMono Nerd Font";
+  font_size = "18px";
+  font_weight = "bold";
+  text_color = "#FBF1C7";
+  background_0 = "#1D2021";
+  background_1 = "#282828";
+  border_color = "#928374";
+  red = "#CC241D";
+  green = "#98971A";
+  yellow = "#FABD2F";
+  blue = "#458588";
+  magenta = "#B16286";
+  cyant = "#689D6A";
+  orange = "#D65D0E";
+  opacity = "1";
+  indicator_height = "2px";
+};
+in 
 {
-  programs.waybar.settings.mainBar = {
+  programs.waybar.settings.mainBar = with custom; {
     position= "bottom";
     layer= "top";
     height= 30;
@@ -59,27 +78,27 @@
             "5"= [];
         };
     };
-    memory= {
-        format= "󰟜 {}%";
-        format-alt= "󰟜 {used} GiB"; # 
+    cpu= {
+        format= "<span foreground='${green}'> </span> {usage}%";
+        format-alt= "<span foreground='${green}'> </span> {avg_frequency} GHz";
         interval= 2;
     };
-    cpu= {
-        format= "  {usage}%";
-        format-alt= "  {avg_frequency} GHz";
+    memory= {
+        format= "<span foreground='${cyant}'>󰟜 </span>{}%";
+        format-alt= "<span foreground='${cyant}'>󰟜 </span>{used} GiB"; # 
         interval= 2;
     };
     disk = {
         # path = "/";
-        format = "󰋊 {percentage_used}%";
+        format = "<span foreground='${orange}'>󰋊 </span>{percentage_used}%";
         interval= 60;
     };
     network = {
-        format-wifi = "  {signalStrength}%";
-        format-ethernet = "󰀂 ";
+        format-wifi = "<span foreground='${magenta}'> </span> {signalStrength}%";
+        format-ethernet = "<span foreground='${magenta}'>󰀂 </span>";
         tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
         format-linked = "{ifname} (No IP)";
-        format-disconnected = "󰖪 ";
+        format-disconnected = "<span foreground='${magenta}'>󰖪 </span>";
     };
     tray= {
         icon-size= 20;
@@ -87,19 +106,19 @@
     };
     pulseaudio= {
         format= "{icon} {volume}%";
-        format-muted= "  {volume}%";
+        format-muted= "<span foreground='${blue}'> </span> {volume}%";
         format-icons= {
-            default= [" "];
+            default= ["<span foreground='${blue}'> </span>"];
         };
         scroll-step= 5;
         on-click= "pamixer -t";
     };
     battery = {
-        format = "{icon} {capacity}%";
+        format = "<span foreground='${yellow}'>{icon}</span> {capacity}%";
         format-icons = [" " " " " " " " " "];
-        format-charging = " {capacity}%";
-        format-full = " {capacity}%";
-        format-warning = " {capacity}%";
+        format-charging = "<span foreground='${yellow}'> </span>{capacity}%";
+        format-full = "<span foreground='${yellow}'> </span>{capacity}%";
+        format-warning = "<span foreground='${yellow}'> </span>{capacity}%";
         interval = 5;
         states = {
             warning = 20;
@@ -118,14 +137,14 @@
         tooltip = false;
         format = "{icon} ";
         format-icons = {
-            notification = "<span foreground='red'><sup></sup></span>  ";
-            none = "  ";
-            dnd-notification = "<span foreground='red'><sup></sup></span>  ";
-            dnd-none = "  ";
-            inhibited-notification = "<span foreground='red'><sup></sup></span>  ";
-            inhibited-none = "  ";
-            dnd-inhibited-notification = "<span foreground='red'><sup></sup></span>  ";
-            dnd-inhibited-none = "  ";
+            notification = "<span foreground='red'><sup></sup></span>  <span foreground='${red}'></span>";
+            none = "  <span foreground='${red}'></span>";
+            dnd-notification = "<span foreground='red'><sup></sup></span>  <span foreground='${red}'></span>";
+            dnd-none = "  <span foreground='${red}'></span>";
+            inhibited-notification = "<span foreground='red'><sup></sup></span>  <span foreground='${red}'></span>";
+            inhibited-none = "  <span foreground='${red}'></span>";
+            dnd-inhibited-notification = "<span foreground='red'><sup></sup></span>  <span foreground='${red}'></span>";
+            dnd-inhibited-none = "  <span foreground='${red}'></span>";
         };
         return-type = "json";
         exec-if = "which swaync-client";
