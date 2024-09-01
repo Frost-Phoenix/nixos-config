@@ -384,6 +384,8 @@ git clone https://github.com/Frost-Phoenix/nixos-config
 cd nixos-config
 ```
 #### 3. **Install script**
+> [!CAUTION]
+> For some computers, the default rebuild command might get stuck due to CPU cores running out of RAM. To fix that modify the install script line: ```sudo nixos-rebuild switch --flake .#${HOST}``` to ```sudo nixos-rebuild switch --cores <less than your max number of cores> --flake .#${HOST}```
 
 > [!TIP]
 > As it is better to know what a script does before running it, you are advised to read it or at least see the [Install script walkthrough](#Install-script-walkthrough) section before execution.
