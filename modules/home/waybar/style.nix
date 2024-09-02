@@ -101,11 +101,11 @@ in
       margin-left: 15px;
       border-bottom: ${indicator_height} solid ${blue};
     }
-    #battery {
-      border-bottom: ${indicator_height} solid ${yellow};
-    }
     #network {
       border-bottom: ${indicator_height} solid ${magenta};
+    }
+    #battery {
+      border-bottom: ${indicator_height} solid ${yellow};
     }
 
     #custom-notification {

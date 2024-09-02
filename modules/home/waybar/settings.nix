@@ -1,4 +1,4 @@
-{ ... }:
+{ host, ... }:
 let custom = {
   font = "JetBrainsMono Nerd Font";
   font_size = "18px";
@@ -38,10 +38,10 @@ in
     modules-right= [
         "cpu"
         "memory"
-        "disk"
+        (if (host == "desktop") then "disk" else "")
         "pulseaudio" 
-        "battery"
         "network"
+        "battery"
         "custom/notification"
     ];
     clock= {
