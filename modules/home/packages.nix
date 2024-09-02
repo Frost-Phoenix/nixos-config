@@ -72,6 +72,7 @@ in
 
     # C / C++
     gcc
+    gdb
     gnumake
 
     # Python
