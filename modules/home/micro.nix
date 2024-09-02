@@ -8,6 +8,7 @@
       "*.nix" = {"tabsize" = 2;};
       "*.ml"  = {"tabsize" = 2;};
       "*.sh"  = {"tabsize" = 2;};
+      "makefile" = {"tabstospaces" = false;};
       "tabstospaces" = true;
       "tabsize" = 4;
       "mkparents" = true;
