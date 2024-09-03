@@ -33,6 +33,7 @@ in
     pamixer                           # pulseaudio command line mixer
     playerctl                         # controller for media players
     poweralertd
+    programmer-calculator
     qview                             # minimal image viewer
     ripgrep                           # grep replacement
     tdf                               # cli pdf viewer
