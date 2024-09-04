@@ -1,32 +1,33 @@
 {inputs, username, host, ...}: {
-  imports =
-       [(import ./aseprite/aseprite.nix)]         # pixel art editor
-    ++ [(import ./audacious.nix)]                 # music player
-    ++ [(import ./bat.nix)]                       # better cat command
-    ++ [(import ./btop.nix)]                      # resouces monitor 
-    ++ [(import ./cava.nix)]                      # audio visualizer
-    ++ [(import ./discord/discord.nix)]                   # discord with catppuccin theme
-    ++ [(import ./fastfetch.nix)]                       # fetch tool
-    ++ [(import ./floorp/floorp.nix)]             # firefox based browser
-    ++ [(import ./fzf.nix)]                       # fuzzy finder
-    ++ [(import ./gaming.nix)]                    # packages related to gaming
-    ++ [(import ./git.nix)]                       # version control
-    ++ [(import ./gnome.nix)]                       # gnome apps
-    ++ [(import ./gtk.nix)]                       # gtk theme
-    ++ [(import ./hyprland)]                      # window manager
-    ++ [(import ./kitty.nix)]                     # terminal
-    ++ [(import ./swaync/swaync.nix)]             # notification deamon
-    ++ [(import ./micro.nix)]                     # nano replacement
-    ++ [(import ./nvim.nix)]                      # neovim editor
-    ++ [(import ./packages.nix)]                  # other packages
-    ++ [(import ./retroarch.nix)]
-    ++ [(import ./rofi.nix)]                      # launcher
-    ++ [(import ./scripts/scripts.nix)]           # personal scripts
-    ++ [(import ./spicetify.nix)]                 # spotify client
-    ++ [(import ./starship.nix)]                  # shell prompt
-    ++ [(import ./swaylock.nix)]                  # lock screen
-    ++ [(import ./vscodium.nix)]                  # vscode forck
-    ++ [(import ./waybar)]                        # status bar
-    ++ [(import ./xdg-mimes.nix)]                 # xdg config
-    ++ [(import ./zsh.nix)];                      # shell
+  imports = [
+    ./aseprite/aseprite.nix           # pixel art editor
+    ./audacious.nix                   # music player
+    ./bat.nix                         # better cat command
+    ./btop.nix                        # resouces monitor 
+    ./cava.nix                        # audio visualizer
+    ./discord/discord.nix                     # discord with catppuccin theme
+    ./fastfetch.nix                         # fetch tool
+    ./floorp/floorp.nix               # firefox based browser
+    ./fzf.nix                         # fuzzy finder
+    ./gaming.nix                      # packages related to gaming
+    ./git.nix                         # version control
+    ./gnome.nix                         # gnome apps
+    ./gtk.nix                         # gtk theme
+    ./hyprland                        # window manager
+    ./kitty.nix                       # terminal
+    ./swaync/swaync.nix               # notification deamon
+    ./micro.nix                       # nano replacement
+    ./nvim.nix                        # neovim editor
+    ./packages.nix                    # other packages
+    ./retroarch.nix  
+    ./rofi.nix                        # launcher
+    ./scripts/scripts.nix             # personal scripts
+    ./spicetify.nix                   # spotify client
+    ./starship.nix                    # shell prompt
+    ./swaylock.nix                    # lock screen
+    ./vscodium.nix                    # vscode forck
+    ./waybar                          # status bar
+    ./xdg-mimes.nix                   # xdg config
+    ./zsh.nix                         # shell
+  ];
 }
