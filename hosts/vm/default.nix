@@ -10,7 +10,7 @@
   # and configure GRUB instead.
   boot.loader.systemd-boot.enable = lib.mkForce false;
   boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
+  boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = false;
 
   # allow local remote access to make it easier to toy around with the system
@@ -23,4 +23,6 @@
       PermitRootLogin = "yes";
     };
   };
+
+  virtualisation.vmware.guest.enable = true;
 }
