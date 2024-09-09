@@ -224,14 +224,22 @@
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
 
+        # clipboard manager
+        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
+      ];
+
+      # binds active in lockscreen
+      bindl = [
         # laptop brigthness
         ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
         ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+      ];
+
+      # binds that repeat when held
+      binde = [
         "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
         "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-
-        # clipboard manager
-        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
+        
       ];
 
       # mouse binding
