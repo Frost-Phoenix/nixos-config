@@ -21,7 +21,7 @@ in
   gtk = {
     enable = true;
     font = {
-      name = "FiraCode Nerd Font";
+      name = "CaskaydiaCove Nerd Font";
       size = 12;
     };
     theme = {

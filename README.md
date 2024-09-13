@@ -94,7 +94,7 @@ Catppuccin (EXPAND)
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
 | **System resource monitor** | [Btop][Btop] |
 | **File Manager**            | [nautilus][nautilus] + [yazi][yazi] |
-| **Fonts**                   | [FiraCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
+| **Fonts**                   | [CascadiaCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
 | **Color Scheme**            | [Gruvbox Dark Hard][Gruvbox] |
 | **Cursor**                  | [Bibata-Modern-Ice][Bibata-Modern-Ice] |
 | **Icons**                   | [Papirus-Dark][Papirus-Dark] |
