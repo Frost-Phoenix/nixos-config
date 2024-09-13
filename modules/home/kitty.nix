@@ -6,8 +6,8 @@
     theme = "Gruvbox Dark Hard";
     
     font = {
-      name = "FiraCode Nerd Font";
-      size = if (host == "laptop") then 14 else 16;
+      name = "Caskaydia Cove Nerd Font";
+      size = if (host == "laptop") then 15 else 16;
     };
 
     settings = {

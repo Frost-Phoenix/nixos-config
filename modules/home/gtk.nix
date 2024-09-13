@@ -6,7 +6,12 @@ in
 {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "NerdFontsSymbolsOnly" ]; })
+    (nerdfonts.override { fonts = [
+      "JetBrainsMono"
+      "FiraCode"
+      "CascadiaCode"
+      "NerdFontsSymbolsOnly"
+    ]; })
     twemoji-color-font
     noto-fonts-emoji
     # monolisa
