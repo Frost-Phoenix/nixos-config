@@ -7,7 +7,7 @@
     
     font = {
       name = "CaskaydiaCove Nerd Font";
-      size = 16;
+      size = if (host == "laptop") then 16 else 16;
     };
 
     settings = {
