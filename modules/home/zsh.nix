@@ -55,6 +55,7 @@
       nano = "micro";
       code = "codium";
       py = "python";
+      ipy = "ipython";
       icat = "kitten icat";
       dsize = "du -hs";
       pdf = "tdf";
