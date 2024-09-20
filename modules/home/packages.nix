@@ -11,6 +11,7 @@ in
     bitwise                           # cli tool for bit / hex manipulation
     caligula                          # User-friendly, lightweight TUI for disk imaging
     cliphist                          # clipboard manager
+    docfd                             # TUI multiline fuzzy document finder
     eza                               # ls replacement
     entr                              # perform action when file change
     fd                                # find replacement
