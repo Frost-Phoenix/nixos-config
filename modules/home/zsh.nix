@@ -63,6 +63,7 @@
       cat = "bat";
       nano = "micro";
       code = "codium";
+      diff = "delta";
       py = "python";
       ipy = "ipython";
       icat = "kitten icat";
