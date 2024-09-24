@@ -8,6 +8,7 @@ in
 
     ## CLI utility
     ani-cli
+    binsider
     bitwise                           # cli tool for bit / hex manipulation
     caligula                          # User-friendly, lightweight TUI for disk imaging
     cliphist                          # clipboard manager
