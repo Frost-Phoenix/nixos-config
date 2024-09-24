@@ -5,29 +5,27 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    plugins = [
-      {
+    oh-my-zsh.enable = true;
+
+    plugins = [{
         name = "powerlevel10k";
         src = pkgs.zsh-powerlevel10k;
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
-    ];
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ ];
-    };
+    }];
+
     initExtraFirst = ''
       DISABLE_AUTO_UPDATE=true
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
     '';
+
     initExtra = ''
       setopt share_history 
       setopt hist_expire_dups_first
       setopt hist_ignore_dups
       setopt hist_verify
 
-      source ~/.config/.p10k.zsh
+      source ~/.p10k.zsh
       
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
@@ -55,6 +53,7 @@
         esac
       }
     '';
+
     shellAliases = {
       # Utils
       c = "clear";
