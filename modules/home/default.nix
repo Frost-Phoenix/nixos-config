@@ -29,6 +29,6 @@
     ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
     ./xdg-mimes.nix                   # xdg config
-    ./zsh.nix                         # shell
+    ./zsh                             # shell
   ];
 }
