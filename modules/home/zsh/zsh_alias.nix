@@ -10,6 +10,7 @@
       nano = "micro";
       code = "codium";
       diff = "delta";
+      less = "bat";
       py = "python";
       ipy = "ipython";
       icat = "kitten icat";
