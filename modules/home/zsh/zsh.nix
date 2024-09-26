@@ -2,10 +2,9 @@
 {
   programs.zsh = {
     enable = true;
-    enableCompletion = true;
+    # enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    # oh-my-zsh.enable = true;
 
     plugins = [
       {
@@ -22,17 +21,17 @@
 
     completionInit = ''
       # Load Zsh modules
-      zmodload zsh/zle
-      zmodload zsh/zpty
-      zmodload zsh/complist
+      # zmodload zsh/zle
+      # zmodload zsh/zpty
+      # zmodload zsh/complist
 
       # Initialize colors
       autoload -Uz colors
       colors
 
       # Initialize completion system
-      autoload -U compinit
-      compinit
+      # autoload -U compinit
+      # compinit
       _comp_options+=(globdots)
 
       # Load edit-command-line for ZLE
@@ -89,7 +88,7 @@
       zstyle ':completion:files' sort false
 
       # fzf-tab
-      zstyle ':fzf-tab:complete:*:*' fzf-preview 'preview $realpath'
+      zstyle ':fzf-tab:complete:*:*' fzf-preview 'eza --icons  -a --group-directories-first -1 --color=always $realpath'
       zstyle ':fzf-tab:complete:kill:argument-rest' fzf-preview 'ps --pid=$word -o cmd --no-headers -w -w'
       zstyle ':fzf-tab:complete:kill:argument-rest' fzf-flags '--preview-window=down:3:wrap'
       zstyle ':fzf-tab:*' fzf-command fzf
@@ -111,9 +110,13 @@
       DISABLE_MAGIC_FUNCTIONS=true
       export "MICRO_TRUECOLOR=1"
 
-      setopt share_history 
-      setopt hist_expire_dups_first
+      setopt sharehistory
+      setopt hist_ignore_space
+      setopt hist_ignore_all_dups
+      setopt hist_save_no_dups
       setopt hist_ignore_dups
+      setopt hist_find_no_dups
+      setopt hist_expire_dups_first
       setopt hist_verify
 
       source ~/.p10k.zsh

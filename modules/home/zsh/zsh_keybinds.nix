@@ -4,6 +4,12 @@
     initExtra = ''      
       # Use emacs key bindings
       bindkey -e
+
+      WORDCHARS='~!#$%^&*(){}[]<>?.+;-'
+
+      ""{back,for}ward-word() WORDCHARS=$MOTION_WORDCHARS zle .$WIDGET
+      zle -N backward-word
+      zle -N forward-word
       
       # [PageUp] - Up a line of history
       if [[ -n "''${terminfo[kpp]}" ]]; then
@@ -44,45 +50,6 @@
         bindkey -M vicmd "''${terminfo[kcud1]}" down-line-or-beginning-search
       fi
       
-      # [Home] - Go to beginning of line
-      if [[ -n "''${terminfo[khome]}" ]]; then
-        bindkey -M emacs "''${terminfo[khome]}" beginning-of-line
-        bindkey -M viins "''${terminfo[khome]}" beginning-of-line
-        bindkey -M vicmd "''${terminfo[khome]}" beginning-of-line
-      fi
-      # [End] - Go to end of line
-      if [[ -n "''${terminfo[kend]}" ]]; then
-        bindkey -M emacs "''${terminfo[kend]}"  end-of-line
-        bindkey -M viins "''${terminfo[kend]}"  end-of-line
-        bindkey -M vicmd "''${terminfo[kend]}"  end-of-line
-      fi
-      
-      # [Shift-Tab] - move through the completion menu backwards
-      if [[ -n "''${terminfo[kcbt]}" ]]; then
-        bindkey -M emacs "''${terminfo[kcbt]}" reverse-menu-complete
-        bindkey -M viins "''${terminfo[kcbt]}" reverse-menu-complete
-        bindkey -M vicmd "''${terminfo[kcbt]}" reverse-menu-complete
-      fi
-      
-      # [Backspace] - delete backward
-      bindkey -M emacs '^?' backward-delete-char
-      bindkey -M viins '^?' backward-delete-char
-      bindkey -M vicmd '^?' backward-delete-char
-      # [Delete] - delete forward
-      if [[ -n "''${terminfo[kdch1]}" ]]; then
-        bindkey -M emacs "''${terminfo[kdch1]}" delete-char
-        bindkey -M viins "''${terminfo[kdch1]}" delete-char
-        bindkey -M vicmd "''${terminfo[kdch1]}" delete-char
-      else
-        bindkey -M emacs "^[[3~" delete-char
-        bindkey -M viins "^[[3~" delete-char
-        bindkey -M vicmd "^[[3~" delete-char
-      
-        bindkey -M emacs "^[3;5~" delete-char
-        bindkey -M viins "^[3;5~" delete-char
-        bindkey -M vicmd "^[3;5~" delete-char
-      fi
-      
       # [Ctrl-Delete] - delete whole forward-word
       bindkey -M emacs '^[[3;5~' kill-word
       bindkey -M viins '^[[3;5~' kill-word
@@ -97,13 +64,10 @@
       bindkey -M viins '^[[1;5D' backward-word
       bindkey -M vicmd '^[[1;5D' backward-word
       
-      
       bindkey '\ew' kill-region                             # [Esc-w] - Kill from the cursor to the mark
       bindkey -s '\el' 'ls\n'                               # [Esc-l] - run command: ls
-      bindkey '^r' history-incremental-search-backward      # [Ctrl-r] - Search backward incrementally for a specified string. The string may begin with ^ to anchor the search to the beginning of the line.
       bindkey ' ' magic-space                               # [Space] - don't do history expansion
-      
-      
+            
       # Edit the current command line in $EDITOR
       autoload -U edit-command-line
       zle -N edit-command-line
@@ -111,6 +75,26 @@
       
       # file rename magick
       bindkey "^[m" copy-prev-shell-word
+
+      # This will be our new default `ctrl+w` command
+      my-backward-delete-word() {
+          # Copy the global WORDCHARS variable to a local variable. That way any
+          # modifications are scoped to this function only
+          local WORDCHARS=$WORDCHARS
+          # Use bash string manipulation to remove `:` so our delete will stop at it
+          WORDCHARS="''${WORDCHARS//:}"
+          # Use bash string manipulation to remove `/` so our delete will stop at it
+          WORDCHARS="''${WORDCHARS//\/}"
+          # Use bash string manipulation to remove `.` so our delete will stop at it
+          WORDCHARS="''${WORDCHARS//.}"
+          WORDCHARS="''${WORDCHARS//-}"
+          # zle <widget-name> will run an existing widget.
+          zle backward-delete-word
+      }
+      # `zle -N` will create a new widget that we can use on the command line
+      zle -N my-backward-delete-word
+      # bind this new widget to `ctrl+w`
+      bindkey '^W' my-backward-delete-word
     '';
   };
 }
