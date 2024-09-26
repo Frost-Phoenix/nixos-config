@@ -214,11 +214,11 @@
         "$mainMod ALT, down, moveactive, 0 80"
 
         # media and volume controls
-        ",XF86AudioMute,exec, pamixer -t"
+        # ",XF86AudioMute,exec, pamixer -t"
         ",XF86AudioPlay,exec, playerctl play-pause"
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
-        ",XF86AudioStop, exec, playerctl stop"
+        ",XF86AudioStop,exec, playerctl stop"
 
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
@@ -227,20 +227,20 @@
         "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
       ];
 
-      # binds active in lockscreen
-      bindl = [
-        # laptop brigthness
-        ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
-        ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
-        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
-        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-      ];
+      # # binds active in lockscreen
+      # bindl = [
+      #   # laptop brigthness
+      #   ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
+      #   ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+      #   "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
+      #   "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+      # ];
 
-      # binds that repeat when held
-      binde = [
-        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
-        ",XF86AudioLowerVolume,exec, pamixer -d 2"
-      ];
+      # # binds that repeat when held
+      # binde = [
+      #   ",XF86AudioRaiseVolume,exec, pamixer -i 2"
+      #   ",XF86AudioLowerVolume,exec, pamixer -d 2"
+      # ];
 
       # mouse binding
       bindm = [

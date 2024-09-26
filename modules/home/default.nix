@@ -5,16 +5,17 @@
     ./bat.nix                         # better cat command
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
-    ./discord/discord.nix                     # discord with catppuccin theme
-    ./fastfetch.nix                         # fetch tool
+    ./discord/discord.nix             # discord with gruvbox
+    ./fastfetch.nix                   # fetch tool
     ./floorp/floorp.nix               # firefox based browser
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
     ./git.nix                         # version control
-    ./gnome.nix                         # gnome apps
+    ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
+    ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
     ./micro.nix                       # nano replacement
     ./nvim.nix                        # neovim editor
