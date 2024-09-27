@@ -39,8 +39,8 @@
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 5;
+        gaps_out = 10;
         border_size = 2;
         "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
         "col.inactive_border" = "0x00000000";
@@ -61,7 +61,7 @@
       };
 
       dwindle = {
-        no_gaps_when_only = true;
+        no_gaps_when_only = false;
         force_split = 0;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
