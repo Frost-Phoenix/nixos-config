@@ -3,5 +3,6 @@
   imports = [
     ./keyring.nix
     ./polkit.nix
+    ./gnome.nix
   ];
 }
