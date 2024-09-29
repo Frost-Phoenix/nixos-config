@@ -5,7 +5,7 @@
     enable = true;
     extraRules = [
       {
-        users = [ ${username} ];
+        users = [ "${username}" ];
         options = [ "NOPASSWD" ];
       }
     ];
