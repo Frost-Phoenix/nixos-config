@@ -5,7 +5,6 @@
     file-roller           # archive
     gnome-text-editor     # gedit
     nautilus              # file manager
-    gparted               # manage drives
   ]);
 
   dconf.settings = {
