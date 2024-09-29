@@ -27,7 +27,7 @@
     docker.rootles = {
       enable = true;
       setSocketVariable = true;
-    }
+    };
     spiceUSBRedirection.enable = true;
   };
   services.spice-vdagentd.enable = true;
