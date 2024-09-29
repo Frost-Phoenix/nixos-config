@@ -1,7 +1,7 @@
 { inputs, ... }: 
 {
   imports = [
-    ./gnome.nix
+    ./keyring.nix
     ./polkit.nix
   ];
 }

@@ -14,5 +14,6 @@
     ./user.nix
     ./wayland.nix
     ./virtualization.nix
+    ./gnome
   ];
 }
