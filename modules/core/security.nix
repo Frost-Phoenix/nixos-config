@@ -6,10 +6,14 @@
     extraRules = [
       {
         users = [ "${username}" ];
-        options = [ "NOPASSWD" ];
+        commands = [
+          {
+            command = "ALL";
+            options = [ "NOPASSWD" ];
+          }
+        ];
       }
     ];
   };
-  # security.pam.services.swaylock = { };
   security.pam.services.hyprlock = {};
 }
