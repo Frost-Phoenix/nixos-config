@@ -1,4 +1,4 @@
-{ ... }: 
+{ username, ... }: 
 {
   security.rtkit.enable = true;
   security.sudo = {
