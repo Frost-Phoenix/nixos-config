@@ -326,6 +326,10 @@
       monitor=DP-2, 1920x1080@165, 1920x0, 1
       monitor=DP-1, 1920x1080@60, 3840x0, 1
 
+      workspace=name:left, monitor:HDMI-A-1, default:true
+      workspace=name:main, monitor:DP-2, default:true
+      workspace=name:right, monitor:DP-1, default:true
+
       xwayland {
         force_zero_scaling = true
       }
