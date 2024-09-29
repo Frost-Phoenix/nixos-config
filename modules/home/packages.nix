@@ -1,11 +1,6 @@
-{ inputs, pkgs, ... }: 
-let 
-  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
-in
+{ inputs, pkgs, ... }:
 {
   home.packages = (with pkgs; [
-    _2048
-
     ## CLI utility
     ani-cli
     bitwise                           # cli tool for bit / hex manipulation
