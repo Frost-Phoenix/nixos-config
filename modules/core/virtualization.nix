@@ -24,7 +24,7 @@
         ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
-    docker.rootles = {
+    docker.rootless = {
       enable = true;
       setSocketVariable = true;
     };
