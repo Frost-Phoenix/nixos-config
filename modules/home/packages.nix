@@ -22,7 +22,6 @@
 	  man-pages					            	  # extra man pages
     mpv                               # video player
     ncdu                              # disk space
-    nitch                             # systhem fetch util
     openssl
     onefetch                          # fetch utility for git repo
     pamixer                           # pulseaudio command line mixer
@@ -34,8 +33,6 @@
     tdf                               # cli pdf viewer
     tldr
     todo                              # cli todo list
-    toipe                             # typing test in the terminal
-    ttyper                            # cli typing test
     unzip
     valgrind                          # c memory analyzer
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
