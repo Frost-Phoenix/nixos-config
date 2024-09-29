@@ -19,8 +19,8 @@
         "hyprlock"
 
         ## App auto start
-        "[workspace 1 silent] floorp"
-        "[workspace 2 silent] kitty"
+        # "[workspace 1 silent] floorp"
+        # "[workspace 2 silent] kitty"
       ];
 
       input = {
