@@ -41,7 +41,6 @@
     yt-dlp-light
     xdg-utils
     xxd
-    tailscale
 
     ## CLI 
     cbonsai                           # terminal screensaver
