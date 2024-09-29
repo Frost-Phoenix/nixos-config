@@ -9,7 +9,7 @@
     ./floorp/floorp.nix               # firefox based browser
     ./fzf.nix                         # fuzzy finder
     ./git.nix                         # version control
-    ./gnome.nix                       # gnome apps
+    ./gnome                           # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
