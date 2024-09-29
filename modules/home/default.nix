@@ -6,7 +6,7 @@
     ./cava.nix                        # audio visualizer
     ./discord/discord.nix             # discord with catppuccin theme
     ./fastfetch.nix                   # fetch tool
-    ./floorp/floorp.nix               # firefox based browser
+    ./brave                           # browser
     ./fzf.nix                         # fuzzy finder
     ./git.nix                         # version control
     ./gnome.nix                       # gnome apps
