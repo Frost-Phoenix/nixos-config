@@ -65,6 +65,7 @@ in
     gimp
     libreoffice
     nix-prefetch-github
+    obs-studio
     pavucontrol                       # pulseaudio volume controle (GUI)
     qalculate-gtk                     # calculator
     soundwireserver                   # pass audio to android phone
