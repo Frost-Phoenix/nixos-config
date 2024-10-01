@@ -27,6 +27,7 @@ in
     lazygit
     libnotify
 	  man-pages					            	  # extra man pages
+    mimeo
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
@@ -36,7 +37,7 @@ in
     playerctl                         # controller for media players
     poweralertd
     programmer-calculator
-    qview                             # minimal image viewer
+    # qview                             # minimal image viewer
     ripgrep                           # grep replacement
     tdf                               # cli pdf viewer
     tldr

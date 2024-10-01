@@ -4,7 +4,7 @@ let
   defaultApps = {
     browser = [ "floorp.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
-    image = [ "com.interversehq.qView.desktop" ];
+    image = [ "imv.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];
     directory = [
