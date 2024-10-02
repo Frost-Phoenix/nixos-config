@@ -6,7 +6,12 @@ in
 {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "JetBrainsMono" "FiraCode" "NerdFontsSymbolsOnly" ]; })
+    (nerdfonts.override { fonts = [
+      "JetBrainsMono"
+      "FiraCode"
+      "CascadiaCode"
+      "NerdFontsSymbolsOnly"
+    ]; })
     twemoji-color-font
     noto-fonts-emoji
     # monolisa
@@ -16,7 +21,7 @@ in
   gtk = {
     enable = true;
     font = {
-      name = "FiraCode Nerd Font";
+      name = "CaskaydiaCove Nerd Font";
       size = 12;
     };
     theme = {

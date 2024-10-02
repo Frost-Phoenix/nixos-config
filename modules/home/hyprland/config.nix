@@ -39,8 +39,8 @@
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-        gaps_in = 0;
-        gaps_out = 0;
+        gaps_in = 5;
+        gaps_out = 10;
         border_size = 2;
         "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
         "col.inactive_border" = "0x00000000";
@@ -61,7 +61,7 @@
       };
 
       dwindle = {
-        no_gaps_when_only = true;
+        no_gaps_when_only = false;
         force_split = 0;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
@@ -112,24 +112,26 @@
           "fluent_decel, 0, 0.2, 0.4, 1"
           "easeOutCirc, 0, 0.55, 0.45, 1"
           "easeOutCubic, 0.33, 1, 0.68, 1"
-          "easeinoutsine, 0.37, 0, 0.63, 1"
+          "fade_curve, 0, 0.55, 0.45, 1"
         ];
 
         animation = [
+          # name, enable, speed, curve, style
+        
           # Windows
-          "windowsIn, 1, 3, easeOutCubic, popin 30%" # window open
-          "windowsOut, 1, 3, fluent_decel, popin 70%" # window close.
-          "windowsMove, 1, 2, easeinoutsine, slide" # everything in between, moving, dragging, resizing.
+          "windowsIn,   0, 4, easeOutCubic,  popin 20%" # window open
+          "windowsOut,  0, 4, fluent_decel,  popin 80%" # window close.
+          "windowsMove, 1, 2, fluent_decel, slide"     # everything in between, moving, dragging, resizing.
 
           # Fade
-          "fadeIn, 1, 3, easeOutCubic" # fade in (open) -> layers and windows
-          "fadeOut, 1, 2, easeOutCubic" # fade out (close) -> layers and windows
-          "fadeSwitch, 0, 1, easeOutCirc" # fade on changing activewindow and its opacity
-          "fadeShadow, 1, 10, easeOutCirc" # fade on changing activewindow for shadows
-          "fadeDim, 1, 4, fluent_decel" # the easing of the dimming of inactive windows
-          "border, 1, 2.7, easeOutCirc" # for animating the border's color switch speed
-          "borderangle, 1, 30, fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
-          "workspaces, 1, 4, easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
+          "fadeIn,      1, 4,   fade_curve"   # fade in (open) -> layers and windows
+          "fadeOut,     1, 4,   fade_curve"   # fade out (close) -> layers and windows
+          "fadeSwitch,  0, 1,   easeOutCirc"  # fade on changing activewindow and its opacity
+          "fadeShadow,  1, 10,  easeOutCirc"  # fade on changing activewindow for shadows
+          "fadeDim,     1, 4,   fluent_decel" # the easing of the dimming of inactive windows
+          "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
+          "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
+          "workspaces,  1, 3,   easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
         ];
       };
 
@@ -213,11 +215,11 @@
         "$mainMod ALT, down, moveactive, 0 80"
 
         # media and volume controls
-        ",XF86AudioMute,exec, pamixer -t"
+        # ",XF86AudioMute,exec, pamixer -t"
         ",XF86AudioPlay,exec, playerctl play-pause"
         ",XF86AudioNext,exec, playerctl next"
         ",XF86AudioPrev,exec, playerctl previous"
-        ",XF86AudioStop, exec, playerctl stop"
+        ",XF86AudioStop,exec, playerctl stop"
 
         "$mainMod, mouse_down, workspace, e-1"
         "$mainMod, mouse_up, workspace, e+1"
@@ -226,20 +228,20 @@
         "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;}' | cliphist decode | wl-copy"
       ];
 
-      # binds active in lockscreen
-      bindl = [
-        # laptop brigthness
-        ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
-        ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
-        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
-        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
-      ];
+      # # binds active in lockscreen
+      # bindl = [
+      #   # laptop brigthness
+      #   ",XF86MonBrightnessUp, exec, brightnessctl set 5%+"
+      #   ",XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+      #   "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%+"
+      #   "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 100%-"
+      # ];
 
-      # binds that repeat when held
-      binde = [
-        ",XF86AudioRaiseVolume,exec, pamixer -i 2"
-        ",XF86AudioLowerVolume,exec, pamixer -d 2"
-      ];
+      # # binds that repeat when held
+      # binde = [
+      #   ",XF86AudioRaiseVolume,exec, pamixer -i 2"
+      #   ",XF86AudioLowerVolume,exec, pamixer -d 2"
+      # ];
 
       # mouse binding
       bindm = [
@@ -285,16 +287,23 @@
         "opacity 1.0 override 1.0 override, class:(brave)"
         "opacity 1.0 override 1.0 override, class:(evince)"
         "workspace 1, class:^(brave)$"
+        "workspace 3, class:^(evince)$"
         "workspace 4, class:^(discord)$"
         "workspace 4, class:^(Gimp-2.10)$"
         "workspace 4, class:^(Aseprite)$"
         "workspace 5, class:^(Audacious)$"
         "workspace 5, class:^(Spotify)$"
+        "workspace 8, class:^(com.obsproject.Studio)$"
+        "workspace 10, class:^(discord)$"
+        "workspace 10, class:^(WebCord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(zenity)$"
         "center,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"
+        "float,class:^(org.gnome.FileRoller)$"
+        "center,class:^(org.gnome.FileRoller)$"
+        "size 850 500,class:^(org.gnome.FileRoller)$"
         "size 850 500,title:^(File Upload)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
@@ -325,10 +334,6 @@
       monitor=HDMI-A-1, 1920x1080@60, 0x0, 1
       monitor=DP-2, 1920x1080@165, 1920x0, 1
       monitor=DP-1, 1920x1080@60, 3840x0, 1
-
-      workspace=name:left, monitor:HDMI-A-1, default:true
-      workspace=name:main, monitor:DP-2, default:true
-      workspace=name:right, monitor:DP-1, default:true
 
       xwayland {
         force_zero_scaling = true

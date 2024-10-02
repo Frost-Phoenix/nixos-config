@@ -1,19 +1,19 @@
+
 { pkgs, host, ... }:
 {
   programs.kitty = {
     enable = true;
 
-    theme = "Gruvbox Dark Hard";
+    themeFile = "gruvbox-dark-hard";
     
     font = {
-      name = "FiraCode Nerd Font";
-      size = if (host == "laptop") then 14 else 16;
+      name = "CaskaydiaCove Nerd Font";
+      size = if (host == "laptop") then 16 else 16;
     };
 
     settings = {
       confirm_os_window_close = 0;
       background_opacity = "0.75";
-      window_padding_width = 10;
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;

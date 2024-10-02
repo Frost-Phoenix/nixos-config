@@ -4,7 +4,7 @@ let
   defaultApps = {
     browser = [ "brave.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
-    image = [ "com.interversehq.qView.desktop" ];
+    image = [ "imv.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];
     directory = [
@@ -15,6 +15,7 @@ let
     pdf = [ "org.gnome.Evince.desktop" ];
     terminal = [ "kitty.desktop" ];
     archive = [ "org.gnome.FileRoller.desktop" ];
+    discord = [ "webcord.desktop" ];
   };
 
   mimeMap = {
@@ -77,6 +78,7 @@ let
       "application/7z"
       "application/*tar"
     ];
+    discord = [ "x-scheme-handler/discord" ];
   };
 
   associations =

@@ -13,9 +13,11 @@
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
+    ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
     ./micro.nix                       # nano replacement
     ./nvim.nix                        # neovim editor
+    ./p10k/p10k.nix
     ./packages.nix                    # other packages
     ./retroarch.nix  
     ./rofi.nix                        # launcher
@@ -25,6 +27,6 @@
     ./vscodium.nix                    # vscode fork
     ./waybar                          # status bar
     ./xdg-mimes.nix                   # xdg config
-    ./zsh.nix                         # shell
+    ./zsh                             # shell
   ];
 }

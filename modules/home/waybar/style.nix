@@ -32,7 +32,7 @@ in
     }
 
     window#waybar {
-      background: rgba(29, 32, 33, 0.5);
+      background: #282828;
     }
 
     tooltip {

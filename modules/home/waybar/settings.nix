@@ -59,15 +59,16 @@ in
         format = "{icon}";
         on-click= "activate";
         format-icons= {
-            "1"= "I";
-            "2"= "II";
-            "3"= "III";
-            "4"= "IV";
-            "5"= "V";
-            "6"= "VI";
-            "7"= "VII";
-            "8"= "VII";
-            "9"= "IX";
+            "1"  = "I";
+            "2"  = "II";
+            "3"  = "III";
+            "4"  = "IV";
+            "5"  = "V";
+            "6"  = "VI";
+            "7"  = "VII";
+            "8"  = "VII";
+            "9"  = "IX";
+            "10" = "X";
             sort-by-number= true;
         };
         persistent-workspaces = {
@@ -82,16 +83,19 @@ in
         format= "<span foreground='${green}'> </span> {usage}%";
         format-alt= "<span foreground='${green}'> </span> {avg_frequency} GHz";
         interval= 2;
+        on-click-right = "kitty --override font_size=14 --title float_kitty btop";
     };
     memory= {
         format= "<span foreground='${cyant}'>󰟜 </span>{}%";
         format-alt= "<span foreground='${cyant}'>󰟜 </span>{used} GiB"; # 
         interval= 2;
+        on-click-right = "kitty --override font_size=14 --title float_kitty btop";
     };
     disk = {
         # path = "/";
         format = "<span foreground='${orange}'>󰋊 </span>{percentage_used}%";
         interval= 60;
+        on-click-right = "kitty --override font_size=14 --title float_kitty btop";
     };
     network = {
         format-wifi = "<span foreground='${magenta}'> </span> {signalStrength}%";

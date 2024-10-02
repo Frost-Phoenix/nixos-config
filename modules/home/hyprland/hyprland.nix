@@ -5,6 +5,7 @@
     swaybg
     inputs.hypr-contrib.packages.${pkgs.system}.grimblast
     hyprpicker
+    inputs.hyprmag.packages.${pkgs.system}.hyprmag
     grim
     slurp
     wl-clip-persist
