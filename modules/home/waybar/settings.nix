@@ -20,7 +20,7 @@ let custom = {
 in 
 {
   programs.waybar.settings.mainBar = with custom; {
-    position= "bottom";
+    position= "top";
     layer= "top";
     height= 30;
     margin-top= 0;
