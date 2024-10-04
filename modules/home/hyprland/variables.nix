@@ -2,7 +2,6 @@
 {
   home.sessionVariables = {
     NIXOS_OZONE_WL = "1";
-    EGL_PLATFORM = "wayland";
     __GL_GSYNC_ALLOWED = "0";
     __GL_VRR_ALLOWED = "0";
     _JAVA_AWT_WM_NONEREPARENTING = "1";
@@ -24,6 +23,7 @@
     XDG_SESSION_TYPE = "wayland";
     SDL_VIDEODRIVER = "wayland";
     CLUTTER_BACKEND = "wayland";
+    EGL_PLATFORM = "wayland";
     GTK_THEME = "Gruvbox-Dark";
   };
 }
