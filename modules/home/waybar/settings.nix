@@ -114,7 +114,7 @@ in
         format-icons= {
             default= ["<span foreground='${blue}'> </span>"];
         };
-        scroll-step= 5;
+        scroll-step= 2;
         on-click= "pamixer -t";
     };
     battery = {
