@@ -27,6 +27,7 @@
     ./spicetify.nix                   # spotify client
     ./starship.nix                    # shell prompt
     ./swaylock.nix                    # lock screen
+    ./viewnior.nix                    # image viewer
     ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
     ./xdg-mimes.nix                   # xdg config

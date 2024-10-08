@@ -250,9 +250,9 @@
 
       # windowrule
       windowrule = [
-        "float,qView"
-        "center,qView"
-        "size 1200 725,qView"
+        "float,Viewnior"
+        "center,Viewnior"
+        "size 1200 800,Viewnior"
         "float,imv"
         "center,imv"
         "size 1200 725,imv"
