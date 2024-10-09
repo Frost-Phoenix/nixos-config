@@ -18,6 +18,7 @@
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
     ./micro.nix                       # nano replacement
+    ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
     ./p10k/p10k.nix
     ./packages.nix                    # other packages

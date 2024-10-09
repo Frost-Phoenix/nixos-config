@@ -4,7 +4,6 @@
     evince                                        # pdf
     file-roller                                   # archive
     gnome-text-editor                             # gedit
-    nautilus                                      # file manager
   ]);
 
   dconf.settings = {

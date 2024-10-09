@@ -93,7 +93,7 @@ Catppuccin (EXPAND)
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
 | **System resource monitor** | [Btop][Btop] |
-| **File Manager**            | [nautilus][nautilus] + [yazi][yazi] |
+| **File Manager**            | [nemo][nemo] + [yazi][yazi] |
 | **Fonts**                   | [CascadiaCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
 | **Color Scheme**            | [Gruvbox Dark Hard][Gruvbox] |
 | **Cursor**                  | [Bibata-Modern-Ice][Bibata-Modern-Ice] |
@@ -284,7 +284,7 @@ Keybindings
 - ```$mainMod, P, pseudo,```
 - ```$mainMod, J, togglesplit,```
 - ```$mainMod, T, exec, toggle_oppacity```
-- ```$mainMod, E, exec, nautilus```
+- ```$mainMod, E, exec, nemo```
 - ```$mainMod SHIFT, B, exec, toggle_waybar```
 - ```$mainMod, C ,exec, hyprpicker -a```
 - ```$mainMod, W,exec, wallpaper-picker```
@@ -489,7 +489,7 @@ Other dotfiles that I learned / copy from:
 [Waybar]: https://github.com/Alexays/Waybar
 [rofi]: https://github.com/lbonn/rofi
 [Btop]: https://github.com/aristocratos/btop
-[nautilus]: https://apps.gnome.org/Nautilus/
+[nemo]: https://github.com/linuxmint/nemo/
 [yazi]: https://github.com/sxyazi/yazi
 [zsh]: https://ohmyz.sh/
 [oh-my-zsh]: https://ohmyz.sh/
