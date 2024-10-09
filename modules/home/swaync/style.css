@@ -142,9 +142,13 @@ label {
     /* background: transparent; */
     background: @crust;
     /* background: @theme_bg_color; */
-    border: 2px solid @surface0;
-    border-radius: 4px;
+    border: 2px solid #A89984;
+    border-radius: 0px;
     box-shadow: 0px 0px 2px black;
+}
+
+.blank-window {
+    background: alpha(black, 0.2);
 }
 
 /* .right.overlay-indicator { */
