@@ -46,7 +46,7 @@ in
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'CaskaydiaCove Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'CaskaydiaCove Nerd Font', 'SymbolsNerdFont'";
-      "editor.fontSize" = 18;
+      "editor.fontSize" = 16;
       "workbench.colorTheme" = "Gruvbox Dark Hard";
       "workbench.iconTheme" = "gruvbox-material-icon-theme";
       "material-icon-theme.folders.theme" = "classic";
