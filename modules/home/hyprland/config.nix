@@ -42,8 +42,8 @@
         gaps_in = 5;
         gaps_out = 10;
         border_size = 2;
-        "col.active_border" = "rgb(98971a) rgb(cc241d) 45deg";
-        "col.inactive_border" = "0x00000000";
+        "col.active_border" = "rgb(98971A)";
+        "col.inactive_border" = "rgb(928374)";
         border_part_of_window = false;
         no_border_on_floating = false;
       };
@@ -129,8 +129,8 @@
           "fadeSwitch,  0, 1,   easeOutCirc"  # fade on changing activewindow and its opacity
           "fadeShadow,  1, 10,  easeOutCirc"  # fade on changing activewindow for shadows
           "fadeDim,     1, 4,   fluent_decel" # the easing of the dimming of inactive windows
-          "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
-          "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
+          # "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
+          # "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
           "workspaces,  1, 4,   easeOutCubic, fade" # styles: slide, slidevert, fade, slidefade, slidefadevert
         ];
       };
