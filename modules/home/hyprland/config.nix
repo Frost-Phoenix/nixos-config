@@ -8,14 +8,16 @@
         "systemctl --user import-environment &"
         "hash dbus-update-activation-environment 2>/dev/null &"
         "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
+
         "nm-applet &"
-        "wl-clip-persist --clipboard both"
-        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
-        "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "poweralertd &"
+        "wl-clip-persist --clipboard both &"
+        "wl-paste --watch cliphist store &"
         "waybar &"
         "swaync &"
-        "wl-paste --watch cliphist store &"
+        "hyprctl setcursor Bibata-Modern-Ice 24 &"
+        "swaybg -m fill -i $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) &"
+
         "hyprlock"
 
         ## App auto start
