@@ -11,6 +11,7 @@
       code = "codium";
       diff = "delta";
       less = "bat";
+      y = "yazi";
       py = "python";
       ipy = "ipython";
       icat = "kitten icat";

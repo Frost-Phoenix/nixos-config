@@ -24,6 +24,7 @@ in
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
     imv                               # image viewer
+    jq                                # JSON processor
     killall
     lazygit
     libnotify
