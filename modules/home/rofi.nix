@@ -90,6 +90,7 @@
       margin: 10px 0px 0px 6px;
       columns: 1;
       background-color: @bg-col;
+      cycle: true;
     }
 
     element {
