@@ -88,7 +88,7 @@ Catppuccin (EXPAND)
 | **Bar**                     | [Waybar][Waybar] |
 | **Application Launcher**    | [rofi][rofi] |
 | **Notification Daemon**     | [swaync][swaync] |
-| **Terminal Emulator**       | [Kitty][Kitty] |
+| **Terminal Emulator**       | [Wezterm][Wezterm] |
 | **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
@@ -267,9 +267,9 @@ Keybindings
 - ```$mainMod, F1, exec, show-keybinds```
 
 ##### keybindings
-- ```$mainMod, Return, exec, kitty```
-- ```ALT, Return, exec, kitty --title float_kitty```
-- ```$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'```
+- ```$mainMod, Return, exec, wezterm start --always-new-process```
+- ```ALT, Return, exec, [float; center] wezterm start --always-new-process```
+- ```$mainMod SHIFT, Return, exec, [fullscreen] wezterm start --always-new-process```
 - ```$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'```
 - ```$mainMod, Q, killactive,```
 - ```$mainMod, F, fullscreen, 0```
@@ -484,7 +484,7 @@ Other dotfiles that I learned / copy from:
 
 <!-- Links -->
 [Hyprland]: https://github.com/hyprwm/Hyprland
-[Kitty]: https://github.com/kovidgoyal/kitty
+[Wezterm]: https://wezfurlong.org/wezterm/index.html
 [Starship]: https://github.com/starship/starship
 [Waybar]: https://github.com/Alexays/Waybar
 [rofi]: https://github.com/lbonn/rofi
