@@ -10,7 +10,7 @@ let
     directory = [ "nemo.desktop" ];
     office = [ "libreoffice.desktop" ];
     pdf = [ "org.gnome.Evince.desktop" ];
-    terminal = [ "kitty.desktop" ];
+    terminal = [ "wezterm.desktop" ];
     archive = [ "org.gnome.FileRoller.desktop" ];
     discord = [ "webcord.desktop" ];
   };
