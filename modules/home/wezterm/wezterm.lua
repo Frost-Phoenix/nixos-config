@@ -12,15 +12,15 @@ end
 config.check_for_updates = false
 config.automatically_reload_config = false
 
-config.font = wezterm.font("CaskaydiaCove Nerd Font", { weight = 'DemiBold' })
+config.font = wezterm.font("CaskaydiaCove Nerd Font")
 config.font_size = 17
-config.cell_width = 1.05
+config.cell_width = 1
 config.underline_thickness = 2
 
 config.default_prog = { 'zsh' }
 
 config.window_decorations = "NONE"
-config.window_background_opacity = 0.5
+config.window_background_opacity = 0.33
 config.window_close_confirmation = 'NeverPrompt'
 config.window_padding = {
   left = 5,
