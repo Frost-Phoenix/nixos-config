@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-PIDS=$(pgrep -f "swaybg")
-
-swaybg -m fill -i $1 &
-
-if [ -n "$PIDS" ]; then
-  echo "$PIDS" | xargs kill
+if (( RANDOM % 2 )); then
+  swww img --transition-type=any $1 ;
+else
+  swww img --transition-type=wipe --transition-angle=135 $1 ;
 fi
