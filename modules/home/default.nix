@@ -31,7 +31,7 @@
     ./viewnior.nix                    # image viewer
     ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
-    ./wezterm/wezterm.nix             # terminal
+    ./wezterm.nix                     # terminal
     ./xdg-mimes.nix                   # xdg config
     ./zsh                             # shell
   ];
