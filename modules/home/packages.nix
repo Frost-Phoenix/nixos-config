@@ -71,6 +71,7 @@ in
     pavucontrol                       # pulseaudio volume controle (GUI)
     pitivi                            # video editing
     qalculate-gtk                     # calculator
+    soundwireserver
     thunderbird
     vlc
     winetricks
