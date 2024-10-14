@@ -33,6 +33,7 @@ in
 
     window#waybar {
       background: #282828;
+      border-top: 1px solid #908172;
     }
 
     tooltip {
@@ -64,7 +65,6 @@ in
 
     #clock {
       color: ${text_color};
-      border-bottom: ${indicator_height} solid ${background_0};
     }
 
     #tray {
@@ -121,7 +121,6 @@ in
       font-weight: bold;
       margin-left: 15px;
       padding-right: 10px;
-      border-bottom: ${indicator_height} solid ${background_0};
     }
   '';
 }
