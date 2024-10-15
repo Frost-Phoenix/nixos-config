@@ -26,7 +26,7 @@
       config.default_prog = { 'zsh' }
 
       config.window_decorations = "NONE"
-      config.window_background_opacity = 0.33
+      config.window_background_opacity = 0.4
       config.window_close_confirmation = 'NeverPrompt'
       config.window_padding = {
         left = 5,
