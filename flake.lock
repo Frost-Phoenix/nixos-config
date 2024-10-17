@@ -522,6 +522,21 @@
         "type": "github"
       }
     },
+    "nix-flatpak": {
+      "locked": {
+        "lastModified": 1729025406,
+        "narHash": "sha256-uYbDN6JikC19WfD3zg0kpOpJVZFvBhHXYo3YJo28vOs=",
+        "owner": "gmodena",
+        "repo": "nix-flatpak",
+        "rev": "8d1193a959c7810f01610c10a055b0020390bf4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gmodena",
+        "repo": "nix-flatpak",
+        "type": "github"
+      }
+    },
     "nix-gaming": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -729,6 +744,7 @@
         "hyprland": "hyprland",
         "hyprmag": "hyprmag",
         "hyprpicker": "hyprpicker",
+        "nix-flatpak": "nix-flatpak",
         "nix-gaming": "nix-gaming",
         "nixpkgs": "nixpkgs_7",
         "nur": "nur",
