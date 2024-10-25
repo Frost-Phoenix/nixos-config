@@ -24,7 +24,7 @@
       font: "JetBrainsMono NF Bold 15";
       show-icons: true;
       icon-theme: "Papirus-dark";
-      terminal: "wezterm";
+      terminal: "kitty";
       drun-display-format: "{icon} {name}";
       location: 0;
       disable-history: true;
