@@ -22,7 +22,7 @@
 
         ## App auto start
         # "[workspace 1 silent] floorp"
-        # "[workspace 2 silent] wezterm"
+        # "[workspace 2 silent] kitty"
       ];
 
       input = {
@@ -142,9 +142,9 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, wezterm start --always-new-process"
-        "ALT, Return, exec, [float; center] wezterm start --always-new-process"
-        "$mainMod SHIFT, Return, exec, [fullscreen] wezterm start --always-new-process"
+        "$mainMod, Return, exec, kitty"
+        "ALT, Return, exec, [float; center; size 950 650] kitty"
+        "$mainMod SHIFT, Return, exec, [fullscreen] kitty"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
