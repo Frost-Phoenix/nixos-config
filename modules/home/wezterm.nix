@@ -1,7 +1,8 @@
 { inputs, pkgs, host, ... }:
 {
   programs.wezterm = {
-    enable = true;
+    # enable = true;
+    enable = false;
     package = inputs.wezterm.packages.${pkgs.system}.default;
     extraConfig = ''
       -- Pull in the wezterm API
@@ -43,6 +44,8 @@
       config.scrollback_lines = 10000
       -- config.harfbuzz_features = { "cv30", "cv21", "cv32", "ss09" } 
       config.freetype_load_flags = 'NO_HINTING'
+      config.freetype_load_target = 'Light'
+      config.freetype_render_target = 'HorizontalLcd'
 
       -- config.color_scheme = "GruvboxDarkHard"
       config.bold_brightens_ansi_colors = false
