@@ -8,12 +8,12 @@
     
     font = {
       name = "CaskaydiaCove Nerd Font";
-      size = if (host == "laptop") then 15 else 16;
+      size = if (host == "laptop") then 15 else 17;
     };
 
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "0.50";
+      background_opacity = "0.40";
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;
