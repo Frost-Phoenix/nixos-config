@@ -6,7 +6,7 @@
     * {
       bg-col: #1D2021;
       bg-col-light: #282828;
-      border-col: #928374;
+      border-col: #A89984;
       selected-col: #3C3836;
       green: #98971A;
       fg-col: #FBF1C7;
