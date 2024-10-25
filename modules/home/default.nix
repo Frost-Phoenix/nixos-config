@@ -4,6 +4,7 @@
     ./audacious.nix                   # music player
     ./bat.nix                         # better cat command
     ./btop.nix                        # resouces monitor 
+    ./bottom.nix                      # resouces monitor
     ./cava.nix                        # audio visualizer
     ./discord/discord.nix             # discord with gruvbox
     ./fastfetch.nix                   # fetch tool
