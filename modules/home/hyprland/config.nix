@@ -63,7 +63,7 @@
       };
 
       dwindle = {
-        no_gaps_when_only = false;
+        # no_gaps_when_only = false;
         force_split = 0;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
@@ -75,7 +75,7 @@
       master = {
         new_status = "master";
         special_scale_factor = 1;
-        no_gaps_when_only = false;
+        # no_gaps_when_only = false;
       };
 
       decoration = {
