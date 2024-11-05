@@ -8,7 +8,7 @@ in
     # BACKGROUND
     background {
       monitor =
-      path = ${../../../wallpapers/otherWallpaper/gruvbox/forest.jpg}
+      path = ${../../../wallpapers/otherWallpaper/gruvbox/fern.jpg}
       blur_passes = 1
       contrast = 0.8916
       brightness = 0.8172
@@ -85,7 +85,7 @@ in
       dots_size = 0.25 # Scale of input-field height, 0.2 - 0.8
       dots_spacing = 0.4 # Scale of dots' absolute size, 0.0 - 1.0
       dots_center = true
-      outer_color = rgba(255, 255, 255, 0)
+      outer_color = rgba(255, 255, 255, 0.2)
       inner_color = rgba(225, 225, 225, 0.2)
       color = rgba(235, 219, 178, .9)
       font_color = rgba(235, 219, 178, .9)
