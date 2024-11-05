@@ -8,7 +8,7 @@
 
   dconf.settings = {
     "org/gnome/TextEditor" = {
-      custom-font = "CaskaydiaCove Nerd Font 15";
+      custom-font = "Maple Mono 15";
       highlight-current-line = true;
       indent-style = "space";
       restore-session = false;

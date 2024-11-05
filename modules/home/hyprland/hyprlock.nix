@@ -42,7 +42,7 @@ in
       text = cmd[update:1000] echo "- $(date +"%A, %B %d") -"
       color = rgba(235, 219, 178, .9)
       font_size = 20
-      font_family = CaskaydiaCove Nerd Font
+      font_family = Maple Mono
       position = 0, 160
       halign = center
       valign = center
@@ -70,7 +70,7 @@ in
       text =   $USER
       color = rgba(235, 219, 178, .9)
       font_size = 16
-      font_family = CaskaydiaCove Nerd Font
+      font_family = Maple Mono
       position = 0, -230
       halign = center
       valign = center

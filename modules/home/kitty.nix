@@ -7,13 +7,13 @@
     themeFile = "gruvbox-dark-hard";
     
     font = {
-      name = "CaskaydiaCove Nerd Font";
+      name = "Maple Mono";
       size = if (host == "laptop") then 15 else 17;
     };
 
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "0.40";
+      background_opacity = "0.55";
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;

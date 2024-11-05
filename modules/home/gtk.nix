@@ -14,6 +14,8 @@ in
     ]; })
     twemoji-color-font
     noto-fonts-emoji
+    fantasque-sans-mono
+    maple-mono
     # monolisa
     # monolisa-nerd
   ];
@@ -21,7 +23,7 @@ in
   gtk = {
     enable = true;
     font = {
-      name = "CaskaydiaCove Nerd Font";
+      name = "Maple Mono";
       size = 12;
     };
     theme = {
