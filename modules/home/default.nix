@@ -3,12 +3,12 @@
     ./aseprite/aseprite.nix           # pixel art editor
     ./audacious.nix                   # music player
     ./bat.nix                         # better cat command
+    ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
     ./bottom.nix                      # resouces monitor
     ./cava.nix                        # audio visualizer
     ./discord/discord.nix             # discord with gruvbox
     ./fastfetch.nix                   # fetch tool
-    ./floorp/floorp.nix               # firefox based browser
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
     ./git.nix                         # version control

@@ -21,7 +21,7 @@
         "hyprlock"
 
         ## App auto start
-        # "[workspace 1 silent] floorp"
+        # "[workspace 1 silent] zen"
         # "[workspace 2 silent] kitty"
       ];
 
@@ -147,7 +147,7 @@
         "$mainMod, Return, exec, kitty"
         "ALT, Return, exec, [float; center; size 950 650] kitty"
         "$mainMod SHIFT, Return, exec, [fullscreen] kitty"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'"
+        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] zen'"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
@@ -305,9 +305,9 @@
         "opacity 1.0 override 1.0 override, title:^(.*mpv.*)$"
         "opacity 1.0 override 1.0 override, class:(Aseprite)"
         "opacity 1.0 override 1.0 override, class:(Unity)"
-        "opacity 1.0 override 1.0 override, class:(floorp)"
+        "opacity 1.0 override 1.0 override, class:(zen)"
         "opacity 1.0 override 1.0 override, class:(evince)"
-        "workspace 1, class:^(floorp)$"
+        "workspace 1, class:^(zen)$"
         "workspace 3, class:^(evince)$"
         "workspace 4, class:^(Gimp-2.10)$"
         "workspace 4, class:^(Aseprite)$"

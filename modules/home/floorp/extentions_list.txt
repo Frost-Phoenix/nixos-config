@@ -1,8 +1,0 @@
-uBlock Origin                   # + filter for shorts
-ScrollAnywhere                  # disable momentum + reverse dirrection
-Return YouTube Dislike
-I don't care about cookies
-ClearURLs
-Tabliss
-
-Theme: https://addons.mozilla.org/en-US/firefox/addon/gruvbox-material-dark-official/?utm_content=addons-manager-reviews-link&utm_medium=firefox-browser&utm_source=firefox-browser
