@@ -8,15 +8,16 @@
     
     font = {
       name = "Maple Mono";
-      size = if (host == "laptop") then 15 else 17;
+      size = if (host == "laptop") then 15 else 16;
     };
 
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "0.55";
+      background_opacity = "0.50";
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;
+      padding = 5;
       
       ## Tabs
       tab_title_template = "{index}";
