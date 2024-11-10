@@ -13,11 +13,11 @@
 
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = "0.50";
+      background_opacity = "0.75";
       scrollback_lines = 10000;
       enable_audio_bell = false;
       mouse_hide_wait = 60;
-      padding = 5;
+      window_padding_width = 10;
       
       ## Tabs
       tab_title_template = "{index}";
