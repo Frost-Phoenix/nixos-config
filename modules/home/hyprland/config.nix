@@ -346,9 +346,24 @@
         "noinitialfocus,class:^(xwaylandvideobridge)$"
         "maxsize 1 1,class:^(xwaylandvideobridge)$"
         "noblur,class:^(xwaylandvideobridge)$"
+
+        # No gaps when only
+        "bordersize 0, floating:0, onworkspace:w[t1]"
+        "rounding 0, floating:0, onworkspace:w[t1]"
+        "bordersize 0, floating:0, onworkspace:w[tg1]"
+        "rounding 0, floating:0, onworkspace:w[tg1]"
+        "bordersize 0, floating:0, onworkspace:f[1]"
+        "rounding 0, floating:0, onworkspace:f[1]"
       ];
 
+      # No gaps when only
+      workspace = [
+        "w[t1], gapsout:0, gapsin:0"
+        "w[tg1], gapsout:0, gapsin:0"
+        "f[1], gapsout:0, gapsin:0"
+      ];
     };
+
 
     extraConfig = "
       monitor=,preferred,auto,auto
@@ -359,3 +374,4 @@
     ";
   };
 }
+
