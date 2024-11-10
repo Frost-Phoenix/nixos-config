@@ -30,11 +30,6 @@
 
     hyprmag.url = "github:SIMULATAN/hyprmag";
 
-    wezterm = {
-      url = "github:wez/wezterm/main?dir=nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
