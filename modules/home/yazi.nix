@@ -1,8 +1,10 @@
-{ inputs, lib, ... }:
+{ inputs, pkgs, ... }:
 {
   programs.yazi = {
     enable = true;
     enableZshIntegration = true;
+    # package = pkgs.yazi-unwrapped;
+
     settings = {
       manager = {
         linemode = "size";
@@ -14,23 +16,15 @@
         sort_sensitive = false;
       };
     };
+
     plugins = {
       full-border = "${inputs.yazi-plugins}/full-border.yazi";
     };
   };
 
-#   programs.zsh.initExtra =
-#     # sh
-#     ''
-#       function yy() {
-#       	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-#       	yazi "$@" --cwd-file="$tmp"
-#       	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-#       		cd -- "$cwd"
-#       	fi
-#       	rm -f -- "$tmp"
-#       }
-# 
-#       bindkey -s '^F' '^U yy\n'
-#     '';
+  xdg.configFile = {
+    "yazi/init.lua".text = ''
+      require("full-border"):setup()
+    '';
+  };
 }

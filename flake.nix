@@ -33,6 +33,11 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     zen-browser.url = "github:fufexan/zen-browser-flake";
+
+    yazi-plugins = {
+      url = "github:yazi-rs/plugins";
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, self, ...} @ inputs:

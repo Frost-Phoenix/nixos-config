@@ -49,7 +49,6 @@ in
     valgrind                          # c memory analyzer
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     wget
-    yazi                              # terminal file manager
     yt-dlp-light
     xdg-utils
     xxd
