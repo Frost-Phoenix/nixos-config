@@ -162,9 +162,10 @@
         "$mainMod, E, exec, nemo"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
-        "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod, W,exec, hyprctl dispatch exec '[float; center; size 925 615] waypaper'"
+        "$mainMod SHIFT, W,exec, wallpaper-picker"
         "$mainMod, N, exec, swaync-client -t -sw"
-        "$mainMod SHIFT, W, exec, vm-start"
+        # "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
         ",Print, exec, screenshot --copy"
@@ -283,6 +284,7 @@
         "size 1200 725,mpv"
         "float,audacious"
         "pin,rofi"
+        "pin,waypaper"
         "tile, neovide"
         "idleinhibit focus,mpv"
         "float,udiskie"
@@ -316,6 +318,7 @@
         "workspace 10, class:^(WebCord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
+        "float,class:^(waypaper)$"
         "float,class:^(zenity)$"
         "center,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"

@@ -32,6 +32,7 @@
     ./viewnior.nix                    # image viewer
     ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
+    ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
     ./yazi.nix                        # terminal file manager
     ./zsh                             # shell
