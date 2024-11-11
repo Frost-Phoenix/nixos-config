@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, pkgs, host, ... }:
 {
   home.packages = (with pkgs; [
     floorp
