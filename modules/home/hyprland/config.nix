@@ -352,6 +352,11 @@
         "rounding 0, floating:0, onworkspace:w[tg1]"
         "bordersize 0, floating:0, onworkspace:f[1]"
         "rounding 0, floating:0, onworkspace:f[1]"
+
+        # Remove context menu transparency in chromium based apps
+        "opaque,class:^()$,title:^()$"
+        "noshadow,class:^()$,title:^()$"
+        "noblur,class:^()$,title:^()$"
       ];
 
       # No gaps when only
