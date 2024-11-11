@@ -2,6 +2,9 @@
 {
   home.packages = (with pkgs; [
     floorp
-    inputs.zen-browser.packages."${system}".default
+    (if (host == "laptop") then
+      inputs.zen-browser.packages."${system}".generic
+    else
+      inputs.zen-browser.packages."${system}".specific)
   ]);
 }
