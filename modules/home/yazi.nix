@@ -22,9 +22,7 @@
     };
   };
 
-  xdg.configFile = {
-    "yazi/init.lua".text = ''
+  xdg.configFile."yazi/init.lua".text = ''
       require("full-border"):setup()
-    '';
-  };
+  '';
 }
