@@ -8,8 +8,8 @@ in
     # BACKGROUND
     background {
       monitor =
-      path = ${../../../wallpapers/otherWallpaper/gruvbox/fern.jpg}
-      blur_passes = 1
+      path = ${../../../wallpapers/otherWallpaper/gruvbox/forest_road.jpg}
+      blur_passes = 2
       contrast = 0.8916
       brightness = 0.8172
       vibrancy = 0.1696
@@ -22,6 +22,8 @@ in
       no_fade_in = false
       grace = 0
       disable_loading_bar = false
+      ignore_empty_input = true
+      fractional_scaling = 0
     }
 
     # Time
@@ -29,11 +31,12 @@ in
       monitor = 
       text = cmd[update:1000] echo "$(date +"%k:%M")"
       color = rgba(235, 219, 178, .9)
-      font_size = 111
-      font_family = JetBrainsMono NF Bold
-      position = 0, 270
+      font_size = 115
+      font_family = Maple Mono Bold
+      shadow_passes = 3
+      position = 0, -150
       halign = center
-      valign = center
+      valign = top
     }
 
     # Day
@@ -41,60 +44,63 @@ in
       monitor =
       text = cmd[update:1000] echo "- $(date +"%A, %B %d") -"
       color = rgba(235, 219, 178, .9)
-      font_size = 20
+      font_size = 18
       font_family = Maple Mono
-      position = 0, 160
+      shadow_passes = 3
+      position = 0, -350
       halign = center
-      valign = center
+      valign = top
     }
 
 
     # USER-BOX
     shape {
       monitor =
-      size = 350, 50
-      color = rgba(225, 225, 225, .2)
+      size = 300, 50
+      color = rgba(102, 92, 84, .33)
       rounding = 15
       border_size = 0
       border_color = rgba(255, 255, 255, 0)
       rotate = 0
 
-      position = 0, -230
+      position = 0, 270
       halign = center
-      valign = center
+      valign = bottom
     }
 
     # USER
     label {
       monitor =
       text =   $USER
-      color = rgba(235, 219, 178, .9)
-      font_size = 16
-      font_family = Maple Mono
-      position = 0, -230
+      color = rgba(235, 219, 178, 1)
+      font_size = 15
+      font_family = Maple Mono Bold
+      position = 0, 281
       halign = center
-      valign = center
+      valign = bottom
     }
 
     # INPUT FIELD
     input-field {
       monitor =
-      size = 350, 50
+      size = 300, 50
       outline_thickness = 0
       rounding = 15
       dots_size = 0.25 # Scale of input-field height, 0.2 - 0.8
       dots_spacing = 0.4 # Scale of dots' absolute size, 0.0 - 1.0
       dots_center = true
-      outer_color = rgba(255, 255, 255, 0.2)
-      inner_color = rgba(225, 225, 225, 0.2)
+      outer_color = rgba(102, 92, 84, .33)
+      inner_color = rgba(102, 92, 84, .33)
       color = rgba(235, 219, 178, .9)
       font_color = rgba(235, 219, 178, .9)
+      font_size = 14
+      font_family = Maple Mono Bold
       fade_on_empty = false
-      placeholder_text = <i><span foreground="##ebdbb2e5">Enter Password</span></i>
+      placeholder_text = <i><span foreground="##fbf1c7">Enter Password</span></i>
       hide_input = false
-      position = 0, -300
+      position = 0, 200
       halign = center
-      valign = center
+      valign = bottom
     }
   '';
 }
