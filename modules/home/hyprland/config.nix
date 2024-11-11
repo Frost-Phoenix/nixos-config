@@ -1,8 +1,6 @@
-{ ... }: 
-{
+{...}: {
   wayland.windowManager.hyprland = {
     settings = {
-      
       # autostart
       exec-once = [
         "systemctl --user import-environment &"
@@ -27,7 +25,7 @@
 
       input = {
         kb_layout = "us,fr";
-        kb_options ="grp:alt_caps_toggle"; 
+        kb_options = "grp:alt_caps_toggle";
         numlock_by_default = true;
         follow_mouse = 0;
         float_switch_override_focus = 0;
@@ -121,17 +119,17 @@
 
         animation = [
           # name, enable, speed, curve, style
-        
+
           # Windows
           "windowsIn,   0, 4, easeOutCubic,  popin 20%" # window open
           "windowsOut,  0, 4, fluent_decel,  popin 80%" # window close.
-          "windowsMove, 1, 2, fluent_decel, slide"     # everything in between, moving, dragging, resizing.
+          "windowsMove, 1, 2, fluent_decel, slide" # everything in between, moving, dragging, resizing.
 
           # Fade
-          "fadeIn,      1, 3,   fade_curve"   # fade in (open) -> layers and windows
-          "fadeOut,     1, 3,   fade_curve"   # fade out (close) -> layers and windows
-          "fadeSwitch,  0, 1,   easeOutCirc"  # fade on changing activewindow and its opacity
-          "fadeShadow,  1, 10,  easeOutCirc"  # fade on changing activewindow for shadows
+          "fadeIn,      1, 3,   fade_curve" # fade in (open) -> layers and windows
+          "fadeOut,     1, 3,   fade_curve" # fade out (close) -> layers and windows
+          "fadeSwitch,  0, 1,   easeOutCirc" # fade on changing activewindow and its opacity
+          "fadeShadow,  1, 10,  easeOutCirc" # fade on changing activewindow for shadows
           "fadeDim,     1, 4,   fluent_decel" # the easing of the dimming of inactive windows
           # "border,      1, 2.7, easeOutCirc"  # for animating the border's color switch speed
           # "borderangle, 1, 30,  fluent_decel, once" # for animating the border's gradient angle - styles: once (default), loop
@@ -354,6 +352,11 @@
         "rounding 0, floating:0, onworkspace:w[tg1]"
         "bordersize 0, floating:0, onworkspace:f[1]"
         "rounding 0, floating:0, onworkspace:f[1]"
+
+        # Remove transparent background in context menus
+        "opaque,class:(),title:()"
+        "noshadow,class:(),title:()"
+        "noblur,class:(),title:()"
       ];
 
       # No gaps when only
@@ -364,7 +367,6 @@
       ];
     };
 
-
     extraConfig = "
       monitor=,preferred,auto,auto
 
@@ -374,4 +376,3 @@
     ";
   };
 }
-
