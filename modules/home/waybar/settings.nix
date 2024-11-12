@@ -1,6 +1,6 @@
 { host, ... }:
 let custom = {
-  font = "JetBrainsMono Nerd Font";
+  font = "Maple Mono";
   font_size = "18px";
   font_weight = "bold";
   text_color = "#FBF1C7";

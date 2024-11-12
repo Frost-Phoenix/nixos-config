@@ -19,7 +19,7 @@
       effect-vignette = "0.75:0.75";
       effect-pixelate = 5;
       
-      font="JetBrainsMono Nerd Font";
+      font="Maple Mono";
 
       text-wrong-color="FBF1C7FF";
       text-ver-color="FBF1C7FF";
