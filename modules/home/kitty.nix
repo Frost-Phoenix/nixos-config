@@ -12,6 +12,11 @@
     };
 
     settings = {
+      font_features = "MapleMono-Regular +ss01 +ss02 +ss04";
+      font_features = "MapleMono-Bold +ss01 +ss02 +ss04";
+      font_features = "MapleMono-Italic +ss01 +ss02 +ss04";
+      font_features = "MapleMono-Light +ss01 +ss02 +ss04";
+
       confirm_os_window_close = 0;
       background_opacity = "0.66";
       scrollback_lines = 10000;
