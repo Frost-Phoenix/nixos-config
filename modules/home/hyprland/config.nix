@@ -162,8 +162,8 @@
         "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; center; size 1111 700] kitty yazi'"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
-        "$mainMod, W,exec, hyprctl dispatch exec '[float; center; size 925 615] waypaper'"
-        "$mainMod SHIFT, W,exec, wallpaper-picker"
+        "$mainMod, W,exec, wallpaper-picker"
+        "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; center; size 925 615] waypaper'"
         "$mainMod, N, exec, swaync-client -t -sw"
         # "$mainMod SHIFT, W, exec, vm-start"
 
