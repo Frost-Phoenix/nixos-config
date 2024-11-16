@@ -159,6 +159,7 @@
         "$mainMod, P, pseudo,"
         "$mainMod, X, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
+        "$mainMod CTRL, E, exec, nemo"
         "$mainMod, E, exec, hyprctl dispatch exec '[float; center; size 1111 700] nemo'"
         "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; center; size 1111 700] kitty yazi'"
         "$mainMod SHIFT, B, exec, toggle_waybar"
