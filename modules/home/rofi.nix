@@ -45,9 +45,9 @@
     }
 
     window {
-      height: 480px;
-      width: 400px;
-      border: 3px;
+      height: 600px;
+      width: 900px;
+      border: 2px;
       border-color: @border-col;
       background-color: @bg-col;
     }
@@ -88,7 +88,7 @@
       border: 0px 0px 0px;
       padding: 6px 0px 0px;
       margin: 10px 0px 0px 6px;
-      columns: 1;
+      columns: 3;
       background-color: @bg-col;
       cycle: true;
     }
