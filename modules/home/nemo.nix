@@ -5,7 +5,7 @@
   dconf.settings = {
     "org/nemo/preferences" = {
       always-use-browser = true;
-      click-double-parent-folder = true;
+      # click-double-parent-folder = true;
       close-device-view-on-device-eject = true;
       date-font-choice = "auto-mono";
       date-format = "iso";
