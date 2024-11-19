@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-animations=("fade" "outer" "center" "any")
+animations=("outer" "center" "any" "wipe")
 random_animation=${animations[RANDOM % ${#animations[@]}]}
 
 if [[ "$random_animation" == "wipe" ]]; then
