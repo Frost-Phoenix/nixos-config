@@ -14,7 +14,7 @@
         "waybar &"
         "swaync &"
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
-        "swww init && swww img $(find ~/Pictures/wallpapers/ -maxdepth 1 -type f) --transition-type none &"
+        "swww-daemon &"
 
         "hyprlock"
 
