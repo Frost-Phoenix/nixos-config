@@ -16,8 +16,6 @@
   compress = pkgs.writeScriptBin "compress" (builtins.readFile ./scripts/compress.sh);
   extract = pkgs.writeScriptBin "extract" (builtins.readFile ./scripts/extract.sh);
   
-  shutdown-script = pkgs.writeScriptBin "shutdown-script" (builtins.readFile ./scripts/shutdown-script.sh);
-  
   show-keybinds = pkgs.writeScriptBin "show-keybinds" (builtins.readFile ./scripts/keybinds.sh);
   
   vm-start = pkgs.writeScriptBin "vm-start" (builtins.readFile ./scripts/vm-start.sh);
@@ -48,8 +46,6 @@ in {
 
     compress
     extract
-
-    shutdown-script
     
     show-keybinds
 
