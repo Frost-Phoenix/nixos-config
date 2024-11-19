@@ -133,9 +133,10 @@ in
     };
     "custom/launcher"= {
         format= "";
-        on-click= "rofi -show drun";
-        on-click-right= "wallpaper-picker"; 
-        tooltip= "false";
+        on-click= "random-wallpaper";
+        on-click-right= "rofi -show drun";
+        tooltip= "true";
+        tooltip-format= "Random Wallpaper";
     };
     "custom/notification" = {
         tooltip = false;
