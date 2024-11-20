@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-unicode=" " 
+unicode=" "
 version="1.2.0"
 
 _black=$(tput setaf 0)

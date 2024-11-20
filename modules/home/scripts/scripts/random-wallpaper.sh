@@ -3,7 +3,7 @@
 wallpaper_path="$HOME/Pictures/wallpapers"
 wallpapers_folder="$HOME/Pictures/wallpapers/others"
 
-current_wallpaper=$(readlink "$wallpaper_path/wallpaper" 2>/dev/null)
+current_wallpaper=$(readlink "$wallpaper_path/wallpaper" 2> /dev/null)
 current_wallpaper_name="$(basename "$current_wallpaper")"
 
 wallpaper_list=($(ls "$wallpapers_folder"))

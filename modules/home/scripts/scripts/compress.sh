@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if (( $# == 1 )) then
+if (($# == 1)); then
     # echo -ne "Archive name: "
     # read name
     # tar -cvzf "$name.tar.gz" $1

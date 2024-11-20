@@ -13,8 +13,8 @@ save() {
 }
 
 swappy_() {
-   grimblast --notify --freeze save area "$file"
-   swappy -f "$file"
+    grimblast --notify --freeze save area "$file"
+    swappy -f "$file"
 }
 
 if [[ ! -d "$dir" ]]; then

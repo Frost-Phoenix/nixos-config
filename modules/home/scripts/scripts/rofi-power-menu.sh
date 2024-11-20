@@ -57,10 +57,8 @@ showtext=true
 function check_valid {
     option="$1"
     shift 1
-    for entry in "${@}"
-    do
-        if [ -z "${actions[$entry]+x}" ]
-        then
+    for entry in "${@}"; do
+        if [ -z "${actions[$entry]+x}" ]; then
             echo "Invalid choice in $1: $entry" >&2
             exit 1
         fi
@@ -77,7 +75,7 @@ eval set -- "$parsed"
 unset parsed
 while true; do
     case "$1" in
-        "-h"|"--help")
+        "-h" | "--help")
             echo "rofi-power-menu - a power menu mode for Rofi"
             echo
             echo "Usage: rofi-power-menu [--choices CHOICES] [--confirm CHOICES]"
@@ -166,8 +164,7 @@ while true; do
     esac
 done
 
-if [ "$showsymbols" = "false" -a "$showtext" = "false" ]
-then
+if [ "$showsymbols" = "false" -a "$showtext" = "false" ]; then
     echo "Invalid options: cannot have --no-symbols and --no-text enabled at the same time." >&2
     exit 1
 fi
@@ -176,17 +173,14 @@ fi
 # configure them in the future.
 
 function write_message {
-    if [ -z ${symbols_font+x} ];
-    then
+    if [ -z ${symbols_font+x} ]; then
         icon="<span font_size=\"medium\">$1</span>"
     else
         icon="<span font=\"${symbols_font}\" font_size=\"medium\">$1</span>"
     fi
     text="<span font_size=\"medium\">$2</span>"
-    if [ "$showsymbols" = "true" ]
-    then
-        if [ "$showtext" = "true" ]
-        then
+    if [ "$showsymbols" = "true" ]; then
+        if [ "$showtext" = "true" ]; then
             echo -n "\u200e$icon \u2068$text\u2069"
         else
             echo -n "\u200e$icon"
@@ -197,29 +191,28 @@ function write_message {
 }
 
 function print_selection {
-    echo -e "$1" | $(read -r -d '' entry; echo "echo $entry")
+    echo -e "$1" | $(
+        read -r -d '' entry
+        echo "echo $entry"
+    )
 }
 
 declare -A messages
 declare -A confirmationMessages
-for entry in "${all[@]}"
-do
+for entry in "${all[@]}"; do
     messages[$entry]=$(write_message "${icons[$entry]}" "${texts[$entry]^}")
 done
-for entry in "${all[@]}"
-do
+for entry in "${all[@]}"; do
     confirmationMessages[$entry]=$(write_message "${icons[$entry]}" "Yes, ${texts[$entry]}")
 done
 confirmationMessages[cancel]=$(write_message "${icons[cancel]}" "No, cancel")
 
-if [ $# -gt 0 ]
-then
+if [ $# -gt 0 ]; then
     # If arguments given, use those as the selection
     selection="${@}"
 else
     # Otherwise, use the CLI passed choice if given
-    if [ -n "${selectionID+x}" ]
-    then
+    if [ -n "${selectionID+x}" ]; then
         selection="${messages[$selectionID]}"
     fi
 fi
@@ -229,23 +222,17 @@ echo -e "\0no-custom\x1ftrue"
 # Use markup
 echo -e "\0markup-rows\x1ftrue"
 
-if [ -z "${selection+x}" ]
-then
+if [ -z "${selection+x}" ]; then
     echo -e "\0prompt\x1fPower menu"
-    for entry in "${show[@]}"
-    do
+    for entry in "${show[@]}"; do
         echo -e "${messages[$entry]}\0icon\x1f${icons[$entry]}"
     done
 else
-    for entry in "${show[@]}"
-    do
-        if [ "$selection" = "$(print_selection "${messages[$entry]}")" ]
-        then
+    for entry in "${show[@]}"; do
+        if [ "$selection" = "$(print_selection "${messages[$entry]}")" ]; then
             # Check if the selected entry is listed in confirmation requirements
-            for confirmation in "${confirmations[@]}"
-            do
-                if [ "$entry" = "$confirmation" ]
-                then
+            for confirmation in "${confirmations[@]}"; do
+                if [ "$entry" = "$confirmation" ]; then
                     # Ask for confirmation
                     echo -e "\0prompt\x1fAre you sure"
                     echo -e "${confirmationMessages[$entry]}\0icon\x1f${icons[$entry]}"
@@ -256,10 +243,8 @@ else
             # If not, then no confirmation is required, so mark confirmed
             selection=$(print_selection "${confirmationMessages[$entry]}")
         fi
-        if [ "$selection" = "$(print_selection "${confirmationMessages[$entry]}")" ]
-        then
-            if [ $dryrun = true ]
-            then
+        if [ "$selection" = "$(print_selection "${confirmationMessages[$entry]}")" ]; then
+            if [ $dryrun = true ]; then
                 # Tell what would have been done
                 echo "Selected: $entry" >&2
             else
@@ -269,8 +254,7 @@ else
             fi
             exit 0
         fi
-        if [ "$selection" = "$(print_selection "${confirmationMessages[cancel]}")" ]
-        then
+        if [ "$selection" = "$(print_selection "${confirmationMessages[cancel]}")" ]; then
             # Do nothing
             exit 0
         fi

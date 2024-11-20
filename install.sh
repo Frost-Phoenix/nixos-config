@@ -22,8 +22,7 @@ confirm() {
     echo -en "[${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
     read -n 1 -r
     echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]
-    then
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
         exit 0
     fi
 }
@@ -71,13 +70,13 @@ get_host() {
         HOST='desktop'
     elif [[ $REPLY =~ ^[Ll]$ ]]; then
         HOST='laptop'
-     elif [[ $REPLY =~ ^[Vv]$ ]]; then
+    elif [[ $REPLY =~ ^[Vv]$ ]]; then
         HOST='vm'
     else
         echo "Invalid choice. Please select 'D' for desktop, 'L' for laptop or 'V' for virtual machine."
         exit 1
     fi
-    
+
     echo -en "$NORMAL"
     echo -en "Use the$YELLOW "$HOST"$NORMAL ${GREEN}host${NORMAL} ? "
     confirm
