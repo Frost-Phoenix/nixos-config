@@ -32,6 +32,7 @@ in
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
+    nixd                              # nix lsp
     nixfmt-rfc-style                  # nix formatter
     openssl
     onefetch                          # fetch utility for git repo
