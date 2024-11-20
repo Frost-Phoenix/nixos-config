@@ -12,7 +12,8 @@ excludes = [
     "*.json",
     "*.zsh",
     "*/packages.nix",
-    "*/home/default.nix"
+    "*/home/default.nix",
+    "treefmt.toml",
 ]
 
 [formatter.nix]
