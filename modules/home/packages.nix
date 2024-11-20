@@ -32,6 +32,7 @@ in
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
+    nixfmt-rfc-style                  # nix formatter
     openssl
     onefetch                          # fetch utility for git repo
     pamixer                           # pulseaudio command line mixer
@@ -39,8 +40,10 @@ in
     poweralertd
     programmer-calculator
     ripgrep                           # grep replacement
+    shfmt                             # bash formatter
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
+    treefmt2                          # project formatter
     tldr
     todo                              # cli todo list
     toipe                             # typing test in the terminal
