@@ -1,4 +1,9 @@
-{ stdenv, requireFile, unzip, lib }:
+{
+  stdenv,
+  requireFile,
+  unzip,
+  lib,
+}:
 
 stdenv.mkDerivation rec {
   name = "monolisa";
@@ -16,7 +21,10 @@ stdenv.mkDerivation rec {
   };
 
   buildInputs = [ unzip ];
-  phases = [ "unpackPhase" "installPhase" ];
+  phases = [
+    "unpackPhase"
+    "installPhase"
+  ];
   pathsToLink = [ "/share/fonts/truetype/" ];
   sourceRoot = ".";
 

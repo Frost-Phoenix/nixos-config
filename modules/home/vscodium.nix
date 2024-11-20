@@ -1,22 +1,24 @@
-{ pkgs, ... }: 
-let 
-  jonathanharty.gruvbox-material-icon-theme = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
-    mktplcRef = {
-      name = "gruvbox-material-icon-theme";
-      publisher = "JonathanHarty";
-      version = "1.1.5";
-      hash = "sha256-86UWUuWKT6adx4hw4OJw3cSZxWZKLH4uLTO+Ssg75gY=";
-    };
-  };
-  # sainnhe.gruvbox-material = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
-  #   mktplcRef = {
-  #     name = "gruvbox-material";
-  #     publisher = "sainnhe";
-  #     version = "6.5.2";
-  #     hash = "sha256-D+SZEQQwjZeuyENOYBJGn8tqS3cJiWbEkmEqhNRY/i4=";
-  #   };
-  # };
+{ pkgs, ... }:
+let
+  jonathanharty.gruvbox-material-icon-theme =
+    pkgs.vscode-utils.buildVscodeMarketplaceExtension
+      {
+        mktplcRef = {
+          name = "gruvbox-material-icon-theme";
+          publisher = "JonathanHarty";
+          version = "1.1.5";
+          hash = "sha256-86UWUuWKT6adx4hw4OJw3cSZxWZKLH4uLTO+Ssg75gY=";
+        };
+      };
 in
+# sainnhe.gruvbox-material = pkgs.vscode-utils.buildVscodeMarketplaceExtension {
+#   mktplcRef = {
+#     name = "gruvbox-material";
+#     publisher = "sainnhe";
+#     version = "6.5.2";
+#     hash = "sha256-D+SZEQQwjZeuyENOYBJGn8tqS3cJiWbEkmEqhNRY/i4=";
+#   };
+# };
 {
   programs.vscode = {
     enable = true;
@@ -94,9 +96,7 @@ in
       "C_Cpp.vcFormat.indent.caseLabels" = true;
       "C_Cpp.intelliSenseCacheSize" = 2048;
       "C_Cpp.intelliSenseMemoryLimit" = 2048;
-      "C_Cpp.default.browse.path" = [
-        ''''${workspaceFolder}/**''
-      ];
+      "C_Cpp.default.browse.path" = [ ''''${workspaceFolder}/**'' ];
       "C_Cpp.default.cStandard" = "gnu11";
       "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores" = false;
       "C_Cpp.intelliSenseUpdateDelay" = 500;

@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: 
+{ pkgs, lib, ... }:
 {
   programs = {
     steam = {
@@ -9,9 +9,7 @@
 
       gamescopeSession.enable = true;
 
-      extraCompatPackages = [
-        pkgs.proton-ge-bin
-      ];
+      extraCompatPackages = [ pkgs.proton-ge-bin ];
     };
 
     gamescope = {

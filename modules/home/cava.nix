@@ -3,7 +3,7 @@
   programs.cava = {
     enable = false;
   };
-  
+
   xdg.configFile."cava/config".text = ''
     # custom cava config
 
@@ -14,7 +14,7 @@
     [color]
     gradient = 1
     gradient_count = 8
-    
+
     gradient_color_1 = '#99991a'
     gradient_color_2 = '#a28e00'
     gradient_color_3 = '#ab8200'

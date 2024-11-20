@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, ... }:
 {
   home.packages = (with pkgs; [ rofi-wayland ]);
 
@@ -126,5 +126,5 @@
       background-color: @bg-col;
       text-color: @green;
     }
-  '';  
+  '';
 }

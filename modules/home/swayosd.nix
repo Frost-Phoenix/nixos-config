@@ -1,16 +1,12 @@
-{ lib, pkgs, ...}:
+{ lib, pkgs, ... }:
 {
   home.packages = with pkgs; [ swayosd ];
 
   wayland.windowManager.hyprland = {
     settings = {
-      exec-once = [
-        "swayosd-server"
-      ];
+      exec-once = [ "swayosd-server" ];
 
-      bind = [
-        ",XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
-      ];
+      bind = [ ",XF86AudioMute, exec, swayosd-client --output-volume mute-toggle" ];
       # binds active in lockscreen
       bindl = [
         ",XF86MonBrightnessUp, exec, swayosd-client --brightness raise 5%+"

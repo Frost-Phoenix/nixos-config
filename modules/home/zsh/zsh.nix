@@ -1,4 +1,10 @@
-{ hostname, config, pkgs, host, ...}: 
+{
+  hostname,
+  config,
+  pkgs,
+  host,
+  ...
+}:
 {
   programs.zsh = {
     enable = true;
@@ -97,7 +103,6 @@
       zstyle ':fzf-tab:*' switch-group ',' '.'
     '';
 
-
     initExtraFirst = ''
       # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
       # Initialization code that may require console input (password prompts, [y/n]
@@ -120,7 +125,7 @@
       setopt hist_verify
 
       source ~/.p10k.zsh
-      
+
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
       # - See the source code (completion.{bash,zsh}) for the details.

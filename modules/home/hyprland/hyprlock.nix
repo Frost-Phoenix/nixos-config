@@ -1,5 +1,5 @@
 { pkgs, host, ... }:
-let 
+let
   text = "rgb(251, 241, 199)";
 in
 {
