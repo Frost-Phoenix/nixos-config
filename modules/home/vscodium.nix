@@ -33,7 +33,7 @@ in
       # C/C++
       ms-vscode.cpptools
       # OCaml
-      ocamllabs.ocaml-platform
+      # ocamllabs.ocaml-platform
 
       # Color theme
       jdinhlife.gruvbox
