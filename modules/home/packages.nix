@@ -74,6 +74,7 @@ in
     pavucontrol                       # pulseaudio volume controle (GUI)
     pitivi                            # video editing
     qalculate-gtk                     # calculator
+    resources                         # GUI resources monitor
     soundwireserver
     thunderbird
     vlc
