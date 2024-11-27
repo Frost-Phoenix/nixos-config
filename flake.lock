@@ -171,11 +171,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732303962,
-        "narHash": "sha256-5Umjb5AdtxV5jSJd5jxoCckh5mlg+FBQDsyAilu637g=",
+        "lastModified": 1732482255,
+        "narHash": "sha256-GUffLwzawz5WRVfWaWCg78n/HrBJrOG7QadFY6rtV8A=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "8cf9cb2ee78aa129e5b8220135a511a2be254c0c",
+        "rev": "a9953635d7f34e7358d5189751110f87e3ac17da",
         "type": "github"
       },
       "original": {
@@ -245,11 +245,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1732371493,
-        "narHash": "sha256-pjmLeC3VsR+3rx1wyX+SO3s5qgauYW6WxI3wW2whIjM=",
+        "lastModified": 1732737540,
+        "narHash": "sha256-9b+cLfJyMluRgC0XVb50mqZA827fSYaRtwovSydu/C0=",
         "ref": "refs/heads/main",
-        "rev": "00d6261cc06716eac6bdfc9d4426c3a54597098c",
-        "revCount": 5489,
+        "rev": "5329298b522e3cc1201894909443775b00aeb336",
+        "revCount": 5500,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -475,11 +475,11 @@
         "umu": "umu"
       },
       "locked": {
-        "lastModified": 1732359130,
-        "narHash": "sha256-6oOIuAMih3tN1Fjo9cQp1Q5LNe1t3eueA2i0IV1QAVI=",
+        "lastModified": 1732543374,
+        "narHash": "sha256-suhk41NhdsnN3aa7gpsr8KnYJtbaLeZBJMB2vqWbkzA=",
         "owner": "fufexan",
         "repo": "nix-gaming",
-        "rev": "6f4ed139a161539429acedf08c5e6c6bc65bffdf",
+        "rev": "18b8f0796f3e9dd8b9d9f262a56f2914a0586a22",
         "type": "github"
       },
       "original": {
@@ -598,11 +598,11 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1731763621,
-        "narHash": "sha256-ddcX4lQL0X05AYkrkV2LMFgGdRvgap7Ho8kgon3iWZk=",
+        "lastModified": 1731890469,
+        "narHash": "sha256-D1FNZ70NmQEwNxpSSdTXCSklBH1z2isPR84J6DQrJGs=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c69a9bffbecde46b4b939465422ddc59493d3e4d",
+        "rev": "5083ec887760adfe12af64830a66807423a859a7",
         "type": "github"
       },
       "original": {
@@ -614,11 +614,11 @@
     },
     "nixpkgs_7": {
       "locked": {
-        "lastModified": 1732014248,
-        "narHash": "sha256-y/MEyuJ5oBWrWAic/14LaIr/u5E0wRVzyYsouYY3W6w=",
+        "lastModified": 1732521221,
+        "narHash": "sha256-2ThgXBUXAE1oFsVATK1ZX9IjPcS4nKFOAjhPNKuiMn0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "23e89b7da85c3640bbc2173fe04f4bd114342367",
+        "rev": "4633a7c72337ea8fd23a4f2ba3972865e3ec685d",
         "type": "github"
       },
       "original": {
@@ -646,11 +646,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1732371112,
-        "narHash": "sha256-SC/QPPrJxT2jOff/SzxG5YQyxmWwSKDkBlOugEjXYh8=",
+        "lastModified": 1732740542,
+        "narHash": "sha256-kds/yxf5eJf4RciixEUS3w4gA8Pd1TvDIj8apxIHcuE=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "1f1cc4692331a456ce1b9dca6737333ddadd6dea",
+        "rev": "59a1f1655ea2d8a03088616eaa9156a7fd338572",
         "type": "github"
       },
       "original": {
@@ -725,11 +725,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732335344,
-        "narHash": "sha256-67eg6CecbBPEYeHFS8K7Xqrg3zhUVoCBYP20dcfHSK4=",
+        "lastModified": 1732681011,
+        "narHash": "sha256-LZomF/Q9DR9WJsf4JoLxKmiRmGIng0c46olLAtQYYlc=",
         "owner": "gerg-l",
         "repo": "spicetify-nix",
-        "rev": "5a608edd5d050ab47af4e301437684441955ece0",
+        "rev": "5d4ec6aded85cfb4434b1b9258dfc21fe827d6d2",
         "type": "github"
       },
       "original": {
@@ -777,11 +777,11 @@
       },
       "locked": {
         "dir": "packaging/nix",
-        "lastModified": 1731556042,
-        "narHash": "sha256-eUFmLbf06Dph//IbB9KsJio3dJNADt+EhcfNFXjiJjU=",
+        "lastModified": 1732337089,
+        "narHash": "sha256-dwFza03ETqrcmVGSCdgDDKTWKRgckpQ3vXkZRCYtM9g=",
         "ref": "refs/heads/main",
-        "rev": "66a1088194bb13c2d86d2c0af316b280a7235640",
-        "revCount": 839,
+        "rev": "f6a6af3191f5497d95d8f8aaa08826a45da199c4",
+        "revCount": 842,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/Open-Wine-Components/umu-launcher/?dir=packaging/nix"
@@ -837,11 +837,11 @@
     "yazi-plugins": {
       "flake": false,
       "locked": {
-        "lastModified": 1732364716,
-        "narHash": "sha256-OdRs3MLtP/HaPwlO4ygbmmCmLKPPi6TnfQD8umWY+Mw=",
+        "lastModified": 1732725619,
+        "narHash": "sha256-geg0UjwzXALZl+XYGFzwSx4hcNwXCZykvfUV0/U8QwE=",
         "owner": "yazi-rs",
         "repo": "plugins",
-        "rev": "f1fb6cc1df9d829173b21dbc1e45ea6606a46f98",
+        "rev": "2491a93e2ce425768fe58559106544932b14c64a",
         "type": "github"
       },
       "original": {
