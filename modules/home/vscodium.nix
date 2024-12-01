@@ -40,7 +40,7 @@ in
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'Maple Mono', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'Maple Mono', 'SymbolsNerdFont'";
-      "editor.fontSize" = 18;
+      "editor.fontSize" = 17;
       "workbench.colorTheme" = "Gruvbox Dark Hard";
       "workbench.iconTheme" = "gruvbox-material-icon-theme";
       "material-icon-theme.folders.theme" = "classic";
