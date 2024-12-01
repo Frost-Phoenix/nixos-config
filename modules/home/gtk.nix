@@ -8,14 +8,10 @@ in
 {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    (nerdfonts.override {
-      fonts = [
-        "JetBrainsMono"
-        "FiraCode"
-        "CascadiaCode"
-        "NerdFontsSymbolsOnly"
-      ];
-    })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.caskaydia-cove
+    nerd-fonts.symbols-only
     twemoji-color-font
     noto-fonts-emoji
     fantasque-sans-mono
