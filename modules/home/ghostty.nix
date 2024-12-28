@@ -12,23 +12,23 @@ in
     font-thicken = true
     font-feature = ss01
     font-feature = ss04
-    
+
     bold-is-bright = false
     adjust-box-thickness = 1
-    
+
     # Theme
     theme = "gruvbox"
     background-opacity = 0.66
-    
+
     cursor-style = bar
     cursor-style-blink = false
     adjust-cursor-thickness = 1
-    
+
     resize-overlay = never
     copy-on-select = false
     confirm-close-surface = false
     mouse-hide-while-typing = true
-    
+
     window-theme = ghostty
     window-padding-x = 4
     window-padding-y = 6
@@ -37,18 +37,18 @@ in
     window-inherit-working-directory = true
     window-inherit-font-size = true
     window-decoration = false
-    
+
     gtk-titlebar = false
     gtk-single-instance = true
     gtk-tabs-location = bottom
     gtk-wide-tabs = false
-    
+
     auto-update = off
   '';
   xdg.configFile."ghostty/themes/gruvbox".text = ''
     background = #151718
     foreground = #fbf1c7
-    
+
     palette = 0=#3c3836
     palette = 1=#cc241d
     palette = 2=#98971a
@@ -65,9 +65,9 @@ in
     palette = 13=#d3869b
     palette = 14=#8ec07c
     palette = 15=#fbf1c7
-    
+
     cursor-color = #D5C4A1
-    
+
     selection-foreground = #282828
     selection-background = #98971A
   '';
