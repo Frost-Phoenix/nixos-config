@@ -16,8 +16,6 @@
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
-    ./swayosd.nix                     # brightness / volume wiget
-    ./swaync/swaync.nix               # notification deamon
     ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
@@ -30,6 +28,8 @@
     ./spicetify.nix                   # spotify client
     ./starship.nix                    # shell prompt
     ./swaylock.nix                    # lock screen
+    ./swayosd.nix                     # brightness / volume wiget
+    ./swaync/swaync.nix               # notification deamon
     # ./viewnior.nix                    # image viewer
     ./vscodium.nix                    # vscode forck
     ./waybar                          # status bar
