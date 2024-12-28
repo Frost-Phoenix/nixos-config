@@ -98,13 +98,13 @@ in
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
-      "nix.serverSettings" = {
-        "nixd" = {
-          "formatting" = {
-            "command" = [ "nixfmt" ];
-          };
-        };
-      };
+      # "nix.serverSettings" = {
+      #   "nixd" = {
+      #     "formatting" = {
+      #       "command" = [ "nixfmt" ];
+      #     };
+      #   };
+      # };
     };
     # Keybindings
     keybindings = [
