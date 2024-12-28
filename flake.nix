@@ -38,6 +38,10 @@
       url = "github:yazi-rs/plugins";
       flake = false;
     };
+
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
   };
 
   outputs =
