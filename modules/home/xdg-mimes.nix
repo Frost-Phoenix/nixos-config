@@ -4,7 +4,7 @@ let
   defaultApps = {
     browser = [ "zen-browser.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
-    image = [ "viewnior.desktop" ];
+    image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
     video = [ "mpv.desktop" ];
     directory = [ "nemo.desktop" ];
