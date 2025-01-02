@@ -27,7 +27,7 @@ in
     killall
     lazygit
     libnotify
-	  man-pages					            	  # extra man pages
+    man-pages                         # extra man pages
     mimeo
     mpv                               # video player
     ncdu                              # disk space
