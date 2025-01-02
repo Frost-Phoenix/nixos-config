@@ -39,7 +39,7 @@ in
     window-decoration = false
 
     gtk-titlebar = false
-    gtk-single-instance = true
+    gtk-single-instance = false
     gtk-tabs-location = bottom
     gtk-wide-tabs = false
 
