@@ -142,7 +142,7 @@
 
         # keybindings
         "$mainMod, Return, exec, ghostty"
-        "ALT, Return, exec, [float; center; size 950 650] ghostty"
+        "ALT, Return, exec, [float; size 1111 700] ghostty"
         "$mainMod SHIFT, Return, exec, [fullscreen] ghostty"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] zen'"
         "$mainMod, Q, killactive,"
@@ -159,12 +159,12 @@
         "$mainMod, X, togglesplit,"
         "$mainMod, T, exec, toggle_oppacity"
         "$mainMod, E, exec, nemo"
-        "ALT, E, exec, hyprctl dispatch exec '[float; center; size 1111 700] nemo'"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; center; size 1111 700] ghostty -e yazi'"
+        "ALT, E, exec, hyprctl dispatch exec '[float; size 1111 700] nemo'"
+        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] ghostty -e yazi'"
         "$mainMod SHIFT, B, exec, toggle_waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"
-        "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; center; size 925 615] waypaper'"
+        "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod, N, exec, swaync-client -t -sw"
         "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 11] resources'"
         # "$mainMod SHIFT, W, exec, vm-start"
@@ -275,15 +275,9 @@
       # windowrule
       windowrule = [
         "float,Viewnior"
-        "center,Viewnior"
-        "size 1200 800,Viewnior"
         "float,imv"
-        "center,imv"
-        "size 1200 725,imv"
         "float,mpv"
-        "center,mpv"
         "tile,Aseprite"
-        "size 1200 725,mpv"
         "float,audacious"
         "pin,rofi"
         "pin,waypaper"
@@ -322,12 +316,8 @@
         "idleinhibit fullscreen, class:^(firefox)$"
         "float,class:^(waypaper)$"
         "float,class:^(zenity)$"
-        "center,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"
         "float,class:^(org.gnome.FileRoller)$"
-        "center,class:^(org.gnome.FileRoller)$"
-        "size 850 500,class:^(org.gnome.FileRoller)$"
-        "size 850 500,title:^(File Upload)$"
         "float,class:^(pavucontrol)$"
         "float,class:^(SoundWireServer)$"
         "float,class:^(.sameboy-wrapped)$"
@@ -357,6 +347,9 @@
         "rounding 0, floating:0, onworkspace:w[tg1]"
         "bordersize 0, floating:0, onworkspace:f[1]"
         "rounding 0, floating:0, onworkspace:f[1]"
+
+        "maxsize 1111 700, floating: 1"
+        "center, floating: 1"
 
         # Remove context menu transparency in chromium based apps
         "opaque,class:^()$,title:^()$"
