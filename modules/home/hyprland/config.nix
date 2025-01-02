@@ -4,9 +4,9 @@
     settings = {
       # autostart
       exec-once = [
-        "systemctl --user import-environment &"
-        "hash dbus-update-activation-environment 2>/dev/null &"
-        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &"
+        # "hash dbus-update-activation-environment 2>/dev/null"
+        "dbus-update-activation-environment --all --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 
         "nm-applet &"
         "poweralertd &"
@@ -18,10 +18,6 @@
         "swww-daemon &"
 
         "hyprlock"
-
-        ## App auto start
-        # "[workspace 1 silent] zen"
-        # "[workspace 2 silent] kitty"
       ];
 
       input = {
