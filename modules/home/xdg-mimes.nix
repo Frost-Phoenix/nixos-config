@@ -94,8 +94,6 @@ in
   xdg.mimeApps.associations.added = associations;
   xdg.mimeApps.defaultApplications = associations;
 
-  home.packages = with pkgs; [ junction ];
-
   home.sessionVariables = {
     # prevent wine from creating file associations
     WINEDLLOVERRIDES = "winemenubuilder.exe=d";
