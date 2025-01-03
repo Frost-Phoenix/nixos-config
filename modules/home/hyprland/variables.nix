@@ -25,6 +25,6 @@
     XDG_SESSION_DESKTOP = "Hyprland";
     SDL_VIDEODRIVER = "wayland";
     CLUTTER_BACKEND = "wayland";
-    GTK_THEME = "Gruvbox-Green-Dark";
+    GTK_THEME = "Colloid-Green-Dark-Gruvbox";
   };
 }
