@@ -311,6 +311,7 @@
         "workspace 10, class:^(WebCord)$"
         "idleinhibit focus, class:^(mpv)$"
         "idleinhibit fullscreen, class:^(firefox)$"
+        "float,class:^(org.gnome.Calculator)$"
         "float,class:^(waypaper)$"
         "float,class:^(zenity)$"
         "size 850 500,class:^(zenity)$"
