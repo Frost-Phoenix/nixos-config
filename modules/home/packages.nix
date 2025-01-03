@@ -26,7 +26,6 @@ in
     imv                               # image viewer
     jq                                # JSON processor
     killall
-    lazygit
     libnotify
     man-pages                         # extra man pages
     mimeo
