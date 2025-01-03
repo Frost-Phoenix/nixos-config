@@ -22,6 +22,7 @@ in
     gifsicle                          # gif utility
     gtrash                            # rm replacement, put deleted files in system trash
     hexdump
+    htop
     imv                               # image viewer
     jq                                # JSON processor
     killall
