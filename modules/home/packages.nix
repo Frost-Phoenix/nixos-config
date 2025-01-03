@@ -74,7 +74,7 @@ in
     obs-studio
     pavucontrol                       # pulseaudio volume controle (GUI)
     pitivi                            # video editing
-    qalculate-gtk                     # calculator
+    gnome-calculator                  # calculator
     resources                         # GUI resources monitor
     soundwireserver
     thunderbird
