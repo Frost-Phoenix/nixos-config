@@ -31,7 +31,11 @@ in
       package = pkgs.colloid-gtk-theme.override {
         colorVariants = [ "dark" ];
         themeVariants = [ "green" ];
-        tweaks = [ "gruvbox" "rimless" "float" ];
+        tweaks = [
+          "gruvbox"
+          "rimless"
+          "float"
+        ];
       };
     };
     iconTheme = {
