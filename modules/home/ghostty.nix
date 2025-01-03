@@ -54,7 +54,7 @@ in
     keybind = shift+enter=text:\n
   '';
   xdg.configFile."ghostty/themes/gruvbox".text = ''
-    background = #151718
+    background = #1d2021
     foreground = #fbf1c7
 
     palette = 0=#3c3836
