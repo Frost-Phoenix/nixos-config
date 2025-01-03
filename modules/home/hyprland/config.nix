@@ -163,6 +163,7 @@
         "$mainMod SHIFT, W,exec, hyprctl dispatch exec '[float; size 925 615] waypaper'"
         "$mainMod, N, exec, swaync-client -t -sw"
         "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 11] resources'"
+        "$mainMod, equal, exec, woomer"
         # "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
