@@ -80,14 +80,14 @@ in
       padding: 1px;
     }
 
-    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #custom-notification {
+    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-notification {
       padding-left: 5px;
       padding-right: 5px;
       margin-right: 10px;
       color: ${text_color};
     }
 
-    #pulseaudio {
+    #pulseaudio, #language {
       margin-left: 15px;
     }
 
