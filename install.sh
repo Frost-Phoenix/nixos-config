@@ -84,7 +84,6 @@ get_host() {
 
 install() {
     echo -e "\n${RED}START INSTALL PHASE${NORMAL}\n"
-    sleep 0.2
 
     # Create basic directories
     echo -e "Creating folders:"
@@ -94,19 +93,16 @@ install() {
     mkdir -p ~/Music
     mkdir -p ~/Documents
     mkdir -p ~/Pictures/wallpapers/others
-    sleep 0.2
 
     # Copy the wallpapers
     echo -e "Copying all ${MAGENTA}wallpapers${NORMAL}"
     cp -r wallpapers/wallpaper.png ~/Pictures/wallpapers
     cp -r wallpapers/otherWallpaper/gruvbox/* ~/Pictures/wallpapers/others/
     cp -r wallpapers/otherWallpaper/nixos/* ~/Pictures/wallpapers/others/
-    sleep 0.2
 
     # Get the hardware configuration
     echo -e "Copying ${MAGENTA}/etc/nixos/hardware-configuration.nix${NORMAL} to ${MAGENTA}./hosts/${HOST}/${NORMAL}\n"
     cp /etc/nixos/hardware-configuration.nix hosts/${HOST}/hardware-configuration.nix
-    sleep 0.2
 
     # Last Confirmation
     echo -en "You are about to start the system build, do you want to process ? "
