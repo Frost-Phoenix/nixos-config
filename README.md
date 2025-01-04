@@ -123,7 +123,11 @@ Utils (EXPAND)
 - ```cat```   $\rightarrow$ ```bat```
 - ```nano```  $\rightarrow$ ```micro```
 - ```code```  $\rightarrow$ ```codium```
+- ```diff```  $\rightarrow$ ```delta --diff-so-fancy --side-by-side```
+- ```less```  $\rightarrow$ ```bat```
+- ```y```     $\rightarrow$ ```yazi```
 - ```py```    $\rightarrow$ ```python```
+- ```ipy```   $\rightarrow$ ```ipython```
 - ```icat```  $\rightarrow$ ```kitten icat```
 - ```dsize``` $\rightarrow$ ```du -hs```
 - ```pdf```   $\rightarrow$ ```tdf```
