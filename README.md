@@ -408,7 +408,6 @@ After rebooting, the config should be applied, you'll be greeted by hyprlock pro
 
 Even though I use home manager, there is still a little bit of manual configuration to do:
 - Set Aseprite theme (they are in the folder `./nixos-config/modules/home/aseprite/themes`).
-- Enable Discord theme (in Discord settings under VENCORD > Themes).
 - Configure the browser (for now, all browser configuration is done manually).
 - Change the git account information in `./modules/home/git.nix`
 ```nix
