@@ -450,9 +450,13 @@ It will also automatically copy the hardware configuration from ```/etc/nixos/ha
 
 Now you will need to choose the host you want. It depend on whether you are using a desktop or laptop (or a VM altho it can be really buggy).
 
-#### 7. Build the system
+#### 7. Choose whether to install aseprite or not
 
-Lastly, it will build the system, which includes both the flake config and home-manager config.
+To reduce installation time, you can choose to skip installing Aseprite. The installation process for Aseprite is time-intensive as it requires compiling over 1100 C++ files from source.
+
+#### 8. Build the system
+
+Lastly, it will build the system using [nh](https://github.com/viperML/nh), which includes both the flake config and home-manager config.
 
 # 👥 Credits
 
