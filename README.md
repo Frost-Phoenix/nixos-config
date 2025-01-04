@@ -88,22 +88,23 @@ Catppuccin (EXPAND)
 | **Bar**                     | [Waybar][Waybar] |
 | **Application Launcher**    | [rofi][rofi] |
 | **Notification Daemon**     | [swaync][swaync] |
-| **Terminal Emulator**       | [Wezterm][Wezterm] |
-| **Shell**                   | [zsh][zsh] + [oh-my-zsh][oh-my-zsh] + [Starship][Starship] |
+| **Terminal Emulator**       | [Ghostty][Ghostty] |
+| **Shell**                   | [zsh][zsh] + [powerlevel10k][powerlevel10k] |
 | **Text Editor**             | [VSCodium][VSCodium] + [Neovim][Neovim] |
 | **network management tool** | [NetworkManager][NetworkManager] + [network-manager-applet][network-manager-applet] |
 | **System resource monitor** | [Btop][Btop] |
 | **File Manager**            | [nemo][nemo] + [yazi][yazi] |
-| **Fonts**                   | [CascadiaCode Nerd Font][Nerd fonts] + [JetBrainsMono Nerd Font][Nerd fonts] |
+| **Fonts**                   | [Maple Mono][Maple Mono] |
 | **Color Scheme**            | [Gruvbox Dark Hard][Gruvbox] |
+| **GTK theme**               | [Colloid gtk theme][Colloid gtk theme] |
 | **Cursor**                  | [Bibata-Modern-Ice][Bibata-Modern-Ice] |
 | **Icons**                   | [Papirus-Dark][Papirus-Dark] |
 | **Lockscreen**              | [Hyprlock][Hyprlock] + [Swaylock-effects][Swaylock-effects] |
-| **Image Viewer**            | [qview][qview] |
+| **Image Viewer**            | [imv][imv] |
 | **Media Player**            | [mpv][mpv] |
 | **Music Player**            | [audacious][audacious] |
 | **Screenshot Software**     | [grimblast][grimblast] |
-| **Screen Recording**        | [wf-recorder][wf-recorder] |
+| **Screen Recording**        | [wf-recorder][wf-recorder] + [OBS][OBS] |
 | **Clipboard**               | [wl-clip-persist][wl-clip-persist] |
 | **Color Picker**            | [hyprpicker][hyprpicker] |
 
@@ -484,15 +485,14 @@ Other dotfiles that I learned / copy from:
 
 <!-- Links -->
 [Hyprland]: https://github.com/hyprwm/Hyprland
-[Wezterm]: https://wezfurlong.org/wezterm/index.html
-[Starship]: https://github.com/starship/starship
+[Ghostty]: https://ghostty.org/
+[powerlevel10k]: https://github.com/romkatv/powerlevel10k
 [Waybar]: https://github.com/Alexays/Waybar
 [rofi]: https://github.com/lbonn/rofi
 [Btop]: https://github.com/aristocratos/btop
 [nemo]: https://github.com/linuxmint/nemo/
 [yazi]: https://github.com/sxyazi/yazi
 [zsh]: https://ohmyz.sh/
-[oh-my-zsh]: https://ohmyz.sh/
 [Swaylock-effects]: https://github.com/mortie/swaylock-effects
 [Hyprlock]: https://github.com/hyprwm/hyprlock
 [audacious]: https://audacious-media-player.org/
@@ -500,9 +500,9 @@ Other dotfiles that I learned / copy from:
 [VSCodium]:https://vscodium.com/
 [Neovim]: https://github.com/neovim/neovim
 [grimblast]: https://github.com/hyprwm/contrib
-[qview]: https://interversehq.com/qview/
+[imv]: https://sr.ht/~exec64/imv/
 [swaync]: https://github.com/ErikReider/SwayNotificationCenter
-[Nerd fonts]: https://github.com/ryanoasis/nerd-fonts
+[Maple Mono]: https://github.com/subframe7536/maple-font
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
 [network-manager-applet]: https://gitlab.gnome.org/GNOME/network-manager-applet/
 [wl-clip-persist]: https://github.com/Linus789/wl-clip-persist
@@ -512,3 +512,5 @@ Other dotfiles that I learned / copy from:
 [Papirus-Dark]: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 [Bibata-Modern-Ice]: https://www.gnome-look.org/p/1197198
 [maxfetch]: https://github.com/jobcmax/maxfetch
+[Colloid gtk theme]: https://github.com/vinceliuice/Colloid-gtk-theme
+[OBS]: https://obsproject.com/
