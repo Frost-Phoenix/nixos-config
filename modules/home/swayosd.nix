@@ -32,9 +32,9 @@
   xdg.configFile."swayosd/style.css".text = ''
     window {
         padding: 0px 10px;
-        border-radius: 30px;
+        border-radius: 25px;
         border: 10px;
-        background: alpha(#111111, 0.99);
+        background: alpha(#282828, 0.99);
     }
 
     #container {
@@ -60,7 +60,7 @@
         min-height: inherit;
         border-radius: inherit;
         border: none;
-        background: alpha(#CCCCCC, 0.1);
+        background: alpha(#DDDDDD, 0.2);
     }
     progress {
         min-height: inherit;
