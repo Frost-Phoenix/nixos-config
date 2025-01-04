@@ -84,8 +84,7 @@ get_host() {
 
 aseprite() {
     # whether to install aseprite or not
-    echo -e "Disable ${GREEN}Aseprite${NORMAL} (faster install) ? "
-    echo -en "[${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
+    echo -en "Disable ${GREEN}Aseprite${NORMAL} (faster install) ? [${GREEN}y${NORMAL}/${RED}n${NORMAL}]: "
     read -n 1 -r
     echo
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
