@@ -29,20 +29,14 @@
 ### 🖼️ Gallery
 
 <p align="center">
-   <img src="./.github/assets/screenshots/1.png" style="margin-bottom: 10px;"/> <br>
-   <img src="./.github/assets/screenshots/2.png" style="margin-bottom: 10px;"/> <br>
-   <img src="./.github/assets/screenshots/3.png" style="margin-bottom: 10px;"/> <br>
-   Screenshots last updated <b>2024-08-24</b>
+   <img src="./.github/assets/screenshots/1.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./.github/assets/screenshots/2.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./.github/assets/screenshots/3.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./.github/assets/screenshots/4.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./.github/assets/screenshots/5.png" style="margin-bottom: 15px;"/> <br>
+   <img src="./.github/assets/screenshots/hyprlock.png" style="margin-bottom: 15px;" /> <br>
+   Screenshots last updated <b>2025-01-05</b>
 </p>
-
-<details>
-<summary>
-Hyprlock (EXPAND)
-</summary>
-<p align="center">
-   <img src="./.github/assets/screenshots/hyprlock.png" style="margin-bottom: 10px;" /> <br>
-</p>
-</details>
 
 Here is my previous Catppuccin rice. You can find it [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin)
 <details>
