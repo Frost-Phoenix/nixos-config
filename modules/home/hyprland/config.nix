@@ -346,8 +346,8 @@
         "bordersize 0, floating:0, onworkspace:f[1]"
         "rounding 0, floating:0, onworkspace:f[1]"
 
-        "maxsize 1111 700, floating: 1"
-        "center, floating: 1"
+        # "maxsize 1111 700, floating: 1"
+        # "center, floating: 1"
 
         # Remove context menu transparency in chromium based apps
         "opaque,class:^()$,title:^()$"
