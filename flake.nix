@@ -44,6 +44,8 @@
     };
 
     zig.url = "github:mitchellh/zig-overlay";
+
+    nvf.url = "github:notashelf/nvf";
   };
 
   outputs =
