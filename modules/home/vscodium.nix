@@ -26,6 +26,8 @@ in
       ms-vscode.cpptools
       # OCaml
       # ocamllabs.ocaml-platform
+      # Zig
+      ziglang.vscode-zig
 
       # Color theme
       jdinhlife.gruvbox
@@ -95,6 +97,12 @@ in
       "C_Cpp.workspaceParsingPriority" = "medium";
       "C_Cpp.clang_format_sortIncludes" = true;
       "C_Cpp.doxygen.generatedStyle" = "/**";
+
+      # Zig
+      "zig.initialSetupDone" = true;
+      "zig.checkForUpdate" = false;
+      "zig.zls.path" = "zls";
+      "zig.path" = "zig";
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;

@@ -42,6 +42,8 @@
     ghostty = {
       url = "github:ghostty-org/ghostty";
     };
+
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
   outputs =
