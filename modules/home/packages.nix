@@ -51,6 +51,7 @@ in
     ttyper                            # cli typing test
     unzip
     valgrind                          # c memory analyzer
+    wavemon                           # monitoring for wireless network devices
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     wget
     woomer
