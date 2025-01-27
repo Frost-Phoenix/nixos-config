@@ -119,9 +119,9 @@ install() {
     echo -en "You are about to start the system build, do you want to process ? "
     confirm
 
-    # Using nh (nixos helper) to Build the system (flakes + home manager)
+    # Build the system (flakes + home manager)
     echo -e "\nBuilding the system...\n"
-    nix-shell -p nh --run "nh os switch -H ${HOST} ."
+    sudo nixos-rebuild switch --flake .#${HOST}
 }
 
 main() {

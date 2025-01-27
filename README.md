@@ -450,7 +450,7 @@ To reduce installation time, you can choose to skip installing Aseprite. The ins
 
 #### 8. Build the system
 
-Lastly, it will build the system using [nh](https://github.com/viperML/nh), which includes both the flake config and home-manager config.
+Lastly, it will build the system, which includes both the flake config and home-manager config.
 
 # 👥 Credits
 
