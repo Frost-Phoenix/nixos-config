@@ -42,7 +42,7 @@ in
       "window.menuBarVisibility" = "toggle";
       "editor.fontFamily" = "'Maple Mono', 'SymbolsNerdFont', 'monospace', monospace";
       "terminal.integrated.fontFamily" = "'Maple Mono', 'SymbolsNerdFont'";
-      "editor.fontSize" = 17;
+      "editor.fontSize" = 18;
       "workbench.colorTheme" = "Gruvbox Dark Hard";
       "workbench.iconTheme" = "gruvbox-material-icon-theme";
       "material-icon-theme.folders.theme" = "classic";
@@ -103,6 +103,8 @@ in
       "zig.checkForUpdate" = false;
       "zig.zls.path" = "zls";
       "zig.path" = "zig";
+      "zig.revealOutputChannelOnFormattingError" = false;
+      "zig.zls.enableInlayHints" = false;
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
