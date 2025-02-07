@@ -22,8 +22,9 @@
 
       input = {
         kb_layout = "us,fr";
-        kb_options = "grp:alt_caps_toggle";
+        kb_options = "grp:alt_caps_toggle,caps:swapescape";
         numlock_by_default = true;
+        repeat_delay = 300;
         follow_mouse = 0;
         float_switch_override_focus = 0;
         mouse_refocus = 0;
@@ -36,8 +37,8 @@
       general = {
         "$mainMod" = "SUPER";
         layout = "dwindle";
-        gaps_in = 5;
-        gaps_out = 10;
+        gaps_in = 6;
+        gaps_out = 12;
         border_size = 2;
         "col.active_border" = "rgb(98971A) rgb(CC241D) 45deg";
         "col.inactive_border" = "0x00000000";
@@ -52,14 +53,13 @@
         layers_hog_keyboard_focus = true;
         animate_manual_resizes = false;
         enable_swallow = true;
-        focus_on_activate = true;
+        focus_on_activate = false;
         new_window_takes_over_fullscreen = 2;
         middle_click_paste = false;
       };
 
       dwindle = {
-        # no_gaps_when_only = false;
-        force_split = 0;
+        force_split = 2;
         special_scale_factor = 1.0;
         split_width_multiplier = 1.0;
         use_active_for_splits = true;
@@ -70,7 +70,6 @@
       master = {
         new_status = "master";
         special_scale_factor = 1;
-        # no_gaps_when_only = false;
       };
 
       decoration = {
