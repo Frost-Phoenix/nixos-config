@@ -70,6 +70,7 @@ in
     audacity
     bleachbit                         # cache cleaner
     gimp
+    gnome-disk-utility
     libreoffice
     nix-prefetch-github
     obs-studio
