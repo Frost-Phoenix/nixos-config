@@ -69,6 +69,7 @@ in
     ## GUI Apps
     audacity
     bleachbit                         # cache cleaner
+    filezilla
     gimp
     gnome-disk-utility
     libreoffice
