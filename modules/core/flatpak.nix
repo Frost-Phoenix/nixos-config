@@ -6,7 +6,7 @@
     enable = true;
     packages = [
       "com.github.tchx84.Flatseal"
-      "io.github.everestapi.Olympus"
+      # "io.github.everestapi.Olympus"
     ];
     overrides = {
       global = {
