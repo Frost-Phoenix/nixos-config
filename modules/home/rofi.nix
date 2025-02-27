@@ -21,7 +21,7 @@
       modi: "run,drun,window";
       lines: 5;
       cycle: false;
-      font: "JetBrainsMono NF Bold 15";
+      font: "Maple Mono Bold 16";
       show-icons: true;
       icon-theme: "Papirus-dark";
       terminal: "ghostty";
@@ -45,8 +45,8 @@
     }
 
     window {
-      height: 600px;
-      width: 900px;
+      height: 530px;
+      width: 400px;
       border: 2px;
       border-color: @border-col;
       background-color: @bg-col;
@@ -88,7 +88,7 @@
       border: 0px 0px 0px;
       padding: 6px 0px 0px;
       margin: 10px 0px 0px 6px;
-      columns: 3;
+      columns: 1;
       background-color: @bg-col;
       cycle: true;
     }
