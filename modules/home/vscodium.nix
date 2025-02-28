@@ -61,7 +61,7 @@ in
         "workbench.editor.limit.enabled" = true;
         "workbench.editor.limit.value" = 10;
         "workbench.editor.limit.perEditorGroup" = true;
-        "workbench.editor.showTabs" = "single";
+        "workbench.editor.showTabs" = "none";
         "files.autoSave" = "onWindowChange";
         "explorer.openEditors.visible" = 0;
         "breadcrumbs.enabled" = false;
