@@ -193,8 +193,8 @@
         "$mainMod, k, alterzorder, top"
         "$mainMod, l, alterzorder, top"
 
-        "ALT, up, exec, hyprctl dispatch focuswindow floating"
-        "ALT, down, exec, hyprctl dispatch focuswindow tiled"
+        "CTRL ALT, up, exec, hyprctl dispatch focuswindow floating"
+        "CTRL ALT, down, exec, hyprctl dispatch focuswindow tiled"
 
         # switch workspace
         "$mainMod, 1, workspace, 1"
