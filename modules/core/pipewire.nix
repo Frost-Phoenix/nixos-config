@@ -8,5 +8,6 @@
     pulse.enable = true;
     # lowLatency.enable = true;
   };
+  hardware.alsa.enablePersistence = true;
   environment.systemPackages = with pkgs; [ pulseaudioFull ];
 }
