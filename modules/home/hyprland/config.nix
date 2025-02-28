@@ -184,6 +184,9 @@
         "$mainMod, k, movefocus, u"
         "$mainMod, l, movefocus, r"
 
+        "ALT, up, exec, hyprctl dispatch focuswindow floating"
+        "ALT, down, exec, hyprctl dispatch focuswindow tiled"
+
         # switch workspace
         "$mainMod, 1, workspace, 1"
         "$mainMod, 2, workspace, 2"
