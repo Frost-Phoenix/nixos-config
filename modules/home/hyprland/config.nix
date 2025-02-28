@@ -175,14 +175,23 @@
         "$mainMod SHIFT, Print, exec, screenshot --swappy"
 
         # switch focus
-        "$mainMod, left, movefocus, l"
+        "$mainMod, left,  movefocus, l"
         "$mainMod, right, movefocus, r"
-        "$mainMod, up, movefocus, u"
-        "$mainMod, down, movefocus, d"
+        "$mainMod, up,    movefocus, u"
+        "$mainMod, down,  movefocus, d"
         "$mainMod, h, movefocus, l"
         "$mainMod, j, movefocus, d"
         "$mainMod, k, movefocus, u"
         "$mainMod, l, movefocus, r"
+
+        "$mainMod, left,  alterzorder, top"
+        "$mainMod, right, alterzorder, top"
+        "$mainMod, up,    alterzorder, top"
+        "$mainMod, down,  alterzorder, top"
+        "$mainMod, h, alterzorder, top"
+        "$mainMod, j, alterzorder, top"
+        "$mainMod, k, alterzorder, top"
+        "$mainMod, l, alterzorder, top"
 
         "ALT, up, exec, hyprctl dispatch focuswindow floating"
         "ALT, down, exec, hyprctl dispatch focuswindow tiled"
