@@ -131,6 +131,10 @@
         ];
       };
 
+      binds = {
+        movefocus_cycles_fullscreen = true;
+      };
+
       bind = [
         # show keybinds list
         "$mainMod, F1, exec, show-keybinds"
