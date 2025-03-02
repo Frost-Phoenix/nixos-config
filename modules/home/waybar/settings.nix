@@ -118,6 +118,7 @@ in
       };
       scroll-step = 2;
       on-click = "pamixer -t";
+      on-click-right= "pavucontrol";
     };
     battery = {
       format = "<span foreground='${yellow}'>{icon}</span> {capacity}%";
