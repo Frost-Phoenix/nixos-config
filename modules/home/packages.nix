@@ -72,6 +72,7 @@ in
     filezilla
     gimp
     gnome-disk-utility
+    ldtk                              # 2D level editor
     libreoffice
     nix-prefetch-github
     obs-studio
