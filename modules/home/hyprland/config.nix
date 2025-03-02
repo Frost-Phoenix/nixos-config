@@ -332,7 +332,7 @@
         "size 850 500,class:^(zenity)$"
         "size 725 330,class:^(SoundWireServer)$"
         "float,class:^(org.gnome.FileRoller)$"
-        "float,class:^(pavucontrol)$"
+        "float,class:^(org.pulseaudio.pavucontrol)$"
         "float,class:^(SoundWireServer)$"
         "float,class:^(.sameboy-wrapped)$"
         "float,class:^(file_progress)$"
