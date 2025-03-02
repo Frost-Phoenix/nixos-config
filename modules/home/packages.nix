@@ -73,6 +73,7 @@ in
     gimp
     gnome-disk-utility
     ldtk                              # 2D level editor
+    tiled                             # tile map editor
     libreoffice
     nix-prefetch-github
     obs-studio
