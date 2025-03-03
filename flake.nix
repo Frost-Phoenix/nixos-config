@@ -12,7 +12,7 @@
 
     nix-gaming.url = "github:fufexan/nix-gaming";
 
-    hyprland.url = "github:hyprwm/hyprland/nix-module";
+    hyprland.url = "github:hyprwm/Hyprland";
 
     home-manager = {
       url = "github:nix-community/home-manager";
