@@ -95,7 +95,7 @@ in
 
     # Zig
     inputs.zig.packages.${system}.master
-    zls
+    inputs.zls.packages.${system}.default
 
     # Python
     python3

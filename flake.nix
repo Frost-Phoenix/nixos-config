@@ -40,6 +40,7 @@
     };
 
     zig.url = "github:mitchellh/zig-overlay";
+    zls.url = "github:zigtools/zls";
 
     nvf.url = "github:notashelf/nvf";
   };
