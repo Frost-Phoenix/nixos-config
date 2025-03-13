@@ -45,7 +45,7 @@ in
     shfmt                             # bash formatter
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
-    treefmt2                          # project formatter
+    treefmt                           # project formatter
     tldr
     todo                              # cli todo list
     toipe                             # typing test in the terminal
