@@ -26,5 +26,6 @@
     SDL_VIDEODRIVER = "wayland";
     CLUTTER_BACKEND = "wayland";
     GTK_THEME = "Colloid-Green-Dark-Gruvbox";
+    GRIMBLAST_HIDE_CURSOR = 0;
   };
 }
