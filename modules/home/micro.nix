@@ -11,6 +11,9 @@
       "*.ml" = {
         "tabsize" = 2;
       };
+      "*.asm" = {
+        "tabsize" = 2;
+      };
       "makefile" = {
         "tabstospaces" = false;
       };
