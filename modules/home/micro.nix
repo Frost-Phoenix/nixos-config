@@ -14,6 +14,9 @@
       "*.asm" = {
         "tabsize" = 2;
       };
+      "ft:asm" = {
+          "commenttype" = "; %s";
+      };
       "makefile" = {
         "tabstospaces" = false;
       };
