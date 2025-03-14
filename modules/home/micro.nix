@@ -15,7 +15,7 @@
         "tabsize" = 2;
       };
       "ft:asm" = {
-          "commenttype" = "; %s";
+        "commenttype" = "; %s";
       };
       "makefile" = {
         "tabstospaces" = false;
