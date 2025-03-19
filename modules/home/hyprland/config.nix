@@ -286,26 +286,22 @@
 
       # windowrule
       windowrule = [
-        "float,Viewnior"
-        "float,imv"
-        "float,mpv"
-        "tile,Aseprite"
-        "float,audacious"
-        "pin,rofi"
-        "pin,waypaper"
-        "tile, neovide"
-        "idleinhibit focus,mpv"
-        "float,udiskie"
+        "float,class:^(Viewnior)$"
+        "float,class:^(imv)$"
+        "float,class:^(mpv)$"
+        "tile,class:^(Aseprite)$"
+        "float,class:^(Audacious)$"
+        "pin,class:^(rofi)$"
+        "pin,class:^(waypaper)$"
+        # "idleinhibit focus,mpv"
+        # "float,udiskie"
         "float,title:^(Transmission)$"
         "float,title:^(Volume Control)$"
         "float,title:^(Firefox — Sharing Indicator)$"
         "move 0 0,title:^(Firefox — Sharing Indicator)$"
         "size 700 450,title:^(Volume Control)$"
         "move 40 55%,title:^(Volume Control)$"
-      ];
 
-      # windowrulev2
-      windowrulev2 = [
         "float, title:^(Picture-in-Picture)$"
         "opacity 1.0 override 1.0 override, title:^(Picture-in-Picture)$"
         "pin, title:^(Picture-in-Picture)$"
@@ -370,6 +366,10 @@
         "noshadow,class:^()$,title:^()$"
         "noblur,class:^()$,title:^()$"
       ];
+
+#       # windowrulev2
+#       windowrulev2 = [
+#       ];
 
       # No gaps when only
       workspace = [
