@@ -95,8 +95,8 @@ in
     gnumake
 
     # Zig
-    inputs.zig.packages.${system}.master
-    zls
+    # inputs.zig.packages.${system}.master
+    # zls
 
     # Python
     python3
