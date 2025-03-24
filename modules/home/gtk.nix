@@ -15,7 +15,7 @@ in
     twemoji-color-font
     noto-fonts-emoji
     fantasque-sans-mono
-    maple-mono
+    maple-mono.truetype-autohint
     # monolisa
     # monolisa-nerd
   ];
