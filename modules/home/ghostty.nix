@@ -14,12 +14,11 @@ in
     # Font
     font-family = "Maple Mono"
     font-size = ${if (host == "laptop") then "16" else "17"}
-    font-thicken = true
-    font-feature = ss01
-    font-feature = ss04
+    font-feature = calt
+    font-feature = ss03
 
     bold-is-bright = false
-    adjust-box-thickness = 1
+    selection-invert-fg-bg = true
 
     # Theme
     theme = "gruvbox"
@@ -35,8 +34,8 @@ in
     mouse-hide-while-typing = true
 
     window-theme = ghostty
-    window-padding-x = 4
-    window-padding-y = 6
+    # window-padding-x = 4
+    # window-padding-y = 6
     window-padding-balance = true
     window-padding-color = background
     window-inherit-working-directory = true
