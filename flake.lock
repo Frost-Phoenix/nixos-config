@@ -1312,15 +1312,14 @@
     },
     "zen-browser": {
       "inputs": {
-        "home-manager": "home-manager_2",
         "nixpkgs": "nixpkgs_9"
       },
       "locked": {
-        "lastModified": 1743849740,
-        "narHash": "sha256-ggVct8jrTB8OZBtPxH++PZDBhOU1MJHdpzBDhs5PxtQ=",
+        "lastModified": 1743216975,
+        "narHash": "sha256-29xgm8F3DCcTNrQZ9V3Pwj6BkjalkKvGyjd+sF9/+3k=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "41455486298ef224e4bae6f551d3508b94d36456",
+        "rev": "165ee672e6b17a8bcc0a3fb51fab3f79715cc1f3",
         "type": "github"
       },
       "original": {
