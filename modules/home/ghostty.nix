@@ -8,7 +8,7 @@ let
   ghostty = inputs.ghostty.packages.x86_64-linux.default;
 in
 {
-  home.packages = (with pkgs; [ ghostty ]);
+  home.packages = [ ghostty ];
 
   xdg.configFile."ghostty/config".text = ''
     # Font
@@ -61,14 +61,15 @@ in
     background = #1d2021
     foreground = #fbf1c7
 
-    palette = 0=#3c3836
+    palette = 0=#32302f
     palette = 1=#cc241d
     palette = 2=#98971a
     palette = 3=#d79921
     palette = 4=#458588
     palette = 5=#b16286
     palette = 6=#689d6a
-    palette = 7=#a89984
+    palette = 7=#ebdbb2
+
     palette = 8=#928374
     palette = 9=#fb4934
     palette = 10=#b8bb26
