@@ -92,6 +92,7 @@ in
     # C / C++
     gcc
     gdb
+    cmake
     gnumake
 
     # Zig
