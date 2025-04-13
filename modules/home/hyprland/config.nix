@@ -367,10 +367,6 @@
         "noblur,class:^()$,title:^()$"
       ];
 
-#       # windowrulev2
-#       windowrulev2 = [
-#       ];
-
       # No gaps when only
       workspace = [
         "w[t1], gapsout:0, gapsin:0"
