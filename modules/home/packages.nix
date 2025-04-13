@@ -94,6 +94,7 @@ in
     gdb
     cmake
     gnumake
+    llvmPackages_20.clang-tools
 
     # Zig
     # inputs.zig.packages.${system}.master
