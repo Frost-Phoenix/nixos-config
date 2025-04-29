@@ -7,7 +7,7 @@
 }:
 {
   programs.zsh = {
-    initExtra = ''
+    initContent = ''
       # Use emacs key bindings
       bindkey -e
 
