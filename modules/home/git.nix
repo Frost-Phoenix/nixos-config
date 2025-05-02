@@ -11,6 +11,12 @@
       credential.helper = "store";
       merge.conflictstyle = "diff3";
       diff.colorMoved = "default";
+      pull.ff = "only";
+      color.ui = true;
+      url = {
+        "https://github.com/frost-phoenix/".insteadOf = "fp:";
+        "https://github.com/".insteadOf = "gh:";
+      };
     };
 
     delta = {
