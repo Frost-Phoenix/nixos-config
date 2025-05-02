@@ -17,6 +17,7 @@
         "https://github.com/frost-phoenix/".insteadOf = "fp:";
         "https://github.com/".insteadOf = "gh:";
       };
+      core.excludeFile = "~/.config/git/.gitignore";
     };
 
     delta = {
@@ -31,6 +32,10 @@
   };
 
   home.packages = [ pkgs.gh ]; # pkgs.git-lfs
+
+  xdg.configFile."git/.gitignore".text = ''
+      .vscode
+  '';
 
   programs.zsh.shellAliases = {
     g = "lazygit";
