@@ -28,6 +28,7 @@ in
     jq                                # JSON processor
     killall
     libnotify
+    lowfi
     man-pages                         # extra man pages
     mimeo
     mpv                               # video player
