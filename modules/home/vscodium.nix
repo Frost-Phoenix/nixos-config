@@ -94,7 +94,7 @@ in
         ];
 
         # Zig
-        "zig.initialSetupDone" = true;
+        # "zig.initialSetupDone" = true;
         "zig.checkForUpdate" = false;
         "zig.zls.path" = "zls";
         "zig.path" = "zig";
