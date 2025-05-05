@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 {
   programs.git = {
     enable = true;
@@ -17,7 +17,7 @@
         "https://github.com/frost-phoenix/".insteadOf = "fp:";
         "https://github.com/".insteadOf = "gh:";
       };
-      core.excludeFile = "~/.config/git/.gitignore";
+      core.excludesFile = "/home/${username}/.config/git/.gitignore";
     };
 
     delta = {
