@@ -22,6 +22,7 @@ in
     gtt                               # google translate TUI
     gifsicle                          # gif utility
     gtrash                            # rm replacement, put deleted files in system trash
+    hevi                              # hex viewer
     hexdump
     htop
     imv                               # image viewer
