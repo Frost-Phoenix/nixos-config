@@ -14,6 +14,7 @@ in
     caligula                          # User-friendly, lightweight TUI for disk imaging
     dconf-editor
     docfd                             # TUI multiline fuzzy document finder
+    dysk                              # disk information
     eza                               # ls replacement
     entr                              # perform action when file change
     fd                                # find replacement
