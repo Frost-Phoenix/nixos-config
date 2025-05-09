@@ -27,6 +27,7 @@
     ./retroarch.nix  
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
+    ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
     ./starship.nix                    # shell prompt
     ./swaylock.nix                    # lock screen
