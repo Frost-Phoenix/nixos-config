@@ -1,10 +1,4 @@
-{
-  hostname,
-  config,
-  pkgs,
-  host,
-  ...
-}:
+{ ... }:
 {
   programs.zsh = {
     initContent = ''

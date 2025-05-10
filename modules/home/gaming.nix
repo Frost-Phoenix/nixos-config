@@ -1,9 +1,4 @@
-{
-  pkgs,
-  config,
-  inputs,
-  ...
-}:
+{ pkgs, inputs, ... }:
 {
   home.packages = with pkgs; [
     ## Utils

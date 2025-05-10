@@ -1,4 +1,4 @@
-{ pkgs, host, ... }:
+{ host, ... }:
 {
   programs.kitty = {
     enable = true;

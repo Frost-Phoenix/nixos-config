@@ -1,9 +1,4 @@
-{
-  inputs,
-  pkgs,
-  host,
-  ...
-}:
+{ inputs, pkgs, ... }:
 {
   home.packages = (
     with pkgs;
