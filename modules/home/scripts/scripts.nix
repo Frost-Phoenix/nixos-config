@@ -62,7 +62,7 @@ let
   );
 in
 {
-  home.packages = with pkgs; [
+  home.packages = [
     wall-change
     wallpaper-picker
     random-wallpaper

@@ -3,7 +3,6 @@
   programs.yazi = {
     enable = true;
     enableZshIntegration = true;
-    # package = pkgs.yazi-unwrapped;
 
     settings = {
       manager = {

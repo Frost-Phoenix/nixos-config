@@ -1,14 +1,6 @@
-#let pkgs = import <nixpkgs> {}; in
-{
-  stdenv,
-  fetchFromGitHub,
-  pkgs,
-  ...
-}:
+{ stdenv, fetchFromGitHub, ... }:
 
-with pkgs;
-
-stdenv.mkDerivation rec {
+stdenv.mkDerivation {
   pname = "2048";
   version = "1.0";
 

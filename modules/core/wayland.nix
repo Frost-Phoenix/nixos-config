@@ -6,6 +6,7 @@
     portalPackage =
       inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland;
   };
+
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
