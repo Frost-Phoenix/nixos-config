@@ -1061,7 +1061,6 @@
         "nixpkgs": "nixpkgs_6",
         "nur": "nur",
         "nvf": "nvf",
-        "spicetify-nix": "spicetify-nix",
         "yazi-plugins": "yazi-plugins",
         "zen-browser": "zen-browser",
         "zig": "zig_2"
@@ -1103,27 +1102,6 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "spicetify-nix": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": "systems_6"
-      },
-      "locked": {
-        "lastModified": 1746738008,
-        "narHash": "sha256-bIMysaVhNyjuFgt8QpnGZv0T4YMao26Vz5R/xfYAJO0=",
-        "owner": "gerg-l",
-        "repo": "spicetify-nix",
-        "rev": "a43fae27f33f8d3e793a6ca2946190cb24a00b03",
-        "type": "github"
-      },
-      "original": {
-        "owner": "gerg-l",
-        "repo": "spicetify-nix",
         "type": "github"
       }
     },
