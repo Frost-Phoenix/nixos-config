@@ -3,10 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nur.url = "github:nix-community/NUR";
-
-    nix-gaming.url = "github:fufexan/nix-gaming";
-
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -35,6 +31,10 @@
         systems.follows = "hyprland/systems";
       };
     };
+
+    nur.url = "github:nix-community/NUR";
+    nix-gaming.url = "github:fufexan/nix-gaming";
+
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -44,10 +44,7 @@
       flake = false;
     };
 
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
-
+    ghostty.url = "github:ghostty-org/ghostty";
 
     nvf.url = "github:notashelf/nvf";
   };
