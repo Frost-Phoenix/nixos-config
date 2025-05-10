@@ -8,8 +8,6 @@
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
 
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
-
     nix-gaming.url = "github:fufexan/nix-gaming";
 
     hyprland.url = "github:hyprwm/Hyprland";
@@ -34,7 +32,6 @@
       url = "github:ghostty-org/ghostty";
     };
 
-    zig.url = "github:mitchellh/zig-overlay";
 
     nvf.url = "github:notashelf/nvf";
   };
