@@ -50,7 +50,6 @@ in
     tdf                               # cli pdf viewer
     treefmt                           # project formatter
     tldr
-    todo                              # cli todo list
     toipe                             # typing test in the terminal
     ttyper                            # cli typing test
     unzip
@@ -73,7 +72,6 @@ in
     ## GUI Apps
     audacity
     bleachbit                         # cache cleaner
-    filezilla
     gimp
     gnome-disk-utility
     ldtk                              # 2D level editor
@@ -86,7 +84,6 @@ in
     gnome-calculator                  # calculator
     mission-center                    # GUI resources monitor
     soundwireserver
-    thunderbird
     vlc
     winetricks
     wineWowPackages.wayland
