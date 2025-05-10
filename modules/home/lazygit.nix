@@ -1,9 +1,10 @@
-{ inputs, pkgs, ... }:
+{ ... }:
 {
-  home.packages = (with pkgs; [ lazygit ]);
+  programs.lazygit = {
+    enable = true;
 
-  xdg.configFile."lazygit/config.yml".text = ''
-    gui:
-        border: single
-  '';
+    settings = {
+      gui.border = "single";
+    };
+  };
 }
