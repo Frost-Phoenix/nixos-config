@@ -13,9 +13,9 @@ let
 
   mkScript = name: {
     name = name;
-    value = pkgs.writeShellScriptBin (builtins.replaceStrings [ ".sh" ] [ "" ]
-      name
-    ) (builtins.readFile (scriptDir + "/${name}"));
+    value = pkgs.writeScriptBin (builtins.replaceStrings [ ".sh" ] [ "" ] name) (
+      builtins.readFile (scriptDir + "/${name}")
+    );
   };
 
   scriptsSet = builtins.listToAttrs (map mkScript shellScripts);
