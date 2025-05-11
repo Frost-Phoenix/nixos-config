@@ -47,6 +47,8 @@
     ghostty.url = "github:ghostty-org/ghostty";
 
     nvf.url = "github:notashelf/nvf";
+
+    zig-sweeper.url = "github:frost-phoenix/zig-sweeper";
   };
 
   outputs =

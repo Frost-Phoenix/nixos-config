@@ -28,5 +28,8 @@
     snes9x
     # cemu
     # dolphin-emu
+
+    ## Personal projects
+    inputs.zig-sweeper.packages.${pkgs.system}.default
   ];
 }
