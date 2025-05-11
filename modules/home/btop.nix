@@ -11,5 +11,5 @@
     };
   };
 
-  home.packages = (with pkgs; [ nvtopPackages.intel ]);
+  home.packages = with pkgs; [ nvtopPackages.intel ];
 }

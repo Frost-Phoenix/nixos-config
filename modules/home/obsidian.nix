@@ -1,4 +1,4 @@
 { pkgs, ... }:
 {
-  home.packages = (with pkgs; [ obsidian ]);
+  home.packages = with pkgs; [ obsidian ];
 }
