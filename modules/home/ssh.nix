@@ -3,7 +3,7 @@
   programs.ssh = {
     enable = true;
 
-    addKeysToAgent = "yes";
+    addKeysToAgent = "1h";
 
     controlMaster = "auto";
     controlPath = "~/.ssh/control-%r@%h:%p";
