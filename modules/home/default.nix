@@ -29,7 +29,6 @@
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
     ./ssh.nix                         # ssh config
-    ./starship.nix                    # shell prompt
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
     ./swaync/swaync.nix               # notification deamon
