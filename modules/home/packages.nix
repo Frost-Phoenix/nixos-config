@@ -93,6 +93,7 @@ in
     # C / C++
     gcc
     gdb
+    gef
     cmake
     gnumake
     llvmPackages_20.clang-tools
