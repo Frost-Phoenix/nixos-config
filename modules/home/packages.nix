@@ -46,6 +46,7 @@ in
     programmer-calculator
     ripgrep                           # grep replacement
     shfmt                             # bash formatter
+    smassh                            # typing test in the terminal
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
     treefmt                           # project formatter
