@@ -159,7 +159,6 @@
         "$mainMod, T, exec, toggle-oppacity"
         "$mainMod, E, exec, nemo"
         "ALT, E, exec, hyprctl dispatch exec '[float; size 1111 700] nemo'"
-        "$mainMod SHIFT, E, exec, hyprctl dispatch exec '[float; size 1111 700] ghostty -e yazi'"
         "$mainMod SHIFT, B, exec, toggle-waybar"
         "$mainMod, C ,exec, hyprpicker -a"
         "$mainMod, W,exec, wallpaper-picker"

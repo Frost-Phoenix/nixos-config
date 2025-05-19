@@ -1157,7 +1157,6 @@
         "nixpkgs": "nixpkgs_3",
         "nur": "nur",
         "nvf": "nvf",
-        "yazi-plugins": "yazi-plugins",
         "zen-browser": "zen-browser",
         "zig-sweeper": "zig-sweeper"
       }
@@ -1396,22 +1395,6 @@
       "original": {
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
-        "type": "github"
-      }
-    },
-    "yazi-plugins": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1746940873,
-        "narHash": "sha256-v/C+ZBrF1ghDt1SXpZcDELmHMVAqfr44iWxzUWynyRk=",
-        "owner": "yazi-rs",
-        "repo": "plugins",
-        "rev": "55bf6996ada3df4cbad331ce3be0c1090769fc7c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yazi-rs",
-        "repo": "plugins",
         "type": "github"
       }
     },
