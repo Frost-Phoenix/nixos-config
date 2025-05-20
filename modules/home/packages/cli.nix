@@ -1,24 +1,17 @@
-{ inputs, pkgs, ... }: 
-let 
-  _2048 = pkgs.callPackage ../../pkgs/2048/default.nix {}; 
-in
+{ pkgs, ... }:
 {
-  home.packages = (with pkgs; [
-    _2048
-
-    ## CLI utility
+  home.packages = with pkgs; [
     ani-cli
     aoc-cli                           # Advent of Code command-line tool
     binsider
     bitwise                           # cli tool for bit / hex manipulation
     caligula                          # User-friendly, lightweight TUI for disk imaging
-    dconf-editor
     dysk                              # disk information
     eza                               # ls replacement
     entr                              # perform action when file change
     fd                                # find replacement
     ffmpeg
-    file                              # Show file information 
+    file                              # Show file information
     gtt                               # google translate TUI
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
@@ -34,8 +27,6 @@ in
     mpv                               # video player
     ncdu                              # disk space
     nitch                             # systhem fetch util
-    nixd                              # nix lsp
-    nixfmt-rfc-style                  # nix formatter
     openssl
     onefetch                          # fetch utility for git repo
     pamixer                           # pulseaudio command line mixer
@@ -52,7 +43,6 @@ in
     toipe                             # typing test in the terminal
     ttyper                            # cli typing test
     unzip
-    valgrind                          # c memory analyzer
     wavemon                           # monitoring for wireless network devices
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     wget
@@ -61,41 +51,13 @@ in
     xdg-utils
     xxd
 
-    ## CLI 
+    winetricks
+    wineWowPackages.wayland
+
     cbonsai                           # terminal screensaver
     cmatrix
     pipes                             # terminal screensaver
     sl
     tty-clock                         # cli clock
-
-    ## GUI Apps
-    audacity
-    gimp
-    gnome-disk-utility
-    ldtk                              # 2D level editor
-    tiled                             # tile map editor
-    libreoffice
-    obs-studio
-    pavucontrol                       # pulseaudio volume controle (GUI)
-    pitivi                            # video editing
-    gnome-calculator                  # calculator
-    mission-center                    # GUI resources monitor
-    soundwireserver
-    vlc
-    winetricks
-    wineWowPackages.wayland
-    zenity
-
-    # C / C++
-    gcc
-    gdb
-    gef
-    cmake
-    gnumake
-    llvmPackages_20.clang-tools
-
-    # Python
-    python3
-    python312Packages.ipython
-  ]);
+  ];
 }

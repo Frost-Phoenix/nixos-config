@@ -24,7 +24,7 @@
     ./nvim.nix                        # neovim editor
     ./obsidian.nix
     ./p10k/p10k.nix
-    ./packages.nix                    # other packages
+    ./packages                        # other packages
     ./retroarch.nix  
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
