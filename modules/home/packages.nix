@@ -13,7 +13,6 @@ in
     bitwise                           # cli tool for bit / hex manipulation
     caligula                          # User-friendly, lightweight TUI for disk imaging
     dconf-editor
-    docfd                             # TUI multiline fuzzy document finder
     dysk                              # disk information
     eza                               # ls replacement
     entr                              # perform action when file change
@@ -21,7 +20,6 @@ in
     ffmpeg
     file                              # Show file information 
     gtt                               # google translate TUI
-    gifsicle                          # gif utility
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
     hexdump
@@ -72,13 +70,11 @@ in
 
     ## GUI Apps
     audacity
-    bleachbit                         # cache cleaner
     gimp
     gnome-disk-utility
     ldtk                              # 2D level editor
     tiled                             # tile map editor
     libreoffice
-    nix-prefetch-github
     obs-studio
     pavucontrol                       # pulseaudio volume controle (GUI)
     pitivi                            # video editing
