@@ -21,6 +21,7 @@ in
       llvm-vs-code-extensions.vscode-clangd
       # ocamllabs.ocaml-platform
       ziglang.vscode-zig
+      tamasfe.even-better-toml
 
       # Color scheme
       jdinhlife.gruvbox
