@@ -17,6 +17,8 @@
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "swww-daemon &"
 
+        "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+
         "hyprlock"
       ];
 
@@ -140,7 +142,7 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, ghostty"
+        "$mainMod, Return, exec, ghostty --gtk-single-instance=true"
         "ALT, Return, exec, [float; size 1111 700] ghostty"
         "$mainMod SHIFT, Return, exec, [fullscreen] ghostty"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] zen-beta'"
