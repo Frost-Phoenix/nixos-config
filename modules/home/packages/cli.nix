@@ -3,6 +3,8 @@
   home.packages = with pkgs; [
     ani-cli
     aoc-cli                           # Advent of Code command-line tool
+    asciinema
+    asciinema-agg
     binsider
     bitwise                           # cli tool for bit / hex manipulation
     caligula                          # User-friendly, lightweight TUI for disk imaging
