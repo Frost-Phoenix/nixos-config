@@ -7,7 +7,7 @@ let
     text_color = "#FBF1C7";
     background_0 = "#1D2021";
     background_1 = "#282828";
-    border_color = "#928374";
+    border_color = "#A89984";
     red = "#CC241D";
     green = "#98971A";
     yellow = "#FABD2F";
@@ -35,7 +35,7 @@ in
 
     window#waybar {
       background: #282828;
-      border-top: 1px solid #928374;
+      border-top: 1px solid ${border_color};
     }
 
     tooltip {
