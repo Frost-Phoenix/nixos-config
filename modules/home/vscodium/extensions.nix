@@ -22,6 +22,7 @@ in
       # ocamllabs.ocaml-platform
       ziglang.vscode-zig
       tamasfe.even-better-toml
+      golang.go
 
       # Color scheme
       jdinhlife.gruvbox
