@@ -21,9 +21,11 @@ in
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "swww-daemon &"
 
-
         "hyprlock"
+
         "${terminal} --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+        "[workspace 1 silent] ${browser}"
+        "[workspace 2 silent] ${terminal}"
       ];
 
       input = {
