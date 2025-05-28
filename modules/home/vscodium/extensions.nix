@@ -14,17 +14,16 @@ in
 {
   programs.vscode.profiles.default = {
     extensions = with pkgs.vscode-extensions; [
-      # Languages
+      ## Languages
       jnoortheen.nix-ide
       arrterian.nix-env-selector
       # ms-python.python
       llvm-vs-code-extensions.vscode-clangd
-      # ocamllabs.ocaml-platform
       ziglang.vscode-zig
       tamasfe.even-better-toml
       golang.go
 
-      # Color scheme
+      ## Color scheme
       jdinhlife.gruvbox
       jonathanharty.gruvbox-material-icon-theme
     ];
