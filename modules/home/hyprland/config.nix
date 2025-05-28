@@ -1,4 +1,8 @@
 { ... }:
+let
+  browser = "zen-beta";
+  terminal = "ghostty";
+in
 {
   wayland.windowManager.hyprland = {
     settings = {
@@ -17,9 +21,9 @@
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "swww-daemon &"
 
-        "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
 
         "hyprlock"
+        "${terminal} --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
       ];
 
       input = {
@@ -142,10 +146,10 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, ghostty --gtk-single-instance=true"
-        "ALT, Return, exec, [float; size 1111 700] ghostty"
-        "$mainMod SHIFT, Return, exec, [fullscreen] ghostty"
-        "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] zen-beta'"
+        "$mainMod, Return, exec, ${terminal} --gtk-single-instance=true"
+        "ALT, Return, exec, [float; size 1111 700] ${terminal}"
+        "$mainMod SHIFT, Return, exec, [fullscreen] ${terminal}"
+        "$mainMod, B, exec, [workspace 1 silent] ${browser}"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
@@ -312,7 +316,7 @@
         "opacity 1.0 override 1.0 override, class:(Unity)"
         "opacity 1.0 override 1.0 override, class:(zen)"
         "opacity 1.0 override 1.0 override, class:(evince)"
-        "workspace 1, class:^(zen)$"
+        "workspace 1, class:^(${browser})$"
         "workspace 3, class:^(evince)$"
         "workspace 4, class:^(Gimp-2.10)$"
         "workspace 4, class:^(Aseprite)$"
