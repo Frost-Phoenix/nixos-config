@@ -17,7 +17,6 @@
     gtt                               # google translate TUI
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
-    hexdump
     htop
     imv                               # image viewer
     jq                                # JSON processor
