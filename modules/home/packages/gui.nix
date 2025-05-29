@@ -1,20 +1,27 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    ## Multimedia
     audacity
-    dconf-editor
     gimp
-    gnome-disk-utility
-    ldtk                              # 2D level editor
-    tiled                             # tile map editor
-    libreoffice
     obs-studio
-    pavucontrol                       # pulseaudio volume controle (GUI)
-    pitivi                            # video editing
-    gnome-calculator                  # calculator
-    mission-center                    # GUI resources monitor
+    pavucontrol
+    pitivi # video editing
     soundwireserver
     vlc
+
+    ## Office
+    libreoffice
+    gnome-calculator
+
+    ## Utility
+    dconf-editor
+    gnome-disk-utility
+    mission-center # GUI resources monitor
     zenity
+
+    ## Level editor
+    ldtk
+    tiled
   ];
 }
