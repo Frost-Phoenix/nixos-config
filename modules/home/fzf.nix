@@ -23,6 +23,7 @@
       "--border='double' --border-label='' --preview-window='border-sharp' --prompt='> '"
       "--marker='>' --pointer='>' --separator='─' --scrollbar='│'"
       "--info='right'"
+      "--bind change:top"
     ];
   };
 }
