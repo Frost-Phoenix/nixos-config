@@ -1,11 +1,15 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    # Nix
-    nixd                              # nix lsp
-    nixfmt-rfc-style                  # nix formatter
+    ## Lsp
+    nixd # nix
 
-    # C / C++
+    ## formating
+    shfmt
+    treefmt
+    nixfmt-rfc-style
+
+    ## C / C++
     gcc
     gdb
     gef
@@ -14,7 +18,7 @@
     valgrind
     llvmPackages_20.clang-tools
 
-    # Python
+    ## Python
     python3
     python312Packages.ipython
   ];
