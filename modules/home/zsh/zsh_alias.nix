@@ -30,11 +30,11 @@
       ns = "nom-shell --run zsh";
       nd = "nom develop --command zsh";
       nb = "nom build";
-      nix-switch = "nh os switch";
-      nix-update = "nh os switch --update";
-      nix-clean = "nh clean all --keep 5";
-      nix-search = "nh search";
-      nix-test = "nh os test";
+      nc = "nh clean all --keep 5";
+      nft = "nh os test";
+      nfs = "nh os switch";
+      nfu = "nh os switch --update";
+      # nix-search = "nh search";
 
       # python
       piv = "python -m venv .venv";
