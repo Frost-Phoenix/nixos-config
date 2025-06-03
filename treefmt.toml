@@ -11,7 +11,7 @@ excludes = [
     "*.css",
     "*.json",
     "*.zsh",
-    "*/packages.nix",
+    "*/packages/*",
     "*/home/default.nix",
     "treefmt.toml",
 ]
