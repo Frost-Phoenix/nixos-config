@@ -5,6 +5,7 @@
     duf                               # disk information
     eza                               # ls replacement
     fd                                # find replacement
+    gping                             # ping with a graph
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
     ncdu                              # disk space
