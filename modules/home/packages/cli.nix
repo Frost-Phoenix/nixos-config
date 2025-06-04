@@ -34,6 +34,7 @@
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
     yt-dlp-light
+    tokei                             # project line counter
     woomer
     xxd
 
