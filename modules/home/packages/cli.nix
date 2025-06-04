@@ -9,6 +9,7 @@
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
     ncdu                              # disk space
+    hexyl                             # hex viewer
     man-pages                         # extra man pages
     ripgrep                           # grep replacement
     tldr
