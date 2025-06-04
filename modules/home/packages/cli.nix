@@ -53,6 +53,7 @@
     countryfetch
     cowsay
     figlet
+    fortune
     pipes
     sl
     tty-clock
