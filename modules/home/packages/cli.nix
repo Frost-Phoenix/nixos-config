@@ -55,6 +55,7 @@
     figlet
     fortune
     lavat
+    lolcat
     pipes
     sl
     tty-clock
