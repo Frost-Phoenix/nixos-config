@@ -50,6 +50,7 @@
     asciiquarium-transparent
     cbonsai
     cmatrix
+    countryfetch
     pipes
     sl
     tty-clock
