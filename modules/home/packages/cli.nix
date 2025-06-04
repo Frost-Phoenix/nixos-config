@@ -32,6 +32,7 @@
     yt-dlp-light
 
     ## TUI
+    epy                               # ebook reader
     gtt                               # google translate TUI
     smassh                            # typing test in the terminal
     toipe                             # typing test in the terminal
