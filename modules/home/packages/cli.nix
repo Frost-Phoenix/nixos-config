@@ -47,6 +47,7 @@
     wavemon                           # monitoring for wireless network devices
 
     ## Fun
+    asciiquarium-transparent
     cbonsai
     cmatrix
     pipes
