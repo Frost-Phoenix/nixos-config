@@ -54,6 +54,7 @@
     cowsay
     figlet
     fortune
+    lavat
     pipes
     sl
     tty-clock
