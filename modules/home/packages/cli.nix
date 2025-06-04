@@ -29,6 +29,7 @@
     broot                             # tree files view
     caligula                          # User-friendly, lightweight TUI for disk imaging
     mimeo
+    hyperfine                         # benchmarking tool
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
     yt-dlp-light
