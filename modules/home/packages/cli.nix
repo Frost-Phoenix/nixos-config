@@ -2,10 +2,10 @@
 {
   home.packages = with pkgs; [
     ## Better core utils
+    duf                               # disk information
     eza                               # ls replacement
     fd                                # find replacement
     gtrash                            # rm replacement, put deleted files in system trash
-    dysk                              # disk information
     hevi                              # hex viewer
     ncdu                              # disk space
     man-pages                         # extra man pages
