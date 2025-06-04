@@ -8,11 +8,28 @@
     gping                             # ping with a graph
     gtrash                            # rm replacement, put deleted files in system trash
     hevi                              # hex viewer
-    ncdu                              # disk space
     hexyl                             # hex viewer
     man-pages                         # extra man pages
+    ncdu                              # disk space
     ripgrep                           # grep replacement
     tldr
+
+    ## Tools / useful cli
+    aoc-cli                           # Advent of Code command-line tool
+    asciinema
+    asciinema-agg
+    binsider
+    bitwise                           # cli tool for bit / hex manipulation
+    broot                             # tree files view
+    caligula                          # User-friendly, lightweight TUI for disk imaging
+    hyperfine                         # benchmarking tool
+    pastel                            # cli to manipulate colors
+    swappy                            # snapshot editing tool
+    tdf                               # cli pdf viewer
+    tokei                             # project line counter
+    translate-shell                   # cli translator
+    woomer
+    yt-dlp-light
 
     ## TUI
     gtt                               # google translate TUI
@@ -21,31 +38,14 @@
     ttyper                            # cli typing test
     programmer-calculator
 
-    aoc-cli                           # Advent of Code command-line tool
-    asciinema
-    asciinema-agg
-    binsider
-    bitwise                           # cli tool for bit / hex manipulation
-    broot                             # tree files view
-    caligula                          # User-friendly, lightweight TUI for disk imaging
-    mimeo
-    hyperfine                         # benchmarking tool
-    pastel                            # cli to manipulate colors
-    swappy                            # snapshot editing tool
-    tdf                               # cli pdf viewer
-    yt-dlp-light
-    tokei                             # project line counter
-    translate-shell                   # cli translator
-    woomer
-
-    ## Monitoring
+    ## Monitoring / fetch
     htop
     neofetch
     nitch                             # systhem fetch util
     onefetch                          # fetch utility for git repo
     wavemon                           # monitoring for wireless network devices
 
-    ## Fun
+    ## Fun / screensaver
     asciiquarium-transparent
     cbonsai
     cmatrix
@@ -72,6 +72,7 @@
     jq                                # JSON processor
     killall
     libnotify
+    mimeo
     openssl
     pamixer                           # pulseaudio command line mixer
     playerctl                         # controller for media players
