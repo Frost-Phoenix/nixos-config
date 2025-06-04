@@ -52,6 +52,7 @@
     cmatrix
     countryfetch
     cowsay
+    figlet
     pipes
     sl
     tty-clock
