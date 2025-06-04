@@ -35,6 +35,7 @@
     tdf                               # cli pdf viewer
     yt-dlp-light
     tokei                             # project line counter
+    translate-shell                   # cli translator
     woomer
     xxd
 
