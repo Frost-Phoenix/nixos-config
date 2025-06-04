@@ -30,6 +30,7 @@
     caligula                          # User-friendly, lightweight TUI for disk imaging
     mimeo
     hyperfine                         # benchmarking tool
+    pastel                            # cli to manipulate colors
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
     yt-dlp-light
