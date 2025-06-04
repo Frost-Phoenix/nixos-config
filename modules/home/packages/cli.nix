@@ -26,6 +26,7 @@
     asciinema-agg
     binsider
     bitwise                           # cli tool for bit / hex manipulation
+    broot                             # tree files view
     caligula                          # User-friendly, lightweight TUI for disk imaging
     mimeo
     swappy                            # snapshot editing tool
