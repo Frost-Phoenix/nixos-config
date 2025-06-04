@@ -37,7 +37,6 @@
     tokei                             # project line counter
     translate-shell                   # cli translator
     woomer
-    xxd
 
     ## Monitoring
     htop
