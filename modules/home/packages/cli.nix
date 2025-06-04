@@ -51,6 +51,7 @@
     cbonsai
     cmatrix
     countryfetch
+    cowsay
     pipes
     sl
     tty-clock
