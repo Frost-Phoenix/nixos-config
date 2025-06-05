@@ -7,6 +7,7 @@
     obs-studio
     pavucontrol
     soundwireserver
+    video-trimmer
     vlc
 
     ## Office
