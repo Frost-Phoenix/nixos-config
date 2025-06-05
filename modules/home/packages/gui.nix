@@ -6,7 +6,6 @@
     gimp
     obs-studio
     pavucontrol
-    pitivi # video editing
     soundwireserver
     vlc
 
