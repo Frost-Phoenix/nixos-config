@@ -6,11 +6,14 @@ dir_editor = "nemo"
 auto_check_update = false
 
 cd_on_quit = true
+shell_close_on_success = true
 
 default_open_file_preview = true
 show_image_preview = false
-default_directory = "."
+show_panel_footer_info = true
 file_size_use_si = false
+
+default_directory = "."
 
 default_sort_type = 0
 sort_order_reversed = false
