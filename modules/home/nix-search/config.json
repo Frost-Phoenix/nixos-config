@@ -5,6 +5,6 @@
         "nur",
         "nixos"
     ],
-    "update_interval": "24h",
+    "update_interval": "168h",
     "enable_waiting_message": true
 }
