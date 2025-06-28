@@ -7,7 +7,6 @@
     fd                                # find replacement
     gping                             # ping with a graph
     gtrash                            # rm replacement, put deleted files in system trash
-    hevi                              # hex viewer
     hexyl                             # hex viewer
     man-pages                         # extra man pages
     ncdu                              # disk space
