@@ -31,7 +31,7 @@
     yt-dlp-light
 
     ## TUI
-    # epy                               # ebook reader
+    epy                               # ebook reader
     gtt                               # google translate TUI
     programmer-calculator
     smassh                            # typing test in the terminal
