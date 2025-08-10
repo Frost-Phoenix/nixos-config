@@ -5,26 +5,32 @@
     enableZshIntegration = true;
 
     settings = {
-      font-family = [ "Maple Mono" "DejaVu Sans" ];
+      font-family = [
+        "Maple Mono"
+        "DejaVu Sans"
+      ];
       font-size = "${if (host == "laptop") then "16" else "17"}";
-      font-feature = [ "calt" "ss03" ];
-  
+      font-feature = [
+        "calt"
+        "ss03"
+      ];
+
       bold-is-bright = false;
       selection-invert-fg-bg = true;
-  
+
       # Theme
       theme = "gruvbox";
       background-opacity = 0.66;
-  
+
       cursor-style = "bar";
       cursor-style-blink = false;
       adjust-cursor-thickness = 1;
-  
+
       resize-overlay = "never";
       copy-on-select = false;
       confirm-close-surface = false;
       mouse-hide-while-typing = true;
-  
+
       window-theme = "ghostty";
       # window-padding-x = 4;
       # window-padding-y = 6;
@@ -33,17 +39,17 @@
       window-inherit-working-directory = true;
       window-inherit-font-size = true;
       window-decoration = false;
-  
+
       gtk-titlebar = false;
       gtk-single-instance = false;
       gtk-tabs-location = "bottom";
       gtk-wide-tabs = false;
-  
+
       auto-update = "off";
       term = "ghostty";
       clipboard-paste-protection = false;
-  
-      keybind = [ 
+
+      keybind = [
         "shift+end=unbind"
         "shift+home=unbind"
         "ctrl+shift+left=unbind"
@@ -70,7 +76,7 @@
         "5=#b16286"
         "6=#689d6a"
         "7=#ebdbb2"
-        
+
         "8=#928374"
         "9=#fb4934"
         "10=#b8bb26"
