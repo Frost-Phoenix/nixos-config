@@ -32,6 +32,15 @@
       };
     };
 
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs = {
+        hyprland = {
+          follows = "hyprland";
+        };
+      };
+    };
+
     waybar.url = "github:Alexays/Waybar";
 
     nur.url = "github:nix-community/NUR";

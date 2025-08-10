@@ -1,0 +1,4 @@
+{ inputs, ... }:
+{
+  imports = [ ./hyprexpo.nix ];
+}
