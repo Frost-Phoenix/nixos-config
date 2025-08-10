@@ -34,7 +34,6 @@
     epy                               # ebook reader
     gtt                               # google translate TUI
     programmer-calculator
-    smassh                            # typing test in the terminal
     toipe                             # typing test in the terminal
     tomato-c                          # TUI pomodoro timer
     ttyper                            # cli typing test
