@@ -2,7 +2,7 @@
 {
   imports = [
     ./aseprite/aseprite.nix           # pixel art editor
-    ./audacious.nix                   # music player
+    ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
     ./browser.nix                     # firefox based browser
     ./btop.nix                        # resouces monitor 
