@@ -56,6 +56,7 @@
       "zig.path" = "zig";
       "zig.revealOutputChannelOnFormattingError" = false;
       "zig.zls.enableInlayHints" = false;
+      "zig.zls.enableArgumentPlaceholders" = false;
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
