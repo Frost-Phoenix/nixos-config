@@ -32,7 +32,7 @@
     };
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme.override { color = "black"; };
+      package = pkgs.papirus-icon-theme.override { color = "green"; };
     };
     cursorTheme = {
       name = "Bibata-Modern-Ice";
