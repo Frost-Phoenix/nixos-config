@@ -5,7 +5,7 @@ dir_editor = "nemo"
 
 auto_check_update = false
 
-cd_on_quit = true
+cd_on_quit = false
 shell_close_on_success = true
 
 default_open_file_preview = true
@@ -20,6 +20,7 @@ sort_order_reversed = false
 case_sensitive_sort = false
 
 debug = false
+ignore_missing_fields = false
 
 # ========== Style ========== #
 code_previewer = 'bat'
@@ -44,3 +45,4 @@ border_middle_right = '┤'
 
 metadata = false # needs exiftool
 enable_md5_checksum = false
+zoxide_support = true
