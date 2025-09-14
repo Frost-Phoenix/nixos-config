@@ -18,6 +18,7 @@ in
         "wl-paste --watch cliphist store &"
         "waybar &"
         "swaync &"
+        "vicinae server &"
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "swww-daemon &"
 
@@ -156,7 +157,7 @@ in
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, exec, toggle-float"
-        "$mainMod, D, exec, rofi -show drun || pkill rofi"
+        "$mainMod, D, exec, vicinae vicinae://toggle"
         "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
@@ -267,7 +268,7 @@ in
         "$mainMod, mouse_up, workspace, e+1"
 
         # clipboard manager
-        "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy"
+        "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
       ];
 
       # # binds active in lockscreen

@@ -1,0 +1,20 @@
+{
+    "faviconService": "twenty",
+    "font": {
+        "normal": "Maple Mono",
+        "size": 12
+    },
+    "popToRootOnClose": true,
+    "rootSearch": {
+        "searchFiles": true
+    },
+    "theme": {
+        "iconTheme": "Papirus-Dark",
+        "name": "gruvbox-dark-hard.json"
+    },
+    "window": {
+        "csd": true,
+        "opacity": 1,
+        "rounding": 0
+    }
+}
