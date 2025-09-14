@@ -375,6 +375,11 @@ in
         "noblur,class:^()$,title:^()$"
       ];
 
+      layerrule = [
+        "dimaround, vicinae"
+        "dimaround, rofi"
+      ];
+
       # No gaps when only
       workspace = [
         "w[t1], gapsout:0, gapsin:0"
