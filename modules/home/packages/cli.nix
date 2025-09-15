@@ -29,6 +29,7 @@
     translate-shell                   # cli translator
     woomer
     yt-dlp-light
+    vdhcoapp                           # videodownloadhelper companion app
 
     ## TUI
     epy                               # ebook reader
@@ -37,6 +38,7 @@
     toipe                             # typing test in the terminal
     tomato-c                          # TUI pomodoro timer
     ttyper                            # cli typing test
+    regname                            # mass renamer                
 
     ## Monitoring / fetch
     htop
@@ -82,7 +84,7 @@
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     xdg-utils
 
-    winetricks
-    wineWowPackages.waylandFull
+    # winetricks
+    # wineWowPackages.waylandFull
   ];
 }
