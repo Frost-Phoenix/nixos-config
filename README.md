@@ -1,7 +1,7 @@
 <h1 align="center">
    <img src="./.github/assets/logo/nixos-logo.png  " width="100px" /> 
    <br>
-      Frost-Phoenix's Flakes 
+      Nikon's Flakes 
    <br>
       <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
 
