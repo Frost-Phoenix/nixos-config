@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ./aseprite/aseprite.nix           # pixel art editor
+    # ./aseprite/aseprite.nix           # pixel art editor
     ./audacious/audacious.nix         # music player
     ./bat.nix                         # better cat command
     ./browser.nix                     # firefox based browser
@@ -11,7 +11,7 @@
     ./fastfetch.nix                   # fetch tool
     ./flow.nix                        # terminal text editor
     ./fzf.nix                         # fuzzy finder
-    ./gaming.nix                      # packages related to gaming
+    # ./gaming.nix                      # packages related to gaming
     ./ghostty.nix                     # terminal
     ./git.nix                         # version control
     ./gnome.nix                       # gnome apps
@@ -22,11 +22,11 @@
     ./micro.nix                       # nano replacement
     ./nemo.nix                        # file manager
     ./nix-search/nix-search.nix       # TUI to search nixpkgs
-    ./nvim.nix                        # neovim editor
-    ./obsidian.nix
+    # ./nvim.nix                        # neovim editor
+    # ./obsidian.nix
     ./p10k/p10k.nix
     ./packages                        # other packages
-    ./retroarch.nix  
+    # ./retroarch.nix  
     ./rofi.nix                        # launcher
     ./scripts/scripts.nix             # personal scripts
     ./ssh.nix                         # ssh config
@@ -36,7 +36,7 @@
     ./swaync/swaync.nix               # notification deamon
     # ./viewnior.nix                    # image viewer
     ./vicinae/vicinae.nix             # launcher
-    ./vscodium                        # vscode fork
+    # ./vscodium                        # vscode fork
     ./waybar                          # status bar
     ./waypaper.nix                    # GUI wallpaper picker
     ./xdg-mimes.nix                   # xdg config
