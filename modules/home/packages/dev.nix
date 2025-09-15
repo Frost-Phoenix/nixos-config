@@ -21,5 +21,9 @@
     ## Python
     python3
     python312Packages.ipython
+    
+    ## Editors
+    helix
+    zed-editor
   ];
 }
