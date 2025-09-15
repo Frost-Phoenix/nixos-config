@@ -4,7 +4,7 @@
     enable = true;
 
     userName = "nikon112";
-    userEmail = "mail@pjcornelissen.com";
+    userEmail = "40752251+nikon112@users.noreply.github.com";
 
     extraConfig = {
       init.defaultBranch = "main";
