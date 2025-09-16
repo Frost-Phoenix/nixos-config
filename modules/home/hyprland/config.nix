@@ -298,7 +298,6 @@ in
         "float,class:^(imv)$"
         "float,class:^(mpv)$"
         "tile,class:^(Aseprite)$"
-        "float,class:^(Audacious)$"
         "pin,class:^(rofi)$"
         "pin,class:^(waypaper)$"
         # "idleinhibit focus,mpv"
