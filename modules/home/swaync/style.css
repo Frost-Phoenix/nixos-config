@@ -467,6 +467,7 @@ scrollbar slider {
 /* Volume widget */
 .widget-volume {
     padding: 8px;
+    margin-bottom: 8px;
     border-radius: 0px;
 }
 
@@ -495,6 +496,7 @@ scrollbar slider {
 .widget-backlight {
     padding: 8px;
     border-radius: 0px;
+    margin-top: -8px;
     margin-bottom: 8px;
 }
 
