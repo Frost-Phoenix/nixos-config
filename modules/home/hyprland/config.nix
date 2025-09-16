@@ -378,6 +378,7 @@ in
       layerrule = [
         "dimaround, vicinae"
         "dimaround, rofi"
+        "dimaround, swaync-control-center"
       ];
 
       # No gaps when only
