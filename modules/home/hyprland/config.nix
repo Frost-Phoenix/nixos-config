@@ -152,7 +152,7 @@ in
         "$mainMod, Return, exec, ${terminal} --gtk-single-instance=true"
         "ALT, Return, exec, [float; size 1111 700] ${terminal}"
         "$mainMod SHIFT, Return, exec, [fullscreen] ${terminal}"
-        "$mainMod, B, exec, [workspace 1 silent] ${browser}"
+        "$mainMod, B, exec, [workspace 2 silent] ${browser}"
         "$mainMod, Q, killactive,"
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
@@ -176,6 +176,10 @@ in
         "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 9] missioncenter'"
         "$mainMod, equal, exec, woomer"
         # "$mainMod SHIFT, W, exec, vm-start"
+        # youtube
+        "$mainMod, Y, exec, [workspace 1 silent] brave --profile-directory=Default --app-id=agimnkijcaahngcdmfeangaknmldooml"
+        # crunchyroll
+        "$mainMod, A, exec, [workspace 1 silent] brave --profile-directory=Default --app-id=hjlhbeffadgkonmpnblkfmhckmocohah"
 
         # screenshot
         ",Print, exec, screenshot --copy"
