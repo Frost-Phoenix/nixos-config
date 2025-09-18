@@ -1,0 +1,88 @@
+@theme "theme"
+
+configuration {
+    show-icons: false;
+    font: "Maple Mono Bold 24";
+}
+
+window {
+    /* properties for window widget */
+    width:                       500px;
+    location:                    center;
+    anchor:                      center;
+
+    margin:                      0px;
+    padding:                     0px;
+    
+    border:                      2px solid;
+    border-radius:               0px;
+    border-color:                @border-col;
+    
+    background-color:            @bg-col;
+}
+
+mainbox {
+    enabled:                     true;
+    
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @selected-col;
+    
+    background-color:            inherit;
+
+    children:                    [ "listview" ];
+}
+
+listview {
+    enabled:                     true;
+
+    lines:                       1;
+    columns:                     5;
+    
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     0px;
+    
+    border:                      inherit;
+    border-radius:               inherit;
+    border-color:                inherit;
+    
+    text-color:                  @fg-col;
+    background-color:            transparent;
+}
+
+element {
+    enabled:                     true;
+    
+    spacing:                     0px;
+    padding:                     28px 0px;
+    
+    border:                      inherit;
+    border-radius:               inherit;
+    border-color:                inherit;
+    
+    background-color:            inherit;
+    text-color:                  @fg-col;
+    cursor:                      pointer;
+}
+
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+ 
+    font:                        inherit;
+    text-color:                  inherit;
+ 
+    background-color:            transparent;
+    cursor:                      inherit;
+}
+
+element selected.normal {
+    background-color:            @selected-col;
+}
