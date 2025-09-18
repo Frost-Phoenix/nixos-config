@@ -1,7 +1,7 @@
 <h1 align="center">
    <img src="./.github/assets/logo/nixos-logo.png  " width="100px" /> 
    <br>
-      Nikon's Flakes Adopted From Frost-Phoenix
+      Frost-Phoenix's Flakes Adapted by nikon112
    <br>
       <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
 
