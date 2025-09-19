@@ -4,6 +4,7 @@
     ## Multimedia
     audacity
     gimp
+    media-downloader
     obs-studio
     pavucontrol
     soundwireserver
