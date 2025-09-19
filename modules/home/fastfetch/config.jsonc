@@ -88,6 +88,14 @@
       "keyColor": "green"
     },
     {
+      "type": "board",
+      "key": "󰌢 System",
+      "keyColor": "green",
+      "condition": {
+          "succeeded": false
+      }
+    },
+    {
       "type": "display",
       "key": "  ├─󰹑",
       "keyColor": "green",
