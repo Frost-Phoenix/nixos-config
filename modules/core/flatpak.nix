@@ -3,7 +3,7 @@
   imports = [ inputs.nix-flatpak.nixosModules.nix-flatpak ];
 
   services.flatpak = {
-    enable = true;
+    enable = false;
     packages = [
       "com.github.tchx84.Flatseal"
     ];
