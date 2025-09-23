@@ -38,6 +38,7 @@
       gtk-single-instance = false;
       gtk-tabs-location = "bottom";
       gtk-wide-tabs = false;
+      gtk-custom-css = "tabs.css";
 
       auto-update = "off";
 
@@ -83,4 +84,34 @@
       ];
     };
   };
+
+  xdg.configFile."ghostty/tabs.css".text = ''
+    headerbar {
+      min-height: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    tabbar tabbox {
+      margin: 0;
+      padding: 0;
+      min-height: 30px;
+      background-color: #1d2021;
+    }
+
+    tabbar tabbox tab {
+      margin: 0;
+      padding: 0;
+      color: #fbf1c7;
+    }
+
+    tabbar tabbox tab:selected {
+      background-color: #282828;
+      color: #fbf1c7;
+    }
+
+    tabbar tabbox tab label {
+      font-size: 18px;
+    }
+  '';
 }
