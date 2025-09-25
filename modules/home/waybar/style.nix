@@ -34,7 +34,7 @@ in
     }
 
     window#waybar {
-      background: #282828;
+      background: ${background_1};
       border-top: 1px solid ${border_color};
     }
 
