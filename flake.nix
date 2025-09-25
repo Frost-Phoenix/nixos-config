@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nur.url = "github:nix-community/NUR";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -10,38 +11,16 @@
     };
 
     hyprland.url = "github:hyprwm/Hyprland";
+    hyprlock.url = "github:hyprwm/hyprlock";
+    hyprpicker.url = "github:hyprwm/hyprpicker";
+    hypr-contrib.url = "github:hyprwm/contrib";
 
-    hypr-contrib = {
-      url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-
-    hyprpicker = {
-      url = "github:hyprwm/hyprpicker";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-
-    hyprlock = {
-      url = "github:hyprwm/hyprlock";
-      inputs = {
-        hyprgraphics.follows = "hyprland/hyprgraphics";
-        hyprlang.follows = "hyprland/hyprlang";
-        hyprutils.follows = "hyprland/hyprutils";
-        nixpkgs.follows = "hyprland/nixpkgs";
-        systems.follows = "hyprland/systems";
-      };
-    };
-
-    nur.url = "github:nix-community/NUR";
     nix-gaming.url = "github:fufexan/nix-gaming";
-
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
-
-    vicinae.url = "github:vicinaehq/vicinae";
-
     superfile.url = "github:yorukot/superfile";
+    vicinae.url = "github:vicinaehq/vicinae";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
