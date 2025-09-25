@@ -88,5 +88,5 @@
   };
 
   xdg.configFile."ghostty/styles/tabs.css".source = ./styles/tabs.css;
-  xdg.configFile."ghostty/shaders/cursor_smear.glsl".source = ./shaders/cursor_smear.glsl;
+  xdg.configFile."ghostty/shaders/cursor.glsl".source = ./shaders/cursor.glsl;
 }
