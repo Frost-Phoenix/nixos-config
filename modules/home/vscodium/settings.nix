@@ -58,7 +58,7 @@
       "zig.zls.enableInlayHints" = false;
       "zig.zls.enableArgumentPlaceholders" = false;
       "zig.zls.enableBuildOnSave" = true;
-      "zig.zls.buildOnSaveArgs" = [];
+      "zig.zls.buildOnSaveArgs" = [ ];
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
