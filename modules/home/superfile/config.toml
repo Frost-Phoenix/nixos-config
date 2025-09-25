@@ -9,6 +9,7 @@ cd_on_quit = false
 shell_close_on_success = true
 
 default_open_file_preview = true
+show_select_icons = true
 show_image_preview = true
 show_panel_footer_info = true
 file_size_use_si = false
