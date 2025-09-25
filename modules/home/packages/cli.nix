@@ -35,13 +35,10 @@
     gtt                               # google translate TUI
     programmer-calculator
     toipe                             # typing test in the terminal
-    tomato-c                          # TUI pomodoro timer
     ttyper                            # cli typing test
 
     ## Monitoring / fetch
     htop
-    neofetch
-    nitch                             # systhem fetch util
     onefetch                          # fetch utility for git repo
     wavemon                           # monitoring for wireless network devices
 
@@ -60,7 +57,6 @@
     tty-clock
 
     ## Multimedia
-    ani-cli
     imv
     lowfi
     mpv
