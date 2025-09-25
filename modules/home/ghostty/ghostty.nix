@@ -24,7 +24,7 @@
       selection-clear-on-copy = true;
       mouse-hide-while-typing = true;
 
-      custom-shader = "shaders/cursor_smear.glsl";
+      custom-shader = "shaders/cursor.glsl";
 
       ##### Window #####;
       window-padding-balance = true;
