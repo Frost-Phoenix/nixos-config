@@ -37,6 +37,8 @@
       confirm-close-surface = false;
       app-notifications = "no-clipboard-copy";
 
+      bell-features = "no-attention,no-audio,no-system,no-title,no-border";
+
       gtk-single-instance = false;
       gtk-tabs-location = "bottom";
       gtk-wide-tabs = false;
