@@ -16,7 +16,7 @@
     nethack
 
     ## Celeste
-    olympus
+    # olympus
     # celeste-classic
     # celeste-classic-pm
 
