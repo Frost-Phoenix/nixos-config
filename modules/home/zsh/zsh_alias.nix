@@ -31,9 +31,9 @@
       nd = "nom develop --command zsh";
       nb = "nom build";
       nc = "nh clean all --keep 5";
-      nft = "nh os test";
-      nfs = "nh os switch";
-      nfu = "nh os switch --update";
+      nft = "nh-error-notify nh os test";
+      nfs = "nh-error-notify nh os switch";
+      nfu = "nh-error-notify nh os switch --update";
       # nix-search = "nh search";
 
       # python
