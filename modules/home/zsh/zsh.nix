@@ -17,6 +17,11 @@
         src = pkgs.zsh-powerlevel10k;
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
       }
+      {
+        name = "zsh-autopair";
+        src = "${pkgs.zsh-autopair}/share/zsh/zsh-autopair";
+        file = "autopair.zsh";
+      }
     ];
 
     completionInit = ''
