@@ -2,7 +2,6 @@
 with lib;
 let
   defaultApps = {
-    browser = [ "zen-beta.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];
@@ -48,13 +47,6 @@ let
       "video/x-msvideo"
     ];
     directory = [ "inode/directory" ];
-    browser = [
-      "text/html"
-      "x-scheme-handler/about"
-      "x-scheme-handler/http"
-      "x-scheme-handler/https"
-      "x-scheme-handler/unknown"
-    ];
     office = [
       "application/vnd.oasis.opendocument.text"
       "application/vnd.oasis.opendocument.spreadsheet"
