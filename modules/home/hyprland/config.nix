@@ -18,7 +18,7 @@ in
         "wl-paste --watch cliphist store &"
         "waybar &"
         "swaync &"
-        # "vicinae server &"
+        "vicinae server &"
         "hyprctl setcursor Bibata-Modern-Ice 24 &"
         "swww-daemon &"
 
@@ -157,8 +157,7 @@ in
         "$mainMod, F, fullscreen, 0"
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, exec, toggle-float"
-        "$mainMod, D, exec, rofi -show drun"
-        # "$mainMod, D, exec, vicinae vicinae://toggle"
+        "$mainMod, D, exec, vicinae vicinae://toggle"
         "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
