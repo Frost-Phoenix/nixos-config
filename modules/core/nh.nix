@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:
+{ username, ... }:
 {
   programs.nh = {
     enable = true;
@@ -8,9 +8,4 @@
     };
     flake = "/home/${username}/nixos-config";
   };
-
-  environment.systemPackages = with pkgs; [
-    nix-output-monitor
-    nvd
-  ];
 }
