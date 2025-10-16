@@ -1,11 +1,11 @@
 #! /usr/bin/env bash
 
 command="$@"
-terminal_class="com.mitchellh.ghostty"
+
+command_window_address=$(hyprctl activewindow -j | jq -r '.address')
 
 focus() {
-    parent_pid=$PPID
-    hyprctl dispatch focuswindow "class:$terminal_class" > /dev/null
+    hyprctl dispatch focuswindow "address:$command_window_address" > /dev/null
 }
 
 start_time=$(date +%s)
@@ -15,12 +15,11 @@ exit_status=$?
 
 end_time=$(date +%s)
 duration=$(($end_time - $start_time))
-
 duration_formatted="$((duration / 60))m $(printf "%02d" $((duration % 60)))s"
 
-active_window_class=$(hyprctl activewindow -j | jq -r '.class')
+active_window_address=$(hyprctl activewindow -j | jq -r '.address')
 
-if [ "$active_window_class" != "$terminal_class" ]; then
+if [ "$active_window_address" != "$command_window_address" ]; then
     if [ $exit_status -ne 0 ]; then
         action=$(
             notify-send -u critical \
