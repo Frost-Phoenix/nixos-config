@@ -74,7 +74,7 @@
 
           color = "rgba(235, 219, 178, 1)";
 
-          position = "0, ${if host == "laptop" then "134" else "281"}";
+          position = "0, ${if host == "laptop" then "134" else "284"}";
           halign = "center";
           valign = "bottom";
         }
