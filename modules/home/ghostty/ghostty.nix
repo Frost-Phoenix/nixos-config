@@ -44,6 +44,8 @@
 
       auto-update = "off";
 
+      clipboard-read = "allow";
+      clipboard-write = "allow";
       clipboard-paste-protection = false;
 
       ##### Keybinds #####
