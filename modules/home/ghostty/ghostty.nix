@@ -50,11 +50,26 @@
 
       ##### Keybinds #####
       keybind = [
-        "shift+end=unbind"
-        "shift+home=unbind"
-        "ctrl+shift+left=unbind"
-        "ctrl+shift+right=unbind"
-        "shift+enter=text:\n"
+        "clear"
+
+        "ctrl+shift+a=select_all"
+        "ctrl+shift+c=copy_to_clipboard"
+        "ctrl+shift+v=paste_from_clipboard"
+
+        "ctrl+shift+t=new_tab"
+        "ctrl+shift+w=close_tab:this"
+        "alt+digit_1=goto_tab:1"
+        "alt+digit_2=goto_tab:2"
+        "alt+digit_3=goto_tab:3"
+        "alt+digit_4=goto_tab:4"
+
+        "ctrl+equal=increase_font_size:1"
+        "ctrl++=increase_font_size:1"
+        "ctrl+-=decrease_font_size:1"
+        "ctrl+0=reset_font_size"
+
+        "shift+page_down=scroll_page_down"
+        "shift+page_up=scroll_page_up"
       ];
     };
 
