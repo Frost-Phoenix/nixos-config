@@ -33,7 +33,7 @@ confirm_cmd() {
 
 rofi_confirm() {
     # echo -e "$yes\n$no" | confirm_cmd
-    echo -e "yes"
+    echo -e "$yes"
 }
 
 run_cmd() {
