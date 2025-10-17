@@ -2,8 +2,11 @@
 {
   imports = [
     ./hyprland.nix
+    ./exec-once.nix
     ./monitors.nix
-    ./config.nix
+    ./settings.nix
+    ./binds.nix
+    ./windowrules.nix
     ./hyprlock.nix
     ./variables.nix
   ];
