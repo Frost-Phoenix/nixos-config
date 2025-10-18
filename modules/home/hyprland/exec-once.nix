@@ -14,6 +14,7 @@
     "waybar &"
     "swaync &"
     "vicinae server &"
+    "udiskie --automount --notify --smart-tray &"
     "hyprctl setcursor Bibata-Modern-Ice 24 &"
     "swww-daemon &"
 
