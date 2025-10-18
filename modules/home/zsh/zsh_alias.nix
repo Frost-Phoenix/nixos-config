@@ -20,7 +20,7 @@
       pdf = "tdf";
       open = "xdg-open";
       space = "ncdu";
-      man = "BAT_THEME='default' batman";
+      man = "batman";
 
       l = "eza --icons -a --group-directories-first -1 --no-user --long"; # EZA_ICON_SPACING=2
       tree = "eza --icons --tree --group-directories-first";
