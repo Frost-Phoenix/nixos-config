@@ -13,7 +13,8 @@
       font-size = "${if (host == "laptop") then "16" else "18"}";
       font-feature = [
         "calt"
-        "ss03"
+        "cv66"
+        "ss05"
       ];
 
       ##### Theme #####
