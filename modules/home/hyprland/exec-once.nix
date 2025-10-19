@@ -16,7 +16,8 @@
     "vicinae server &"
     "udiskie --automount --notify --smart-tray &"
     "hyprctl setcursor Bibata-Modern-Ice 24 &"
-    "swww-daemon &"
+    "swww-daemon --no-cache &"
+    "swww img -t none ~/Pictures/wallpapers/wallpaper &"
 
     "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
     "[workspace 1 silent] zen-beta"
