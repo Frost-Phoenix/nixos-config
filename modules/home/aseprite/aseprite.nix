@@ -1,4 +1,4 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ aseprite ];
+  # home.packages = with pkgs; [ aseprite ];
 }

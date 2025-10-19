@@ -21,12 +21,17 @@
     superfile.url = "github:yorukot/superfile";
     vicinae.url = "github:vicinaehq/vicinae";
     zen-browser.url = "github:0xc000022070/zen-browser-flake/beta";
+    
+    spicetify-nix = {    
+    url = "github:gerg-l/spicetify-nix";
+    inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     { nixpkgs, self, ... }@inputs:
     let
-      username = "frostphoenix";
+      username = "robin";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
