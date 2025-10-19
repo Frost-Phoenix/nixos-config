@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./nixpkgs.nix
     ./bootloader.nix
     ./hardware.nix
     ./xserver.nix

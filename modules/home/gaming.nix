@@ -11,6 +11,7 @@
     # prismlauncher
 
     ## Cli games
+    _2048
     _2048-in-terminal
     vitetris
     nethack

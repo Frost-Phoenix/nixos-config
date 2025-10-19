@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   # imports = [ inputs.nix-gaming.nixosModules.default ];
   nix = {
@@ -23,9 +23,6 @@
         "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
       ];
     };
-  };
-  nixpkgs = {
-    overlays = [ inputs.nur.overlays.default ];
   };
 
   environment.systemPackages = with pkgs; [
