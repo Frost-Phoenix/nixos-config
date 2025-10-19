@@ -127,7 +127,7 @@ Utils (EXPAND)
 - ```pdf```   $\rightarrow$ ```tdf```
 - ```open```  $\rightarrow$ ```xdg-open```
 - ```space``` $\rightarrow$ ```ncdu```
-- ```man```   $\rightarrow$ ```BAT_THEME='default' batman```
+- ```man```   $\rightarrow$ ```batman```
 - ```l```     $\rightarrow$ ```eza --icons  -a --group-directories-first -1```
 - ```ll```    $\rightarrow$ ```eza --icons  -a --group-directories-first -1 --no-user --long```
 - ```tree```  $\rightarrow$ ```eza --icons --tree --group-directories-first```
@@ -140,10 +140,12 @@ Nixos (EXPAND)
 
 - ```cdnix```      $\rightarrow$ ```cd ~/nixos-config && codium ~/nixos-config```
 - ```ns```         $\rightarrow$ ```nom-shell --run zsh```
-- ```nix-test```   $\rightarrow$ ```nh os test```
-- ```nix-switch``` $\rightarrow$ ```nh os switch```
-- ```nix-update``` $\rightarrow$ ```nh os switch --update```
-- ```nix-clean```  $\rightarrow$ ```nh clean all --keep 5```
+- ```nd```         $\rightarrow$ ```nom develop --command zsh```
+- ```nb```         $\rightarrow$ ```nom build```
+- ```nft```   $\rightarrow$ ```nh-notify nh os test```
+- ```nfs``` $\rightarrow$ ```nh-notify nh os switch```
+- ```nfu``` $\rightarrow$ ```nh-notify nh os switch --update```
+- ```nc```  $\rightarrow$ ```nh-notify nh clean all --keep 5```
 - ```nix-search``` $\rightarrow$ ```nh search```
 </details>
 
