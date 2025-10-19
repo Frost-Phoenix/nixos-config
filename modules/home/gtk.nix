@@ -9,7 +9,7 @@
     twemoji-color-font
     noto-fonts-emoji
     fantasque-sans-mono
-    maple-mono.truetype-autohint
+    maple-mono-custom
   ];
 
   gtk = {

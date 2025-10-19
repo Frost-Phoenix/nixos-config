@@ -157,6 +157,23 @@
         "type": "github"
       }
     },
+    "maple-mono": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760762423,
+        "narHash": "sha256-I3i7u6/g3CYICiSUuATIJ16zow7Prv1qb0jGDgLcA1Q=",
+        "owner": "subframe7536",
+        "repo": "maple-font",
+        "rev": "abc82deef733d82903ee33c52e3b234ed0b82f64",
+        "type": "github"
+      },
+      "original": {
+        "owner": "subframe7536",
+        "ref": "variable",
+        "repo": "maple-font",
+        "type": "github"
+      }
+    },
     "nix-flatpak": {
       "locked": {
         "lastModified": 1754777568,
@@ -344,6 +361,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "maple-mono": "maple-mono",
         "nix-flatpak": "nix-flatpak",
         "nix-gaming": "nix-gaming",
         "nix-index-database": "nix-index-database",
