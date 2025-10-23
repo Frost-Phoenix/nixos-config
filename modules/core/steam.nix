@@ -3,6 +3,8 @@
   programs = {
     steam = {
       enable = true;
+        
+      platformOptimizations.enable = true;
 
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;

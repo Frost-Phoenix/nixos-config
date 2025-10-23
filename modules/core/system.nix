@@ -1,6 +1,9 @@
 { pkgs, inputs, ... }:
 {
-  # imports = [ inputs.nix-gaming.nixosModules.default ];
+  imports = [ 
+    inputs.nix-gaming.nixosModules.pipewireLowLatency 
+    inputs.nix-gaming.nixosModules.platformOptimizations
+    ];
   nix = {
     settings = {
       auto-optimise-store = true;
