@@ -6,6 +6,8 @@
     gamescope
     winetricks
     inputs.nix-gaming.packages.${pkgs.system}.wine-ge
+    inputs.nix-gaming.packages.${pkgs.system}.pipewireLowLatency
+    inputs.nix-gaming.packages.${pkgs.system}.platformOptimizations
 
     ## Minecraft
     # prismlauncher
