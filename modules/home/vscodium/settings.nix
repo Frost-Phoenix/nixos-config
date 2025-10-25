@@ -30,6 +30,7 @@
       "workbench.editor.limit.perEditorGroup" = true;
       "workbench.editor.showTabs" = "none";
       "files.autoSave" = "onWindowChange";
+      "files.insertFinalNewline" = true;
       "explorer.openEditors.visible" = 0;
       "breadcrumbs.enabled" = false;
       "editor.renderControlCharacters" = false;
