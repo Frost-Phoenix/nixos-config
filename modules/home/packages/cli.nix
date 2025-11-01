@@ -23,6 +23,7 @@
     caligula                          # User-friendly, lightweight TUI for disk imaging
     hyperfine                         # benchmarking tool
     pastel                            # cli to manipulate colors
+    scooter                           # Interactive find and replace in the terminal
     swappy                            # snapshot editing tool
     tdf                               # cli pdf viewer
     tokei                             # project line counter
