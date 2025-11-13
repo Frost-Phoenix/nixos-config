@@ -4,9 +4,7 @@
 
   services.flatpak = {
     enable = false;
-    packages = [
-      "com.github.tchx84.Flatseal"
-    ];
+    packages = [ "com.github.tchx84.Flatseal" ];
     overrides = {
       global = {
         # Force Wayland by default
