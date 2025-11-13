@@ -1,6 +1,7 @@
 { pkgs, inputs, ... }:
 let
-  superfile = inputs.superfile.packages.${pkgs.system}.default;
+  system = pkgs.stdenv.hostPlatform.system;
+  superfile = inputs.superfile.packages.${system}.default;
 in
 {
   home.packages = [

@@ -8,7 +8,8 @@
     let
       value =
         let
-          zen-browser = inputs.zen-browser.packages.${pkgs.system}.beta;
+          system = pkgs.stdenv.hostPlatform.system;
+          zen-browser = inputs.zen-browser.packages.${system}.beta;
         in
         zen-browser.meta.desktopFileName;
 
