@@ -17,5 +17,6 @@
     ./user.nix
     ./wayland.nix
     ./virtualization.nix
+    ./qmk.nix
   ];
 }
