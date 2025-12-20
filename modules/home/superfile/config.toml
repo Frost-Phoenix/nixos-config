@@ -47,3 +47,5 @@ border_middle_right = '┤'
 metadata = false # needs exiftool
 enable_md5_checksum = false
 zoxide_support = true
+
+[open_with]
