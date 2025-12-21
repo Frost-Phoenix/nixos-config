@@ -8,4 +8,6 @@
     fg-col2: #EBDBB2;
     grey: #BDAE93;
     highlight: @green;
+    element-bg: #212323;
+    element-alternate-bg: #242526;
 }
