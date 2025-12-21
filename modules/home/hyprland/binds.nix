@@ -18,7 +18,7 @@
       "$mainMod, F, fullscreen, 0"
       "$mainMod SHIFT, F, fullscreen, 1"
       "$mainMod, Space, exec, toggle-float"
-      "$mainMod, D, exec, rofi -show drun || pkill rofi"
+      "$mainMod, D, exec, toggle-rofi rofi -show drun"
       "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
       "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
       "$mainMod, Escape, exec, swaylock"
@@ -129,7 +129,7 @@
       "$mainMod, mouse_up, workspace, e+1"
 
       # clipboard manager
-      "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy"
+      "$mainMod, V, exec, toggle-rofi \"cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy\""
     ];
 
     # mouse binding
