@@ -13,7 +13,6 @@
     "wl-paste --watch cliphist store &"
     "waybar &"
     "swaync &"
-    "vicinae server &"
     "udiskie --automount --notify --smart-tray &"
     "hyprctl setcursor Bibata-Modern-Ice 24 &"
     "init-wallpaper &"

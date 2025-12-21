@@ -83,7 +83,6 @@
     ];
 
     layerrule = [
-      "dimaround, vicinae"
       "dimaround, rofi"
       "dimaround, swaync-control-center"
     ];
