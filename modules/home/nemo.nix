@@ -1,11 +1,13 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
-  home.packages = with pkgs; [ nemo ];
+  home.packages = with pkgs; [
+    nemo-with-extensions
+    nemo-fileroller
+  ];
 
   dconf.settings = {
     "org/nemo/preferences" = {
       always-use-browser = true;
-      # click-double-parent-folder = true;
       close-device-view-on-device-eject = true;
       date-font-choice = "auto-mono";
       date-format = "iso";
@@ -19,7 +21,8 @@
       show-open-in-terminal-toolbar = false;
       show-search-icon-toolbar = false;
       show-show-thumbnails-toolbar = false;
-      thumbnail-limit = 10485760;
+      # needs to be a uint64!
+      thumbnail-limit = lib.gvariant.mkUint64 (100 * 1024 * 1024); # 100 mb
     };
     "org/nemo/preferences/menu-config" = {
       background-menu-open-as-root = false;
@@ -36,7 +39,7 @@
       network-expanded = true;
       side-pane-view = "places";
       sidebar-bookmark-breakpoint = 2;
-      sidebar-width = 220;
+      sidebar-width = lib.gvariant.mkInt32 180;
       start-with-sidebar = true;
     };
   };
