@@ -18,10 +18,12 @@ CYAN=$(tput setaf 6)
 BRIGHT=$(tput bold)
 UNDERLINE=$(tput smul)
 
-OK="[$(tput setaf 2)OK$(tput sgr0)]\t"
-INFO="[$(tput setaf 4)INFO$(tput sgr0)]\t"
-WARN="[$(tput setaf 5)WARN$(tput sgr0)]\t"
-ERROR="[$(tput setaf 1)ERROR$(tput sgr0)]\t"
+OK="[${GEREN}OK${RESET}]\t"
+INFO="[${BLUE}INFO${RESET}]\t"
+WARN="[${MAGENTA}WARN${RESET}]\t"
+ERROR="[${RED}ERROR${RESET}]\t"
+
+set -e
 
 #------------------------------#
 #   Check if running as root   #
@@ -117,13 +119,6 @@ else
     DISABLE_ASEPRITE="No"
 fi
 
-whiptail --msgbox "This config default launcher is Vicinae. Like Aseprite, it is built from source, which can take a significant amount of time depending on your hardware. You will have the option to disable it to speed up installation. If disabled, Rofi will be used as the launcher instead." 12 60 --title "Vicinae Information"
-if (whiptail --yesno "Disable Vicinae (faster install, uses rofi)?" --defaultno 9 40 --title "Vicinae"); then
-    DISABLE_VICINAE="Yes"
-else
-    DISABLE_VICINAE="No"
-fi
-
 #---------------------------#
 #   Recap of user choices   #
 #---------------------------#
@@ -133,10 +128,9 @@ Username:   $username
 Host:       $HOST
 
 Disable Aseprite:   $DISABLE_ASEPRITE
-Disable Vicinae:    $DISABLE_VICINAE
 "
 
-whiptail --msgbox "$SUMMARY" 12 40 --title "Installation Summary"
+whiptail --msgbox "$SUMMARY" 11 40 --title "Installation Summary"
 
 #-----------------------#
 #   Last Confirmation   #
@@ -160,17 +154,6 @@ find ./hosts ./modules flake.nix -type f -exec sed -i -e "s/${CURRENT_USERNAME}/
 if [[ $DISABLE_ASEPRITE = "Yes" ]]; then
     echo -e "${INFO}Disabling Aseprite"
     sed -i '3s/  /  # /' modules/home/aseprite/aseprite.nix
-fi
-
-if [[ $DISABLE_VICINAE = "Yes" ]]; then
-    echo -e "${INFO}Disabling Vicinae"
-    sed -i '/^    enable = true;$/c\    enable = false;' modules/home/vicinae/vicinae.nix
-    sed -i 's|^    \./vicinae/vicinae.nix|    # ./vicinae/vicinae.nix|' modules/home/default.nix
-    sed -i '/^    "vicinae server &"$/c\    # "vicinae server &"' modules/home/hyprland/exec-once.nix
-
-    echo -e "${INFO}Setting rofi as default launcher"
-    sed -i 's/vicinae vicinae:\/\/toggle/rofi -show drun || pkill rofi/g' modules/home/hyprland/binds.nix
-    sed -i "s/vicinae vicinae:\/\/extensions\/vicinae\/clipboard\/history/\cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy/g" modules/home/hyprland/binds.nix
 fi
 
 #----------------------#
