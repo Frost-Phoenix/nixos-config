@@ -18,6 +18,7 @@
     ## Utility
     dconf-editor
     gnome-disk-utility
+    popsicle
     mission-center # GUI resources monitor
     zenity
 
