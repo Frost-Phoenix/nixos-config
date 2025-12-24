@@ -18,7 +18,7 @@ CYAN=$(tput setaf 6)
 BRIGHT=$(tput bold)
 UNDERLINE=$(tput smul)
 
-OK="[${GEREN}OK${RESET}]\t"
+OK="[${GREEN}OK${RESET}]\t"
 INFO="[${BLUE}INFO${RESET}]\t"
 WARN="[${MAGENTA}WARN${RESET}]\t"
 ERROR="[${RED}ERROR${RESET}]\t"
