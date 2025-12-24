@@ -26,7 +26,7 @@
     ./packages                        # other packages
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
-    ./scripts/scripts.nix             # personal scripts
+    ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
     ./spicetify.nix                   # spotify client
     ./superfile/superfile.nix         # terminal file manager
