@@ -5,7 +5,7 @@
 
     settings = {
       user = {
-        name = "Frost-Phoenix ";
+        name = "Frost-Phoenix";
         email = "67cyril6767@gmail.com";
       };
 
