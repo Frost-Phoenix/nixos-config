@@ -34,7 +34,7 @@
       nft = "nh-notify nh os test";
       nfs = "nh-notify nh os switch";
       nfu = "nh-notify nh os switch --update";
-      # nix-search = "nh search";
+      nsearch = "nh search";
 
       # python
       piv = "python -m venv .venv";
