@@ -276,10 +276,6 @@ programs.git = {
 };
 ```
 
-# 📜 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
-
 # 👥 Credits
 
 Other dotfiles that I ~~copied~~ learned from:
@@ -300,6 +296,10 @@ Other dotfiles that I ~~copied~~ learned from:
   - [Ruixi-rebirth/flakes](https://github.com/Ruixi-rebirth/flakes)
 
 - And many others I probably forgot to mention.
+
+# 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
 <!-- # ✨ Stars History
 
