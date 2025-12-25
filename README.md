@@ -37,9 +37,51 @@
 
 <details>
 <summary>
+   Waybar (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/waybar.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Swaylock (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/swaylock.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
    Hyprlock (EXPAND)
 </summary>
    <img src="./.github/assets/screenshots/hyprlock.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Power menu (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/power_menu.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Launcher (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/launcher.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Wallpapers picker (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/wallpaper_picker.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Notification (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/notification.png" style="margin-bottom: 15px;" /> <br>
+</details>
+<details>
+<summary>
+   Notification center (EXPAND)
+</summary>
+   <img src="./.github/assets/screenshots/notification_center.png" style="margin-bottom: 15px;" /> <br>
 </details>
 
 You can find my previous Catppuccin rice [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin) (outdated).
@@ -233,6 +275,10 @@ programs.git = {
    ...
 };
 ```
+
+# 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
 # 👥 Credits
 
