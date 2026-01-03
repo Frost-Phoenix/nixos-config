@@ -367,11 +367,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1766992078,
-        "narHash": "sha256-3Dm5LdsZHktHzGqfCrPqJQBlIIHhfkKbMjOwl4y4LEk=",
+        "lastModified": 1767416951,
+        "narHash": "sha256-6fRq4DGFHN8UR4zqoRx6fuaAuknOlGNLF7X2OJsr09k=",
         "owner": "yorukot",
         "repo": "superfile",
-        "rev": "83dd77fe18ae2b3f819470423060e2a069f8f557",
+        "rev": "e5cc991c83cea975d02489ffb1e5491e8189c4be",
         "type": "github"
       },
       "original": {
