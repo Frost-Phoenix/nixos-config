@@ -20,6 +20,8 @@ default_sort_type = 0
 sort_order_reversed = false
 case_sensitive_sort = false
 
+page_scroll_size = 0
+
 debug = false
 ignore_missing_fields = false
 
@@ -29,7 +31,8 @@ nerdfont = true
 transparent_background = true
 
 file_preview_width = 0
-sidebar_width = 20
+enable_file_preview_border = true
+sidebar_width = 18
 
 border_top = '─'
 border_bottom = '─'
