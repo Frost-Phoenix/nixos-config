@@ -195,17 +195,17 @@ scripts/
 
 Keybindings are defined in [`binds.nix`](./modules/home/hyprland/binds.nix). 
 
-**Quick access:** Press `$mainMod F1` to view all keybinds.
+**Quick access:** Press `$mod F1` to view all keybinds.
 
 Here are some of the main keybinds:
 
 | Category | Key Examples | Purpose |
 |----------|--------------|---------|
-| **Navigation** | `$mainMod + 0-9/arrow keys` | workspace & window navigation |
-| **Applications** | `$mainMod + return/d/b/e` | terminal, launcher, browser, file manager |
-| **Window Control** | `$mainMod + q/f/space` | close, fullscreen, float windows |
-| **Media & Tools** | `Print`, `$mainMod + c/w` | screenshots, color picker, wallpaper picker |
-| **System** | `$mainMod + escape/shift escape` | lockscreen, power menu |
+| **Navigation** | `$mod + 0-9/arrow keys` | workspace & window navigation |
+| **Applications** | `$mod + return/d/b/e` | terminal, launcher, browser, file manager |
+| **Window Control** | `$mod + q/f/space` | close, fullscreen, float windows |
+| **Media & Tools** | `Print`, `$mod + c/w` | screenshots, color picker, wallpaper picker |
+| **System** | `$mod + escape/shift escape` | lockscreen, power menu |
 
 # 🚀 Installation
 

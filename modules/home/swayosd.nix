@@ -11,15 +11,15 @@
       bindl = [
         ",XF86MonBrightnessUp, exec, swayosd-client --brightness raise 5%+"
         ",XF86MonBrightnessDown, exec, swayosd-client --brightness lower 5%-"
-        "$mainMod, XF86MonBrightnessUp, exec, brightnessctl set 100%"
-        "$mainMod, XF86MonBrightnessDown, exec, brightnessctl set 0%"
+        "$mod, XF86MonBrightnessUp, exec, brightnessctl set 100%"
+        "$mod, XF86MonBrightnessDown, exec, brightnessctl set 0%"
       ];
       bindle = [
         ",XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2 --max-volume=100"
         ",XF86AudioLowerVolume, exec, swayosd-client --output-volume -2"
 
-        "$mainMod, f11, exec, swayosd-client --output-volume +2 --max-volume=100"
-        "$mainMod, f12, exec, swayosd-client --output-volume -2"
+        "$mod, f11, exec, swayosd-client --output-volume +2 --max-volume=100"
+        "$mod, f12, exec, swayosd-client --output-volume -2"
       ];
       bindr = [
         "CAPS,Caps_Lock,exec,swayosd-client --caps-lock"

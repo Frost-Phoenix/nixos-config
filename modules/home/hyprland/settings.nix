@@ -1,6 +1,8 @@
 { ... }:
 {
   wayland.windowManager.hyprland.settings = {
+    "$mod" = "SUPER";
+
     input = {
       kb_layout = "us,fr";
       kb_options = "grp:alt_caps_toggle";
@@ -16,7 +18,6 @@
     };
 
     general = {
-      "$mainMod" = "SUPER";
       layout = "dwindle";
       gaps_in = 6;
       gaps_out = 12;
