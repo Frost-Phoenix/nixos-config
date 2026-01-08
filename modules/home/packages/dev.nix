@@ -7,7 +7,7 @@
     ## formating
     shfmt
     treefmt
-    nixfmt-rfc-style
+    nixfmt
 
     ## C / C++
     gcc
