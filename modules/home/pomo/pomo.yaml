@@ -1,0 +1,26 @@
+askToContinue: true
+
+asciiArt:
+  enabled: true
+  font: ansiShadow
+  color: "#5A56E0"
+
+work:
+  duration: 25m
+  title: work session
+  notification:
+    enabled: true
+    urgent: false
+    title: work finished
+    message: time to take a break
+    icon: ~/.config/pomo/pomo.png
+
+break:
+  duration: 5m
+  title: break session
+  notification:
+    enabled: true
+    urgent: false
+    title: break over
+    message: back to work!
+    icon: ~/.config/pomo/pomo.png

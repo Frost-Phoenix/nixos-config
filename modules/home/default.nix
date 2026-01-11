@@ -24,6 +24,7 @@
     ./obsidian.nix
     ./p10k/p10k.nix
     ./packages                        # other packages
+    ./pomo/pomo.nix                   # TUI Pomodoro timer
     ./retroarch.nix  
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
