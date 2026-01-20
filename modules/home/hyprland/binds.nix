@@ -44,6 +44,9 @@
       "$mod, Print, exec, screenshot --save"
       "$mod SHIFT, Print, exec, screenshot --swappy"
 
+      # OCR
+      "$mod CTRL, O, exec, ocr"
+
       # switch focus
       "$mod, left,  movefocus, l"
       "$mod, right, movefocus, r"
