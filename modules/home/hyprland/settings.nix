@@ -38,7 +38,7 @@
       focus_on_activate = true;
       middle_click_paste = false;
 
-      disable_autoreload = true;
+      disable_autoreload = false;
     };
 
     dwindle = {
