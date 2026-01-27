@@ -28,6 +28,7 @@
       # Nixos
       cdnix = "cd ~/nixos-config && codium ~/nixos-config";
       ns = "nom-shell --run zsh";
+      nsp = "nom-shell --run zsh -p";
       nd = "nom develop --command zsh";
       nb = "nom build";
       nc = "nh-notify nh clean all --keep 5";
