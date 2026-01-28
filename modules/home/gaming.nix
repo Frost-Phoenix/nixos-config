@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     ## Minecraft
-    # prismlauncher
+    prismlauncher
 
     ## Cli games
     _2048
