@@ -16,7 +16,7 @@
     enable = true;
     font = {
       name = "Maple Mono";
-      size = 12;
+      size = 14;
     };
     theme = {
       name = "Colloid-Green-Dark-Gruvbox";
