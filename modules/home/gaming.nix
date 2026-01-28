@@ -1,12 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
-    ## Utils
-    # gamemode
-    # gamescope
-    # winetricks
-    # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-ge
-
     ## Minecraft
     # prismlauncher
 
@@ -22,7 +16,6 @@
     # celeste-classic-pm
 
     ## Doom
-    # gzdoom
     crispy-doom
 
     ## Emulation
