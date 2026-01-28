@@ -19,9 +19,11 @@
     crispy-doom
 
     ## Emulation
-    sameboy
+    cemu
+    mgba
     snes9x
-    # cemu
-    # dolphin-emu
+    sameboy
+    melonDS
+    dolphin-emu
   ];
 }
