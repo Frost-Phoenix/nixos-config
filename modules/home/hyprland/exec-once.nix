@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, host, ... }:
 {
   wayland.windowManager.hyprland.settings.exec-once = [
     # "hash dbus-update-activation-environment 2>/dev/null"
@@ -20,5 +20,7 @@
     "ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
     "[workspace 1 silent] zen-beta"
     "[workspace 2 silent] ghostty"
-  ];
+  ]
+  # only start monitor watching screen on laptop
+  ++ lib.optional (host == "p14s" || host == "laptop") "monitor-watcher &";
 }

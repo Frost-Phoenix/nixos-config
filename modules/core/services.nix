@@ -20,6 +20,9 @@
     logind.settings.Login = {
       # don’t shutdown when power button is short-pressed
       HandlePowerKey = "ignore";
+
+      # ignore lid close when docked/external monitor conected
+      HandleLidSwitchDocked = "ignore";
     };
 
     udisks2.enable = true;
