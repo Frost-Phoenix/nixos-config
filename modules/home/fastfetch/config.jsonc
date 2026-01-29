@@ -84,6 +84,7 @@
     "break",
     {
       "type": "host",
+      "format": "{1}",
       "key": "󰌢 System",
       "keyColor": "green"
     },
