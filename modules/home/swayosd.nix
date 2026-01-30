@@ -29,6 +29,11 @@
     };
   };
 
+  xdg.configFile."swayosd/config.toml".text = ''
+    [server]
+    show_percentage = true
+  '';
+
   xdg.configFile."swayosd/style.css".text = ''
     window {
         padding: 0px 10px;
