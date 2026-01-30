@@ -15,10 +15,10 @@
         "$mod, XF86MonBrightnessDown, exec, brightnessctl set 0%"
       ];
       bindle = [
-        ",XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2 --max-volume=100"
+        ",XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2"
         ",XF86AudioLowerVolume, exec, swayosd-client --output-volume -2"
 
-        "$mod, f11, exec, swayosd-client --output-volume +2 --max-volume=100"
+        "$mod, f11, exec, swayosd-client --output-volume +2"
         "$mod, f12, exec, swayosd-client --output-volume -2"
       ];
       bindr = [
@@ -31,6 +31,7 @@
 
   xdg.configFile."swayosd/config.toml".text = ''
     [server]
+    max_volume = 100
     show_percentage = true
   '';
 
