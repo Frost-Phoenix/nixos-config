@@ -40,7 +40,7 @@
       # "$mod SHIFT, W, exec, vm-start"
 
       # screenshot
-      ",Print, exec, screenshot --copy"
+      ", Print, exec, screenshot --copy"
       "$mod, Print, exec, screenshot --save"
       "$mod SHIFT, Print, exec, screenshot --swappy"
 
@@ -123,11 +123,10 @@
       "$mod ALT, l, moveactive, 80 0"
 
       # media and volume controls
-      # ",XF86AudioMute,exec, pamixer -t"
-      ",XF86AudioPlay,exec, playerctl play-pause"
-      ",XF86AudioNext,exec, playerctl next"
-      ",XF86AudioPrev,exec, playerctl previous"
-      ",XF86AudioStop,exec, playerctl stop"
+      ", XF86AudioPlay,exec, playerctl play-pause"
+      ", XF86AudioNext,exec, playerctl next"
+      ", XF86AudioPrev,exec, playerctl previous"
+      ", XF86AudioStop,exec, playerctl stop"
 
       "$mod, mouse_down, workspace, e-1"
       "$mod, mouse_up, workspace, e+1"
