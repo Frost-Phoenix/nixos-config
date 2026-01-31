@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, host, ... }:
 {
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
@@ -16,7 +16,7 @@
     enable = true;
     font = {
       name = "Maple Mono";
-      size = 14;
+      size = if (host == "p14s") then 14 else 12;
     };
     theme = {
       name = "Colloid-Green-Dark-Gruvbox";
