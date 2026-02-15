@@ -23,7 +23,7 @@
     mgba
     snes9x
     sameboy
-    melonDS
+    melonds
     dolphin-emu
   ];
 }
