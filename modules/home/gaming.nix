@@ -1,14 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
-    ## Utils
-    # gamemode
-    # gamescope
-    # winetricks
-    # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-ge
-
     ## Minecraft
-    # prismlauncher
+    prismlauncher
 
     ## Cli games
     _2048
@@ -22,13 +16,14 @@
     # celeste-classic-pm
 
     ## Doom
-    # gzdoom
     crispy-doom
 
     ## Emulation
-    sameboy
+    cemu
+    mgba
     snes9x
-    # cemu
-    # dolphin-emu
+    sameboy
+    melonds
+    dolphin-emu
   ];
 }

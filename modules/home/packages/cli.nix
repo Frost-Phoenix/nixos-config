@@ -73,6 +73,7 @@
     pamixer                           # pulseaudio command line mixer
     playerctl                         # controller for media players
     poweralertd
+    socat
     udiskie                           # Automounter for removable media
     unzip
     wget
@@ -80,6 +81,6 @@
     xdg-utils
 
     winetricks
-    wineWowPackages.waylandFull
+    wineWow64Packages.waylandFull
   ];
 }

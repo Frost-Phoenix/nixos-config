@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   programs.btop = {
     enable = true;
@@ -10,6 +10,4 @@
       rounded_corners = false;
     };
   };
-
-  home.packages = with pkgs; [ nvtopPackages.intel ];
 }
