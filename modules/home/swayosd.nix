@@ -15,8 +15,8 @@
         "$mod, XF86MonBrightnessDown, exec, swayosd-client --brightness 0"
       ];
       bindel = [
-        ", XF86MonBrightnessUp, exec, swayosd-client --brightness raise 5%+"
-        ", XF86MonBrightnessDown, exec, swayosd-client --brightness lower 5%-"
+        ", XF86MonBrightnessUp, exec, swayosd-client --brightness raise"
+        ", XF86MonBrightnessDown, exec, swayosd-client --brightness lower"
       ];
       binde = [
         ", XF86AudioRaiseVolume, exec, swayosd-client --output-volume +2"
