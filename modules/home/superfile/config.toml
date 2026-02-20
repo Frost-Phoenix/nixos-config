@@ -20,6 +20,10 @@ default_sort_type = 0
 sort_order_reversed = false
 case_sensitive_sort = false
 
+file_panel_extra_columns = 0
+file_panel_name_percent = 100
+sidebar_sections = ["home", "pinned"] # "disks"
+
 page_scroll_size = 0
 
 debug = false
