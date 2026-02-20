@@ -2,7 +2,10 @@
 {
   imports = [ inputs.zen-browser.homeModules.beta ];
 
-  programs.zen-browser.enable = true;
+  programs.zen-browser = {
+    enable = true;
+    suppressXdgMigrationWarning = true;
+  };
 
   xdg.mimeApps =
     let
