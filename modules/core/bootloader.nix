@@ -8,6 +8,7 @@
     };
 
     kernelPackages = pkgs.linuxPackages_latest;
+    kernelModules = [ "hid-nintendo" ];
     supportedFilesystems = [ "ntfs" ];
   };
 }
