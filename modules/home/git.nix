@@ -29,11 +29,11 @@
 
   programs.delta = {
     enable = true;
-    enableGitIntegration = true;
+    enableGitIntegration = false;
 
     options = {
       line-numbers = true;
-      side-by-side = false;
+      side-by-side = true;
       diff-so-fancy = true;
       navigate = true;
     };
@@ -42,6 +42,7 @@
   home.packages = with pkgs; [
     gh
     serie
+    diffnav
   ];
 
   xdg.configFile."git/.gitignore".text = ''
@@ -54,7 +55,7 @@
 
     gs = "git status";
     gcl = "git clone";
-    gd = "git diff";
+    gd = "git diff | diffnav";
 
     ga = "git add";
     gaa = "git add --all";
