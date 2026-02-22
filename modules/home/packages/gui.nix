@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     ## Multimedia
+    amberol # music player
     audacity
     gimp
     media-downloader
