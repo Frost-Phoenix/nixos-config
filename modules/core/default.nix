@@ -6,6 +6,7 @@
     ./hardware.nix
     ./xserver.nix
     ./network.nix
+    ./bluetooth.nix
     ./nh.nix
     ./pipewire.nix
     ./program.nix
