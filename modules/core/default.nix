@@ -9,6 +9,7 @@
     ./bluetooth.nix
     ./nh.nix
     ./pipewire.nix
+    ./printing.nix
     ./program.nix
     ./security.nix
     ./services.nix
