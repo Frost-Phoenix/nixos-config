@@ -17,10 +17,19 @@ restart-apps() {
 }
 
 handle-monitor-state() {
-    # is external monitor connected?
-    if hyprctl monitors | grep -qE "HDMI|DP"; then
-        # external monitor connected - disable laptop screen
-        hyprctl keyword monitor "eDP-1,disable"
+    # detect external monitors (HDMI-* or DP-*)
+    external_present=$(hyprctl monitors | grep -E "^Monitor (HDMI-|DP-)" || true)
+
+    # count enabled monitors
+    enabled_count=$(hyprctl monitors | grep -c "^Monitor")
+
+    # is an external monitor connected
+    if [ -n "$external_present" ]; then
+
+        # only disable eDP-1 if more than 1 monitor is active
+        if [ "$enabled_count" -gt 1 ]; then
+            hyprctl keyword monitor "eDP-1,disable"
+        fi
     else
         # no external monitor - enable laptop screen
         hyprctl keyword monitor "eDP-1,preferred,auto,1"
@@ -37,7 +46,7 @@ restart-apps
 socat -U - UNIX-CONNECT:"$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket2.sock" |
     while read -r line; do
         # react on external monitor plug/unplug or hyprland reload
-        if echo "$line" | grep -qE "monitor(added|removed)>>(HDMI|DP)|configreloaded"; then
+        if echo "$line" | grep -qE "monitor(added|removed)>>(HDMI-|DP-)|configreloaded"; then
             handle-monitor-state
             restart-apps
         fi
