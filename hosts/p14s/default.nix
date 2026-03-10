@@ -37,6 +37,8 @@
         STOP_CHARGE_THRESH_BAT0 = 80;
 
         RESTORE_THRESHOLDS_ON_BAT = 1;
+
+        DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
       };
     };
   };
