@@ -39,6 +39,8 @@
       "$mod, equal, exec, woomer"
       # "$mod SHIFT, W, exec, vm-start"
 
+      "$mod, XF86Display, exec, toggle-display"
+
       # screenshot
       ", Print, exec, screenshot --copy"
       "$mod, Print, exec, screenshot --save"
