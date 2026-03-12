@@ -10,7 +10,6 @@
           inherit (prev) system;
         })
       )
-      inputs.nur.overlays.default
     ];
   };
 }
