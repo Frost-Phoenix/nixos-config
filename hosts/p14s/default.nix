@@ -11,10 +11,14 @@
 
     amdgpu_top
     nvtopPackages.amd
+
+    lm_sensors
   ];
 
   services = {
     # lact.enable = true;
+
+    power-profiles-daemon.enable = true;
 
     upower = {
       enable = true;
@@ -23,33 +27,19 @@
       percentageAction = 5;
       criticalPowerAction = "HybridSleep";
     };
-
-    tlp = {
-      enable = true;
-      settings = {
-        CPU_SCALING_GOVERNOR_ON_AC = "performance";
-        CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-
-        CPU_ENERGY_PERF_ON_AC = "performance";
-        CPU_ENERGY_PERF_ON_BAT = "power";
-
-        START_CHARGE_THRESH_BAT0 = 60;
-        STOP_CHARGE_THRESH_BAT0 = 80;
-
-        RESTORE_THRESHOLDS_ON_BAT = 1;
-
-        DEVICES_TO_DISABLE_ON_STARTUP = "bluetooth";
-      };
-    };
   };
 
-  hardware.graphics = {
-    extraPackages = with pkgs; [
-      mesa
+  hardware = {
+    cpu.amd.updateMicrocode = true;
 
-      libva
-      libva-vdpau-driver
-    ];
+    graphics = {
+      extraPackages = with pkgs; [
+        mesa
+
+        libva
+        libva-utils
+      ];
+    };
   };
 
   boot = {
@@ -60,4 +50,26 @@
     kernelParams = [ "amd_pstate=active" ];
     extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
   };
+
+  systemd.services.battery-charge-threshold = {
+    description = "Set ThinkPad Battery Charge Thresholds";
+    wantedBy = [ "sysinit.target" ];
+    after = [ "sysinit.target" ];
+
+    serviceConfig.Type = "oneshot";
+
+    script = ''
+      # Stop charging at 80%
+      echo 80 > /sys/class/power_supply/BAT0/charge_control_end_threshold
+
+      # Start charging only if below 70%
+      echo 70 > /sys/class/power_supply/BAT0/charge_control_start_threshold
+    '';
+  };
+
+  # Automatically switch power profiles on AC/Battery
+  services.udev.extraRules = ''
+    SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", RUN+="${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance"
+    SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", RUN+="${pkgs.power-profiles-daemon}/bin/powerprofilesctl set balanced"
+  '';
 }
