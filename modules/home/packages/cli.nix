@@ -22,6 +22,7 @@
     broot                             # tree files view
     caligula                          # User-friendly, lightweight TUI for disk imaging
     hyperfine                         # benchmarking tool
+    just                              # command runner (makefile like)
     pastel                            # cli to manipulate colors
     scooter                           # Interactive find and replace in the terminal
     swappy                            # snapshot editing tool
