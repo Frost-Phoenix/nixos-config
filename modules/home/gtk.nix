@@ -1,4 +1,9 @@
-{ lib, pkgs, host, ... }:
+{
+  lib,
+  pkgs,
+  host,
+  ...
+}:
 let
   gtk-theme-name = "Colloid-Green-Dark-Gruvbox";
   gtk-theme = pkgs.colloid-gtk-theme.override {
@@ -13,18 +18,6 @@ let
   icon-theme-name = "Papirus-Dark";
 in
 {
-  fonts.fontconfig.enable = true;
-  home.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.fira-code
-    nerd-fonts.caskaydia-cove
-    nerd-fonts.symbols-only
-    twemoji-color-font
-    noto-fonts-color-emoji
-    fantasque-sans-mono
-    maple-mono-custom
-  ];
-
   gtk = {
     enable = true;
     font = {
