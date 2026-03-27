@@ -18,7 +18,7 @@
     };
 
     maple-mono = {
-      url = "github:subframe7536/maple-font/variable";
+      url = "github:subframe7536/maple-font?ref=v7.8";
       flake = false;
     };
 
