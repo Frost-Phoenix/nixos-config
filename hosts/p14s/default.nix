@@ -53,7 +53,10 @@
 
   systemd.services.set-power-profile-on-boot = {
     description = "Set power profile based on AC state at boot";
+
     wantedBy = [ "power-profiles-daemon.service" ];
+    after = [ "power-profiles-daemon.service" ];
+    partOf = [ "power-profiles-daemon.service" ];
 
     serviceConfig.Type = "oneshot";
 
