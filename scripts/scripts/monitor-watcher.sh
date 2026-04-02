@@ -4,7 +4,7 @@
 
 restart-apps() {
     # restart wallpaper
-    pkill .swww-daemon-wr 2> /dev/null
+    pkill .awww-daemon-wr 2> /dev/null
     init-wallpaper &
 
     # restart waybar
