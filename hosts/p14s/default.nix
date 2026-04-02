@@ -51,19 +51,18 @@
     extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
   };
 
-  systemd.services.battery-charge-threshold = {
-    description = "Set ThinkPad Battery Charge Thresholds";
-    wantedBy = [ "sysinit.target" ];
-    after = [ "sysinit.target" ];
+  systemd.services.set-power-profile-on-boot = {
+    description = "Set power profile based on AC state at boot";
+    wantedBy = [ "power-profiles-daemon.service" ];
 
     serviceConfig.Type = "oneshot";
 
     script = ''
-      # Stop charging at 80%
-      echo 80 > /sys/class/power_supply/BAT0/charge_control_end_threshold
-
-      # Start charging only if below 70%
-      echo 70 > /sys/class/power_supply/BAT0/charge_control_start_threshold
+      if [ "$(cat /sys/class/power_supply/AC/online 2>/dev/null || echo 0)" = "1" ]; then
+        ${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance
+      else
+        ${pkgs.power-profiles-daemon}/bin/powerprofilesctl set power-saver
+      fi
     '';
   };
 
