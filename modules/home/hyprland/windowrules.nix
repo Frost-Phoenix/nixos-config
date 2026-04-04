@@ -6,7 +6,6 @@
       "match:class ^(mpv)$, float on"
       "match:class ^(zenity)$, float on"
       "match:class ^(waypaper)$, float on"
-      "match:class ^(SoundWireServer)$, float on"
       "match:class ^(.sameboy-wrapped)$, float on"
       "match:class ^(org.gnome.Calculator)$, float on"
       "match:class ^(org.gnome.FileRoller)$, float on"
@@ -18,7 +17,6 @@
       "match:class ^(Aseprite)$, tile on"
 
       "match:class ^(zenity)$, size 850 500"
-      "match:class ^(SoundWireServer)$, size 725 330"
 
       "match:title ^(Volume Control)$, size 700 450"
       "match:title ^(Volume Control)$, move 40 55%"

@@ -8,7 +8,6 @@
     media-downloader
     obs-studio
     pavucontrol
-    soundwireserver
     video-trimmer
     vlc
 
