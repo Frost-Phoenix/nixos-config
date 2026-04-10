@@ -11,19 +11,19 @@
     nethack
 
     ## Celeste
-    olympus
+    # olympus
     # celeste-classic
     # celeste-classic-pm
 
     ## Doom
-    crispy-doom
+    # crispy-doom
 
     ## Emulation
-    cemu
-    mgba
-    snes9x
-    sameboy
-    melonds
-    dolphin-emu
+    # cemu
+    # mgba
+    # snes9x
+    # sameboy
+    # melonds
+    # dolphin-emu
   ];
 }
