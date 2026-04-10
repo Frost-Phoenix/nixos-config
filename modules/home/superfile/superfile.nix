@@ -4,11 +4,7 @@ let
   superfile = inputs.superfile.packages.${system}.default;
 in
 {
-  home.packages = [
-    (superfile.overrideAttrs (oldAttrs: {
-      doCheck = false;
-    }))
-  ];
+  home.packages = [ superfile ];
 
   xdg.configFile."superfile/config.toml".source = ./config.toml;
 }
