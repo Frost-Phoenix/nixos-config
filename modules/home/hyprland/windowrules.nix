@@ -25,6 +25,7 @@
       "match:title ^(Picture-in-Picture)$, float on"
 
       "match:class ^(zen-beta)$, workspace 1"
+      "match:class ^(codium)$, workspace 3"
       "match:class ^(Gimp-2.10)$, workspace 4"
       "match:class ^(Aseprite)$, workspace 4"
       "match:class ^(Audacious)$, workspace 5"
