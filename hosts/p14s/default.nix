@@ -62,7 +62,7 @@
 
     script = ''
       if [ "$(cat /sys/class/power_supply/AC/online 2>/dev/null || echo 0)" = "1" ]; then
-        ${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance
+        ${pkgs.power-profiles-daemon}/bin/powerprofilesctl set balanced
       else
         ${pkgs.power-profiles-daemon}/bin/powerprofilesctl set power-saver
       fi
@@ -71,7 +71,7 @@
 
   # Automatically switch power profiles on AC/Battery
   services.udev.extraRules = ''
-    SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", RUN+="${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance"
+    SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="1", RUN+="${pkgs.power-profiles-daemon}/bin/powerprofilesctl set balanced"
     SUBSYSTEM=="power_supply", ATTR{type}=="Mains", ATTR{online}=="0", RUN+="${pkgs.power-profiles-daemon}/bin/powerprofilesctl set power-saver"
   '';
 }
