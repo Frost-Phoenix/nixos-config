@@ -55,11 +55,13 @@
       "zig.checkForUpdate" = false;
       "zig.zls.path" = "zls";
       "zig.path" = "zig";
+      "zig.buildOnSaveProvider" = "zls";
       "zig.revealOutputChannelOnFormattingError" = false;
       "zig.zls.enableInlayHints" = false;
       "zig.zls.enableArgumentPlaceholders" = false;
-      "zig.zls.enableBuildOnSave" = true;
-      "zig.zls.buildOnSaveArgs" = [ ];
+      "zig.buildOnSaveArgs" = [ ];
+      "zig.zls.enabled" = "on";
+      "zig.zls.warnStyle" = true;
 
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
