@@ -44,25 +44,20 @@
 
       "editor.mouseWheelZoom" = true;
 
-      # C/C++
+      ## C/C++
       "clangd.arguments" = [
         "--clang-tidy"
         "--inlay-hints=false"
       ];
 
-      # Zig
-      # "zig.initialSetupDone" = true;
-      "zig.checkForUpdate" = false;
-      "zig.zls.path" = "zls";
+      ## Zig
       "zig.path" = "zig";
-      "zig.buildOnSaveProvider" = "zls";
-      "zig.revealOutputChannelOnFormattingError" = false;
-      "zig.zls.enableInlayHints" = false;
-      "zig.zls.enableArgumentPlaceholders" = false;
-      "zig.buildOnSaveArgs" = [ ];
+      "zig.zls.path" = "zls";
       "zig.zls.enabled" = "on";
       "zig.zls.warnStyle" = true;
+      "zig.buildOnSaveProvider" = "zls";
 
+      ## Nix
       "nix.serverPath" = "nixd";
       "nix.enableLanguageServer" = true;
       # "nix.serverSettings" = {
