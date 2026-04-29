@@ -12,10 +12,21 @@ performance="<span color='${red}'>󰓅 </span>"
 
 theme="$HOME/.config/rofi/powermenu-theme.rasi"
 
+current_profile=$(powerprofilesctl get)
+selected_row=0
+case ${current_profile} in
+    performance)
+        selected_row=2
+        ;;
+    balanced)
+        selected_row=1
+        ;;
+esac
+
 rofi_cmd() {
     rofi -theme-str 'window {width: 300px;}' \
         -theme-str 'listview { columns: 3; }' \
-        -selected-row 1 \
+        -selected-row ${selected_row} \
         -dmenu -theme "${theme}" -markup-rows
 }
 
