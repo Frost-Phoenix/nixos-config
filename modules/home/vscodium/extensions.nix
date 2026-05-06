@@ -12,7 +12,7 @@ let
       };
 in
 {
-  programs.vscode.profiles.default = {
+  programs.vscodium.profiles.default = {
     extensions = with pkgs.vscode-extensions; [
       ## Languages
       jnoortheen.nix-ide
