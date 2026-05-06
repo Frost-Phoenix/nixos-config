@@ -19,6 +19,7 @@ in
       arrterian.nix-env-selector
       llvm-vs-code-extensions.vscode-clangd
       ziglang.vscode-zig
+      yzhang.markdown-all-in-one
 
       ## Color scheme
       jdinhlife.gruvbox
