@@ -36,6 +36,7 @@
       "$mod, N, exec, swaync-client -t -sw"
       "CTRL SHIFT, Escape, exec, hyprctl dispatch exec '[workspace 9] missioncenter'"
       "$mod, equal, exec, woomer"
+      "$mod, A, exec, toggle-blanket"
       # "$mod SHIFT, W, exec, vm-start"
 
       "$mod, XF86Display, exec, toggle-display"
