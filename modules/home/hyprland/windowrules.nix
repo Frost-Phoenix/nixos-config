@@ -13,6 +13,9 @@
 
       "match:class ^(rofi)$, pin on"
       "match:class ^(waypaper)$, pin on"
+      "match:class ^(com.rafaelmardojai.Blanket)$, float on"
+      "match:class ^(com.rafaelmardojai.Blanket)$, size 600 700"
+      "match:class ^(com.rafaelmardojai.Blanket)$, workspace special:blanket silent"
 
       "match:class ^(Aseprite)$, tile on"
 
