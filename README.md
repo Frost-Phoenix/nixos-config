@@ -303,7 +303,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 
 <!-- # ✨ Stars History
 
-<p align="center"><img src="https://api.star-history.com/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark" /></p> -->
+<p align="center"><img src="https://star-history.dera.page/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark" /></p> -->
 
 <p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
 
